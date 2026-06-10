@@ -1,0 +1,58 @@
+[
+  {
+    "id": "tea-001",
+    "name": "Ceylon Green Tea with Lemongrass",
+    "description": "A refreshing blend of Ceylon Green Tea and zesty Lemongrass. Expertly crafted for a calming afternoon experience.",
+    "price": "Rs. 1500",
+    "pack": "Premium Pack",
+    "weight": "100g Loose Leaf",
+    "image": "/images/purl.png",
+    "ingredientImage": "/leaves/purl.jpg",
+    "ingredients": [
+      {
+        "name": "Green Tea Leaves",
+        "description": "Premium Ceylon green tea, rich in catechins and antioxidants."
+      },
+      {
+        "name": "Natural Lemongrass",
+        "description": "Dried lemongrass stalks for a citrusy, aromatic kick."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Metabolism Boost",
+        "description": "Green tea catechins help increase metabolic rate naturally."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Lemongrass is traditionally used to soothe digestion and bloating."
+      },
+      {
+        "title": "Focus & Calm",
+        "description": "L-theanine promotes relaxation without drowsiness."
+      },
+      {
+        "title": "Natural Detox",
+        "description": "Rich in antioxidants that help cleanse the body of toxins."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat fresh water to 80°C (176°F). Avoid boiling completely to protect delicate green tea leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon (2g) of tea blend per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Pour hot water and cover. Let it steep for 2 minutes for a light, refreshing taste."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot. Garnish with a fresh stalk of lemongrass if desired."
+      }
+    ]
+  }
+]

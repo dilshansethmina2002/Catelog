@@ -6,7 +6,7 @@ export const translations = {
     hero: {
       title: 'Ceylon Green Tea with Lemongrass',
       tagline: 'A refreshing blend of Ceylon Green Tea and zesty Lemongrass',
-      cta: 'Discover More',
+      cta: 'Let\'s Make Tea',
       scroll: 'Scroll to explore'
     },
     process: {
@@ -111,7 +111,7 @@ export const translations = {
     hero: {
       title: 'Té Verde de Ceilán con Limoncillo',
       tagline: 'Una mezcla refrescante de Té Verde de Ceilán y Limoncillo vibrante',
-      cta: 'Descubre Más',
+      cta: 'Vamos a preparar té',
       scroll: 'Desplázate para explorar'
     },
     process: {
@@ -212,7 +212,7 @@ export const translations = {
     hero: {
       title: 'Thé Vert Ceylan à la Citronnelle',
       tagline: 'Un mélange rafraîchissant de Thé Vert Ceylan et de Citronnelle zesty',
-      cta: 'En Savoir Plus',
+      cta: 'Préparons du thé', // Let's make tea
       scroll: 'Défiler pour explorer'
     },
     process: {
@@ -313,7 +313,7 @@ export const translations = {
     hero: {
       title: 'Tè Verde Ceylon con Citronella',
       tagline: 'Una miscela rinfrescante di Tè Verde Ceylon e Citronella vivace',
-      cta: 'Scopri di Più',
+      cta: 'Faciamus theam',
       scroll: 'Scorri per esplorare'
     },
     process: {
@@ -414,7 +414,7 @@ export const translations = {
     hero: {
       title: 'Цейлонский Зеленый Чай с Лемонграссом',
       tagline: 'Освежающая смесь цейлонского зеленого чая и яркого лемонграсса',
-      cta: 'Узнать Больше',
+      cta: 'Давайте заварим чай', // Let's brew/make tea
       scroll: 'Прокрутите, чтобы узнать больше'
     },
     process: {
@@ -515,7 +515,7 @@ export const translations = {
     hero: {
       title: 'レモングラス入りセイロン緑茶',
       tagline: 'セイロン緑茶と爽やかなレモングラスの鮮やかなブレンド',
-      cta: 'もっと詳しく',
+      cta: 'お茶を淹れましょう', // Let's brew/make tea
       scroll: 'スクロールして探索'
     },
     process: {
@@ -616,7 +616,7 @@ export const translations = {
     hero: {
       title: '柠檬草 锡兰绿茶',
       tagline: '锡兰绿茶与鲜活柠檬草的清爽融合',
-      cta: '探索更多',
+      cta: '来泡茶吧', // Let's make/brew tea
       scroll: '向下滚动探索'
     },
     process: {
