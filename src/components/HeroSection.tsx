@@ -43,9 +43,12 @@ export function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
   const { id } = useParams(); 
 
+  // URL එකට අදාළ product එක JSON එකෙන් ගන්නවා
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0]; 
   
-  const nameParts = t.hero.title.split(' ');
+  // JSON එකේ තියෙන featuredProduct.name එක ගන්නවා
+  const productName = featuredProduct.name || t.hero.title;
+  const nameParts = productName.split(' ');
   const firstWord = nameParts[0]; 
   const restOfName = nameParts.slice(1).join(' '); 
 
@@ -59,28 +62,22 @@ export function HeroSection() {
   const yLead = useTransform(scrollY, [0, 300], [0, 50]);
 
   return (
-    // මුලින්ම තිබ්බ 'pl-10' ඉවත් කර responsive padding (px-4 sm:px-6 lg:px-8) එකතු කළා
-    <div className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-[#f0fdf4] py-12 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8">
-
+    <div className="relative flex items-center justify-center overflow-hidden bg-[#f0fdf4] py-10 px-4 sm:px-6 md:px-8">
       {/* LIGHT BACKGROUND */}
       <div className="absolute inset-0 bg-gradient-to-br from-lime-50 via-emerald-50 to-teal-50">
-        {/* Soft Orbs - කුඩා screen වලදී ප්‍රමාණය සහ පිහිටීම responsive කළා */}
         <div className="absolute -top-[10%] -right-[10%] w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-yellow-100/40 rounded-full blur-[50px] sm:blur-[80px]" />
         <div className="absolute -bottom-[20%] -left-[10%] w-[250px] h-[250px] sm:w-[500px] sm:h-[500px] bg-emerald-100/40 rounded-full blur-[40px] sm:blur-[60px]" />
       </div>
 
-      {/* Container එක මැදට ගන්න 'lg:ml-10' ඉවත් කරලා 'max-w-7xl mx-auto' දුන්නා */}
-      <div className="w-full max-w-7xl mx-auto relative z-10 pt-12 md:pt-16 lg:pt-0">
+      <div className="w-full max-w-7xl mx-auto relative z-10 ">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
-          {/* LEFT: Content (Mobile වලදී මේක පල්ලෙහාට යනවා, Image එක උඩට එනවා) */}
+          {/* LEFT: Content */}
           <motion.div
             style={isMobile ? {} : { y: yLead }}
             className="lg:col-span-6 text-center lg:text-left space-y-5 sm:space-y-6 relative order-2 lg:order-1 max-w-xl mx-auto lg:mx-0"
           >
-            {/* Main Headline */}
             <div className="relative">
-              {/* Mobile වලදී අකුරු එක මත එක නොවැදෙන්න leading-[1.1] දීලා විශාල screen වලදී leading-[0.95] කළා */}
               <h1 className="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-medium tracking-tight leading-[1.1] lg:leading-[0.95] text-emerald-950 font-serif">
                 <span className="block overflow-hidden pb-1 sm:pb-2">
                   <motion.span
@@ -89,7 +86,7 @@ export function HeroSection() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="block text-emerald-950"
                   >
-                    {firstWord}
+                    {firstWord} 
                   </motion.span>
                 </span>
                 <span className="block overflow-hidden pb-1">
@@ -113,7 +110,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-md sm:max-w-lg mx-auto lg:mx-0 font-light px-2 sm:px-0"
             >
-              {t.hero.tagline}
+              {featuredProduct.description || t.hero.tagline} 
             </motion.p>
 
             {/* CTAs */}
@@ -123,22 +120,42 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex justify-center lg:justify-start pt-2 px-4 sm:px-0"
             >
-              {/* Mobile වලදී button එක thumb එකෙන් ඔබන්න ලේසි වෙන්න 'w-full sm:w-auto' (full width) කළා */}
               <button
                 onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full sm:w-auto text-center px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold uppercase tracking-widest transition-all shadow-lg shadow-emerald-600/20 rounded-sm active:scale-[0.98]"
+                className="group inline-flex items-center border border-emerald-600/30 dark:border-emerald-700/50 rounded-full overflow-hidden active:scale-[0.97] transition-all hover:border-emerald-600/60 bg-emerald-600 dark:bg-emerald-600"
               >
-                {t.hero.cta} 
+                {/* Text Section - Changed to Emerald 900 */}
+                <span className="px-6 py-3 text-sm font-medium tracking-widest uppercase text-white bg-transparent">
+                  {t.hero.cta}
+                </span>
+                
+                {/* Icon Section - Changed to Emerald 700 with hover color change */}
+                <span className="w-11 h-11 flex items-center justify-center bg-emerald-200 dark:bg-emerald-200 text-black transition-colors group-hover:bg-yellow-900 dark:group-hover:bg-yellow-200 flex-shrink-0">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                    /* Added the smooth slide-right animation on hover */
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6"/>
+                  </svg>
+                </span>
               </button>
             </motion.div>
           </motion.div>
 
-          {/* RIGHT: Product Stage (Mobile වලදී මේක උඩට එනවා - order-1) */}
+          {/* RIGHT: Product Stage */}
           <div className="lg:col-span-6 relative h-[280px] sm:h-[420px] md:h-[500px] lg:h-[600px] w-full flex items-center justify-center order-1 lg:order-2">
 
             {/* Ambient Animated Rings */}
             <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none select-none">
-              {/* Responsive Ring widths using layout limits */}
               <motion.div
                 whileInView={{ rotate: 360 }}
                 viewport={{ once: false }}
@@ -169,34 +186,32 @@ export function HeroSection() {
               <FloatingParticle className="top-[55%] left-[10%] w-1 h-1 sm:w-1.5 sm:h-1.5" delay={1.5} />
             </div>
 
-            {/* Product Image - Centered & Floating */}
+            {/* Product Image */}
             <motion.div
               className="relative z-20 group flex items-center justify-center w-full"
               whileInView={{ y: [0, -8, 0] }}
               viewport={{ once: false }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             >
-              {/* SPOTLIGHT BACKDROP */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] sm:w-[260px] lg:w-[300px] h-[220px] sm:h-[360px] lg:h-[400px] bg-white/60 blur-[40px] sm:blur-[60px] rounded-full z-0 pointer-events-none" />
 
               <img
                 src={featuredProduct.image}
-                alt={t.hero.title}
+                alt={productName}
                 loading="eager"
                 decoding="async"
                 className="w-[65%] sm:w-[55%] lg:w-[85%] h-auto max-w-[240px] sm:max-w-[380px] lg:max-w-[450px] drop-shadow-2xl mx-auto relative z-10"
               />
 
-              {/* Pulsing Shadow */}
               <motion.div
                 whileInView={{ scale: [1, 0.9, 1], opacity: [0.6, 0.4, 0.6] }}
                 viewport={{ once: false }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 sm: -bottom-6 left-1/2 -translate-x-1/2 w-[50%] h-[12px] sm:h-[20px] bg-emerald-950/20 blur-md sm:blur-lg rounded-[100%] z-[-1]"
+                className="absolute -bottom-4 sm:-bottom-6 left-1/2 -translate-x-1/2 w-[50%] h-[12px] sm:h-[20px] bg-emerald-950/20 blur-md sm:blur-lg rounded-[100%] z-[-1]"
               />
             </motion.div>
 
-            {/* Verified Badge - Mobile වලදී රින්ග්ස් වලට උඩින් ලස්සනට පේන්න responsive placement දුන්නා */}
+            {/* Verified Badge */}
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -213,7 +228,6 @@ export function HeroSection() {
 
         </div>
       </div>
-
     </div>
   );
 }

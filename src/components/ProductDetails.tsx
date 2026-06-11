@@ -17,7 +17,6 @@ export default function ProductDetails() {
     <div className="w-full">
       {/* අර ලස්සන Sections ඔක්කොම මෙතනට දානවා */}
       <HeroSection />
-      <ProcessSection />
       <IngredientsSection />
       <BenefitsSection />
       <BrewingSection />

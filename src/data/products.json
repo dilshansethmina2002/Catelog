@@ -54,5 +54,2253 @@
         "description": "Strain and serve hot. Garnish with a fresh stalk of lemongrass if desired."
       }
     ]
+  },
+  {
+    "id": "tea-002",
+    "name": "Black Tea Flower",
+    "description": "A delicate and aromatic blend of premium Ceylon black tea enriched with natural edible flowers.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Black Tea Flower.png",
+    "ingredientImage": "/leaves/black-tea-flower.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "High-grown black tea leaves carefully handpicked for a robust base."
+      },
+      {
+        "name": "Edible Flowers",
+        "description": "A curated mix of dried petals adding a subtle floral sweetness."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Booster",
+        "description": "Floral aromas are known to naturally uplift and improve mood."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Black tea contains flavonoids beneficial for cardiovascular health."
+      },
+      {
+        "title": "Energy Lift",
+        "description": "A gentle, sustained caffeine release for focused energy."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with polyphenols that fight free radicals in the body."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon per cup into your infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 to 4 minutes to extract the perfect floral balance."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and enjoy plain, or with a tiny drop of honey."
+      }
+    ]
+  },
+  {
+    "id": "tea-003",
+    "name": "BOPF 400",
+    "description": "Broken Orange Pekoe Fannings. A strong, robust, and fast-brewing Ceylon black tea, perfect for a classic milk tea.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/BOPF 400.png",
+    "ingredientImage": "/leaves/bopf.jpg",
+    "ingredients": [
+      {
+        "name": "BOPF Black Tea",
+        "description": "Finely broken premium black tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Instant Energy",
+        "description": "Strong infusion provides a quick and robust caffeine kick."
+      },
+      {
+        "title": "Mental Alertness",
+        "description": "Enhances focus and concentration for busy mornings."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Black tea aids in digestion after heavy meals."
+      },
+      {
+        "title": "Immunity Support",
+        "description": "Contains natural antioxidants that strengthen the immune system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of BOPF per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-5 minutes for a strong, dark liquor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Best enjoyed with a splash of warm milk and sugar."
+      }
+    ]
+  },
+  {
+    "id": "tea-004",
+    "name": "BOPF SP 200",
+    "description": "Special Broken Orange Pekoe Fannings. A superior grade of finely crushed tea offering a brisk, bright, and exceptionally strong cup.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/BOPF SP 200.png",
+    "ingredientImage": "/leaves/bopf-sp.jpg",
+    "ingredients": [
+      {
+        "name": "Special BOPF Tea",
+        "description": "Extra fine, high-quality broken black tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Rich in Antioxidants",
+        "description": "Premium grade ensures higher retention of beneficial polyphenols."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular consumption supports healthy blood pressure levels."
+      },
+      {
+        "title": "Focus & Alertness",
+        "description": "High caffeine content sharpens mental clarity."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Helps boost the body's natural metabolic rate."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Use freshly boiled water at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Use a slightly heaped teaspoon per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-4 minutes based on desired strength."
+      },
+      {
+        "title": "Serve",
+        "description": "Perfect for making strong traditional milk tea."
+      }
+    ]
+  },
+  {
+    "id": "tea-005",
+    "name": "BOPF SP TB 100",
+    "description": "Special Broken Orange Pekoe Fannings in convenient tea bags. Enjoy the brisk and bold flavor of premium Ceylon tea effortlessly.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/BOPF SP TB 100.png",
+    "ingredientImage": "/leaves/bopf-tb.jpg",
+    "ingredients": [
+      {
+        "name": "Special BOPF Tea",
+        "description": "Premium black tea packed in high-quality filter bags."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Convenience",
+        "description": "Quick brewing without compromising on authentic taste."
+      },
+      {
+        "title": "Energizing",
+        "description": "Provides a sustained energy lift throughout the day."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Delivers a rich dose of daily antioxidants."
+      },
+      {
+        "title": "Heart Friendly",
+        "description": "Promotes cardiovascular wellness with daily use."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Boil water to 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea Bag",
+        "description": "Place one tea bag in your cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Pour hot water over the tea bag and steep for 2-3 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Remove the tea bag and enjoy with or without milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-006",
+    "name": "Cardamon Flavoured 50g",
+    "description": "A warming blend of robust Ceylon black tea infused with the exotic, spicy-sweet notes of natural cardamom.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Cardamon Flavoured 50g.png",
+    "ingredientImage": "/leaves/cardamom.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong black tea base that complements spices."
+      },
+      {
+        "name": "Natural Cardamom",
+        "description": "Crushed cardamom pods for an authentic spicy aroma."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Health",
+        "description": "Cardamom is excellent for relieving bloating and indigestion."
+      },
+      {
+        "title": "Breath Freshener",
+        "description": "Natural antibacterial properties help freshen breath."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Helps flush toxins from the body naturally."
+      },
+      {
+        "title": "Warming Effect",
+        "description": "Improves blood circulation and provides a comforting warmth."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the cardamom blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-5 minutes to let the spice flavors bloom."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Tastes divine with a touch of hot milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-007",
+    "name": "Ceylon Premium tea 125",
+    "description": "The quintessential Ceylon tea experience. A perfectly balanced, bright, and flavorful premium black tea.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ceylon Premium tea 125.png",
+    "ingredientImage": "/leaves/ceylon-premium.jpg",
+    "ingredients": [
+      {
+        "name": "Premium Black Tea",
+        "description": "Carefully selected leaves from Sri Lanka's finest estates."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mental Clarity",
+        "description": "L-theanine and caffeine work together for calm focus."
+      },
+      {
+        "title": "Antioxidant Power",
+        "description": "High levels of polyphenols protect cellular health."
+      },
+      {
+        "title": "Gut Health",
+        "description": "Tannins in black tea help soothe the digestive tract."
+      },
+      {
+        "title": "Immune Boost",
+        "description": "Supports a robust and healthy immune system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Use freshly drawn water boiled to 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of loose leaf tea per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 to 5 minutes depending on desired strength."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and enjoy. Perfect plain or with a slice of lemon."
+      }
+    ]
+  },
+  {
+    "id": "tea-008",
+    "name": "Ceylon Special FFSP tea 125",
+    "description": "Flowery Fannings Special. An exceptional tea with a beautifully golden liquor and a refined, slightly sweet flavor profile.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ceylon Special FFSP tea 125.png",
+    "ingredientImage": "/leaves/ffsp.jpg",
+    "ingredients": [
+      {
+        "name": "FFSP Black Tea",
+        "description": "High-grade fannings with occasional delicate tips."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Superior Antioxidants",
+        "description": "Special grade processing locks in higher nutrient levels."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Flavonoids help maintain healthy blood vessels."
+      },
+      {
+        "title": "Energy Boost",
+        "description": "Provides a clean, jitter-free energy lift."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "Warm, comforting aroma aids in relaxation."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Measure 1 teaspoon into your teapot."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for precisely 3 minutes for the best flavor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain into a cup. Best enjoyed black to appreciate its complex notes."
+      }
+    ]
+  },
+  {
+    "id": "tea-009",
+    "name": "Ceylon Supreme tea 150",
+    "description": "A supreme quality black tea boasting a deeply rich color, full-bodied taste, and an unforgettable aroma.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ceylon Supreme tea 150.png",
+    "ingredientImage": "/leaves/supreme.jpg",
+    "ingredients": [
+      {
+        "name": "Supreme Black Tea",
+        "description": "A master blend of the most flavorful high-altitude leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Vitality",
+        "description": "Awakens the senses and fights fatigue."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Rich in catechins that protect against oxidative stress."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Eases digestion when consumed after a meal."
+      },
+      {
+        "title": "Focus",
+        "description": "Improves brain function and alertness naturally."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 heaped teaspoon of Supreme tea per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes for a truly bold cup."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain well. Highly recommended with milk and a sweetener."
+      }
+    ]
+  },
+  {
+    "id": "tea-010",
+    "name": "Ceylon tea BOP",
+    "description": "Broken Orange Pekoe. The classic everyday tea, known for its balanced strength, rich color, and brisk flavor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ceylon BOP tea 100.png",
+    "ingredientImage": "/leaves/bop.jpg",
+    "ingredients": [
+      {
+        "name": "BOP Black Tea",
+        "description": "Medium-sized broken leaves offering a robust brew."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Morning Energizer",
+        "description": "The perfect strong cup to kickstart your day."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Daily consumption promotes cardiovascular well-being."
+      },
+      {
+        "title": "Immunity",
+        "description": "Boosts the body's natural defense mechanisms."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Helps maintain a healthy metabolic rate."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Boil fresh water to 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of BOP per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-4 minutes depending on preferred strength."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Excellent for making traditional milk tea."
+      }
+    ]
+  },
+  {
+    "id": "tea-011",
+    "name": "Ceylon tea OP1",
+    "description": "Orange Pekoe 1. A delicate, long, and wiry leaf tea that produces a light, bright liquor with a refined floral aroma.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ceylon OP1 tea 100.png",
+    "ingredientImage": "/leaves/op1.jpg",
+    "ingredients": [
+      {
+        "name": "OP1 Black Tea",
+        "description": "Premium whole leaf tea, delicately rolled."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Relaxation",
+        "description": "Light and smooth profile helps calm the mind."
+      },
+      {
+        "title": "High Antioxidants",
+        "description": "Whole leaves retain maximum natural antioxidants."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Contributes to maintaining healthy cholesterol levels."
+      },
+      {
+        "title": "Hydration",
+        "description": "A light brew that keeps you refreshed and hydrated."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 95°C-100°C (203°F-212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Use 1 to 1.5 teaspoons of the large wiry leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes to allow leaves to fully unfurl."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Best enjoyed black without milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-012",
+    "name": "Ceylon tea PEKO",
+    "description": "Pekoe grade tea consisting of short, curly, and twisted leaves. Produces a rich, dark red liquor with a malty finish.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ceylon PEKO tea 100.png",
+    "ingredientImage": "/leaves/pekoe.jpg",
+    "ingredients": [
+      {
+        "name": "Pekoe Black Tea",
+        "description": "Distinctive curly leaves with a bold character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Robust Energy",
+        "description": "Malty and strong, ideal for fighting mid-day slumps."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Helps settle the stomach after heavy meals."
+      },
+      {
+        "title": "Rich Antioxidants",
+        "description": "Supports cellular defense and overall immunity."
+      },
+      {
+        "title": "Focus",
+        "description": "Enhances cognitive function and concentration."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Measure 1 teaspoon of Pekoe leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4 minutes for a deep, malty flavor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and enjoy. Pairs wonderfully with a dash of milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-013",
+    "name": "Chakra Tea 25",
+    "description": "An Ayurvedic-inspired herbal and black tea blend designed to balance your inner energy, align your chakras, and soothe the soul.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Chakra Tea 25.png",
+    "ingredientImage": "/leaves/chakra-herbs.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Tea Base",
+        "description": "Light black tea providing a gentle foundation."
+      },
+      {
+        "name": "Ayurvedic Herbs",
+        "description": "A proprietary blend of holy basil, ginger, and soothing spices."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Energy Balance",
+        "description": "Formulated to harmonize the mind and body."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "Adaptogenic herbs help reduce cortisol and anxiety."
+      },
+      {
+        "title": "Immune Defense",
+        "description": "Spices and herbs naturally fortify the immune system."
+      },
+      {
+        "title": "Detoxification",
+        "description": "Aids the liver and kidneys in natural detox processes."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 95°C (203°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of Chakra Tea per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 4-5 minutes to release herbal oils."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Breathe in the aroma before taking your first sip."
+      }
+    ]
+  },
+  {
+    "id": "tea-014",
+    "name": "Cinnamon Tea 100",
+    "description": "The finest Ceylon black tea blended with authentic Ceylon Cinnamon bark. A sweet, spicy, and incredibly comforting beverage.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Cinnamon Tea 100.png",
+    "ingredientImage": "/leaves/cinnamon.jpg",
+    "ingredients": [
+      {
+        "name": "Black Tea",
+        "description": "Premium quality Ceylon tea leaves."
+      },
+      {
+        "name": "Ceylon Cinnamon",
+        "description": "True Ceylon cinnamon pieces for a naturally sweet, spicy flavor."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Sugar Control",
+        "description": "Cinnamon is famous for helping regulate blood sugar levels."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Reduces inflammation and soothes joint pain naturally."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Helps lower bad cholesterol and improves circulation."
+      },
+      {
+        "title": "Warming",
+        "description": "Perfect for cold days to warm the body from within."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the cinnamon blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes to extract the cinnamon oils."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot. Naturally sweet, but add honey if desired."
+      }
+    ]
+  },
+  {
+    "id": "tea-015",
+    "name": "Cinnamon Tea Box",
+    "description": "Our signature Cinnamon Tea elegantly packed in a box. A sweet, spicy, and incredibly comforting beverage made with true Ceylon cinnamon.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Cinnamon Tea Box.png",
+    "ingredientImage": "/leaves/cinnamon.jpg",
+    "ingredients": [
+      {
+        "name": "Black Tea",
+        "description": "Premium quality Ceylon tea leaves."
+      },
+      {
+        "name": "Ceylon Cinnamon",
+        "description": "True Ceylon cinnamon pieces for a naturally sweet, spicy flavor."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Sugar Control",
+        "description": "Cinnamon is famous for helping regulate blood sugar levels."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Reduces inflammation and soothes joint pain naturally."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Helps lower bad cholesterol and improves circulation."
+      },
+      {
+        "title": "Warming",
+        "description": "Perfect for cold days to warm the body from within."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the cinnamon blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes to extract the cinnamon oils."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot. Naturally sweet, but add honey if desired."
+      }
+    ]
+  },
+  {
+    "id": "tea-016",
+    "name": "Earl Grey Tea Box",
+    "description": "A sophisticated classic. Premium Ceylon black tea masterfully infused with the citrusy elegance of natural Bergamot oil.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Earl Grey Tea Box.png",
+    "ingredientImage": "/leaves/earl-grey.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, medium-bodied black tea base."
+      },
+      {
+        "name": "Bergamot Oil",
+        "description": "Natural citrus extract from the bergamot orange."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress Relief",
+        "description": "Bergamot aromatherapy is known to reduce anxiety and stress."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Soothes the stomach and helps alleviate indigestion."
+      },
+      {
+        "title": "Energy Boost",
+        "description": "Provides a clean, refreshing lift in energy."
+      },
+      {
+        "title": "Oral Health",
+        "description": "Contains natural catechins that protect against oral infections."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 95°C-100°C (203°F-212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Place 1 teaspoon of Earl Grey per cup into your teapot."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-4 minutes. Do not over-steep to avoid bitterness."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Excellent black or with a slice of lemon."
+      }
+    ]
+  },
+  {
+    "id": "tea-017",
+    "name": "Ella OPA 100",
+    "description": "Orange Pekoe A from the picturesque Ella region. A large, bold leaf tea producing a mild, smooth, and incredibly aromatic cup.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ella OPA 100.png",
+    "ingredientImage": "/leaves/opa.jpg",
+    "ingredients": [
+      {
+        "name": "OPA Black Tea",
+        "description": "Large, slightly twisted whole leaves from high-altitude estates."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Deep Relaxation",
+        "description": "The mild liquor provides a soothing, calming experience."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Large leaves retain a high concentration of beneficial polyphenols."
+      },
+      {
+        "title": "Hydration",
+        "description": "A light brew perfect for all-day hydration."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Supports healthy blood circulation and heart function."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to 95°C-100°C (203°F-212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Use 1.5 teaspoons of the large leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-6 minutes to let the large leaves fully expand."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Best enjoyed without milk to appreciate its mild notes."
+      }
+    ]
+  },
+  {
+    "id": "tea-018",
+    "name": "Extra special FFEXSP tea 125",
+    "description": "Flowery Fannings Extra Special. A highly luxurious, premium grade tea featuring bright golden tips and an exquisite, sweet flavor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Extra special FFEXSP Tea 125.png",
+    "ingredientImage": "/leaves/ffexsp.jpg",
+    "ingredients": [
+      {
+        "name": "FFEXSP Black Tea",
+        "description": "The finest fannings heavily accented with golden tea buds."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Ultimate Antioxidants",
+        "description": "Golden tips are the youngest leaves, containing the highest antioxidants."
+      },
+      {
+        "title": "Skin Health",
+        "description": "Protects against cellular aging and promotes glowing skin."
+      },
+      {
+        "title": "Immunity Boost",
+        "description": "Packed with vitamins and minerals to fight off illnesses."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "Provides a smooth, highly focused energy boost."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat fresh water to exactly 95°C (203°F) to protect the delicate tips."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Measure 1 teaspoon into your finest teapot."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes for a bright, golden-red liquor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain carefully. This masterpiece is best enjoyed absolutely plain."
+      }
+    ]
+  },
+  {
+    "id": "tea-019",
+    "name": "FBOP Box",
+    "description": "Flowery Broken Orange Pekoe. A highly sought-after grade featuring short, broken leaves with a scattering of sweet tips. Rich and full-bodied.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/FBOP Box.png",
+    "ingredientImage": "/leaves/fbop.jpg",
+    "ingredients": [
+      {
+        "name": "FBOP Black Tea",
+        "description": "Premium broken leaves mixed with tender golden tips."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Energizing",
+        "description": "Produces a robust brew that instantly fights fatigue."
+      },
+      {
+        "title": "Rich in Antioxidants",
+        "description": "The presence of tips increases the health benefits significantly."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Aids in smooth digestion after a heavy meal."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Supports the cardiovascular system and healthy blood flow."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 level teaspoon of FBOP per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 to 4 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Tastes superb black or with a dash of milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-020",
+    "name": "Ginger Tea 100",
+    "description": "A deeply warming and therapeutic blend of strong Ceylon black tea and fiery, natural dried ginger root.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ginger Tea 100.png",
+    "ingredientImage": "/leaves/ginger.jpg",
+    "ingredients": [
+      {
+        "name": "Black Tea",
+        "description": "Strong Ceylon tea leaves that hold up to bold spices."
+      },
+      {
+        "name": "Dried Ginger",
+        "description": "Natural ginger root pieces for a spicy, warming kick."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Soothes Nausea",
+        "description": "Ginger is a natural remedy for motion sickness and upset stomachs."
+      },
+      {
+        "title": "Fights Colds",
+        "description": "Warming properties help clear congestion and soothe sore throats."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Reduces muscle pain and bodily inflammation."
+      },
+      {
+        "title": "Immunity",
+        "description": "Packed with antioxidants that fortify your immune defense."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 heaped teaspoon of the ginger blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 4-5 minutes to extract the ginger spice."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Highly recommended with honey and a squeeze of lemon."
+      }
+    ]
+  },
+  {
+    "id": "tea-021",
+    "name": "Ginger Tea Box",
+    "description": "Our signature Ginger Tea elegantly packed. A deeply warming and therapeutic blend of strong Ceylon black tea and fiery ginger root.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Ginger Tea Box.png",
+    "ingredientImage": "/leaves/ginger.jpg",
+    "ingredients": [
+      {
+        "name": "Black Tea",
+        "description": "Strong Ceylon tea leaves that hold up to bold spices."
+      },
+      {
+        "name": "Dried Ginger",
+        "description": "Natural ginger root pieces for a spicy, warming kick."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Soothes Nausea",
+        "description": "Ginger is a natural remedy for motion sickness and upset stomachs."
+      },
+      {
+        "title": "Fights Colds",
+        "description": "Warming properties help clear congestion and soothe sore throats."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Reduces muscle pain and bodily inflammation."
+      },
+      {
+        "title": "Immunity",
+        "description": "Packed with antioxidants that fortify your immune defense."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 heaped teaspoon of the ginger blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 4-5 minutes to extract the ginger spice."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Highly recommended with honey and a squeeze of lemon."
+      }
+    ]
+  },
+  {
+    "id": "tea-022",
+    "name": "Green tea Box",
+    "description": "Pure, unfermented Ceylon Green Tea. Delicately processed to retain its natural green color, fresh grassy flavor, and high antioxidant profile.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Green tea Box.png",
+    "ingredientImage": "/leaves/green-tea.jpg",
+    "ingredients": [
+      {
+        "name": "Green Tea Leaves",
+        "description": "Premium Ceylon green tea, unfermented and pan-fired/steamed."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Metabolism Boost",
+        "description": "Rich in EGCG catechins that aid in fat burning and weight management."
+      },
+      {
+        "title": "Brain Health",
+        "description": "Contains L-theanine which works with caffeine to improve brain function."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Helps flush out toxins and keeps the body cleansed."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Antioxidants prevent cellular damage, promoting healthy, glowing skin."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 80°C (176°F). Never use boiling water on green tea."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of green tea leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep gently for 2 to 3 minutes maximum to avoid bitterness."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve immediately. Best enjoyed completely plain."
+      }
+    ]
+  },
+  {
+    "id": "tea-023",
+    "name": "Hibiscus Tea Box",
+    "description": "A vibrant, ruby-red herbal infusion made from premium dried hibiscus flowers. Naturally caffeine-free with a refreshing, tart flavor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Hibiscus Tea Box.png",
+    "ingredientImage": "/leaves/hibiscus.jpg",
+    "ingredients": [
+      {
+        "name": "Hibiscus Sabdariffa",
+        "description": "100% natural dried hibiscus flower calyces."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Pressure",
+        "description": "Clinically proven to help naturally lower high blood pressure."
+      },
+      {
+        "title": "Rich in Vitamin C",
+        "description": "Boosts immunity and fights off common infections."
+      },
+      {
+        "title": "Liver Health",
+        "description": "Promotes liver steatosis reduction and natural detox."
+      },
+      {
+        "title": "Caffeine-Free",
+        "description": "A perfect, relaxing beverage for any time of the day or night."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 to 2 teaspoons of dried hibiscus per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 5-7 minutes until the water turns a deep, vibrant red."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Can be served hot with honey, or poured over ice for a summer cooler."
+      }
+    ]
+  },
+  {
+    "id": "tea-024",
+    "name": "jasmine Tea Box",
+    "description": "A celestial blend of fine green tea naturally scented with freshly picked Jasmine blossoms. Sweet, highly fragrant, and profoundly relaxing.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Jasmine Tea Box.png",
+    "ingredientImage": "/leaves/jasmine.jpg",
+    "ingredients": [
+      {
+        "name": "Green Tea Base",
+        "description": "Delicate green tea leaves capable of absorbing floral aromas."
+      },
+      {
+        "name": "Jasmine Blossoms",
+        "description": "Night-blooming jasmine flowers used for natural scenting."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress Relief",
+        "description": "The aroma of jasmine acts as a natural mild sedative, calming the nerves."
+      },
+      {
+        "title": "Antioxidant Power",
+        "description": "Combines the benefits of green tea catechins and floral compounds."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Protects LDL cholesterol against oxidation."
+      },
+      {
+        "title": "Glowing Skin",
+        "description": "Anti-inflammatory properties help reduce acne and skin irritation."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat fresh water to about 80°C (176°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Measure 1 level teaspoon of Jasmine tea per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 2-3 minutes to preserve the delicate floral notes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve immediately. Do not add milk or strong sweeteners."
+      }
+    ]
+  },
+  {
+    "id": "tea-025",
+    "name": "Masala Tea Box",
+    "description": "An authentic, bold, and spicy Chai experience. Strong Ceylon black tea expertly blended with traditional aromatic Indian spices.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Masala Tea Box.png",
+    "ingredientImage": "/leaves/masala.jpg",
+    "ingredients": [
+      {
+        "name": "CTC Black Tea",
+        "description": "A robust, granular black tea base designed to hold up to milk."
+      },
+      {
+        "name": "Masala Spice Mix",
+        "description": "A traditional blend of cardamom, cinnamon, clove, ginger, and black pepper."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Immunity Boost",
+        "description": "The complex spice blend is a powerhouse of antiviral and antibacterial properties."
+      },
+      {
+        "title": "Improves Digestion",
+        "description": "Spices like ginger and black pepper stimulate healthy digestion."
+      },
+      {
+        "title": "Energy & Warmth",
+        "description": "Provides sustained energy and warms the body from the inside out."
+      },
+      {
+        "title": "Aches & Pains",
+        "description": "Cloves and cinnamon act as natural anti-inflammatory agents."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Simmer Water & Milk",
+        "description": "Combine half water and half milk in a saucepan and bring to a simmer."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1.5 teaspoons of Masala Tea per cup directly into the simmering liquid."
+      },
+      {
+        "title": "Boil Together",
+        "description": "Let it boil together for 3-5 minutes until the color turns a rich caramel brown."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain into a cup. Add sugar or jaggery to taste for the perfect Chai."
+      }
+    ]
+  },
+  {
+    "id": "tea-026",
+    "name": "Mint Tea Box",
+    "description": "A remarkably refreshing infusion combining premium tea leaves with cool, crisp, natural peppermint leaves. Perfect for clearing the mind.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/Mint Tea Box.png",
+    "ingredientImage": "/leaves/mint.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Tea",
+        "description": "A light tea base that doesn't overpower the herbs."
+      },
+      {
+        "name": "Natural Peppermint",
+        "description": "Dried peppermint leaves rich in cooling menthol."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Relief",
+        "description": "Menthol naturally relaxes the digestive tract and relieves bloating."
+      },
+      {
+        "title": "Clears Congestion",
+        "description": "The cooling aroma helps open up sinuses and clear respiratory pathways."
+      },
+      {
+        "title": "Freshens Breath",
+        "description": "Natural antibacterial properties kill germs that cause bad breath."
+      },
+      {
+        "title": "Headache Relief",
+        "description": "The soothing properties can help alleviate tension headaches."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a rolling boil at 95°C-100°C (203°F-212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the mint blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 3-5 minutes to release the menthol oils fully."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Delicious hot, or poured over ice as a refreshing summer drink."
+      }
+    ]
+  },
+  {
+    "id": "tea-027",
+    "name": "OP 200 ",
+    "description": "Orange Pekoe. A classic, high-grade whole leaf black tea. Delivers a bright, coppery liquor with a smooth, refined taste.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/OPA 200.png",
+    "ingredientImage": "/leaves/op.jpg",
+    "ingredients": [
+      {
+        "name": "OP Black Tea",
+        "description": "Long, twisted, and wiry whole black tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Antioxidant Rich",
+        "description": "Whole leaves retain maximum polyphenols to protect body cells."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "Provides a smooth, jitter-free energy boost for better focus."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Supports a healthy cardiovascular system and blood pressure."
+      },
+      {
+        "title": "Hydrating",
+        "description": "A lighter brew that effectively hydrates while providing flavor."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat fresh water to 95°C-100°C (203°F-212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Use 1 heaped teaspoon of these large leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes, giving the large leaves time to unfurl."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Highly recommended to be enjoyed black."
+      }
+    ]
+  },
+  {
+    "id": "tea-028",
+    "name": "OP 200",
+    "description": "Orange Pekoe. A classic, high-grade whole leaf black tea. Delivers a bright, coppery liquor with a smooth, refined taste.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/op-200-2.png",
+    "ingredientImage": "/leaves/op.jpg",
+    "ingredients": [
+      {
+        "name": "OP Black Tea",
+        "description": "Long, twisted, and wiry whole black tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Antioxidant Rich",
+        "description": "Whole leaves retain maximum polyphenols to protect body cells."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "Provides a smooth, jitter-free energy boost for better focus."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Supports a healthy cardiovascular system and blood pressure."
+      },
+      {
+        "title": "Hydrating",
+        "description": "A lighter brew that effectively hydrates while providing flavor."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat fresh water to 95°C-100°C (203°F-212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Use 1 heaped teaspoon of these large leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes, giving the large leaves time to unfurl."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Highly recommended to be enjoyed black."
+      }
+    ]
+  },
+  {
+    "id": "tea-029",
+    "name": "OP1 200 (1)",
+    "description": "Orange Pekoe 1. The highest grade of Orange Pekoe, featuring exceptionally long, delicate, wiry leaves. Produces a light, floral, and sophisticated liquor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/op1-200.png",
+    "ingredientImage": "/leaves/op1.jpg",
+    "ingredients": [
+      {
+        "name": "OP1 Black Tea",
+        "description": "The most premium, delicate whole leaf black tea."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress Relief",
+        "description": "The delicate floral aroma acts as a natural stress reliever."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Extremely high in antioxidants due to careful leaf selection."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Aids in maintaining a healthy weight and metabolic rate."
+      },
+      {
+        "title": "Gut Health",
+        "description": "A light, non-astringent brew that is gentle on the stomach."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to just under a boil, around 95°C (203°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1.5 teaspoons of the light, wiry leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-5 minutes, watching the long leaves beautifully unroll."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain gently. Must be enjoyed without milk to taste its subtle notes."
+      }
+    ]
+  },
+  {
+    "id": "tea-030",
+    "name": "OP1 200",
+    "description": "Orange Pekoe 1. The highest grade of Orange Pekoe, featuring exceptionally long, delicate, wiry leaves. Produces a light, floral, and sophisticated liquor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/op1-200-2.png",
+    "ingredientImage": "/leaves/op1.jpg",
+    "ingredients": [
+      {
+        "name": "OP1 Black Tea",
+        "description": "The most premium, delicate whole leaf black tea."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress Relief",
+        "description": "The delicate floral aroma acts as a natural stress reliever."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Extremely high in antioxidants due to careful leaf selection."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Aids in maintaining a healthy weight and metabolic rate."
+      },
+      {
+        "title": "Gut Health",
+        "description": "A light, non-astringent brew that is gentle on the stomach."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to just under a boil, around 95°C (203°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1.5 teaspoons of the light, wiry leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-5 minutes, watching the long leaves beautifully unroll."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain gently. Must be enjoyed without milk to taste its subtle notes."
+      }
+    ]
+  },
+  {
+    "id": "tea-031",
+    "name": "OPA 200 (1)",
+    "description": "Orange Pekoe A. Characterized by bold, large, slightly open leaves. Brews into a very mild, pale liquor with a soothing, earthy flavor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/opa-200.png",
+    "ingredientImage": "/leaves/opa.jpg",
+    "ingredients": [
+      {
+        "name": "OPA Black Tea",
+        "description": "Large, bold, and slightly twisted whole tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Calming Effect",
+        "description": "Very low astringency makes it a deeply calming beverage."
+      },
+      {
+        "title": "Hydrating",
+        "description": "Excellent for drinking throughout the day without over-caffeinating."
+      },
+      {
+        "title": "Heart Friendly",
+        "description": "Contains flavonoids that support cardiovascular health."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "Gentle on the stomach and aids in mild digestion."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Because the leaves are large, use 1.5 to 2 teaspoons per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 5-6 minutes to extract flavor from the thick leaves."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Perfect black, or with a slice of fresh lemon."
+      }
+    ]
+  },
+  {
+    "id": "tea-032",
+    "name": "OPA 200",
+    "description": "Orange Pekoe A. Characterized by bold, large, slightly open leaves. Brews into a very mild, pale liquor with a soothing, earthy flavor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/opa-200-2.png",
+    "ingredientImage": "/leaves/opa.jpg",
+    "ingredients": [
+      {
+        "name": "OPA Black Tea",
+        "description": "Large, bold, and slightly twisted whole tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Calming Effect",
+        "description": "Very low astringency makes it a deeply calming beverage."
+      },
+      {
+        "title": "Hydrating",
+        "description": "Excellent for drinking throughout the day without over-caffeinating."
+      },
+      {
+        "title": "Heart Friendly",
+        "description": "Contains flavonoids that support cardiovascular health."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "Gentle on the stomach and aids in mild digestion."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Because the leaves are large, use 1.5 to 2 teaspoons per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 5-6 minutes to extract flavor from the thick leaves."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Perfect black, or with a slice of fresh lemon."
+      }
+    ]
+  },
+  {
+    "id": "tea-033",
+    "name": "OPGolden Tips Roll",
+    "description": "A highly luxurious artisanal tea. Premium Orange Pekoe hand-rolled with precious, velvety Golden Tips. Offers an exquisite honey-like sweetness.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/op-golden-tips.png",
+    "ingredientImage": "/leaves/golden-tips.jpg",
+    "ingredients": [
+      {
+        "name": "OP Black Tea",
+        "description": "Finest whole leaf Orange Pekoe."
+      },
+      {
+        "name": "Golden Tips",
+        "description": "Unopened, golden-hued tea buds packed with nutrients and sweetness."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Supreme Antioxidants",
+        "description": "Tea buds (tips) contain the highest concentration of L-theanine and antioxidants."
+      },
+      {
+        "title": "Anti-Aging",
+        "description": "Powerful polyphenols help combat cellular aging and skin damage."
+      },
+      {
+        "title": "Immunity Focus",
+        "description": "Fortifies the immune system with essential trace minerals."
+      },
+      {
+        "title": "Zen State",
+        "description": "High L-theanine induces a state of calm, relaxed alertness."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 90°C (194°F). Boiling water can burn the delicate tips."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the Golden Tips roll per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep gently for 3 minutes for a bright, golden liquor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain carefully. This is a master-grade tea; strictly serve without milk or sugar."
+      }
+    ]
+  },
+  {
+    "id": "tea-034",
+    "name": "PEKOE 200 P-box",
+    "description": "Premium Pekoe packaged in a special presentation box. Featuring signature short, curly leaves that brew into a rich, dark, and malty cup.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/pekoe-pbox.png",
+    "ingredientImage": "/leaves/pekoe.jpg",
+    "ingredients": [
+      {
+        "name": "Pekoe Black Tea",
+        "description": "Distinctive curly, tightly rolled leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Robust Energy",
+        "description": "Malty and strong, ideal for fighting mid-day slumps."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Helps settle the stomach after heavy meals."
+      },
+      {
+        "title": "Rich Antioxidants",
+        "description": "Supports cellular defense and overall immunity."
+      },
+      {
+        "title": "Focus",
+        "description": "Enhances cognitive function and concentration."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Measure 1 teaspoon of Pekoe leaves per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4 minutes for a deep, malty flavor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and enjoy. Pairs wonderfully with a dash of milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-035",
+    "name": "Pure Ceylon Tea BOP 200",
+    "description": "100% Pure Ceylon Broken Orange Pekoe. The gold standard for a strong, robust, and flavorful everyday tea.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/pure-ceylon-bop.png",
+    "ingredientImage": "/leaves/bop.jpg",
+    "ingredients": [
+      {
+        "name": "Pure BOP Black Tea",
+        "description": "Authentic broken black tea leaves from Sri Lanka."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Morning Energizer",
+        "description": "The perfect strong cup to kickstart your day."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Daily consumption promotes cardiovascular well-being."
+      },
+      {
+        "title": "Immunity",
+        "description": "Boosts the body's natural defense mechanisms."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Helps maintain a healthy metabolic rate."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Boil fresh water to 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of BOP per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-4 minutes depending on preferred strength."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Excellent for making traditional milk tea."
+      }
+    ]
+  },
+  {
+    "id": "tea-036",
+    "name": "Pure Ceylon Tea TB(25)",
+    "description": "Pure Ceylon Tea conveniently packed in 25 premium tea bags. Delivering the authentic, robust taste of Sri Lanka in minutes.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/pure-ceylon-tb.png",
+    "ingredientImage": "/leaves/bopf-tb.jpg",
+    "ingredients": [
+      {
+        "name": "Pure Black Tea Fannings",
+        "description": "High-quality, fast-brewing tea enclosed in filter bags."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Convenience",
+        "description": "Perfect for busy mornings or office environments."
+      },
+      {
+        "title": "Instant Energy",
+        "description": "Quick brewing provides a rapid release of caffeine."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular drinking supports a healthy cardiovascular system."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Delivers a reliable dose of daily antioxidants."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Boil water to 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea Bag",
+        "description": "Place one tea bag into your favorite mug."
+      },
+      {
+        "title": "Steep",
+        "description": "Pour hot water and let it steep for 2-3 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Remove the bag. Enjoy black or with a splash of milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-037",
+    "name": "Purple tea Roll",
+    "description": "A rare and highly exotic purple tea, carefully hand-rolled. Rich in anthocyanins, offering a unique plummy flavor and a mesmerizing violet hue.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/purple-tea.png",
+    "ingredientImage": "/leaves/purple-tea.jpg",
+    "ingredients": [
+      {
+        "name": "Purple Tea Leaves",
+        "description": "A unique tea varietal naturally rich in purple anthocyanin pigments."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Super Antioxidant",
+        "description": "Contains anthocyanins (same as blueberries), fighting severe oxidative stress."
+      },
+      {
+        "title": "Heart & Brain Health",
+        "description": "Improves cardiovascular health and protects neuro-pathways."
+      },
+      {
+        "title": "Anti-Viral",
+        "description": "High levels of unique polyphenols help ward off infections."
+      },
+      {
+        "title": "Metabolic Boost",
+        "description": "Contains GHG (a unique polyphenol) known to help with weight management."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to exactly 85°C (185°F). Too hot will ruin the delicate pigments."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Place 1 teaspoon of the rolled purple tea into a glass teapot."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes. Watch the water turn a beautiful purplish-pink."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Add a drop of lemon juice to see the color magically change to bright pink!"
+      }
+    ]
+  },
+  {
+    "id": "tea-038",
+    "name": "Rose Tea Box",
+    "description": "An enchanting blend of light Ceylon tea and romantic, fragrant red rose petals. A sophisticated brew that soothes the senses.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/rose-box.png",
+    "ingredientImage": "/leaves/rose-petals.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Tea",
+        "description": "A mild, smooth tea base."
+      },
+      {
+        "name": "Red Rose Petals",
+        "description": "Natural, dried, edible rose petals."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Skin Radiance",
+        "description": "Rose is famous for promoting a healthy, youthful skin glow."
+      },
+      {
+        "title": "Stress & Anxiety Relief",
+        "description": "The natural aroma of roses deeply relaxes the nervous system."
+      },
+      {
+        "title": "Digestive Health",
+        "description": "Helps soothe stomach cramps and mild indigestion."
+      },
+      {
+        "title": "Immunity",
+        "description": "Rose petals are a surprisingly good source of Vitamin C."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 90°C (194°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 level teaspoon of the Rose Tea blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 3-4 minutes to capture the floral essence."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Beautiful when enjoyed clear without any additions."
+      }
+    ]
+  },
+  {
+    "id": "tea-039",
+    "name": "Silver green tea Roll",
+    "description": "An artisanal masterpiece. Extremely premium green tea intertwined with velvety Silver Tips, hand-rolled to perfection. Exceptionally smooth and sweet.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/silver-green-roll.png",
+    "ingredientImage": "/leaves/silver-tips.jpg",
+    "ingredients": [
+      {
+        "name": "Premium Green Tea",
+        "description": "The finest, tender green tea leaves."
+      },
+      {
+        "name": "Silver Tips",
+        "description": "Unopened, downy tea buds harvested before dawn."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Ultimate Detox",
+        "description": "The highest possible concentration of detoxifying catechins."
+      },
+      {
+        "title": "Anti-Aging Properties",
+        "description": "Fights cellular degradation and promotes longevity."
+      },
+      {
+        "title": "Deep Calm",
+        "description": "Exceptionally high L-theanine provides profound mental relaxation."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Naturally boosts fat burning capabilities."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water strictly to 75°C-80°C (167°F-176°F). Never use boiling water."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the rolled tea per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep gently for 2 to 3 minutes. You can re-steep these leaves up to 3 times."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain carefully. Serve absolutely plain to respect its delicate nature."
+      }
+    ]
+  },
+  {
+    "id": "tea-040",
+    "name": "Untitled design (6)",
+    "description": "Our Signature Mystery Blend. A secret, exclusive combination of premium Ceylon black and green teas crafted by our master blenders.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/signature-blend.png",
+    "ingredientImage": "/leaves/signature-blend.jpg",
+    "ingredients": [
+      {
+        "name": "Master's Tea Blend",
+        "description": "A proprietary mix of high-grown black and green tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Balanced Energy",
+        "description": "A perfect equilibrium of stimulation and relaxation."
+      },
+      {
+        "title": "Comprehensive Antioxidants",
+        "description": "Combines the flavonoids of black tea with the catechins of green tea."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Aids in maintaining a healthy gut microbiome."
+      },
+      {
+        "title": "Immunity",
+        "description": "Supports overall health and daily wellness."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 90°C (194°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of the signature blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for exactly 3 minutes for the perfect balance."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. A versatile tea that can be enjoyed plain or with a dash of honey."
+      }
+    ]
+  },
+  {
+    "id": "tea-041",
+    "name": "Vanila Tea Box",
+    "description": "A luscious, dessert-like tea. Rich Ceylon black tea expertly blended with the sweet, creamy, and comforting notes of natural Vanilla.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/vanilla-box.png",
+    "ingredientImage": "/leaves/vanilla.jpg",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth and robust black tea base."
+      },
+      {
+        "name": "Natural Vanilla",
+        "description": "Real vanilla bean extract for a creamy aroma."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Enhancer",
+        "description": "The scent of vanilla is scientifically proven to elevate mood and reduce anxiety."
+      },
+      {
+        "title": "Curb Cravings",
+        "description": "A sweet-tasting, zero-calorie tea that helps stop sugar cravings."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Provides the cardiovascular benefits of premium black tea."
+      },
+      {
+        "title": "Soothing",
+        "description": "A perfect comforting cup to wind down the afternoon."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 teaspoon of Vanilla tea per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3-5 minutes to let the creamy vanilla notes develop."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain. Exceptionally delicious when served with a splash of warm milk."
+      }
+    ]
+  },
+  {
+    "id": "tea-042",
+    "name": "Vita glow Tea",
+    "description": "A specialized wellness infusion crafted for beauty from within. A revitalizing blend of green tea and skin-loving herbs.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/vita-glow.png",
+    "ingredientImage": "/leaves/vita-glow-herbs.jpg",
+    "ingredients": [
+      {
+        "name": "Green Tea",
+        "description": "Antioxidant-rich base to fight free radicals."
+      },
+      {
+        "name": "Beauty Botanicals",
+        "description": "A blend including rose petals, hibiscus, and chamomile."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Skin Radiance",
+        "description": "Botanicals work to clear the complexion and promote a natural glow."
+      },
+      {
+        "title": "Anti-Aging",
+        "description": "High antioxidants prevent premature aging of skin cells."
+      },
+      {
+        "title": "Deep Detox",
+        "description": "Cleanses the liver and purifies the blood naturally."
+      },
+      {
+        "title": "Hydration",
+        "description": "Provides essential hydration required for plump, healthy skin."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to 85°C (185°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 1 heaped teaspoon of Vita Glow per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Cover and steep for 4 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve plain to enjoy its pure, cleansing properties."
+      }
+    ]
+  },
+  {
+    "id": "tea-043",
+    "name": "White tea Roll",
+    "description": "The pinnacle of tea craftsmanship. Extremely rare Silver Needles (unopened buds) carefully hand-rolled. Boasts a sweet, nectar-like, incredibly delicate flavor.",
+    "price": "",
+    "pack": "",
+    "weight": "",
+    "image": "/images/white-tea-roll.png",
+    "ingredientImage": "/leaves/silver-needles.jpg",
+    "ingredients": [
+      {
+        "name": "Pure White Tea",
+        "description": "100% pure, downy, unopened tea buds harvested at dawn."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Maximum Antioxidants",
+        "description": "The least processed tea in the world, holding the highest natural antioxidants."
+      },
+      {
+        "title": "Skin Protection",
+        "description": "Protects elastin and collagen, keeping skin firm and youthful."
+      },
+      {
+        "title": "Immune Fortification",
+        "description": "Incredibly rich in antibacterial and antiviral compounds."
+      },
+      {
+        "title": "Ultra Low Caffeine",
+        "description": "Provides a deeply calming experience without any caffeine jitters."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Heat water to a gentle 75°C (167°F). Boiling water will destroy this tea."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Use 2 teaspoons of the light, fluffy rolled buds per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 4-5 minutes. The delicate buds take longer to release flavor."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain gently. These premium leaves can be re-steeped up to 4 times."
+      }
+    ]
   }
 ]
