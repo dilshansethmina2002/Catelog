@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 // JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json'; 
 
-// ✅ පින්තූරය import කරගන්නවා (Background එක සඳහා)
+// ✅ පින්තූරය import කරගන්නවා (Fallback එක සඳහා)
 import roseTeaImg from '../assets/rosetea.jpeg'; 
 
 export function HeroSection() {
@@ -77,16 +77,16 @@ export function HeroSection() {
             </h1>
           </div>
 
-          {/* Description */}
-            {/* <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              // Description එක කියවීමට පහසු තද අළු පැහැයක් (text-slate-600)
-              className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed font-light pr-4"
-            >
-              {featuredProduct.description || t.hero.tagline} 
-            </motion.p> */}
+          {/* Description (JSON එකෙන් Map වේ) */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            // Description එක කියවීමට පහසු තද අළු පැහැයක් (text-slate-600)
+            className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed font-light pr-4"
+          >
+            {featuredProduct.description || t.hero.tagline} 
+          </motion.p>
 
           {/* Call to Action Button */}
           <motion.div
@@ -126,11 +126,11 @@ export function HeroSection() {
       </div>
 
       {/* ======================================= */}
-      {/* RIGHT SIDE: Background Image           */}
+      {/* RIGHT SIDE: Background Image (JSON එකෙන් Map වේ) */}
       {/* ======================================= */}
       <div 
         className="w-full md:w-1/2 h-[50vh] md:h-screen relative bg-cover bg-center bg-no-repeat order-1 md:order-2"
-        style={{ backgroundImage: `url(${roseTeaImg})` }}
+        style={{ backgroundImage: `url(${featuredProduct.image || roseTeaImg})` }}
       >
         {/* ✅ 1. Color Fade: වම් පස ඇති සුදු වර්ණය දකුණට ක්‍රමයෙන් මැකී යාම (Blend into white) */}
         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-white via-white/20 to-transparent pointer-events-none"></div>
