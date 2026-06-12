@@ -29,33 +29,29 @@ export function HeroSection() {
   const yLead = useTransform(scrollY, [0, 300], [0, 50]);
 
   return (
-    <div 
-      className="relative min-h-screen flex flex-col md:flex-row overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${roseTeaImg})` }}
-    >
+    <div className="relative min-h-[100vh] flex flex-col md:flex-row overflow-hidden bg-white">
       
       {/* ======================================= */}
-      {/* LEFT SIDE: Dark Overlay & Text Content  */}
+      {/* LEFT SIDE: Text Content (White Background) */}
       {/* ======================================= */}
-      <div className="w-full md:w-1/2 flex items-center px-8 sm:px-12 md:px-16 py-24 relative z-10">
-        
-        {/* Darker, highly opaque green overlay for the strict left-side cut */}
-        <div className="absolute inset-0 bg-[#162a20]/90 backdrop-blur-md"></div>
+      <div 
+        className="w-full md:w-1/2 flex justify-center items-center px-6 sm:px-10 md:px-16 py-20 md:py-0 relative z-10 order-2 md:order-1 bg-white ml-10"
+      >
         
         <motion.div
           style={isMobile ? {} : { y: yLead }}
           className="relative z-20 flex flex-col items-start w-full max-w-md mt-10" 
         >
-          {/* Main Headline - Constrained width forces the stacking */}
-          <div className="mb-8 w-full max-w-[320px]">
-            <h1 className="text-6xl sm:text-7xl font-normal tracking-tight text-white font-serif flex flex-col">
-              <span className="block overflow-hidden pb-2">
+          {/* Main Headline */}
+          <div className="relative lg:pt-20">
+            {/* සුදු පසුබිමට ගැළපෙන පරිදි තද කොළ පැහැති අකුරු (text-emerald-950) */}
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight leading-[1.1] md:leading-[1.1] font-serif">
+              <span className="block overflow-hidden pb-1 sm:pb-2">
                 <motion.span
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="block text-white"
-                  style={{ fontFamily: "Playfair Display, serif" }}
+                  className="block text-emerald-950"
                 >
                   {firstWord}
                 </motion.span>
@@ -65,7 +61,8 @@ export function HeroSection() {
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-                  className="block italic text-[#8be0b6] leading-[1.15]"
+                  // ඉතිරි කොටස සඳහා ලස්සන කොළ පැහැයක් (text-emerald-600)
+                  className="block italic text-emerald-600 font-[family-name:var(--font-serif-italic)] pb-1"
                   style={{ fontFamily: "Playfair Display, serif" }}
                 >
                   {restOfName}
@@ -75,14 +72,15 @@ export function HeroSection() {
           </div>
 
           {/* Description */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[15px] sm:text-base text-gray-300 font-light leading-relaxed mb-10 max-w-[340px]"
-          >
-            {featuredProduct.description || "A refreshing blend of Ceylon Green Tea and zesty Lemongrass. Expertly crafted for a calming afternoon experience."} 
-          </motion.p>
+            {/* <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              // Description එක කියවීමට පහසු තද අළු පැහැයක් (text-slate-600)
+              className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed font-light pr-4"
+            >
+              {featuredProduct.description || t.hero.tagline} 
+            </motion.p> */}
 
           {/* Call to Action Button */}
           <motion.div
@@ -92,13 +90,13 @@ export function HeroSection() {
           >
             <button
               onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group flex items-stretch rounded-full overflow-hidden active:scale-[0.97] transition-all shadow-lg"
+              className="group inline-flex items-center border border-emerald-600/30 rounded-full overflow-hidden active:scale-[0.97] transition-all hover:border-emerald-600 bg-emerald-600 shadow-xl shadow-emerald-900/10 w-full sm:w-auto"
             >
               <span className="px-6 py-3 text-xs sm:text-sm font-bold tracking-wider uppercase text-white bg-[#5a9c7c] hover:bg-[#4b8a6b] transition-colors flex items-center justify-center">
                 {t.hero.cta || "LET'S MAKE TEA"}
               </span>
               
-              <span className="w-10 flex items-center justify-center bg-[#8be0b6] text-emerald-950 flex-shrink-0">
+              <span className="w-12 h-12 flex items-center justify-center bg-emerald-100 text-emerald-950 transition-colors group-hover:bg-amber-400 group-hover:text-emerald-950 flex-shrink-0">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   width="16" 
@@ -122,8 +120,15 @@ export function HeroSection() {
       {/* ======================================= */}
       {/* RIGHT SIDE: Clear Image View            */}
       {/* ======================================= */}
-      <div className="hidden md:block w-1/2 h-full relative z-0">
-        {/* Transparent container to maintain flex layout while showing the background image */}
+      <div 
+        className="w-full md:w-1/2 h-[50vh] md:h-screen relative bg-cover bg-center bg-no-repeat order-1 md:order-2"
+        style={{ backgroundImage: `url(${roseTeaImg})` }}
+      >
+        {/* ✅ 1. Color Fade: වම් පස ඇති සුදු වර්ණය දකුණට ක්‍රමයෙන් මැකී යාම (Blend into white) */}
+        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-white via-white/20 to-transparent pointer-events-none"></div>
+        
+        {/* ✅ 2. Blur Fade: වම් පස ඇති Blur එක දකුණට ක්‍රමයෙන් මැකී යාම */}
+        <div className="absolute inset-0 backdrop-blur-[15px] [mask-image:linear-gradient(to_top,black_0%,transparent_15%)] md:[mask-image:linear-gradient(to_right,black_0%,transparent_30%)] pointer-events-none"></div>
       </div>
 
     </div>
