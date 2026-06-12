@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { HeroSection } from './HeroSection';
-import { ProcessSection } from './ProcessSection';
 import { IngredientsSection } from './IngredientsSection';
 import { BenefitsSection } from './BenefitsSection';
 import { BrewingSection } from './BrewingSection';
