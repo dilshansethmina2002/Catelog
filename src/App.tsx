@@ -32,23 +32,16 @@ function AppContent() {
   return (
     // මුළු App එකම Router එකකින් ආවරණය කරනවා
     <Router>
-      {/* flex සහ flex-col පාවිච්චි කළේ පිටුවේ content අඩු වුණත් Footer එක යටින්ම තියාගන්න */}
-      <div className="min-h-screen flex flex-col bg-[#faf9f6] font-sans text-emerald-950 selection:bg-emerald-200 selection:text-emerald-950">
+      <div className="min-h-screen flex flex-col font-sans text-emerald-950 selection:bg-emerald-200 selection:text-emerald-950">
         
         {/* Header එක හැම පිටුවකම පේන්න ඕනේ නිසා Routes වලට උඩින් දානවා */}
         <Header />
         
-        {/* flex-grow දාන්නේ මැද කොටසට ඉතුරු ඉඩ ඔක්කොම ගන්න */}
-        <main className="flex-grow pt-20 md:pt-24"> 
-          {/* Header එක පාවෙන (fixed) නිසා main එකට පොඩි padding top එකක් දුන්නා */}
+        {/* ✅ වෙනස: pt-20 md:pt-24 ඉවත් කරන ලදී. එවිට Hero Section එක තිරයේ ඉහළම කෙළවරේ සිට ආරම්භ වේ */}
+        <main className="flex-grow"> 
           <Routes>
-            {/* සාමාන්‍යයෙන් වෙබ්සයිට් එකට ආවම පේන Main Page එක */}
             <Route path="/" element={<Home />} />
-            
-            {/* QR කේතය Scan කරාම යන Product Page එක */}
             <Route path="/product/:id" element={<ProductDetails />} />
-            
-            {/* අනාගතයේ QR ප්‍රින්ට් කරන්න ඕනේ නම් මේක පාවිච්චි කරන්න පුළුවන් (දැනට comment කරලා තියෙන්නේ) */}
             <Route path="/admin/qr" element={<QRMaker />} />
           </Routes>
         </main>
