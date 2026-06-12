@@ -11,6 +11,7 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import ProductDetails from './components/ProductDetails';
 import { QRMaker } from './components/QRMaker';
+import SnapScroll from './components/ui/SnapScroll';
 
 
 // --- New Pages (QR System) ---
@@ -24,6 +25,8 @@ function Home() {
       <BenefitsSection />
       <BrewingSection />
       <PriceSection />
+      <SnapScroll />
+
     </>
   );
 }
@@ -50,6 +53,8 @@ function AppContent() {
             
             {/* අනාගතයේ QR ප්‍රින්ට් කරන්න ඕනේ නම් මේක පාවිච්චි කරන්න පුළුවන් (දැනට comment කරලා තියෙන්නේ) */}
             <Route path="/admin/qr" element={<QRMaker />} />
+
+            <Route path="/snap-scroll" element={<SnapScroll />} />
           </Routes>
         </main>
 
