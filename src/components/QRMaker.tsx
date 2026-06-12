@@ -1,13 +1,33 @@
 import React from 'react';
-import { QRCodeSVG } from 'qrcode.react';
+// ✅ QRCodeSVG වෙනුවට QRCodeCanvas භාවිතා කර ඇත
+import { QRCodeCanvas } from 'qrcode.react'; 
 import productsData from '../data/products.json'; 
 import athuLogo from '../assets/athu.png'; 
 
 export const QRMaker: React.FC = () => {
   const BASE_URL = "http://localhost:5173"; 
 
+  // ✅ QR Code එක PNG පින්තූරයක් ලෙස Download කිරීමේ Function එක
+  const downloadQR = (productId: string, productName: string) => {
+    // Canvas element එක ලබා ගැනීම
+    const canvas = document.getElementById(`qr-${productId}`) as HTMLCanvasElement;
+    if (!canvas) return;
+
+    // Canvas එකෙන් PNG URL එකක් සාදා ගැනීම
+    const pngUrl = canvas.toDataURL("image/png");
+
+    // Download Link එකක් සාදා එය Click කරවීම
+    const link = document.createElement("a");
+    link.href = pngUrl;
+    // නම අගට .png යොදා ඇත
+    link.download = `${productName.replace(/\s+/g, '_')}_QR.png`; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="min-h-screen bg-gray-100 p-10">
+    <div className="min-h-screen bg-gray-100 p-10 pt-[80px] lg:pt-[120px]">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-center text-emerald-900">
           Tea Products - QR Code Generator
@@ -17,7 +37,9 @@ export const QRMaker: React.FC = () => {
           {productsData.map((product) => (
             <div key={product.id} className="bg-white p-4 rounded-xl shadow-sm flex flex-col items-center text-center border border-gray-200">
               
-              <QRCodeSVG
+              {/* ✅ QRCodeCanvas බවට වෙනස් කර ඇත */}
+              <QRCodeCanvas
+                id={`qr-${product.id}`}
                 value={`${BASE_URL}/product/${product.id}`}
                 size={120}
                 level={"H"} 
@@ -29,23 +51,27 @@ export const QRMaker: React.FC = () => {
                 }}
               />
               
-              <h3 className="mt-4 text-xs font-bold text-gray-800 line-clamp-2">
+              <h3 className="mt-4 text-xs font-bold text-gray-800 line-clamp-2 h-8">
                 {product.name}
               </h3>
-              
-              {/* <p className="text-[10px] text-gray-400 mt-1 font-mono">
-                {product.id}
-              </p> */}
 
-              {/* Added View Button Here */}
-              <a 
-                href={`${BASE_URL}/product/${product.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 px-4 py-1.5 bg-emerald-600 text-white text-xs font-medium rounded-md hover:bg-emerald-700 transition-colors w-full text-center"
-              >
-                View
-              </a>
+              <div className="flex w-full gap-2 mt-3">
+                <a 
+                  href={`${BASE_URL}/product/${product.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-2 py-1.5 bg-emerald-600 text-white text-xs font-medium rounded-md hover:bg-emerald-700 transition-colors text-center flex items-center justify-center"
+                >
+                  View
+                </a>
+
+                <button 
+                  onClick={() => downloadQR(product.id, product.name)}
+                  className="flex-1 px-2 py-1.5 bg-slate-800 text-white text-xs font-medium rounded-md hover:bg-slate-900 transition-colors text-center flex items-center justify-center"
+                >
+                  Download
+                </button>
+              </div>
 
             </div>
           ))}
