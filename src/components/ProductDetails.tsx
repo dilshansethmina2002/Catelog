@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { HeroSection } from './HeroSection';
-import { ProcessSection } from './ProcessSection';
 import { IngredientsSection } from './IngredientsSection';
 import { BenefitsSection } from './BenefitsSection';
 import { BrewingSection } from './BrewingSection';
@@ -17,7 +16,6 @@ export default function ProductDetails() {
     <div className="w-full">
       {/* අර ලස්සන Sections ඔක්කොම මෙතනට දානවා */}
       <HeroSection />
-      <ProcessSection />
       <IngredientsSection />
       <BenefitsSection />
       <BrewingSection />
