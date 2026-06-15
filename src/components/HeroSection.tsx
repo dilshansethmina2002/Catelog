@@ -11,11 +11,9 @@ export function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
   const { id } = useParams(); 
 
-  // URL එකට අදාළ product එක JSON එකෙන් ගන්නවා
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0]; 
+  const productName = featuredProduct.name || t.hero.title || "Ceylon Green Tea with Lemongrass";
   
-  // JSON එකේ තියෙන featuredProduct.name එක ගන්නවා
-  const productName = featuredProduct.name || t.hero.title;
   const nameParts = productName.split(' ');
   const firstWord = nameParts[0]; 
   const restOfName = nameParts.slice(1).join(' '); 
@@ -27,112 +25,106 @@ export function HeroSection() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Parallax effect එක (Text එක සඳහා)
-  const yLead = useTransform(scrollY, [0, 300], [0, 50]);
+  // Subtle parallax for the text content
+  const yLead = useTransform(scrollY, [0, 500], [0, 100]);
+  // Subtle zoom for the background image on scroll
+  const scaleImage = useTransform(scrollY, [0, 500], [1, 1.05]);
+
+  // Framer Motion variants for staggered text reveal
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+  };
 
   return (
-    <div className="relative min-h-[100vh] flex flex-col md:flex-row overflow-hidden bg-white">
+    <div className="relative min-h-[100vh] flex flex-col md:flex-row overflow-hidden bg-emerald-950 font-sans">
       
       {/* ======================================= */}
-      {/* LEFT SIDE: Text Content (White Background) */}
+      {/* LEFT SIDE: Deep Green Typography Panel  */}
       {/* ======================================= */}
-      <div 
-        className="w-full md:w-1/2 flex justify-center items-center px-6 sm:px-10 md:px-16 py-20 md:py-0 relative z-10 order-2 md:order-1 bg-white ml-10"
-      >
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-24 py-24 md:py-0 relative z-10 order-2 md:order-1 bg-emerald-950">
         
+        {/* Subtle background texture/pattern (Optional) */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(circle_at_top_left,white_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
         <motion.div
           style={isMobile ? {} : { y: yLead }}
-          className="text-left space-y-6 relative w-full flex flex-col items-start max-w-lg lg:max-w-2xl z-20" 
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="relative z-20 w-full max-w-xl" 
         >
-          {/* Main Headline */}
-          <div className="relative lg:pt-20">
-            {/* සුදු පසුබිමට ගැළපෙන පරිදි තද කොළ පැහැති අකුරු (text-emerald-950) */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight leading-[1.1] md:leading-[1.1] font-serif">
-              <span className="block overflow-hidden pb-1 sm:pb-2">
-                <motion.span
-                  initial={{ y: "100%" }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="block text-emerald-950"
-                >
-                  {firstWord} 
-                </motion.span>
-              </span>
-              <span className="block overflow-hidden pb-1">
-                <motion.span
-                  initial={{ y: "100%" }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-                  // ඉතිරි කොටස සඳහා ලස්සන කොළ පැහැයක් (text-emerald-600)
-                  className="block italic text-emerald-600 font-[family-name:var(--font-serif-italic)] pb-1"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  {restOfName}
-                </motion.span>
-              </span>
-            </h1>
-          </div>
+          {/* Label / Overline */}
+          <motion.div variants={itemVariants} className="flex items-center gap-4 mb-8">
+            <span className="h-[1px] w-12 bg-amber-400/60 block"></span>
+            <span className="text-amber-400/90 uppercase tracking-[0.3em] text-xs font-bold">
+              Premium Collection
+            </span>
+          </motion.div>
 
-          {/* Description (JSON එකෙන් Map වේ) */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            // Description එක කියවීමට පහසු තද අළු පැහැයක් (text-slate-600)
-            className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed font-light pr-4"
-          >
-            {featuredProduct.description || t.hero.tagline} 
+          {/* Main Headline */}
+          <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.05] tracking-tight mb-8">
+            <span className="block font-medium">
+              {firstWord}
+            </span>
+            <span 
+              className="block italic text-emerald-200 mt-2"
+              style={{ fontFamily: "Playfair Display, serif" }}
+            >
+              {restOfName}
+            </span>
+          </motion.h1>
+
+          {/* Description (Uncommented and styled for dark background) */}
+          <motion.p variants={itemVariants} className="text-base md:text-lg text-emerald-100/70 leading-relaxed font-light mb-12 max-w-md">
+            {featuredProduct.description || "Experience the pure essence of Sri Lanka. Hand-plucked leaves blended with natural botanicals for a deeply refreshing cup."}
           </motion.p>
 
           {/* Call to Action Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex justify-start pt-6 w-full"
-          >
+          <motion.div variants={itemVariants}>
             <button
               onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group inline-flex items-center border border-emerald-600/30 rounded-full overflow-hidden active:scale-[0.97] transition-all hover:border-emerald-600 bg-emerald-600 shadow-xl shadow-emerald-900/10 w-full sm:w-auto"
+              className="group relative inline-flex items-center gap-6 px-8 py-4 bg-emerald-800/40 hover:bg-emerald-800 border border-emerald-700/50 rounded-full transition-all duration-300 overflow-hidden"
             >
-              <span className="flex-1 px-8 py-3.5 sm:py-3 text-sm font-bold tracking-widest uppercase text-white bg-transparent text-center sm:text-left">
-                {t.hero.cta}
+              <span className="relative z-10 text-sm font-bold tracking-widest uppercase text-white">
+                {t.hero.cta || "Let's Make Tea"}
               </span>
               
-              <span className="w-12 h-12 flex items-center justify-center bg-emerald-100 text-emerald-950 transition-colors group-hover:bg-amber-400 group-hover:text-emerald-950 flex-shrink-0">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="18" 
-                  height="18" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <path d="M5 12h14M13 6l6 6-6 6"/>
+              {/* Arrow Icon */}
+              <span className="relative z-10 w-8 h-8 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full transition-transform duration-300 group-hover:translate-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </span>
             </button>
           </motion.div>
-        </motion.div>
 
+        </motion.div>
       </div>
 
       {/* ======================================= */}
-      {/* RIGHT SIDE: Background Image (JSON එකෙන් Map වේ) */}
+      {/* RIGHT SIDE: Full Bleed Image            */}
       {/* ======================================= */}
-      <div 
-        className="w-full md:w-1/2 h-[50vh] md:h-screen relative bg-cover bg-center bg-no-repeat order-1 md:order-2"
-        style={{ backgroundImage: `url(${featuredProduct.image || roseTeaImg})` }}
-      >
-        {/* ✅ 1. Color Fade: වම් පස ඇති සුදු වර්ණය දකුණට ක්‍රමයෙන් මැකී යාම (Blend into white) */}
-        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-white via-white/20 to-transparent pointer-events-none"></div>
+      <div className="w-full md:w-1/2 h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2">
+        {/* Animated background image */}
+        <motion.div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(${roseTeaImg})`,
+            scale: isMobile ? 1 : scaleImage
+          }}
+        />
         
-        {/* ✅ 2. Blur Fade: වම් පස ඇති Blur එක දකුණට ක්‍රමයෙන් මැකී යාම */}
-        <div className="absolute inset-0 backdrop-blur-[15px] [mask-image:linear-gradient(to_top,black_0%,transparent_15%)] md:[mask-image:linear-gradient(to_right,black_0%,transparent_30%)] pointer-events-none"></div>
+        {/* Very subtle inner shadow to frame the image nicely against the hard split */}
+        <div className="absolute inset-0 shadow-[inset_20px_0_40px_rgba(0,0,0,0.15)] md:block hidden pointer-events-none"></div>
       </div>
 
     </div>

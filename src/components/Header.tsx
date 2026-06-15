@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logoImg12 from '.././assets/athu.png';
-import { LanguageSelector } from './LanguageSelector'; // Ensure this path is correct for your project
+import { LanguageSelector } from './LanguageSelector';
 
 export const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(true);
@@ -31,46 +31,47 @@ export const Header: React.FC = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 pt-2 sm:pt-4 px-2 sm:px-4 md:px-8 pointer-events-none ${
-        isVisible ? 'translate-y-0 opacity-100' : '-translate-y-[150%] opacity-0'
-      }`}
+      /* APPLE AESTHETIC: 
+        Full width, high backdrop blur (frosted glass), 
+        color saturation bump, and a hair-thin translucent border.
+        Using a cubic-bezier easing for that buttery Apple animation.
+      */
+      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-none 
+        bg-[#0a140f]/70 backdrop-blur-2xl saturate-150 border-b border-white/10
+        ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
-      <div className="mx-auto max-w-8xl pointer-events-auto">
+      {/* Fixed height ensures a sleek, uniform bar. pointer-events-auto re-enables clicks inside the glass */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between pointer-events-auto">
         
-        <div className="bg-[#0f3824]/85 backdrop-blur-md border border-[#1b5e3d]/50 shadow-[0_10px_40px_rgba(0,0,0,0.3)] rounded-full px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 flex justify-between items-center transition-all duration-500 hover:border-[#227a4f]/60">
+        {/* Brand Area */}
+        <div className="flex items-center gap-3 sm:gap-4 group cursor-pointer opacity-90 hover:opacity-100 transition-opacity duration-300 min-w-0">
           
-          <div className="flex items-center gap-2 sm:gap-3 md:gap-4 group cursor-pointer min-w-0">
+          {/* Logo - Minimalist, no glowing hover effects, just clean rendering */}
+          <img
+            src={logoImg12}
+            alt="Athukorala Logo"
+            className="w-7 h-7 sm:w-8 sm:h-8 object-contain drop-shadow-sm"
+          />
+
+          {/* Typography - System fonts, tight tracking for title, wide tracking for subtitle */}
+          <div className="flex flex-col justify-center min-w-0">
+            <span className="text-sm sm:text-base font-semibold tracking-tight text-white/95 truncate">
+              Athukorala Group <span className="hidden sm:inline font-normal text-white/70">Ltd.</span>
+            </span>
             
-            <div className="relative shrink-0">
-              <div className="absolute inset-0 bg-lime-400/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <img
-                src={logoImg12}
-                alt="Athukorala Logo"
-                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-green-700/50 bg-white/5 shadow-inner object-contain relative z-10 transition-transform duration-500 group-hover:scale-[1.05]"
-              />
-            </div>
-
-            {/* Company Branding - */}
-            <div className="flex flex-col justify-center min-w-0">
-              <span className="text-sm sm:text-base md:text-xl font-serif font-bold tracking-wide text-white transition-colors group-hover:text-green-50 truncate sm:whitespace-normal">
-                Athukorala Group <span className="hidden lg:inline text-white/80 font-normal text-lg">(Pvt) Ltd</span>
-              </span>
-              
-              <span className="text-[7px] sm:text-[9px] md:text-[10px] font-bold uppercase tracking-wider sm:tracking-[0.25em] text-green-300/80 transition-colors group-hover:text-lime-300 mt-0.5 leading-none sm:leading-normal truncate sm:whitespace-normal">
-                MANUFACTURERS AND EXPORTERS OF TEA
-              </span>
-            </div>
+            <span className="text-[8px] sm:text-[9px] font-medium uppercase tracking-[0.15em] text-white/50 truncate mt-0.5">
+              Manufacturers & Exporters of Tea
+            </span>
           </div>
-
-          {/* Actions Area */}
-          <div className="flex items-center gap-2 sm:gap-3 md:gap-5 shrink-0 ml-2">
-            <div className="h-6 w-px bg-green-800/60 hidden sm:block" />
-            <div className="scale-85 sm:scale-90 md:scale-100 origin-right transition-transform">
-              <LanguageSelector />
-            </div>
-          </div>
-          
         </div>
+
+        {/* Actions Area */}
+        <div className="flex items-center shrink-0 ml-4">
+          <div className="scale-90 sm:scale-100 origin-right opacity-80 hover:opacity-100 transition-opacity">
+            <LanguageSelector />
+          </div>
+        </div>
+        
       </div>
     </header>
   );
