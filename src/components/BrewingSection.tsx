@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
 import { useParams } from 'react-router-dom';
-
-// JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json';
 
 // --- CUSTOM SVG ILLUSTRATIONS ---
@@ -85,7 +83,6 @@ export const BrewingSection: React.FC = () => {
   const brewingSteps = featuredProduct.brewing || t.brewing.steps;
 
   return (
-    // Mobile එකේදී py-16 කිනුත්, ලොකු screen වලදී py-24/py-32 කිනුත් padding පාලනය කර ඇත
     <Section id="brewing" className="bg-[#faf9f6]/50 relative overflow-hidden py-16 sm:py-24 md:py-32">
       {/* Background Orbs */}
       <div className="absolute top-0 left-1/4 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-emerald-100/30 rounded-full blur-[80px] sm:blur-[120px] pointer-events-none" />
@@ -100,7 +97,6 @@ export const BrewingSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-20 lg:mb-24 max-w-2xl mx-auto space-y-3 sm:space-y-4"
         >
-          {/* Mobile තිරවලදී text-3xl ලෙසත් ලොකු තිරවලදී text-5xl/6xl ලෙසත් හැරේ */}
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-emerald-950 tracking-tight">
             {t.brewing.title}
           </h2>
@@ -109,7 +105,6 @@ export const BrewingSection: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Grid layout - මොබයිල් වලදී කාඩ්පත් අතර පරතරය ලස්සනට පෙනෙන්න gap-6 කර ඇත */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
           {brewingSteps.map((step: any, index: number) => {
             const Icon = customIcons[index % customIcons.length];
@@ -126,10 +121,9 @@ export const BrewingSection: React.FC = () => {
                 {/* Card Wrapper */}
                 <div className="relative group-hover:transform group-hover:-translate-y-2 transition-transform duration-500">
                   
-                  {/* මොබයිල් තිරවලදී aspect ratio එක අයින් කර පෑඩින් (py-8 px-5) සහ min-height එකක් ලබා දී අකුරු තෙරපීම වළක්වා ඇත */}
                   <div className="w-full min-h-[260px] md:aspect-[4/5] bg-white rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 shadow-[0_15px_40px_rgba(5,150,105,0.04)] md:shadow-[0_30px_60px_rgba(5,150,105,0.06)] border border-emerald-50/50 flex flex-col items-center justify-center overflow-hidden relative group-hover:shadow-[0_45px_100px_rgba(5,150,105,0.1)] transition-all duration-700">
 
-                    {/* Step Indicator - මොබයිල් වලදී text-4xl ලෙස පැහැදිලිව පෙනේ */}
+                    {/* Step Indicator */}
                     <div className="absolute top-4 left-4 md:top-8 md:left-8 text-4xl md:text-6xl font-serif font-bold text-emerald-950/5 select-none">
                       0{index + 1}
                     </div>

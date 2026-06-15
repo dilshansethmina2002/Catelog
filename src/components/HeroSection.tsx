@@ -2,11 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useParams } from 'react-router-dom';
-
-// JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json'; 
-
-// ✅ පින්තූරය import කරගන්නවා (Fallback එක සඳහා)
 import roseTeaImg from '../assets/rosetea.jpeg'; 
 
 export function HeroSection() {
