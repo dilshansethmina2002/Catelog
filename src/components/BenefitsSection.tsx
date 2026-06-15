@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
 import { useParams } from 'react-router-dom';
 
-// JSON ෆයිල් එක import කරගන්න
+// Import the JSON file to access product data and benefits
 import productsData from '../data/products.json'; 
 
 // --- CUSTOM SVG ILLUSTRATIONS ---
@@ -43,13 +43,12 @@ const customIcons = [ShieldIcon, HeartIcon, ZapIcon, BrainIcon];
 export const BenefitsSection: React.FC = () => {
   const { t } = useLanguage(); 
 
-  // JSON එකෙන් Featured Product එක ගන්නවා
+  // Get Featured Product to JSON
   const { id } = useParams(); 
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
   const benefitsList = featuredProduct.benefits || t.benefits.items;
 
   return (
-    // Mobile එකේදී py-16 කිනුත්, ලොකු screen වලදී py-24/py-32 කිනුත් padding පාලනය කර ඇත
     <Section id="benefits" className="bg-[#faf9f6] py-16 sm:py-24 md:py-32 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         
@@ -62,7 +61,6 @@ export const BenefitsSection: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
           >
-            {/* මොබයිල් තිරවලදී text-3xl ලෙසත් ලොකු තිරවලදී text-5xl/6xl ලෙසත් හැරේ */}
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-serif font-bold text-emerald-950 tracking-tight leading-tight">
               {t.benefits.title}
             </h2>
@@ -79,7 +77,6 @@ export const BenefitsSection: React.FC = () => {
           </motion.p>
         </div>
 
-        {/* Bento Grid layout - මොබයිල් වලදී gap එක 4ක් දක්වා අඩු කර ඉඩ ඉතිරි කර ඇත */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8">
           
           {benefitsList.map((item: any, index: number) => {
@@ -101,7 +98,6 @@ export const BenefitsSection: React.FC = () => {
                   }
                 `}
               >
-                {/* Background Decor Circles - මොබයිල් වලදී screen එකෙන් එළියට පැනීම වළක්වා ඇත */}
                 {isMain ? (
                   <>
                     <div className="absolute top-0 right-0 w-[240px] h-[240px] sm:w-[400px] sm:h-[400px] bg-emerald-900/50 rounded-full blur-[60px] sm:blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none" />
@@ -112,7 +108,7 @@ export const BenefitsSection: React.FC = () => {
                 )}
 
                 <div className="relative z-10 h-full flex flex-col">
-                  {/* Icon Container - මොබයිල් එකේදී ප්‍රමාණය සහ පහළ හිස් ඉඩ (mb-6) අඩු කර ඇත */}
+                  {/* Icon Container */}
                   <div className={`
                     w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8 md:mb-10 transition-transform duration-500 group-hover:scale-110
                     ${isMain ? 'bg-white/10 text-emerald-400 backdrop-blur-[4px] border border-white/10' : 'bg-emerald-50 text-emerald-600'}

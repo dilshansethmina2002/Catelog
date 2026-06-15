@@ -4,7 +4,6 @@ import logoImg from '../assets/athu.png';
 
 export const Footer: React.FC = () => {
   return (
-    // මොබයිල් එකේදී පෑඩින් px-4 කර දාරවල වැදීම වළක්වා ඇත
     <footer className="bg-[#0b2818] text-green-50 py-12 sm:py-16 px-4 sm:px-10 border-t-4 border-[#0a8c5e]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
 

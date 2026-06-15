@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useParams } from 'react-router-dom';
-
 import productsData from '../data/products.json'; 
 import roseTeaImg from '../assets/rosetea.jpeg'; 
 
