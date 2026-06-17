@@ -47,7 +47,6 @@ function AppContent() {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/admin/qr" element={<QRMaker />} />
 
-            <Route path="/snap-scroll" element={<SnapScroll />} />
           </Routes>
         </main>
 

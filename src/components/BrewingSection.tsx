@@ -83,10 +83,23 @@ export const BrewingSection: React.FC = () => {
   const brewingSteps = featuredProduct.brewing || t.brewing.steps;
 
   return (
-    <Section id="brewing" className="bg-[#faf9f6]/50 relative overflow-hidden py-16 sm:py-24 md:py-32">
-      {/* Background Orbs */}
-      <div className="absolute top-0 left-1/4 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-emerald-100/30 rounded-full blur-[80px] sm:blur-[120px] pointer-events-none" />
-      <div className="absolute right-0 bottom-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-amber-50/40 rounded-full blur-[70px] sm:blur-[100px] pointer-events-none" />
+    // Changed bg to dark emerald-950 to match the dark theme
+    <Section id="brewing" className="bg-emerald-950 relative overflow-hidden py-16 sm:py-24 md:py-32">
+      
+      {/* --- THE ANIMATED GRADIENT BACKGROUND --- */}
+      <motion.div
+        className="absolute inset-0 z-0"
+        style={{
+          background: 'linear-gradient(-45deg, #022c22, #064e3b, #047857, #022c22)',
+          backgroundSize: '300% 300%'
+        }}
+        animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
+        transition={{ duration: 15, ease: "linear", repeat: Infinity }}
+      />
+
+      {/* Background Orbs adapted for dark mode */}
+      <div className="absolute top-0 left-1/4 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-emerald-500/10 rounded-full blur-[80px] sm:blur-[120px] pointer-events-none z-0" />
+      <div className="absolute right-0 bottom-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-[#d4af37]/10 rounded-full blur-[70px] sm:blur-[100px] pointer-events-none z-0" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         
@@ -97,14 +110,16 @@ export const BrewingSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-20 lg:mb-24 max-w-2xl mx-auto space-y-3 sm:space-y-4"
         >
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-emerald-950 tracking-tight">
+          {/* Updated text colors to white and light emerald for dark background */}
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">
             {t.brewing.title}
           </h2>
-          <p className="text-emerald-800/60 text-base sm:text-lg font-light leading-relaxed px-2">
+          <p className="text-emerald-100/80 text-base sm:text-lg font-light leading-relaxed px-2">
             {t.brewing.subtitle}
           </p>
         </motion.div>
 
+        {/* Grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
           {brewingSteps.map((step: any, index: number) => {
             const Icon = customIcons[index % customIcons.length];
@@ -121,25 +136,26 @@ export const BrewingSection: React.FC = () => {
                 {/* Card Wrapper */}
                 <div className="relative group-hover:transform group-hover:-translate-y-2 transition-transform duration-500">
                   
-                  <div className="w-full min-h-[260px] md:aspect-[4/5] bg-white rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 shadow-[0_15px_40px_rgba(5,150,105,0.04)] md:shadow-[0_30px_60px_rgba(5,150,105,0.06)] border border-emerald-50/50 flex flex-col items-center justify-center overflow-hidden relative group-hover:shadow-[0_45px_100px_rgba(5,150,105,0.1)] transition-all duration-700">
+                  {/* Converted solid white background to Translucent Dark Glassmorphism */}
+                  <div className="w-full min-h-[260px] md:aspect-[4/5] bg-black/20 backdrop-blur-md rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 shadow-xl border border-white/10 flex flex-col items-center justify-center overflow-hidden relative group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:bg-black/30 group-hover:border-white/20 transition-all duration-700">
 
-                    {/* Step Indicator */}
-                    <div className="absolute top-4 left-4 md:top-8 md:left-8 text-4xl md:text-6xl font-serif font-bold text-emerald-950/5 select-none">
+                    {/* Step Indicator - Adjusted opacity for dark background */}
+                    <div className="absolute top-4 left-4 md:top-8 md:left-8 text-4xl md:text-6xl font-serif font-bold text-white/5 select-none">
                       0{index + 1}
                     </div>
 
-                    {/* Icon Container */}
-                    <div className="w-14 h-14 md:w-24 md:h-24 mb-4 md:mb-10 flex items-center justify-center text-emerald-700 group-hover:text-emerald-500 transition-colors duration-500">
+                    {/* Icon Container - Green default, transitioning to Gold on hover */}
+                    <div className="w-14 h-14 md:w-24 md:h-24 mb-4 md:mb-10 flex items-center justify-center text-emerald-400 group-hover:text-[#d4af37] transition-colors duration-500">
                       <Icon className="w-full h-full" />
                     </div>
 
                     {/* Step Title */}
-                    <h3 className="text-xl md:text-2xl font-serif font-bold text-emerald-950 mb-2 md:mb-4 tracking-tight text-center">
+                    <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-2 md:mb-4 tracking-tight text-center">
                       {step.title}
                     </h3>
                     
                     {/* Step Description */}
-                    <p className="text-emerald-800/60 text-sm md:text-base leading-relaxed font-medium px-1 text-center">
+                    <p className="text-emerald-100/60 text-sm md:text-base leading-relaxed font-medium px-1 text-center group-hover:text-emerald-100/80 transition-colors duration-500">
                       {step.description}
                     </p>
                   </div>
@@ -148,7 +164,7 @@ export const BrewingSection: React.FC = () => {
                 {/* Vertical Divider (Mobile only) */}
                 {index < brewingSteps.length - 1 && (
                   <div className="flex justify-center md:hidden my-4">
-                    <div className="w-[1px] h-6 bg-emerald-800/10" />
+                    <div className="w-[1px] h-6 bg-white/10" />
                   </div>
                 )}
               </motion.div>
