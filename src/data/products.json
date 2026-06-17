@@ -62,8 +62,8 @@
     "price": "$10.00",
     "pack": "",
     "weight": "",
-    "image": "/images/Black Tea Flower.png",
-    "ingredientImage": "/leaves/black-tea-flower.jpg",
+    "image": "/images/BlackTeaFlower.png",
+    "ingredientImage": "/leaves/black-tea-flower.png",
     "ingredients": [
       {
         "name": "Ceylon Black Tea",
@@ -118,7 +118,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "",
-    "image": "/images/BOPF SP 400.png",
+    "image": "/images/BOPF400.png",
     "ingredientImage": "/leaves/bopf.jpg",
     "ingredients": [
       {

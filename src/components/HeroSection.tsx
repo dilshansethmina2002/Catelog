@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json'; 
+
+// Fallback පින්තූරය (JSON එකේ image එකක් නැති වුණොත් පමණක් මෙය පෙන්වයි)
 import roseTeaImg from '../assets/rosetea.jpeg'; 
 
 export function HeroSection() {
@@ -11,9 +13,16 @@ export function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
   const { id } = useParams(); 
 
+  // 1. JSON එකෙන් Data ගැනීම
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0]; 
-  const productName = featuredProduct.name || t.hero.title || "Ceylon Green Tea with Lemongrass";
   
+  // 2. Data Mapping (නම, විස්තරය, පින්තූරය සහ පැකට් වර්ගය)
+  const productName = featuredProduct.name || t.hero.title || "Ceylon Green Tea";
+  const displayImage = featuredProduct.image || roseTeaImg; // ✅ JSON පින්තූරය මෙතනින් ගනී
+  const packType = featuredProduct.pack || "Premium Collection"; // ✅ Pack Type එක
+  const description = featuredProduct.description || "Experience the pure essence of Sri Lanka. Hand-plucked leaves blended with natural botanicals for a deeply refreshing cup.";
+
+  // නම වචන වලට කැඩීම (Styling සඳහා)
   const nameParts = productName.split(' ');
   const firstWord = nameParts[0]; 
   const restOfName = nameParts.slice(1).join(' '); 
@@ -45,14 +54,15 @@ export function HeroSection() {
   };
 
   return (
-    <div className="relative min-h-[100vh] flex flex-col md:flex-row overflow-hidden bg-emerald-950 font-sans">
+    <div className="relative min-h-[100vh] flex flex-col md:flex-row overflow-hidden bg-emerald-950 font-sans pt-16 md:pt-0">
       
       {/* ======================================= */}
       {/* LEFT SIDE: Deep Green Typography Panel  */}
       {/* ======================================= */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-24 py-24 md:py-0 relative z-10 order-2 md:order-1 bg-emerald-950">
+      {/* ✅ Mobile Responsive Padding: Mobile වලදී py-16 සහ Desktop වලදී py-0 */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 sm:px-12 md:px-16 lg:px-24 py-16 md:py-0 relative z-10 order-2 md:order-1 bg-emerald-950">
         
-        {/* Subtle background texture/pattern (Optional) */}
+        {/* Subtle background texture/pattern */}
         <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(circle_at_top_left,white_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
         <motion.div
@@ -60,46 +70,47 @@ export function HeroSection() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="relative z-20 w-full max-w-xl" 
+          className="relative z-20 w-full max-w-xl mx-auto md:mx-0" 
         >
-          {/* Label / Overline */}
-          <motion.div variants={itemVariants} className="flex items-center gap-4 mb-8">
-            <span className="h-[1px] w-12 bg-amber-400/60 block"></span>
-            <span className="text-amber-400/90 uppercase tracking-[0.3em] text-xs font-bold">
-              Premium Collection
+          {/* Label / Overline - JSON එකෙන් එන Pack Type එක පෙන්නයි */}
+          <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8 lg:mt-20">
+            <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
+            <span className="text-amber-400/90 uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[10px] sm:text-xs font-bold">
+              Export Quality
             </span>
+            <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
           </motion.div>
 
-          {/* Main Headline */}
-          <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.05] tracking-tight mb-8">
+          {/* Main Headline - Mobile වල text-5xl දක්වා කුඩා වේ */}
+          <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.05] tracking-tight mb-6 sm:mb-8">
             <span className="block font-medium">
               {firstWord}
             </span>
             <span 
-              className="block italic text-emerald-200 mt-2"
+              className="block italic text-emerald-200 mt-1 sm:mt-2"
               style={{ fontFamily: "Playfair Display, serif" }}
             >
               {restOfName}
             </span>
           </motion.h1>
 
-          {/* Description (Uncommented and styled for dark background) */}
-          <motion.p variants={itemVariants} className="text-base md:text-lg text-emerald-100/70 leading-relaxed font-light mb-12 max-w-md">
-            {featuredProduct.description || "Experience the pure essence of Sri Lanka. Hand-plucked leaves blended with natural botanicals for a deeply refreshing cup."}
+          {/* Description - JSON එකෙන් Map වේ */}
+          <motion.p variants={itemVariants} className="text-sm sm:text-base md:text-lg text-emerald-100/70 leading-relaxed font-light mb-10 sm:mb-12 max-w-md">
+            {description}
           </motion.p>
 
           {/* Call to Action Button */}
           <motion.div variants={itemVariants}>
             <button
               onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group relative inline-flex items-center gap-6 px-8 py-4 bg-emerald-800/40 hover:bg-emerald-800 border border-emerald-700/50 rounded-full transition-all duration-300 overflow-hidden"
+              className="group relative inline-flex items-center gap-4 sm:gap-6 px-6 sm:px-8 py-3 sm:py-4 bg-emerald-800/40 hover:bg-emerald-800 border border-emerald-700/50 rounded-full transition-all duration-300 overflow-hidden w-full sm:w-auto justify-center sm:justify-start"
             >
-              <span className="relative z-10 text-sm font-bold tracking-widest uppercase text-white">
+              <span className="relative z-10 text-xs sm:text-sm font-bold tracking-widest uppercase text-white">
                 {t.hero.cta || "Let's Make Tea"}
               </span>
               
               {/* Arrow Icon */}
-              <span className="relative z-10 w-8 h-8 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full transition-transform duration-300 group-hover:translate-x-2">
+              <span className="relative z-10 w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full transition-transform duration-300 group-hover:translate-x-2 flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -113,12 +124,13 @@ export function HeroSection() {
       {/* ======================================= */}
       {/* RIGHT SIDE: Full Bleed Image            */}
       {/* ======================================= */}
-      <div className="w-full md:w-1/2 h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2">
-        {/* Animated background image */}
+      {/* ✅ Mobile Responsive Height: Mobile වලදී 45vh පමණක් ගෙන අකුරු වලට ඉඩ ලබා දේ */}
+      <div className="w-full md:w-1/2 h-[45vh] sm:h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2 ">
+        {/* Animated background image - JSON එකෙන් එන පින්තූරය මෙතනට වැටේ */}
         <motion.div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{ 
-            backgroundImage: `url(${roseTeaImg})`,
+            backgroundImage: `url(${displayImage})`,
             scale: isMobile ? 1 : scaleImage
           }}
         />
