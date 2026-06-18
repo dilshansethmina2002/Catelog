@@ -6,7 +6,7 @@
     "price": "Rs. 1500",
     "pack": "Premium Pack",
     "weight": "100g Loose Leaf",
-    "image": "/images/purl.png",
+    "image": "/images/purl.jpeg",
     "ingredientImage": "/leaves/purl.jpg",
     "ingredients": [
       {
@@ -62,7 +62,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "",
-    "image": "/images/BlackTeaFlower.png",
+    "image": "/images/BlackTeaFlower.jpeg",
     "ingredientImage": "/leaves/black-tea-flower.png",
     "ingredients": [
       {
@@ -118,7 +118,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "",
-    "image": "/images/BOPF400.png",
+    "image": "/images/BOPF400.jpeg",
     "ingredientImage": "/leaves/bopf.jpg",
     "ingredients": [
       {
@@ -170,7 +170,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "",
-    "image": "/images/BOPF SP 200.png",
+    "image": "/images/BOPFSP200.jpeg",
     "ingredientImage": "/leaves/bopf-sp.jpg",
     "ingredients": [
       {
@@ -222,7 +222,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "200g (100 tea bags)",
-    "image": "/images/BOPF SP TB 100.png",
+    "image": "/images/BOPFSPTB100.jpg",
     "ingredientImage": "/leaves/bopf-tb.jpg",
     "ingredients": [
       {
@@ -274,7 +274,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/Cardamon Flavoured 50g.png",
+    "image": "/images/CardamonFlavoured50g.jpg",
     "ingredientImage": "/leaves/cardamom.jpg",
     "ingredients": [
       {
@@ -330,7 +330,7 @@
     "price": "$125.00",
     "pack": "",
     "weight": "125g",
-    "image": "/images/Ceylon Premium tea 125.png",
+    "image": "/images/CeylonPremiumtea125.jpg",
     "ingredientImage": "/leaves/ceylon-premium.jpg",
     "ingredients": [
       {
@@ -382,7 +382,7 @@
     "price": "$12.00",
     "pack": "",
     "weight": "125g",
-    "image": "/images/Ceylon Special FFSP tea 125.png",
+    "image": "/images/CeylonSpecialFFSPtea125.jpg",
     "ingredientImage": "/leaves/ffsp.jpg",
     "ingredients": [
       {
@@ -434,7 +434,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "150g",
-    "image": "/images/Ceylon Supreme tea 150.png",
+    "image": "/images/CeylonSupremetea150.jpg",
     "ingredientImage": "/leaves/supreme.jpg",
     "ingredients": [
       {
@@ -486,7 +486,7 @@
     "price": "$7.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Ceylon BOP tea 100.png",
+    "image": "/images/CeylonteaBOP.jpg",
     "ingredientImage": "/leaves/bop.jpg",
     "ingredients": [
       {
@@ -538,7 +538,7 @@
     "price": "$7.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Ceylon OP1 tea 100.png",
+    "image": "/images/CeylonteaOP1.jpg",
     "ingredientImage": "/leaves/op1.jpg",
     "ingredients": [
       {
@@ -590,7 +590,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Ceylon PEKO tea 100.png",
+    "image": "/images/CeylonteaPEKO.jpg",
     "ingredientImage": "/leaves/pekoe.jpg",
     "ingredients": [
       {
@@ -642,7 +642,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "25g",
-    "image": "/images/Chakra Tea 25.png",
+    "image": "/images/ChakraTea25.jpg",
     "ingredientImage": "/leaves/chakra-herbs.jpg",
     "ingredients": [
       {
@@ -698,7 +698,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Cinnamon Tea 100.png",
+    "image": "/images/CinnamonTea100.jpg",
     "ingredientImage": "/leaves/cinnamon.jpg",
     "ingredients": [
       {
@@ -754,7 +754,7 @@
     "price": "$15.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Cinnamon Tea Box.png",
+    "image": "/images/CinnamonTeaBox.jpg",
     "ingredientImage": "/leaves/cinnamon.jpg",
     "ingredients": [
       {
@@ -810,7 +810,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Earl Grey Tea Box.png",
+    "image": "/images/EarlGreyTeaBox.jpg",
     "ingredientImage": "/leaves/earl-grey.jpg",
     "ingredients": [
       {
@@ -866,7 +866,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Ella OPA 100.png",
+    "image": "/images/EllaOPA100.jpg",
     "ingredientImage": "/leaves/opa.jpg",
     "ingredients": [
       {
@@ -918,7 +918,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "150g",
-    "image": "/images/Extra special FFEXSP Tea 125.png",
+    "image": "/images/ExtraspecialFFEXSPtea125.jpg",
     "ingredientImage": "/leaves/ffexsp.jpg",
     "ingredients": [
       {
@@ -970,7 +970,7 @@
     "price": "$14.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/FBOP Box.png",
+    "image": "/images/FBOPBox.jpg",
     "ingredientImage": "/leaves/fbop.jpg",
     "ingredients": [
       {
@@ -1022,7 +1022,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Ginger Tea 100.png",
+    "image": "/images/GingerTea100.jpg",
     "ingredientImage": "/leaves/ginger.jpg",
     "ingredients": [
       {
@@ -1078,7 +1078,7 @@
     "price": "$15.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Ginger Tea Box.png",
+    "image": "/images/GingerTeaBox.jpg",
     "ingredientImage": "/leaves/ginger.jpg",
     "ingredients": [
       {
@@ -1134,7 +1134,7 @@
     "price": "$4.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/Green tea Box.png",
+    "image": "/images/GreenteaBox.jpg",
     "ingredientImage": "/leaves/green-tea.jpg",
     "ingredients": [
       {
@@ -1186,7 +1186,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Hibiscus Tea Box.png",
+    "image": "/images/HibiscusTeaBox.jpg",
     "ingredientImage": "/leaves/hibiscus.jpg",
     "ingredients": [
       {
@@ -1238,7 +1238,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Jasmine Tea Box.png",
+    "image": "/images/JasmieTeaBox.jpg",
     "ingredientImage": "/leaves/jasmine.jpg",
     "ingredients": [
       {
