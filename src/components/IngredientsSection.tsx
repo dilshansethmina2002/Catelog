@@ -49,10 +49,10 @@ export function IngredientsSection() {
             className="absolute top-0 right-0 w-3/4 h-3/4 rounded-t-[40px] sm:rounded-t-[100px] overflow-hidden z-10 border-r-4 border-t-4 border-amber-500/30"
           >
             <img
-              src={logoImg} 
+              src={logoImg}
               alt="Tea Ingredients"
               decoding="async"
-              className="w-full h-full object-cover" 
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
           </motion.div>
           
@@ -65,10 +65,10 @@ export function IngredientsSection() {
             className="absolute bottom-0 left-0 w-2/3 h-1/2 bg-emerald-900 rounded-b-[40px] sm:rounded-b-[100px] overflow-hidden z-20 border-l-4 border-b-4 border-emerald-700"
           >
             <img
-              src={dynamicIngredientImage} 
+              src={dynamicIngredientImage}
               alt="Tea Leaves"
               decoding="async"
-              className="w-full h-full object-cover hover:opacity-100 transition-opacity duration-700" 
+              className="w-full h-full object-cover hover:scale-110 hover:opacity-100 transition-all duration-700"
             />
           </motion.div>
         </div>

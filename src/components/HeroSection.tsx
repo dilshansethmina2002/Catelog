@@ -102,6 +102,8 @@ export function HeroSection() {
 
           {/* Call to Action Button */}
           <motion.div variants={itemVariants}>
+            <div className="relative inline-block w-full sm:w-auto">
+              <span className="absolute inset-0 rounded-full animate-ping bg-emerald-500/20 pointer-events-none" />
             <button
               onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
               className="group relative inline-flex items-center gap-4 sm:gap-6 px-6 sm:px-8 py-3 sm:py-4 bg-emerald-800/40 hover:bg-emerald-800 border border-emerald-700/50 rounded-full transition-all duration-300 overflow-hidden w-full sm:w-auto justify-center sm:justify-start"
@@ -117,6 +119,7 @@ export function HeroSection() {
                 </svg>
               </span>
             </button>
+            </div>
           </motion.div>
 
         </motion.div>

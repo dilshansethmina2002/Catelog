@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
@@ -77,8 +77,9 @@ const customIcons = [KettleIcon, SpoonIcon, TimerIcon, CupIcon];
 
 export const BrewingSection: React.FC = () => {
   const { t } = useLanguage();
+  const [activeStep, setActiveStep] = useState<number | null>(null);
 
-  const { id } = useParams(); 
+  const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
   const isTea001 = !id || id === 'tea-001';
   const brewingSteps = isTea001 ? t.brewing.steps : (featuredProduct.brewing || t.brewing.steps);
@@ -132,13 +133,14 @@ export const BrewingSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.15, ease: [0.21, 0.45, 0.32, 0.9] }}
-                className="group relative h-full"
+                className="group relative h-full cursor-pointer"
+                onClick={() => setActiveStep(activeStep === index ? null : index)}
               >
                 {/* Card Wrapper - ensuring it takes full height of the grid cell */}
                 <div className="relative h-full group-hover:transform group-hover:-translate-y-2 transition-transform duration-500">
-                  
+
                   {/* ✅ FIXED CARD PADDING & SIZING: Removed hardcoded min-heights that break layout */}
-                  <div className="h-full w-full bg-black/20 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl border border-white/10 flex flex-col items-center justify-start overflow-hidden relative group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:bg-black/30 group-hover:border-white/20 transition-all duration-700">
+                  <div className={`h-full w-full backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl flex flex-col items-center justify-start overflow-hidden relative transition-all duration-500 ${activeStep === index ? 'bg-amber-500/20 border border-amber-400/50 shadow-[0_0_30px_rgba(251,191,36,0.15)]' : 'bg-black/20 border border-white/10 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:bg-black/30 group-hover:border-white/20'}`}>
 
                     {/* Step Indicator */}
                     <div className="absolute top-4 left-4 md:top-6 md:left-6 text-4xl md:text-5xl font-serif font-bold text-white/5 select-none transition-all duration-500 group-hover:text-white/10">
