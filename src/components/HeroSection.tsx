@@ -73,7 +73,7 @@ export function HeroSection() {
           className="relative z-20 w-full max-w-xl mx-auto md:mx-0" 
         >
           {/* Label / Overline - JSON එකෙන් එන Pack Type එක පෙන්නයි */}
-          <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8 lg:mt-20">
+          <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
             <span className="text-amber-400/90 uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[10px] sm:text-xs font-bold">
               Export Quality
@@ -125,7 +125,7 @@ export function HeroSection() {
       {/* RIGHT SIDE: Full Bleed Image            */}
       {/* ======================================= */}
       {/* ✅ Mobile Responsive Height: Mobile වලදී 45vh පමණක් ගෙන අකුරු වලට ඉඩ ලබා දේ */}
-      <div className="w-full md:w-1/2 h-[45vh] sm:h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2 ">
+      <div className="w-full md:w-1/2 h-[45vh] sm:h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2 lg:mt-10">
         {/* Animated background image - JSON එකෙන් එන පින්තූරය මෙතනට වැටේ */}
         <motion.div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat "

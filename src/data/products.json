@@ -6,7 +6,7 @@
     "price": "Rs. 1500",
     "pack": "Premium Pack",
     "weight": "100g Loose Leaf",
-    "image": "/images/purl.jpeg",
+    "image": "/images/CeylonGreenTeawithLemongrass.jpg",
     "ingredientImage": "/leaves/purl.jpg",
     "ingredients": [
       {
@@ -1294,7 +1294,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Masala Tea Box.png",
+    "image": "/images/MasalaTeaBox.jpg",
     "ingredientImage": "/leaves/masala.jpg",
     "ingredients": [
       {
@@ -1350,7 +1350,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/Mint Tea Box.png",
+    "image": "/images/MintTeaBox.jpg",
     "ingredientImage": "/leaves/mint.jpg",
     "ingredients": [
       {
@@ -1406,7 +1406,7 @@
     "price": "$5.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/OPA 200.png",
+    "image": "/images/OP200.jpg",
     "ingredientImage": "/leaves/op.jpg",
     "ingredients": [
       {
