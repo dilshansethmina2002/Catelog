@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 
 // --- Components ---
@@ -14,7 +15,30 @@ import { QRMaker } from './components/QRMaker';
 // import SnapScroll from './components/ui/SnapScroll';
 
 
-// --- New Pages (QR System) ---
+// Floating scroll-to-top button — appears after scrolling 400px
+function ScrollToTopButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  if (!visible) return null;
+
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Scroll to top"
+      className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-amber-400 hover:bg-amber-300 text-emerald-950 shadow-lg flex items-center justify-center transition-colors duration-200"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+  );
+}
 
 // ප්‍රධාන පිටුවේ (Home Page) අන්තර්ගතය
 function Home() {
@@ -52,6 +76,7 @@ function AppContent() {
 
         {/* Footer එක හැම පිටුවකම පේන්න ඕනේ නිසා Routes වලට පහළින් දානවා */}
         <Footer />
+        <ScrollToTopButton />
       </div>
     </Router>
   );

@@ -14,13 +14,16 @@ export function HeroSection() {
   const { id } = useParams(); 
 
   // 1. JSON එකෙන් Data ගැනීම
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0]; 
-  
+  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
+
+  // tea-001 / මුල් පිටුව සඳහා පරිවර්තනය කළ අන්තර්ගතය භාවිතා කරන්න; අනෙකුත් සියලුම නිෂ්පාදන සඳහා JSON වෙත ආපසු යන්න
+  const isTea001 = !id || id === 'tea-001';
+
   // 2. Data Mapping (නම, විස්තරය, පින්තූරය සහ පැකට් වර්ගය)
-  const productName = featuredProduct.name || t.hero.title || "Ceylon Green Tea";
+  const productName = isTea001 ? t.hero.title : (featuredProduct.name || t.hero.title);
   const displayImage = featuredProduct.image || roseTeaImg; // ✅ JSON පින්තූරය මෙතනින් ගනී
   const packType = featuredProduct.pack || "Premium Collection"; // ✅ Pack Type එක
-  const description = featuredProduct.description || "Experience the pure essence of Sri Lanka. Hand-plucked leaves blended with natural botanicals for a deeply refreshing cup.";
+  const description = isTea001 ? t.hero.tagline : (featuredProduct.description || t.hero.tagline);
 
   // නම වචන වලට කැඩීම (Styling සඳහා)
   const nameParts = productName.split(' ');
@@ -76,7 +79,7 @@ export function HeroSection() {
           <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8 lg:mt-20">
             <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
             <span className="text-amber-400/90 uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[10px] sm:text-xs font-bold">
-              Export Quality
+              {t.hero.exportQuality}
             </span>
             <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
           </motion.div>

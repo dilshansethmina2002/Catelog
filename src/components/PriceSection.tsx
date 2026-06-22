@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
@@ -18,6 +17,7 @@ export function PriceSection() {
 
   // JSON එකෙන් මිල ගන්නවා, නැත්නම් Translation එකේ තියෙන default මිල ගන්නවා
   const displayPrice = featuredProduct.price || t.price.price;
+  const displayWeight = featuredProduct.weight || t.price.weight;
 
   // Checkmarks වලට එන්න ඕනේ දේවල් ටික ලේසියෙන් හදාගන්නවා (භාෂාව මාරු වෙන්න පහසු වෙන්න)
   const checklistItems = [
@@ -112,12 +112,12 @@ export function PriceSection() {
                 <span className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
                   {displayPrice}
                 </span>
-                <span className="text-emerald-200/70 text-sm sm:text-base">/ pack</span>
+                <span className="text-emerald-200/70 text-sm sm:text-base">{t.price.perPack}</span>
               </div>
 
               <div className="flex items-center justify-center gap-2 text-emerald-200/50 mb-2 sm:mb-4 text-xs sm:text-sm">
                 <Package className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                {t.price.weight}
+                {displayWeight}
               </div>
             </motion.div>
           </div>

@@ -80,7 +80,9 @@ export const BrewingSection: React.FC = () => {
 
   const { id } = useParams(); 
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
-  const brewingSteps = featuredProduct.brewing || t.brewing.steps;
+  // Use translated brewing steps for tea-001 / home page; JSON for all other products
+  const isTea001 = !id || id === 'tea-001';
+  const brewingSteps = isTea001 ? t.brewing.steps : (featuredProduct.brewing || t.brewing.steps);
 
   return (
     // Changed bg to dark emerald-950 to match the dark theme
