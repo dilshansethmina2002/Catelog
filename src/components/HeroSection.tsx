@@ -29,8 +29,19 @@ export function HeroSection() {
 
   // නම වචන වලට කැඩීම (Styling සඳහා)
   const nameParts = productName.split(' ');
-  const firstWord = nameParts[0]; 
-  const restOfName = nameParts.slice(1).join(' '); 
+  const firstWord = nameParts[0];
+  const restOfName = nameParts.slice(1).join(' ');
+
+  // CJK languages have no spaces — no letter-spacing on badge
+  const isCJK = language === 'ja' || language === 'zh';
+  const badgeTracking = isCJK ? 'tracking-normal' : 'tracking-[0.2em] sm:tracking-[0.3em]';
+
+  // CJK characters are full-width so they need a much smaller font than Latin
+  const titleSize = isCJK
+    ? 'text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'
+    : productName.length > 22
+      ? 'text-3xl sm:text-4xl lg:text-5xl xl:text-6xl'
+      : 'text-5xl sm:text-6xl lg:text-7xl xl:text-8xl'; 
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -80,23 +91,27 @@ export function HeroSection() {
           {/* Label / Overline - JSON එකෙන් එන Pack Type එක පෙන්නයි */}
           <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
-            <span className="text-amber-400/90 uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[10px] sm:text-xs font-bold">
+            <span className={`text-amber-400/90 uppercase ${badgeTracking} text-[10px] sm:text-xs font-bold`}>
               {t.hero.exportQuality}
             </span>
             <span className="h-[1px] w-8 sm:w-12 bg-amber-400/60 block"></span>
           </motion.div>
 
           {/* Main Headline - Mobile වල text-5xl දක්වා කුඩා වේ */}
-          <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-serif text-white leading-[1.05] tracking-tight mb-6 sm:mb-8">
-            <span className="block font-medium">
-              {firstWord}
-            </span>
-            <span 
-              className="block italic text-emerald-200 mt-1 sm:mt-2"
-              style={{ fontFamily: "Playfair Display, serif" }}
-            >
-              {restOfName}
-            </span>
+          <motion.h1 variants={itemVariants} className={`${titleSize} font-serif text-white leading-[1.05] tracking-tight mb-6 sm:mb-8`}>
+            {restOfName ? (
+              <>
+                <span className="block font-medium">{firstWord}</span>
+                <span
+                  className="block italic text-emerald-200 mt-1 sm:mt-2"
+                  style={{ fontFamily: "Playfair Display, serif" }}
+                >
+                  {restOfName}
+                </span>
+              </>
+            ) : (
+              <span className="block font-medium">{productName}</span>
+            )}
           </motion.h1>
 
           {/* Description - JSON එකෙන් Map වේ */}
