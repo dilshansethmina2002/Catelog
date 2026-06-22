@@ -19,6 +19,9 @@ export function PriceSection() {
   // JSON එකෙන් මිල ගන්නවා, නැත්නම් Translation එකේ තියෙන default මිල ගන්නවා
   const displayPrice = featuredProduct.price || t.price.price;
 
+  // ✅ අලුතින් එකතු කළ කොටස: JSON එකෙන් බර (weight) ගන්නවා, නැත්නම් default එක ගන්නවා
+  const displayWeight = featuredProduct.weight || t.price.weight;
+
   // Checkmarks වලට එන්න ඕනේ දේවල් ටික ලේසියෙන් හදාගන්නවා (භාෂාව මාරු වෙන්න පහසු වෙන්න)
   const checklistItems = [
     t.ingredients.items[0].name,
@@ -104,8 +107,9 @@ export function PriceSection() {
               {/* Premium Gold to Green top border highlight */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#d4af37] via-emerald-500 to-[#d4af37]" />
 
+              {/* ✅ JSON එකෙන් පැකට් වර්ගය ගන්නවා නම් මෙතන featuredProduct.pack දෙන්න පුළුවන්. දැනට default තියෙනවා */}
               <div className="inline-block px-4 py-1 rounded-full bg-[#d4af37]/10 text-[#d4af37] text-xs sm:text-sm font-medium mb-4 sm:mb-6 border border-[#d4af37]/20 backdrop-blur-sm">
-                {t.price.pack}
+                {featuredProduct.pack || t.price.pack} 
               </div>
 
               <div className="flex items-baseline justify-center gap-1 mb-1 sm:mb-2">
@@ -117,7 +121,8 @@ export function PriceSection() {
 
               <div className="flex items-center justify-center gap-2 text-emerald-200/50 mb-2 sm:mb-4 text-xs sm:text-sm">
                 <Package className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                {t.price.weight}
+                {/* ✅ මෙතනට JSON එකෙන් ගන්න Weight එක (displayWeight) ලබා දුන්නා */}
+                {displayWeight}
               </div>
             </motion.div>
           </div>
