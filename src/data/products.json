@@ -1458,7 +1458,7 @@
     "price": "$4.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/opa-box-200.jpg",
+    "image": "/images/OP200.png",
     "ingredientImage": "/leaves/op.jpg",
     "ingredients": [
       {
@@ -1510,7 +1510,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/op1-pouch-200.jpg",
+    "image": "/images/OP1200.png",
     "ingredientImage": "/leaves/op1.jpg",
     "ingredients": [
       {
@@ -1562,7 +1562,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/op1-box-200.jpg",
+    "image": "/images/OP1200.png",
     "ingredientImage": "/leaves/op1.jpg",
     "ingredients": [
       {
@@ -1614,7 +1614,7 @@
     "price": "$5.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/opa-box-200.jpg",
+    "image": "/images/OPA200.png",
     "ingredientImage": "/leaves/opa.jpg",
     "ingredients": [
       {
@@ -1666,7 +1666,7 @@
     "price": "$4.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/opa-box-200.jpg",
+    "image": "/images/OPA200.png",
     "ingredientImage": "/leaves/opa.jpg",
     "ingredients": [
       {
@@ -1718,7 +1718,7 @@
     "price": "$35.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/golden-tips-50.jpg",
+    "image": "/images/OPGoldenTipsRoll.png",
     "ingredientImage": "/leaves/golden-tips.jpg",
     "ingredients": [
       {
@@ -1774,7 +1774,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/pekoe-box-200.jpg",
+    "image": "/images/PEKOE 200 P-box.png",
     "ingredientImage": "/leaves/pekoe.jpg",
     "ingredients": [
       {
@@ -1826,7 +1826,7 @@
     "price": "$7.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/bop-pouch-200.jpg",
+    "image": "/images/PureCeylonTeaBOP200.png",
     "ingredientImage": "/leaves/bop.jpg",
     "ingredients": [
       {
@@ -1878,7 +1878,7 @@
     "price": "$3.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/pure-ceylon-tb-25.jpg",
+    "image": "/images/PureCeylonTeaTB.png",
     "ingredientImage": "/leaves/bopf-tb.jpg",
     "ingredients": [
       {
@@ -1930,7 +1930,7 @@
     "price": "$9.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/purple-tea-50.jpg",
+    "image": "/images/PurpleteaRoll.png",
     "ingredientImage": "/leaves/purple-tea.jpg",
     "ingredients": [
       {
@@ -1982,7 +1982,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/rose-tea-100.jpg",
+    "image": "/images/RoseTeaBox.png",
     "ingredientImage": "/leaves/rose-petals.jpg",
     "ingredients": [
       {
@@ -2038,7 +2038,7 @@
     "price": "$14.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/silver-green-50.jpg",
+    "image": "/images/SilvergreenteaRoll.png",
     "ingredientImage": "/leaves/silver-tips.jpg",
     "ingredients": [
       {
@@ -2094,7 +2094,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/green-tea-lemongrass-100.jpg",
+    "image": "/images/CeylonGreenTeawithLemongrass.jpg",
     "ingredientImage": "/leaves/signature-blend.jpg",
     "ingredients": [
       {
@@ -2146,7 +2146,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/vanilla-tea-100.jpg",
+    "image": "/images/VanilaTeaBox.png",
     "ingredientImage": "/leaves/vanilla.jpg",
     "ingredients": [
       {
@@ -2202,7 +2202,7 @@
     "price": "$5.00",
     "pack": "",
     "weight": "25g",
-    "image": "/images/vita-glow-tea.jpg",
+    "image": "/images/VitaglowTea.png",
     "ingredientImage": "/leaves/vita-glow-herbs.jpg",
     "ingredients": [
       {
@@ -2258,7 +2258,7 @@
     "price": "$9.00",
     "pack": "",
     "weight": "25g",
-    "image": "/images/white-tea-25.jpg",
+    "image": "/images/WhiteteaRoll.png",
     "ingredientImage": "/leaves/silver-needles.jpg",
     "ingredients": [
       {
