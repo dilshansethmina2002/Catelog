@@ -9,16 +9,13 @@ import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json';
 
 export function IngredientsSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
-  const { id } = useParams(); // URL එකෙන් ID එක ගන්නවා (උදා: tea-002)
-  
-  // URL එකේ ID එකක් තියෙනවා නම් ඒකට අදාළ product එක ගන්නවා, නැත්නම් default විදිහට පළවෙනි එක ගන්නවා
+  const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
 
-  // අලුත් JSON ෆයිල් එකේ 'ingredients' දත්ත ගන්නවා
   const isTea001 = !id || id === 'tea-001';
-  const ingredientsList = isTea001 ? t.ingredients.items : (featuredProduct.ingredients || t.ingredients.items);
+  const ingredientsList = (isTea001 || language !== 'en') ? t.ingredients.items : (featuredProduct.ingredients || t.ingredients.items);
 
   // JSON එකෙන් යට පින්තූරය ගන්නවා. ඒක නැත්නම් පරණ Unsplash පින්තූරය දානවා (Fallback)
   const dynamicIngredientImage = featuredProduct.ingredientImage || "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?q=80&w=600&auto=format&fit=crop";

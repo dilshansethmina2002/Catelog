@@ -2,26 +2,30 @@ import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useParams } from 'react-router-dom';
-import productsData from '../data/products.json'; 
+import productsData from '../data/products.json';
+import { productTranslations } from '../data/productTranslations';
 
 // Fallback පින්තූරය (JSON එකේ image එකක් නැති වුණොත් පමණක් මෙය පෙන්වයි)
-import roseTeaImg from '../assets/rosetea.jpeg'; 
+import roseTeaImg from '../assets/rosetea.jpeg';
 
 export function HeroSection() {
-  const { t } = useLanguage(); 
+  const { t, language } = useLanguage();
   const { scrollY } = useScroll();
   const [isMobile, setIsMobile] = useState(false);
-  const { id } = useParams(); 
+  const { id } = useParams();
 
   // 1. JSON එකෙන් Data ගැනීම
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0]; 
-  
-  // 2. Data Mapping (නම, විස්තරය, පින්තූරය සහ පැකට් වර්ගය)
-  const isTea001 = !id || id === 'tea-001';
-  const productName = isTea001 ? t.hero.title : (featuredProduct.name || t.hero.title);
-  const displayImage = featuredProduct.image || roseTeaImg; // ✅ JSON පින්තූරය මෙතනින් ගනී
-  const packType = featuredProduct.pack || "Premium Collection"; // ✅ Pack Type එක
-  const description = isTea001 ? t.hero.tagline : (featuredProduct.description || t.hero.tagline);
+  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
+
+  // 2. Per-product translation lookup
+  const productKey = id || 'tea-001';
+  const translated = productTranslations[productKey]?.[language];
+
+  // 3. Data Mapping (නම, විස්තරය, පින්තූරය සහ පැකට් වර්ගය)
+  const productName = translated?.name || featuredProduct.name || t.hero.title;
+  const displayImage = featuredProduct.image || roseTeaImg;
+  const packType = featuredProduct.pack || "Premium Collection";
+  const description = translated?.description || featuredProduct.description || t.hero.tagline;
 
   // නම වචන වලට කැඩීම (Styling සඳහා)
   const nameParts = productName.split(' ');

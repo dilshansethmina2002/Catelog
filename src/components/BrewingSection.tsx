@@ -76,13 +76,13 @@ const CupIcon = ({ className = "" }: { className?: string }) => (
 const customIcons = [KettleIcon, SpoonIcon, TimerIcon, CupIcon];
 
 export const BrewingSection: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
   const isTea001 = !id || id === 'tea-001';
-  const brewingSteps = isTea001 ? t.brewing.steps : (featuredProduct.brewing || t.brewing.steps);
+  const brewingSteps = (isTea001 || language !== 'en') ? t.brewing.steps : (featuredProduct.brewing || t.brewing.steps);
 
   return (
     // Changed bg to dark emerald-950 to match the dark theme
