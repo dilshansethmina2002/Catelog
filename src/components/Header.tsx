@@ -60,7 +60,7 @@ export const Header: React.FC = () => {
             </span>
             
             <span className="text-[8px] sm:text-[9px] font-medium uppercase tracking-[0.15em] text-white/50 truncate mt-0.5">
-              Manufacturers & Exporters of Tea
+              Manufacturers & Exporters of Tea 
             </span>
           </div>
         </div>
