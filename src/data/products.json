@@ -1774,7 +1774,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/PEKOE 200 P-box.png",
+    "image": "/images/pekoe.png",
     "ingredientImage": "/leaves/pekoe.jpg",
     "ingredients": [
       {
@@ -2094,7 +2094,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/CeylonGreenTeawithLemongrass.jpg",
+    "image": "/images/GreenTea.png",
     "ingredientImage": "/leaves/signature-blend.jpg",
     "ingredients": [
       {
