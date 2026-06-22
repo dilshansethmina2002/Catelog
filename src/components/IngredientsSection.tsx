@@ -17,7 +17,8 @@ export function IngredientsSection() {
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
 
   // අලුත් JSON ෆයිල් එකේ 'ingredients' දත්ත ගන්නවා
-  const ingredientsList = featuredProduct.ingredients || t.ingredients.items;
+  const isTea001 = !id || id === 'tea-001';
+  const ingredientsList = isTea001 ? t.ingredients.items : (featuredProduct.ingredients || t.ingredients.items);
 
   // JSON එකෙන් යට පින්තූරය ගන්නවා. ඒක නැත්නම් පරණ Unsplash පින්තූරය දානවා (Fallback)
   const dynamicIngredientImage = featuredProduct.ingredientImage || "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?q=80&w=600&auto=format&fit=crop";
@@ -80,7 +81,7 @@ export function IngredientsSection() {
             viewport={{ once: true }}
           >
             <span className="text-amber-400 font-medium tracking-widest uppercase text-xs sm:text-sm mb-3 sm:mb-4 block">
-              Composition
+              {t.ingredients.composition}
             </span>
             
             {/* මොබයිල්වලදී text-3xl/leading-tight ලෙසත් ලොකු තිරවලදී text-7xl/leading-none ලෙසත් හැරේ */}

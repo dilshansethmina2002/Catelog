@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
@@ -116,7 +115,7 @@ export function PriceSection() {
                 <span className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
                   {displayPrice}
                 </span>
-                <span className="text-emerald-200/70 text-sm sm:text-base">/ pack</span>
+                <span className="text-emerald-200/70 text-sm sm:text-base">{t.price.perPack}</span>
               </div>
 
               <div className="flex items-center justify-center gap-2 text-emerald-200/50 mb-2 sm:mb-4 text-xs sm:text-sm">

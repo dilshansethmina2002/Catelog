@@ -7,7 +7,8 @@ export const translations = {
       title: 'Ceylon Green Tea with Lemongrass',
       tagline: 'A refreshing blend of Ceylon Green Tea and zesty Lemongrass',
       cta: 'Let\'s Make Tea',
-      scroll: 'Scroll to explore'
+      scroll: 'Scroll to explore',
+      exportQuality: 'Export Quality'
     },
     process: {
       title: 'The Art of Freshness',
@@ -37,6 +38,7 @@ export const translations = {
     ingredients: {
       title: 'Pure Ingredients',
       subtitle: "Nature's finest selection",
+      composition: 'Composition',
       items: [
         {
           name: 'Green Tea Leaves',
@@ -99,7 +101,8 @@ export const translations = {
       cta: 'Add to Cart',
       shipping: 'Free shipping worldwide',
       videoTitle: "Please take a moment to leave a review",
-      videoDescription: 'Share Your Experience'
+      videoDescription: 'Share Your Experience',
+      perPack: '/ pack'
     },
     footer: {
       rights: 'All rights reserved.',
@@ -112,7 +115,8 @@ export const translations = {
       title: 'Té Verde de Ceilán con Limoncillo',
       tagline: 'Una mezcla refrescante de Té Verde de Ceilán y Limoncillo vibrante',
       cta: 'Vamos a preparar té',
-      scroll: 'Desplázate para explorar'
+      scroll: 'Desplázate para explorar',
+      exportQuality: 'Calidad de Exportación'
     },
     process: {
       title: 'El Arte de la Frescura',
@@ -138,6 +142,7 @@ export const translations = {
     ingredients: {
       title: 'Ingredientes Puros',
       subtitle: 'La mejor selección de la naturaleza',
+      composition: 'Composición',
       items: [
         {
           name: 'Hojas de Té Verde',
@@ -200,7 +205,8 @@ export const translations = {
       cta: 'Añadir al Carrito',
       shipping: 'Envío gratis a todo el mundo',
       videoTitle: "Por favor, tómese un momento para dejar una reseña",
-      videoDescription: 'Comparte Tu Experiencia'
+      videoDescription: 'Comparte Tu Experiencia',
+      perPack: '/ paquete'
     },
     footer: {
       rights: 'Todos los derechos reservados.',
@@ -213,7 +219,8 @@ export const translations = {
       title: 'Thé Vert Ceylan à la Citronnelle',
       tagline: 'Un mélange rafraîchissant de Thé Vert Ceylan et de Citronnelle zesty',
       cta: 'Préparons du thé', // Let's make tea
-      scroll: 'Défiler pour explorer'
+      scroll: 'Défiler pour explorer',
+      exportQuality: "Qualité d'Exportation"
     },
     process: {
       title: "L'Art de la Fraîcheur",
@@ -239,6 +246,7 @@ export const translations = {
     ingredients: {
       title: 'Ingrédients Purs',
       subtitle: 'La meilleure sélection de la nature',
+      composition: 'Composition',
       items: [
         {
           name: 'Feuilles de Thé Vert',
@@ -301,7 +309,8 @@ export const translations = {
       cta: 'Ajouter au Panier',
       shipping: 'Livraison gratuite dans le monde entier',
       videoTitle: "Prenez un moment pour laisser un avis, s'il vous plaît",
-      videoDescription: 'Partagez Votre Expérience'
+      videoDescription: 'Partagez Votre Expérience',
+      perPack: '/ paquet'
     },
     footer: {
       rights: 'Tous droits réservés.',
@@ -314,7 +323,8 @@ export const translations = {
       title: 'Tè Verde Ceylon con Citronella',
       tagline: 'Una miscela rinfrescante di Tè Verde Ceylon e Citronella vivace',
       cta: 'Faciamus theam',
-      scroll: 'Scorri per esplorare'
+      scroll: 'Scorri per esplorare',
+      exportQuality: 'Qualità di Esportazione'
     },
     process: {
       title: "L'Arte della Freschezza",
@@ -340,6 +350,7 @@ export const translations = {
     ingredients: {
       title: 'Ingredienti Puri',
       subtitle: 'La migliore selezione della natura',
+      composition: 'Composizione',
       items: [
         {
           name: 'Foglie di Tè Verde',
@@ -402,7 +413,8 @@ export const translations = {
       cta: 'Aggiungi al Carrello',
       shipping: 'Spedizione gratuita in tutto il mondo',
       videoTitle: "Per favore, prenditi un momento per lasciare una recensione",
-      videoDescription: 'Condividi la Tua Esperienza'
+      videoDescription: 'Condividi la Tua Esperienza',
+      perPack: '/ confezione'
     },
     footer: {
       rights: 'Tutti i diritti riservati.',
@@ -415,7 +427,8 @@ export const translations = {
       title: 'Цейлонский Зеленый Чай с Лемонграссом',
       tagline: 'Освежающая смесь цейлонского зеленого чая и яркого лемонграсса',
       cta: 'Давайте заварим чай', // Let's brew/make tea
-      scroll: 'Прокрутите, чтобы узнать больше'
+      scroll: 'Прокрутите, чтобы узнать больше',
+      exportQuality: 'Экспортное Качество'
     },
     process: {
       title: 'Искусство Свежести',
@@ -441,6 +454,7 @@ export const translations = {
     ingredients: {
       title: 'Чистые Ингредиенты',
       subtitle: 'Лучший выбор природы',
+      composition: 'Состав',
       items: [
         {
           name: 'Листья Зеленого Чая',
@@ -503,7 +517,8 @@ export const translations = {
       cta: 'В Корзину',
       shipping: 'Бесплатная доставка по всему миру',
       videoTitle: "Пожалуйста, найдите время, чтобы оставить отзыв",
-      videoDescription: 'Поделитесь Своим Опытом'
+      videoDescription: 'Поделитесь Своим Опытом',
+      perPack: '/ пачка'
     },
     footer: {
       rights: 'Все права защищены.',
@@ -516,7 +531,8 @@ export const translations = {
       title: 'レモングラス入りセイロン緑茶',
       tagline: 'セイロン緑茶と爽やかなレモングラスの鮮やかなブレンド',
       cta: 'お茶を淹れましょう', // Let's brew/make tea
-      scroll: 'スクロールして探索'
+      scroll: 'スクロールして探索',
+      exportQuality: '輸出品質'
     },
     process: {
       title: '鮮度の芸術',
@@ -542,6 +558,7 @@ export const translations = {
     ingredients: {
       title: '純粋な成分',
       subtitle: '自然からの最高の贈り物',
+      composition: '成分',
       items: [
         {
           name: '緑茶の葉',
@@ -604,7 +621,8 @@ export const translations = {
       cta: 'カートに追加',
       shipping: '全世界送料無料',
       videoTitle: "よろしければ、レビューをお願いします",
-      videoDescription: 'あなたの体験を共有する'
+      videoDescription: 'あなたの体験を共有する',
+      perPack: '/ パック'
     },
     footer: {
       rights: '全著作権所有。',
@@ -617,7 +635,8 @@ export const translations = {
       title: '柠檬草 锡兰绿茶',
       tagline: '锡兰绿茶与鲜活柠檬草的清爽融合',
       cta: '来泡茶吧', // Let's make/brew tea
-      scroll: '向下滚动探索'
+      scroll: '向下滚动探索',
+      exportQuality: '出口品质'
     },
     process: {
       title: '鲜度的艺术',
@@ -643,6 +662,7 @@ export const translations = {
     ingredients: {
       title: '纯净成分',
       subtitle: '大自然的精选',
+      composition: '成分',
       items: [
         { name: '绿茶叶', description: '优质锡兰绿茶，富含儿茶素和抗氧化剂。' },
         { name: '天然柠檬草', description: '干柠檬草茎，带来清新柑橘香气。' }]
@@ -690,7 +710,8 @@ export const translations = {
       cta: '加入购物车',
       shipping: '全球免费配送',
       videoTitle: "请花点时间留下您的评价",
-      videoDescription: '分享您的体验'
+      videoDescription: '分享您的体验',
+      perPack: '/ 包'
     },
     footer: {
       rights: '版权所有。',
