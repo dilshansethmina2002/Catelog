@@ -48,6 +48,7 @@ export function IngredientsSection() {
             <img
               src={logoImg}
               alt="Tea Ingredients"
+              loading="lazy"
               decoding="async"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
@@ -64,6 +65,7 @@ export function IngredientsSection() {
             <img
               src={dynamicIngredientImage}
               alt="Tea Leaves"
+              loading="lazy"
               decoding="async"
               className="w-full h-full object-cover hover:scale-110 hover:opacity-100 transition-all duration-700"
             />
