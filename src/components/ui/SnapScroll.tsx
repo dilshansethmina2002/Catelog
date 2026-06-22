@@ -459,37 +459,37 @@ const SectionBlock = ({
   );
 };
 
-// ── Root ───────────────────────────────────────────────────────────────────
-export default function EditorialSnapScroll(): JSX.Element {
-  return (
-    <>
-      <style>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          *, *::before, *::after {
-            transition-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+  // ── Root ───────────────────────────────────────────────────────────────────
+  export default function EditorialSnapScroll(): JSX.Element {
+    return (
+      <>
+        <style>{`
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
           }
-        }
-      `}</style>
 
-      <div
-        className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans antialiased bg-[#FAF8F5] text-stone-900"
-        style={{
-          msOverflowStyle: 'none',
-          scrollbarWidth: 'none',
-        }}
-      >
-        <style>{`::-webkit-scrollbar { display: none; }`}</style>
+          @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+              transition-duration: 0.01ms !important;
+              animation-duration: 0.01ms !important;
+            }
+          }
+        `}</style>
 
-        {sections.map((section, index) => (
-          <SectionBlock key={section.id} section={section} index={index} />
-        ))}
-      </div>
-    </>
-  );
-}
+        <div
+          className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans antialiased bg-[#FAF8F5] text-stone-900"
+          style={{
+            msOverflowStyle: 'none',
+            scrollbarWidth: 'none',
+          }}
+        >
+          <style>{`::-webkit-scrollbar { display: none; }`}</style>
+
+          {sections.map((section, index) => (
+            <SectionBlock key={section.id} section={section} index={index} />
+          ))}
+        </div>
+      </>
+    );
+  }
