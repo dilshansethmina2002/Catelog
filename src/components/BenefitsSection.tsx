@@ -46,7 +46,8 @@ export const BenefitsSection: React.FC = () => {
   // Get Featured Product to JSON
   const { id } = useParams(); 
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
-  const benefitsList = featuredProduct.benefits || t.benefits.items;
+  const isTea001 = !id || id === 'tea-001';
+  const benefitsList = isTea001 ? t.benefits.items : (featuredProduct.benefits || t.benefits.items);
 
   return (
     <Section id="benefits" className="relative py-16 sm:py-24 md:py-32 overflow-hidden bg-emerald-950">

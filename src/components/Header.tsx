@@ -5,10 +5,14 @@ import { LanguageSelector } from './LanguageSelector';
 export const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = (): void => {
       const currentScrollY: number = window.scrollY;
+
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress(totalHeight > 0 ? (currentScrollY / totalHeight) * 100 : 0);
 
       if (Math.abs(currentScrollY - lastScrollY) < 10) return;
 
@@ -40,6 +44,13 @@ export const Header: React.FC = () => {
         bg-[#0a140f]/70 backdrop-blur-2xl saturate-150 border-b border-white/10
         ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
     >
+      <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white/5 pointer-events-none">
+        <div
+          className="h-full bg-amber-400/70 transition-all duration-100 ease-linear"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
+
       {/* Fixed height ensures a sleek, uniform bar. pointer-events-auto re-enables clicks inside the glass */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between pointer-events-auto">
         
