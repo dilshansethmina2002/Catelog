@@ -12,6 +12,7 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import ProductDetails from './components/ProductDetails';
 import { QRMaker } from './components/QRMaker';
+import { NotFound } from './components/NotFound';
 // import SnapScroll from './components/ui/SnapScroll';
 
 
@@ -68,7 +69,7 @@ function AppContent() {
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/admin/qr" element={<QRMaker />} />
-
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 

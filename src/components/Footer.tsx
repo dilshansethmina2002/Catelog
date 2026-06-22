@@ -14,6 +14,7 @@ export const Footer: React.FC = () => {
               <img
                 src={logoImg}
                 alt="Athukorala Group Logo"
+                loading="lazy"
                 decoding="async"
                 className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-contain"
               />
