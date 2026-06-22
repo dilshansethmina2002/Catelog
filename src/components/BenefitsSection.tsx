@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
 import { useParams } from 'react-router-dom';
 
-// JSON ෆයිල් එක import කරගන්න
+// Import the JSON file to access product data and benefits
 import productsData from '../data/products.json'; 
 
 // --- CUSTOM SVG ILLUSTRATIONS ---
@@ -43,6 +43,7 @@ const customIcons = [ShieldIcon, HeartIcon, ZapIcon, BrainIcon];
 export const BenefitsSection: React.FC = () => {
   const { t } = useLanguage(); 
 
+  // Get Featured Product to JSON
   const { id } = useParams(); 
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
   const benefitsList = featuredProduct.benefits || t.benefits.items;

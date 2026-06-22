@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
 import { useParams } from 'react-router-dom';
-
-// JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json';
 
 // --- CUSTOM SVG ILLUSTRATIONS ---
