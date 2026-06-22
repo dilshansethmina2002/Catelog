@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import ProductDetails from './components/ProductDetails';
 import { QRMaker } from './components/QRMaker';
-import SnapScroll from './components/ui/SnapScroll';
+// import SnapScroll from './components/ui/SnapScroll';
 
 
 // --- New Pages (QR System) ---
@@ -25,7 +25,7 @@ function Home() {
       <BenefitsSection />
       <BrewingSection />
       <PriceSection />
-      <SnapScroll />
+      {/* <SnapScroll /> */}
 
     </>
   );

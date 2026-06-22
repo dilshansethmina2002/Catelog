@@ -119,8 +119,8 @@ export const BrewingSection: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 lg:gap-16">
+        {/* ✅ FIXED GRID LAYOUT: Stacks nicely on mobile, 2 columns on tablet, 4 on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
           {brewingSteps.map((step: any, index: number) => {
             const Icon = customIcons[index % customIcons.length];
             
@@ -131,42 +131,36 @@ export const BrewingSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.15, ease: [0.21, 0.45, 0.32, 0.9] }}
-                className="group relative"
+                className="group relative h-full"
               >
-                {/* Card Wrapper */}
-                <div className="relative group-hover:transform group-hover:-translate-y-2 transition-transform duration-500">
+                {/* Card Wrapper - ensuring it takes full height of the grid cell */}
+                <div className="relative h-full group-hover:transform group-hover:-translate-y-2 transition-transform duration-500">
                   
-                  {/* Converted solid white background to Translucent Dark Glassmorphism */}
-                  <div className="w-full min-h-[260px] md:aspect-[4/5] bg-black/20 backdrop-blur-md rounded-3xl md:rounded-[2.5rem] p-6 sm:p-8 shadow-xl border border-white/10 flex flex-col items-center justify-center overflow-hidden relative group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:bg-black/30 group-hover:border-white/20 transition-all duration-700">
+                  {/* ✅ FIXED CARD PADDING & SIZING: Removed hardcoded min-heights that break layout */}
+                  <div className="h-full w-full bg-black/20 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl border border-white/10 flex flex-col items-center justify-start overflow-hidden relative group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:bg-black/30 group-hover:border-white/20 transition-all duration-700">
 
-                    {/* Step Indicator - Adjusted opacity for dark background */}
-                    <div className="absolute top-4 left-4 md:top-8 md:left-8 text-4xl md:text-6xl font-serif font-bold text-white/5 select-none">
+                    {/* Step Indicator */}
+                    <div className="absolute top-4 left-4 md:top-6 md:left-6 text-4xl md:text-5xl font-serif font-bold text-white/5 select-none transition-all duration-500 group-hover:text-white/10">
                       0{index + 1}
                     </div>
 
-                    {/* Icon Container - Green default, transitioning to Gold on hover */}
-                    <div className="w-14 h-14 md:w-24 md:h-24 mb-4 md:mb-10 flex items-center justify-center text-emerald-400 group-hover:text-[#d4af37] transition-colors duration-500">
+                    {/* Icon Container */}
+                    <div className="w-16 h-16 md:w-20 md:h-20 mt-4 mb-6 flex items-center justify-center text-emerald-400 group-hover:text-[#d4af37] transition-colors duration-500 shrink-0">
                       <Icon className="w-full h-full" />
                     </div>
 
                     {/* Step Title */}
-                    <h3 className="text-xl md:text-2xl font-serif font-bold text-white mb-2 md:mb-4 tracking-tight text-center">
+                    <h3 className="text-lg md:text-xl font-serif font-bold text-white mb-3 tracking-tight text-center">
                       {step.title}
                     </h3>
                     
                     {/* Step Description */}
-                    <p className="text-emerald-100/60 text-sm md:text-base leading-relaxed font-medium px-1 text-center group-hover:text-emerald-100/80 transition-colors duration-500">
+                    <p className="text-emerald-100/60 text-sm leading-relaxed font-medium text-center group-hover:text-emerald-100/80 transition-colors duration-500">
                       {step.description}
                     </p>
                   </div>
                 </div>
 
-                {/* Vertical Divider (Mobile only) */}
-                {index < brewingSteps.length - 1 && (
-                  <div className="flex justify-center md:hidden my-4">
-                    <div className="w-[1px] h-6 bg-white/10" />
-                  </div>
-                )}
               </motion.div>
             );
           })}
