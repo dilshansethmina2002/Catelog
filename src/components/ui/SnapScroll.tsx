@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface CinematicSection {
   id: number;
@@ -183,6 +184,7 @@ const TextContent = ({
   isVisible: boolean;
   isImageLeft: boolean;
 }) => {
+  const { t } = useLanguage();
   const rotationDirection = isImageLeft ? -12 : 12;
 
   return (
@@ -376,7 +378,7 @@ const TextContent = ({
               }
             }}
           >
-            Discover More
+            {t.catalog.discoverMore}
             <span
               className="cta-underline"
               style={{
@@ -461,6 +463,13 @@ const SectionBlock = ({
 
   // ── Root ───────────────────────────────────────────────────────────────────
   export default function EditorialSnapScroll(): JSX.Element {
+    const { t } = useLanguage();
+    const localizedSections = sections.map((s, i) => ({
+      ...s,
+      title: t.catalog.sections[i].title,
+      subtitle: t.catalog.sections[i].subtitle,
+      productName: t.catalog.sections[i].productName,
+    }));
     return (
       <>
         <style>{`
@@ -486,7 +495,7 @@ const SectionBlock = ({
         >
           <style>{`::-webkit-scrollbar { display: none; }`}</style>
 
-          {sections.map((section, index) => (
+          {localizedSections.map((section, index) => (
             <SectionBlock key={section.id} section={section} index={index} />
           ))}
         </div>
