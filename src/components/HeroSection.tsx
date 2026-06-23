@@ -115,30 +115,31 @@ export function HeroSection() {
           </motion.h1>
 
           {/* Description - JSON එකෙන් Map වේ */}
-          <motion.p variants={itemVariants} className="text-sm sm:text-base md:text-lg text-emerald-100/70 leading-relaxed font-light mb-10 sm:mb-12 max-w-md">
+          <motion.p variants={itemVariants} className="text-sm sm:text-base md:text-lg text-emerald-100/70 leading-relaxed font-light mb-6 sm:mb-8 max-w-md">
             {description}
           </motion.p>
 
-          {/* Call to Action Button */}
+          {/* Let's Make Tea CTA */}
           <motion.div variants={itemVariants}>
-            <div className="relative inline-block w-full sm:w-auto">
-              <span className="absolute inset-0 rounded-full animate-ping bg-emerald-500/20 pointer-events-none" />
-            <button
+            <motion.button
               onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group relative inline-flex items-center gap-4 sm:gap-6 px-6 sm:px-8 py-3 sm:py-4 bg-emerald-800/40 hover:bg-emerald-800 border border-emerald-700/50 rounded-full transition-all duration-300 overflow-hidden w-full sm:w-auto justify-center sm:justify-start"
+              animate={{
+                boxShadow: [
+                  '0 0 0 0px rgba(251, 191, 36, 0)',
+                  '0 0 0 8px rgba(251, 191, 36, 0.12)',
+                  '0 0 0 0px rgba(251, 191, 36, 0)',
+                ]
+              }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+              className="w-full max-w-md flex items-center justify-between px-6 sm:px-8 py-4 sm:py-5 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 text-white hover:bg-white/10 transition-colors duration-300"
             >
-              <span className="relative z-10 text-xs sm:text-sm font-bold tracking-widest uppercase text-white">
-                {t.hero.cta || "Let's Make Tea"}
-              </span>
-              
-              {/* Arrow Icon */}
-              <span className="relative z-10 w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full transition-transform duration-300 group-hover:translate-x-2 flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <span className="text-sm sm:text-base font-bold uppercase tracking-[0.15em]">{t.hero.cta}</span>
+              <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </span>
-            </button>
-            </div>
+            </motion.button>
           </motion.div>
 
         </motion.div>
