@@ -2,7 +2,7 @@ export type Language = 'en' | 'es' | 'ru' | 'it' | 'fr' | 'ja' | 'zh';
 
 export const translations = {
   en: {
-    nav: { language: 'Language' },
+    nav: { language: 'Language', home: 'Home', search: 'Search', searchPlaceholder: 'Search products...', noProductsFound: 'No products found' },
     hero: {
       title: 'Ceylon Green Tea with Lemongrass',
       tagline: 'A refreshing blend of Ceylon Green Tea and zesty Lemongrass',
@@ -102,15 +102,28 @@ export const translations = {
       shipping: 'Free shipping worldwide',
       videoTitle: "Please take a moment to leave a review",
       videoDescription: 'Share Your Experience',
-      perPack: '/ pack'
+      perPack: '/ pack',
+      trustedExcellence: 'Trusted Excellence'
     },
     footer: {
       rights: 'All rights reserved.',
-      contact: 'Contact Us'
+      contact: 'Contact Us',
+      connect: 'Connect',
+      privacyPolicy: 'Privacy Policy',
+      termsOfService: 'Terms of Service'
+    },
+    catalog: {
+      discoverMore: 'Discover More',
+      sections: [
+        { title: 'Rose Tea', subtitle: 'Floral & Delicate', productName: 'Botanical Collection' },
+        { title: 'Tea Box', subtitle: 'The Perfect Assortment', productName: 'Signature Blends' },
+        { title: 'Pure Ceylon', subtitle: 'Rich & Robust', productName: 'Heritage Series' },
+        { title: 'Slim Beauty', subtitle: 'Wellness in a Cup', productName: 'Wellness Line' }
+      ]
     }
   },
   es: {
-    nav: { language: 'Idioma' },
+    nav: { language: 'Idioma', home: 'Inicio', search: 'Buscar', searchPlaceholder: 'Buscar productos...', noProductsFound: 'No se encontraron productos' },
     hero: {
       title: 'Té Verde de Ceilán con Limoncillo',
       tagline: 'Una mezcla refrescante de Té Verde de Ceilán y Limoncillo vibrante',
@@ -206,15 +219,28 @@ export const translations = {
       shipping: 'Envío gratis a todo el mundo',
       videoTitle: "Por favor, tómese un momento para dejar una reseña",
       videoDescription: 'Comparte Tu Experiencia',
-      perPack: '/ paquete'
+      perPack: '/ paquete',
+      trustedExcellence: 'Excelencia de Confianza'
     },
     footer: {
       rights: 'Todos los derechos reservados.',
-      contact: 'Contáctanos'
+      contact: 'Contáctanos',
+      connect: 'Conectar',
+      privacyPolicy: 'Política de Privacidad',
+      termsOfService: 'Términos de Servicio'
+    },
+    catalog: {
+      discoverMore: 'Descubrir Más',
+      sections: [
+        { title: 'Té de Rosa', subtitle: 'Floral y Delicado', productName: 'Colección Botánica' },
+        { title: 'Caja de Té', subtitle: 'El Surtido Perfecto', productName: 'Mezclas Exclusivas' },
+        { title: 'Ceilán Puro', subtitle: 'Rico y Robusto', productName: 'Serie Heritage' },
+        { title: 'Belleza Esbelta', subtitle: 'Bienestar en una Taza', productName: 'Línea de Bienestar' }
+      ]
     }
   },
   fr: {
-    nav: { language: 'Langue' },
+    nav: { language: 'Langue', home: 'Accueil', search: 'Rechercher', searchPlaceholder: 'Rechercher des produits...', noProductsFound: 'Aucun produit trouvé' },
     hero: {
       title: 'Thé Vert Ceylan à la Citronnelle',
       tagline: 'Un mélange rafraîchissant de Thé Vert Ceylan et de Citronnelle zesty',
@@ -310,15 +336,28 @@ export const translations = {
       shipping: 'Livraison gratuite dans le monde entier',
       videoTitle: "Prenez un moment pour laisser un avis, s'il vous plaît",
       videoDescription: 'Partagez Votre Expérience',
-      perPack: '/ paquet'
+      perPack: '/ paquet',
+      trustedExcellence: 'Excellence de Confiance'
     },
     footer: {
       rights: 'Tous droits réservés.',
-      contact: 'Contactez-nous'
+      contact: 'Contactez-nous',
+      connect: 'Connexion',
+      privacyPolicy: 'Politique de Confidentialité',
+      termsOfService: "Conditions d'utilisation"
+    },
+    catalog: {
+      discoverMore: 'Découvrir Plus',
+      sections: [
+        { title: 'Thé à la Rose', subtitle: 'Floral et Délicat', productName: 'Collection Botanique' },
+        { title: 'Boîte à Thé', subtitle: "L'Assortiment Parfait", productName: 'Mélanges Signature' },
+        { title: 'Ceylan Pur', subtitle: 'Riche et Robuste', productName: 'Série Héritage' },
+        { title: 'Beauté Mince', subtitle: 'Bien-être dans une Tasse', productName: 'Ligne Bien-être' }
+      ]
     }
   },
   it: {
-    nav: { language: 'Lingua' },
+    nav: { language: 'Lingua', home: 'Home', search: 'Cerca', searchPlaceholder: 'Cerca prodotti...', noProductsFound: 'Nessun prodotto trovato' },
     hero: {
       title: 'Tè Verde Ceylon con Citronella',
       tagline: 'Una miscela rinfrescante di Tè Verde Ceylon e Citronella vivace',
@@ -414,15 +453,28 @@ export const translations = {
       shipping: 'Spedizione gratuita in tutto il mondo',
       videoTitle: "Per favore, prenditi un momento per lasciare una recensione",
       videoDescription: 'Condividi la Tua Esperienza',
-      perPack: '/ confezione'
+      perPack: '/ confezione',
+      trustedExcellence: 'Eccellenza Fidata'
     },
     footer: {
       rights: 'Tutti i diritti riservati.',
-      contact: 'Contattaci'
+      contact: 'Contattaci',
+      connect: 'Connettiti',
+      privacyPolicy: 'Politica sulla Privacy',
+      termsOfService: 'Termini di Servizio'
+    },
+    catalog: {
+      discoverMore: 'Scopri di Più',
+      sections: [
+        { title: 'Tè alla Rosa', subtitle: 'Floreale e Delicato', productName: 'Collezione Botanica' },
+        { title: 'Scatola di Tè', subtitle: "L'Assortimento Perfetto", productName: 'Miscele Signature' },
+        { title: 'Ceylon Puro', subtitle: 'Ricco e Robusto', productName: 'Serie Heritage' },
+        { title: 'Bellezza Snella', subtitle: 'Benessere in una Tazza', productName: 'Linea Wellness' }
+      ]
     }
   },
   ru: {
-    nav: { language: 'Язык' },
+    nav: { language: 'Язык', home: 'Главная', search: 'Поиск', searchPlaceholder: 'Поиск продуктов...', noProductsFound: 'Продукты не найдены' },
     hero: {
       title: 'Цейлонский Зеленый Чай с Лемонграссом',
       tagline: 'Освежающая смесь цейлонского зеленого чая и яркого лемонграсса',
@@ -518,15 +570,28 @@ export const translations = {
       shipping: 'Бесплатная доставка по всему миру',
       videoTitle: "Пожалуйста, найдите время, чтобы оставить отзыв",
       videoDescription: 'Поделитесь Своим Опытом',
-      perPack: '/ пачка'
+      perPack: '/ пачка',
+      trustedExcellence: 'Проверенное Качество'
     },
     footer: {
       rights: 'Все права защищены.',
-      contact: 'Связаться с нами'
+      contact: 'Связаться с нами',
+      connect: 'Соединиться',
+      privacyPolicy: 'Политика конфиденциальности',
+      termsOfService: 'Условия использования'
+    },
+    catalog: {
+      discoverMore: 'Узнать Больше',
+      sections: [
+        { title: 'Чай с Розой', subtitle: 'Цветочный и Нежный', productName: 'Ботаническая Коллекция' },
+        { title: 'Чайный Набор', subtitle: 'Идеальный Ассортимент', productName: 'Фирменные Смеси' },
+        { title: 'Чистый Цейлон', subtitle: 'Насыщенный и Крепкий', productName: 'Серия Heritage' },
+        { title: 'Стройная Красота', subtitle: 'Здоровье в Чашке', productName: 'Линия Wellness' }
+      ]
     }
   },
   ja: {
-    nav: { language: '言語' },
+    nav: { language: '言語', home: 'ホーム', search: '検索', searchPlaceholder: '製品を検索...', noProductsFound: '製品が見つかりません' },
     hero: {
       title: 'レモングラス入りセイロン緑茶',
       tagline: 'セイロン緑茶と爽やかなレモングラスの鮮やかなブレンド',
@@ -622,15 +687,28 @@ export const translations = {
       shipping: '全世界送料無料',
       videoTitle: "よろしければ、レビューをお願いします",
       videoDescription: 'あなたの体験を共有する',
-      perPack: '/ パック'
+      perPack: '/ パック',
+      trustedExcellence: '信頼の品質'
     },
     footer: {
       rights: '全著作権所有。',
-      contact: 'お問い合わせ'
+      contact: 'お問い合わせ',
+      connect: '接続',
+      privacyPolicy: 'プライバシーポリシー',
+      termsOfService: '利用規約'
+    },
+    catalog: {
+      discoverMore: 'さらに見る',
+      sections: [
+        { title: 'ローズティー', subtitle: '花々しく繊細', productName: 'ボタニカルコレクション' },
+        { title: 'ティーボックス', subtitle: '完璧なアソートメント', productName: 'シグネチャーブレンド' },
+        { title: '純粋なセイロン', subtitle: '濃厚でロバスト', productName: 'ヘリテージシリーズ' },
+        { title: 'スリムビューティー', subtitle: 'カップの中のウェルネス', productName: 'ウェルネスライン' }
+      ]
     }
   },
   zh: {
-    nav: { language: '语言' },
+    nav: { language: '语言', home: '首页', search: '搜索', searchPlaceholder: '搜索产品...', noProductsFound: '未找到产品' },
     hero: {
       title: '柠檬草 锡兰绿茶',
       tagline: '锡兰绿茶与鲜活柠檬草的清爽融合',
@@ -711,11 +789,24 @@ export const translations = {
       shipping: '全球免费配送',
       videoTitle: "请花点时间留下您的评价",
       videoDescription: '分享您的体验',
-      perPack: '/ 包'
+      perPack: '/ 包',
+      trustedExcellence: '信赖的卓越'
     },
     footer: {
       rights: '版权所有。',
-      contact: '联系我们'
+      contact: '联系我们',
+      connect: '联系',
+      privacyPolicy: '隐私政策',
+      termsOfService: '服务条款'
+    },
+    catalog: {
+      discoverMore: '探索更多',
+      sections: [
+        { title: '玫瑰茶', subtitle: '花香雅致', productName: '植物系列' },
+        { title: '茶叶礼盒', subtitle: '完美精选', productName: '招牌混合' },
+        { title: '纯锡兰', subtitle: '浓郁醇厚', productName: '传承系列' },
+        { title: '纤体美颜', subtitle: '杯中健康', productName: '健康系列' }
+      ]
     }
   }
 };
