@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { HeroSection } from './HeroSection';
 import { IngredientsSection } from './IngredientsSection';
 import { BenefitsSection } from './BenefitsSection';
@@ -6,21 +7,25 @@ import { BrewingSection } from './BrewingSection';
 import { PriceSection } from './PriceSection';
 
 export default function ProductDetails() {
-  
-  // පිටුවට ආවම මුලටම (Top එකට) Scroll වෙන්න හදනවා
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="w-full">
-      {/* අර ලස්සන Sections ඔක්කොම මෙතනට දානවා */}
-      <HeroSection />
+    <motion.div
+      className="w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4 }}
+    >
+
+<HeroSection />
       <IngredientsSection />
       <BenefitsSection />
       <BrewingSection />
       <PriceSection />
-    </div>
+    </motion.div>
   );
 }
 
