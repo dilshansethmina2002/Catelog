@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 
 interface CinematicSection {
@@ -7,37 +7,43 @@ interface CinematicSection {
   image: string;
   productName: string;
   subtitle: string;
+  url: string;
 }
 
 const sections: CinematicSection[] = [
   {
     id: 1,
     title: "Rose Tea",
-    subtitle: "Floral & Delicate",
-    image: "/images/Tea1.png",
-    productName: "Botanical Collection"
+    subtitle: "Aromatic & Delicate",
+    image: "/images/RoseTeaBox.jpg",
+    productName: "Botanical Infusions",
+    url: "/product/tea-038"
   },
   {
     id: 2,
-    title: "Tea Box",
-    subtitle: "The Perfect Assortment",
-    image: "/images/Tea2.png",
-    productName: "Signature Blends"
+    title: "FBOP Tea",
+    subtitle: "Premium & Aromatic",
+    image: "/images/FBOPBox.jpg",
+    productName: "Artisan Reserve",
+    url: "/product/tea-019"
   },
   {
     id: 3,
-    title: "Pure Ceylon",
-    subtitle: "Rich & Robust",
-    image: "/images/Tea3.png",
-    productName: "Heritage Series"
+    title: "Ceylon BOP Tea",
+    subtitle: "Bold & Full-Bodied",
+    image: "/images/CeylonteaBOP.jpg",
+    productName: "Heritage Estates",
+    url: "/product/tea-010"
   },
   {
     id: 4,
-    title: "Slim Beauty",
-    subtitle: "Wellness in a Cup",
-    image: "/images/Tea4.png",
-    productName: "Wellness Line"
+    title: "Cinnamon Tea",
+    subtitle: "Warm & Invigorating",
+    image: "/images/CinnamonTeaBox.jpg",
+    productName: "Spiced Wellness",
+    url: "/product/tea-015"
   },
+
 ];
 
 // ── Accordion shutter slats that peel open ─────────────────────────────────
@@ -124,7 +130,15 @@ const BreakingSeal = ({ isVisible }: { isVisible: boolean }) => (
         opacity: 0.5,
       }}
     >
-      <circle cx="50" cy="50" r="45" fill="none" stroke="#d4ccc6" strokeWidth="1" strokeDasharray="282" strokeDashoffset="282"
+      <circle
+        cx="50"
+        cy="50"
+        r="45"
+        fill="none"
+        stroke="#d4ccc6"
+        strokeWidth="1"
+        strokeDasharray="282"
+        strokeDashoffset="282"
         style={{
           animation: isVisible ? 'none' : 'spin 8s linear infinite',
         }}
@@ -163,11 +177,10 @@ const ZoomingImage = ({
           height: '100%',
           objectFit: 'cover',
           transform: isVisible ? 'scale(1) rotate(0deg)' : 'scale(1.8) rotate(-8deg)',
-          transition: isVisible
-            ? 'transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s'
-            : 'transform 0.4s ease',
           filter: isVisible ? 'brightness(1)' : 'brightness(0.85)',
-          transitionProperty: 'transform, filter',
+          transition: isVisible
+            ? 'transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s, filter 1.6s ease 0.3s'
+            : 'transform 0.4s ease, filter 0.4s ease',
         }}
       />
     </div>
@@ -185,6 +198,7 @@ const TextContent = ({
   isImageLeft: boolean;
 }) => {
   const { t } = useLanguage();
+  const [isHovered, setIsHovered] = useState(false);
   const rotationDirection = isImageLeft ? -12 : 12;
 
   return (
@@ -210,17 +224,16 @@ const TextContent = ({
           top: '50%',
           right: isImageLeft ? 'max(2rem, 5%)' : undefined,
           left: !isImageLeft ? 'max(2rem, 5%)' : undefined,
-          transform: 'translateY(-50%)',
+          transform: `translateY(-50%) rotate(${isVisible ? '0deg' : '180deg'})`,
           fontSize: 'clamp(8rem, 16vw, 16rem)',
           fontWeight: 900,
           fontFamily: 'Georgia, serif',
           color: 'rgba(120, 113, 108, 0.05)',
           letterSpacing: '-0.05em',
           opacity: isVisible ? 1 : 0,
-          rotate: isVisible ? '0deg' : '180deg',
           transition: isVisible
-            ? 'opacity 1s ease 0.5s, rotate 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s'
-            : 'opacity 0.3s ease, rotate 0.3s ease',
+            ? 'opacity 1s ease 0.5s, transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s'
+            : 'opacity 0.3s ease, transform 0.3s ease',
           pointerEvents: 'none',
         }}
       >
@@ -352,48 +365,41 @@ const TextContent = ({
           }}
         >
           <button
+          onClick={() => {
+            // අදාළ පිටුවට යොමු කිරීම
+            window.location.href = section.url; 
+          }}
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            cursor: 'pointer',
+            fontSize: '0.6rem',
+            fontWeight: 800,
+            letterSpacing: '0.3em',
+            textTransform: 'uppercase',
+            color: '#292524',
+            position: 'relative',
+            overflow: 'visible',
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {t?.catalog?.discoverMore || "DISCOVER MORE"}
+          <span
             style={{
-              background: 'none',
-              border: 'none',
-              padding: 0,
-              cursor: 'pointer',
-              fontSize: '0.6rem',
-              fontWeight: 800,
-              letterSpacing: '0.3em',
-              textTransform: 'uppercase',
-              color: '#292524',
-              position: 'relative',
-              overflow: 'visible',
+              position: 'absolute',
+              bottom: '-8px',
+              left: 0,
+              width: '100%',
+              height: '2px',
+              background: '#292524',
+              transformOrigin: 'center',
+              transform: isHovered ? 'scaleX(1.15)' : 'scaleX(1)',
+              transition: 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
             }}
-            onMouseEnter={(e) => {
-              const underline = e.currentTarget.querySelector('.cta-underline') as HTMLElement;
-              if (underline) {
-                underline.style.transform = 'scaleX(1.15)';
-              }
-            }}
-            onMouseLeave={(e) => {
-              const underline = e.currentTarget.querySelector('.cta-underline') as HTMLElement;
-              if (underline) {
-                underline.style.transform = 'scaleX(1)';
-              }
-            }}
-          >
-            {t.catalog.discoverMore}
-            <span
-              className="cta-underline"
-              style={{
-                position: 'absolute',
-                bottom: '-8px',
-                left: 0,
-                width: '100%',
-                height: '2px',
-                background: '#292524',
-                transformOrigin: 'center',
-                transform: 'scaleX(1)',
-                transition: 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
-              }}
-            />
-          </button>
+          />
+        </button>
         </div>
       </div>
     </div>
@@ -412,18 +418,19 @@ const SectionBlock = ({
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentRef = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
+        setIsVisible(entry.isIntersecting);
       },
       { threshold: 0.35 }
     );
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => { if (sectionRef.current) observer.unobserve(sectionRef.current); };
+
+    if (currentRef) observer.observe(currentRef);
+
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
   }, []);
 
   const isImageLeft = index % 2 === 0;
@@ -432,16 +439,13 @@ const SectionBlock = ({
     <div
       ref={sectionRef}
       id={`section-${section.id}`}
-      className={`relative flex flex-col h-screen w-full snap-start overflow-hidden md:flex-row ${
-        isImageLeft ? '' : 'md:flex-row-reverse'
-      }`}
+      className={`relative flex flex-col h-screen w-full snap-start overflow-hidden md:flex-row ${isImageLeft ? '' : 'md:flex-row-reverse'
+        }`}
     >
       {/* ── IMAGE HALF ── */}
       <div
         className="relative w-full h-[50vh] md:w-1/2 md:h-full bg-stone-100"
-        style={{
-          perspective: '1200px',
-        }}
+        style={{ perspective: '1200px' }}
       >
         <ZoomingImage src={section.image} alt={section.title} isVisible={isVisible} />
         <ShutterOverlay isVisible={isVisible} count={5} />
@@ -451,9 +455,7 @@ const SectionBlock = ({
       {/* ── TEXT HALF ── */}
       <div
         className="relative w-full h-[50vh] md:w-1/2 md:h-full bg-[#FAF8F5]"
-        style={{
-          perspective: '1200px',
-        }}
+        style={{ perspective: '1200px' }}
       >
         <TextContent section={section} isVisible={isVisible} isImageLeft={isImageLeft} />
       </div>
@@ -461,44 +463,46 @@ const SectionBlock = ({
   );
 };
 
-  // ── Root ───────────────────────────────────────────────────────────────────
-  export default function EditorialSnapScroll(): JSX.Element {
-    const { t } = useLanguage();
-    const localizedSections = sections.map((s, i) => ({
-      ...s,
-      title: t.catalog.sections[i].title,
-      subtitle: t.catalog.sections[i].subtitle,
-      productName: t.catalog.sections[i].productName,
-    }));
-    return (
-      <>
-        <style>{`
-          @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+// ── Root ───────────────────────────────────────────────────────────────────
+export default function EditorialSnapScroll(): JSX.Element {
+  const { t } = useLanguage();
+
+  const localizedSections = sections.map((s, i) => ({
+    ...s,
+    title: t?.catalog?.sections?.[i]?.title || s.title,
+    subtitle: t?.catalog?.sections?.[i]?.subtitle || s.subtitle,
+    productName: t?.catalog?.sections?.[i]?.productName || s.productName,
+  }));
+
+  return (
+    <>
+      <style>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          *, *::before, *::after {
+            transition-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
           }
+        }
 
-          @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-              transition-duration: 0.01ms !important;
-              animation-duration: 0.01ms !important;
-            }
-          }
-        `}</style>
+        ::-webkit-scrollbar { display: none; }
+      `}</style>
 
-        <div
-          className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans antialiased bg-[#FAF8F5] text-stone-900"
-          style={{
-            msOverflowStyle: 'none',
-            scrollbarWidth: 'none',
-          }}
-        >
-          <style>{`::-webkit-scrollbar { display: none; }`}</style>
-
-          {localizedSections.map((section, index) => (
-            <SectionBlock key={section.id} section={section} index={index} />
-          ))}
-        </div>
-      </>
-    );
-  }
+      <div
+        className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans antialiased bg-[#FAF8F5] text-stone-900"
+        style={{
+          msOverflowStyle: 'none',
+          scrollbarWidth: 'none',
+        }}
+      >
+        {localizedSections.map((section, index) => (
+          <SectionBlock key={section.id} section={section} index={index} />
+        ))}
+      </div>
+    </>
+  );
+}

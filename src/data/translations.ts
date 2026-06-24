@@ -115,10 +115,10 @@ export const translations = {
     catalog: {
       discoverMore: 'Discover More',
       sections: [
-        { title: 'Rose Tea', subtitle: 'Floral & Delicate', productName: 'Botanical Collection' },
-        { title: 'Tea Box', subtitle: 'The Perfect Assortment', productName: 'Signature Blends' },
-        { title: 'Pure Ceylon', subtitle: 'Rich & Robust', productName: 'Heritage Series' },
-        { title: 'Slim Beauty', subtitle: 'Wellness in a Cup', productName: 'Wellness Line' }
+        { title: 'Rose Tea', subtitle: 'Aromatic & Delicate', productName: 'Botanical Collection' },
+        { title: 'FBOP Tea', subtitle: 'Premium & Aromatic', productName: 'Artisan Reserve' },
+        { title: 'Ceylon BOP Tea', subtitle: 'Bold & Full-Bodied', productName: 'Heritage Estates' },
+        { title: 'Cinnamon Tea', subtitle: 'Warm & Invigorating', productName: 'Spiced Wellness' }
       ]
     }
   },

@@ -67,8 +67,8 @@ function AppContent() {
         <main className="flex-grow"> 
           <Routes>
             <Route path="/" element={<SnapScroll />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
-            <Route path="/catalog" element={<SnapScroll />} />
             <Route path="/admin/qr" element={<QRMaker />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
