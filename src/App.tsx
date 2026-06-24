@@ -66,9 +66,9 @@ function AppContent() {
         {/* ✅ වෙනස: pt-20 md:pt-24 ඉවත් කරන ලදී. එවිට Hero Section එක තිරයේ ඉහළම කෙළවරේ සිට ආරම්භ වේ */}
         <main className="flex-grow"> 
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<SnapScroll />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
-            <Route path="/catalog" element={<SnapScroll />} />
             <Route path="/admin/qr" element={<QRMaker />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
