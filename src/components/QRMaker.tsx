@@ -8,7 +8,7 @@ export const QRMaker: React.FC = () => {
   const BASE_URL = "http://localhost:5173"; 
 
   // ✅ QR Code එක PNG පින්තූරයක් ලෙස Download කිරීමේ Function එක
-  const downloadQR = (productId: string, productName: string) => {
+  const downloadQR = (productId: string, imagePath: string) => {
     // Canvas element එක ලබා ගැනීම
     const canvas = document.getElementById(`qr-${productId}`) as HTMLCanvasElement;
     if (!canvas) return;
@@ -20,7 +20,8 @@ export const QRMaker: React.FC = () => {
     const link = document.createElement("a");
     link.href = pngUrl;
     // නම අගට .png යොදා ඇත
-    link.download = `${productName.replace(/\s+/g, '_')}_QR.png`; 
+    const baseName = imagePath.split('/').pop()?.replace('.jpg', '') ?? productId;
+    link.download = `${baseName}_QR.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -52,7 +53,7 @@ export const QRMaker: React.FC = () => {
               />
               
               <h3 className="mt-4 text-xs font-bold text-gray-800 line-clamp-2 h-8">
-                {product.name}
+                {product.image.split('/').pop()?.replace('.jpg', '') ?? product.name}
               </h3>
 
               <div className="flex w-full gap-2 mt-3">
@@ -66,7 +67,7 @@ export const QRMaker: React.FC = () => {
                 </a>
 
                 <button 
-                  onClick={() => downloadQR(product.id, product.name)}
+                  onClick={() => downloadQR(product.id, product.image)}
                   className="flex-1 px-2 py-1.5 bg-slate-800 text-white text-xs font-medium rounded-md hover:bg-slate-900 transition-colors text-center flex items-center justify-center"
                 >
                   Download
