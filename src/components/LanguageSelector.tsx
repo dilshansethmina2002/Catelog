@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -20,7 +20,15 @@ const languages: {
 export function LanguageSelector() {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const showToast = useCallback((label: string) => {
+    if (toastTimer.current) clearTimeout(toastTimer.current);
+    setToast(label);
+    toastTimer.current = setTimeout(() => setToast(null), 2000);
+  }, []);
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -75,6 +83,7 @@ export function LanguageSelector() {
                 key={lang.code}
                 onClick={() => {
                   setLanguage(lang.code);
+                  showToast(lang.label);
                   setIsOpen(false);
                 }}
                 className={`w-full px-4 py-2 text-left text-sm flex items-center justify-between hover:bg-emerald-50 transition-colors ${language === lang.code ? 'text-emerald-700 font-medium bg-emerald-50/50' : 'text-gray-600'}`}>
@@ -87,6 +96,19 @@ export function LanguageSelector() {
             )}
           </motion.div>
         }
+      </AnimatePresence>
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.2 }}
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-emerald-900/90 backdrop-blur-sm text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg z-[100] pointer-events-none whitespace-nowrap"
+          >
+            🌐 {toast}
+          </motion.div>
+        )}
       </AnimatePresence>
     </div>);
 

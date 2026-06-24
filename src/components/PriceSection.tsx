@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
@@ -7,6 +6,7 @@ import { useParams } from 'react-router-dom';
 
 // JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json';
+import { translations } from '../data/translations';
 
 export function PriceSection() {
   const { t } = useLanguage();
@@ -20,7 +20,9 @@ export function PriceSection() {
   const displayPrice = featuredProduct.price || t.price.price;
 
   // ✅ අලුතින් එකතු කළ කොටස: JSON එකෙන් බර (weight) ගන්නවා, නැත්නම් default එක ගන්නවා
-  const displayWeight = featuredProduct.weight || t.price.weight;
+  const displayWeight = featuredProduct.weight === translations.en.price.weight
+    ? t.price.weight
+    : (featuredProduct.weight || t.price.weight);
 
   // Checkmarks වලට එන්න ඕනේ දේවල් ටික ලේසියෙන් හදාගන්නවා (භාෂාව මාරු වෙන්න පහසු වෙන්න)
   const checklistItems = [
@@ -109,14 +111,14 @@ export function PriceSection() {
 
               {/* ✅ JSON එකෙන් පැකට් වර්ගය ගන්නවා නම් මෙතන featuredProduct.pack දෙන්න පුළුවන්. දැනට default තියෙනවා */}
               <div className="inline-block px-4 py-1 rounded-full bg-[#d4af37]/10 text-[#d4af37] text-xs sm:text-sm font-medium mb-4 sm:mb-6 border border-[#d4af37]/20 backdrop-blur-sm">
-                {featuredProduct.pack || t.price.pack} 
+                {t.price.pack}
               </div>
 
               <div className="flex items-baseline justify-center gap-1 mb-1 sm:mb-2">
                 <span className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
                   {displayPrice}
                 </span>
-                <span className="text-emerald-200/70 text-sm sm:text-base">/ pack</span>
+                <span className="text-emerald-200/70 text-sm sm:text-base">{t.price.perPack}</span>
               </div>
 
               <div className="flex items-center justify-center gap-2 text-emerald-200/50 mb-2 sm:mb-4 text-xs sm:text-sm">
@@ -152,7 +154,7 @@ export function PriceSection() {
                 transition={{ delay: 0.5 }}
                 className="text-[#d4af37] font-bold text-[9px] sm:text-[10px] uppercase tracking-[0.3em]"
               >
-                Trusted Excellence
+                {t.price.trustedExcellence}
               </motion.div>
               <h3 className="text-2xl sm:text-4xl md:text-5xl font-serif font-medium text-white tracking-tight italic leading-tight">
                 {t.price.videoTitle}

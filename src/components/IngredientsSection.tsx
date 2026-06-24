@@ -9,15 +9,13 @@ import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json';
 
 export function IngredientsSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
-  const { id } = useParams(); // URL එකෙන් ID එක ගන්නවා (උදා: tea-002)
-  
-  // URL එකේ ID එකක් තියෙනවා නම් ඒකට අදාළ product එක ගන්නවා, නැත්නම් default විදිහට පළවෙනි එක ගන්නවා
+  const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
 
-  // අලුත් JSON ෆයිල් එකේ 'ingredients' දත්ත ගන්නවා
-  const ingredientsList = featuredProduct.ingredients || t.ingredients.items;
+  const isTea001 = !id || id === 'tea-001';
+  const ingredientsList = (isTea001 || language !== 'en') ? t.ingredients.items : (featuredProduct.ingredients || t.ingredients.items);
 
   // JSON එකෙන් යට පින්තූරය ගන්නවා. ඒක නැත්නම් පරණ Unsplash පින්තූරය දානවා (Fallback)
   const dynamicIngredientImage = featuredProduct.ingredientImage || "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?q=80&w=600&auto=format&fit=crop";
@@ -48,10 +46,11 @@ export function IngredientsSection() {
             className="absolute top-0 right-0 w-3/4 h-3/4 rounded-t-[40px] sm:rounded-t-[100px] overflow-hidden z-10 border-r-4 border-t-4 border-amber-500/30"
           >
             <img
-              src={logoImg} 
+              src={logoImg}
               alt="Tea Ingredients"
+              loading="lazy"
               decoding="async"
-              className="w-full h-full object-cover" 
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
           </motion.div>
           
@@ -64,10 +63,11 @@ export function IngredientsSection() {
             className="absolute bottom-0 left-0 w-2/3 h-1/2 bg-emerald-900 rounded-b-[40px] sm:rounded-b-[100px] overflow-hidden z-20 border-l-4 border-b-4 border-emerald-700"
           >
             <img
-              src={dynamicIngredientImage} 
+              src={dynamicIngredientImage}
               alt="Tea Leaves"
+              loading="lazy"
               decoding="async"
-              className="w-full h-full object-cover hover:opacity-100 transition-opacity duration-700" 
+              className="w-full h-full object-cover hover:scale-110 hover:opacity-100 transition-all duration-700"
             />
           </motion.div>
         </div>
@@ -80,7 +80,7 @@ export function IngredientsSection() {
             viewport={{ once: true }}
           >
             <span className="text-amber-400 font-medium tracking-widest uppercase text-xs sm:text-sm mb-3 sm:mb-4 block">
-              Composition
+              {t.ingredients.composition}
             </span>
             
             {/* මොබයිල්වලදී text-3xl/leading-tight ලෙසත් ලොකු තිරවලදී text-7xl/leading-none ලෙසත් හැරේ */}
