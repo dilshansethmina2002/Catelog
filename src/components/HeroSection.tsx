@@ -15,7 +15,7 @@ export function HeroSection() {
   const { id } = useParams();
 
   // 1. JSON එකෙන් Data ගැනීම
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
+  const featuredProduct = productsData.find((p) => p.id === id) || productsData.find((p) => p.id === 'tea-001') || productsData[0];
 
   // 2. Per-product translation lookup
   const productKey = id || 'tea-001';
@@ -154,7 +154,7 @@ export function HeroSection() {
         <motion.div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{ 
-            backgroundImage: `url(${displayImage})`,
+            backgroundImage: `url('${displayImage}')`,
             scale: isMobile ? 1 : scaleImage
           }}
         />
