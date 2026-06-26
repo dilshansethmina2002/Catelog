@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json';
+import spicesData from '../data/spices.json';
 import { productTranslations } from '../data/productTranslations';
 
 // Fallback පින්තූරය (JSON එකේ image එකක් නැති වුණොත් පමණක් මෙය පෙන්වයි)
@@ -15,7 +16,8 @@ export function HeroSection() {
   const { id } = useParams();
 
   // 1. JSON එකෙන් Data ගැනීම
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData.find((p) => p.id === 'tea-001') || productsData[0];
+  const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData.find((p) => p.id === 'tea-001') || productsData[0];
+  const isSpicePage = !!spicesData.find((p) => p.id === id);
 
   // 2. Per-product translation lookup
   const productKey = id || 'tea-001';
@@ -24,7 +26,6 @@ export function HeroSection() {
   // 3. Data Mapping (නම, විස්තරය, පින්තූරය සහ පැකට් වර්ගය)
   const productName = translated?.name || featuredProduct.name || t.hero.title;
   const displayImage = featuredProduct.image || roseTeaImg;
-  const packType = featuredProduct.pack || "Premium Collection";
   const description = translated?.description || featuredProduct.description || t.hero.tagline;
 
   // නම වචන වලට කැඩීම (Styling සඳහා)
@@ -70,7 +71,7 @@ export function HeroSection() {
   };
 
   return (
-    <div className="relative min-h-[100vh] flex flex-col md:flex-row overflow-hidden bg-emerald-950 font-sans pt-16 md:pt-0">
+    <div className="relative min-h-[100svh] flex flex-col md:flex-row overflow-hidden bg-emerald-950 font-sans pt-16 md:pt-0">
       
       {/* ======================================= */}
       {/* LEFT SIDE: Deep Green Typography Panel  */}
@@ -84,9 +85,9 @@ export function HeroSection() {
         <motion.div
           style={isMobile ? {} : { y: yLead }}
           variants={containerVariants}
-          initial="hidden"
+          initial="visible"
           animate="visible"
-          className="relative z-20 w-full max-w-xl mx-auto md:mx-0" 
+          className="relative z-20 w-full max-w-xl mx-auto md:mx-0"
         >
           {/* Label / Overline - JSON එකෙන් එන Pack Type එක පෙන්නයි */}
           <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -120,27 +121,29 @@ export function HeroSection() {
           </motion.p>
 
           {/* Let's Make Tea CTA */}
-          <motion.div variants={itemVariants}>
-            <motion.button
-              onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
-              animate={{
-                boxShadow: [
-                  '0 0 0 0px rgba(251, 191, 36, 0)',
-                  '0 0 0 8px rgba(251, 191, 36, 0.12)',
-                  '0 0 0 0px rgba(251, 191, 36, 0)',
-                ]
-              }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-              className="w-full max-w-md flex items-center justify-between px-6 sm:px-8 py-4 sm:py-5 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 text-white hover:bg-white/10 transition-colors duration-300"
-            >
-              <span className="text-sm sm:text-base font-bold uppercase tracking-[0.15em]">{t.hero.cta}</span>
-              <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </span>
-            </motion.button>
-          </motion.div>
+          {!isSpicePage && (
+            <motion.div variants={itemVariants}>
+              <motion.button
+                onClick={() => document.getElementById('brewing')?.scrollIntoView({ behavior: 'smooth' })}
+                animate={{
+                  boxShadow: [
+                    '0 0 0 0px rgba(251, 191, 36, 0)',
+                    '0 0 0 8px rgba(251, 191, 36, 0.12)',
+                    '0 0 0 0px rgba(251, 191, 36, 0)',
+                  ]
+                }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+                className="w-full max-w-md flex items-center justify-between px-6 sm:px-8 py-4 sm:py-5 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 text-white hover:bg-white/10 transition-colors duration-300"
+              >
+                <span className="text-sm sm:text-base font-bold uppercase tracking-[0.15em]">{t.hero.cta}</span>
+                <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-amber-400 text-emerald-950 rounded-full flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </motion.button>
+            </motion.div>
+          )}
 
         </motion.div>
       </div>
@@ -149,15 +152,20 @@ export function HeroSection() {
       {/* RIGHT SIDE: Full Bleed Image            */}
       {/* ======================================= */}
       {/* ✅ Mobile Responsive Height: Mobile වලදී 45vh පමණක් ගෙන අකුරු වලට ඉඩ ලබා දේ */}
-      <div className="w-full md:w-1/2 h-[45vh] sm:h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2 lg:mt-10">
-        {/* Animated background image - JSON එකෙන් එන පින්තූරය මෙතනට වැටේ */}
-        <motion.div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat "
-          style={{ 
-            backgroundImage: `url('${displayImage}')`,
-            scale: isMobile ? 1 : scaleImage
-          }}
-        />
+      <div className="w-full md:w-1/2 h-[45vh] min-h-[200px] sm:h-[50vh] md:h-screen relative overflow-hidden order-1 md:order-2 lg:mt-10">
+        {/* Product image — eager loaded so it appears immediately on navigation */}
+        <motion.div
+          className="absolute inset-0 overflow-hidden"
+          style={{ scale: isMobile ? 1 : scaleImage }}
+        >
+          <img
+            src={displayImage}
+            alt={productName}
+            loading="eager"
+            decoding="async"
+            className="w-full h-full object-cover object-center"
+          />
+        </motion.div>
         
         {/* Very subtle inner shadow to frame the image nicely against the hard split */}
         <div className="absolute inset-0 shadow-[inset_20px_0_40px_rgba(0,0,0,0.15)] md:block hidden pointer-events-none"></div>
