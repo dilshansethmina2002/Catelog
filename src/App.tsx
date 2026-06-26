@@ -11,9 +11,12 @@ import { PriceSection } from './components/PriceSection';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import ProductDetails from './components/ProductDetails';
+import SpicesPage from './components/SpicesPage';
+import SpiceDetails from './components/SpiceDetails';
 import { QRMaker } from './components/QRMaker';
 import { NotFound } from './components/NotFound';
 import SnapScroll from './components/ui/SnapScroll';
+import HomePage from './components/HomePage';
 
 
 // --- New Pages (QR System) ---
@@ -66,9 +69,12 @@ function AppContent() {
         {/* ✅ වෙනස: pt-20 md:pt-24 ඉවත් කරන ලදී. එවිට Hero Section එක තිරයේ ඉහළම කෙළවරේ සිට ආරම්භ වේ */}
         <main className="flex-grow"> 
           <Routes>
-            <Route path="/" element={<SnapScroll />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/catalog" element={<SnapScroll />} />
             <Route path="/home" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/spices" element={<SpicesPage />} />
+            <Route path="/spice/:id" element={<SpiceDetails />} />
             <Route path="/admin/qr" element={<QRMaker />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
