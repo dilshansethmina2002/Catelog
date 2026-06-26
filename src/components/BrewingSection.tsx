@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
 import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json';
+import spicesData from '../data/spices.json';
 
 // --- CUSTOM SVG ILLUSTRATIONS ---
 
@@ -15,7 +16,7 @@ const KettleIcon = ({ className = "" }: { className?: string }) => (
     <motion.path
       d="M85 35Q90 25 85 15M92 38Q97 28 92 18"
       stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"
-      whileInView={{ y: [0, -5, 0], opacity: [0, 0.6, 0] }}
+      animate={{ y: [0, -5, 0], opacity: [0, 0.6, 0] }}
       transition={{ duration: 2, repeat: Infinity }}
     />
   </svg>
@@ -27,14 +28,14 @@ const SpoonIcon = ({ className = "" }: { className?: string }) => (
     <path d="M55 45C50 40 30 40 25 55C20 70 30 85 45 80C60 75 60 55 55 45Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M35 55Q32 60 35 65" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
     <motion.g
-      whileInView={{ y: [0, 25], opacity: [1, 0] }}
+      animate={{ y: [0, 25], opacity: [1, 0] }}
       transition={{ duration: 1.8, repeat: Infinity }}
     >
       <circle cx="35" cy="75" r="2" fill="currentColor" />
       <path d="M45 70Q47 67 49 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
     </motion.g>
     <motion.g
-      whileInView={{ y: [0, 30], opacity: [1, 0] }}
+      animate={{ y: [0, 30], opacity: [1, 0] }}
       transition={{ duration: 2.2, repeat: Infinity, delay: 0.4 }}
     >
       <circle cx="40" cy="82" r="1.5" fill="currentColor" />
@@ -51,7 +52,7 @@ const TimerIcon = ({ className = "" }: { className?: string }) => (
       d="M50 50L50 25"
       stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"
       initial={{ rotate: 0 }}
-      whileInView={{ rotate: 360 }}
+      animate={{ rotate: 360 }}
       transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
       style={{ originX: "50px", originY: "50px" }}
     />
@@ -67,7 +68,7 @@ const CupIcon = ({ className = "" }: { className?: string }) => (
     <motion.path
       d="M45 30Q50 20 45 10M55 30Q60 20 55 10"
       stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-      whileInView={{ y: [0, -5, 0], opacity: [0.3, 0.8, 0.3] }}
+      animate={{ y: [0, -5, 0], opacity: [0.3, 0.8, 0.3] }}
       transition={{ duration: 3, repeat: Infinity }}
     />
   </svg>
@@ -80,14 +81,13 @@ export const BrewingSection: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   const { id } = useParams();
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
+  const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
   const isTea001 = !id || id === 'tea-001';
   const brewingSteps = (isTea001 || language !== 'en') ? t.brewing.steps : (featuredProduct.brewing || t.brewing.steps);
 
   return (
-    // Changed bg to dark emerald-950 to match the dark theme
     <Section id="brewing" className="bg-emerald-950 relative overflow-hidden py-16 sm:py-24 md:py-32">
-      
+
       {/* --- THE ANIMATED GRADIENT BACKGROUND --- */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -104,42 +104,31 @@ export const BrewingSection: React.FC = () => {
       <div className="absolute right-0 bottom-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-[#d4af37]/10 rounded-full blur-[70px] sm:blur-[100px] pointer-events-none z-0" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        
+
         {/* Header Area */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12 md:mb-20 lg:mb-24 max-w-2xl mx-auto space-y-3 sm:space-y-4"
-        >
-          {/* Updated text colors to white and light emerald for dark background */}
+        <div className="text-center mb-12 md:mb-20 lg:mb-24 max-w-2xl mx-auto space-y-3 sm:space-y-4">
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight">
             {t.brewing.title}
           </h2>
           <p className="text-emerald-100/80 text-base sm:text-lg font-light leading-relaxed px-2">
             {t.brewing.subtitle}
           </p>
-        </motion.div>
+        </div>
 
-        {/* ✅ FIXED GRID LAYOUT: Stacks nicely on mobile, 2 columns on tablet, 4 on desktop */}
+        {/* Grid Layout: Stacks nicely on mobile, 2 columns on tablet, 4 on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
           {brewingSteps.map((step: any, index: number) => {
             const Icon = customIcons[index % customIcons.length];
-            
+
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.15, ease: [0.21, 0.45, 0.32, 0.9] }}
                 className="group relative h-full cursor-pointer"
                 onClick={() => setActiveStep(activeStep === index ? null : index)}
               >
-                {/* Card Wrapper - ensuring it takes full height of the grid cell */}
+                {/* Card Wrapper */}
                 <div className="relative h-full group-hover:transform group-hover:-translate-y-2 transition-transform duration-500">
 
-                  {/* ✅ FIXED CARD PADDING & SIZING: Removed hardcoded min-heights that break layout */}
                   <div className={`h-full w-full backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl flex flex-col items-center justify-start overflow-hidden relative transition-all duration-500 ${activeStep === index ? 'bg-amber-500/20 border border-amber-400/50 shadow-[0_0_30px_rgba(251,191,36,0.15)]' : 'bg-black/20 border border-white/10 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group-hover:bg-black/30 group-hover:border-white/20'}`}>
 
                     {/* Step Indicator */}
@@ -156,15 +145,14 @@ export const BrewingSection: React.FC = () => {
                     <h3 className="text-lg md:text-xl font-serif font-bold text-white mb-3 tracking-tight text-center">
                       {step.title}
                     </h3>
-                    
+
                     {/* Step Description */}
                     <p className="text-emerald-100/60 text-sm leading-relaxed font-medium text-center group-hover:text-emerald-100/80 transition-colors duration-500">
                       {step.description}
                     </p>
                   </div>
                 </div>
-
-              </motion.div>
+              </div>
             );
           })}
         </div>
