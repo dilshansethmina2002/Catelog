@@ -1,0 +1,214 @@
+﻿[
+  {
+    "id": "tea-058",
+    "name": "Black Pepper",
+    "description": "Premium whole Black Pepper sourced from Sri Lanka. Rich in piperine with a bold, sharp heat and complex aroma — perfect for spiced teas and culinary blends.",
+    "price": "$3.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Black Pepper 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Whole Black Pepper",
+        "description": "Sun-dried, mature Piper nigrum berries harvested at peak ripeness."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Fire",
+        "description": "Piperine stimulates digestive enzymes and improves nutrient absorption."
+      },
+      {
+        "title": "Immune Boost",
+        "description": "Contains natural antimicrobial and antioxidant compounds."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Piperine is known to reduce inflammation and ease respiratory issues."
+      },
+      {
+        "title": "Warming Effect",
+        "description": "Naturally warms the body and enhances circulation in cold conditions."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Pepper",
+        "description": "Add 3-5 freshly crushed black pepper corns per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Simmer with your choice of tea for 3-5 minutes to infuse the heat and oils."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot. Pairs exceptionally well with ginger and honey."
+      }
+    ]
+  },
+  {
+    "id": "tea-064",
+    "name": "Cinnamon Pouches",
+    "description": "Convenient and beautifully portioned True Ceylon Cinnamon in individual pouches. The perfect way to enjoy authentic Ceylon cinnamon's warmth and wellness benefits effortlessly every day.",
+    "price": "$10.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Cinnamon Pouches 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "True Ceylon Cinnamon",
+        "description": "Ground or rolled Ceylon cinnamon portioned into individual filter pouches."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Sugar Balance",
+        "description": "Daily cinnamon intake helps maintain stable blood glucose levels."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Natural cinnamaldehyde reduces chronic inflammation throughout the body."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Naturally relieves bloating and supports smooth digestion."
+      },
+      {
+        "title": "Warmth & Comfort",
+        "description": "A perfectly portioned warming infusion for cold mornings and evenings."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Pouch",
+        "description": "Place one cinnamon pouch into your mug."
+      },
+      {
+        "title": "Steep",
+        "description": "Pour hot water and steep for 4-6 minutes for a full-flavored cinnamon infusion."
+      },
+      {
+        "title": "Serve",
+        "description": "Remove the pouch and enjoy. Naturally sweet — a drop of honey is optional."
+      }
+    ]
+  },
+  {
+    "id": "tea-051",
+    "name": "Cinnamon Stick Alba",
+    "description": "Premium True Ceylon Cinnamon Alba grade sticks in an elegant replica presentation. The finest, most fragrant variety of real Ceylon cinnamon, perfect for gifting or daily wellness.",
+    "price": "$10.00",
+    "pack": "Replica Pack",
+    "weight": "50g",
+    "image": "/images/Cinnamon Stick Alba 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Cinnamon Alba Grade",
+        "description": "The finest true Ceylon cinnamon with paper-thin, tightly rolled bark."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Sugar Control",
+        "description": "Ceylon cinnamon is clinically shown to help moderate blood glucose."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Natural cinnamaldehyde reduces bodily inflammation and soothes pain."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Helps lower bad cholesterol and promotes healthy blood circulation."
+      },
+      {
+        "title": "Warming Effect",
+        "description": "Naturally warms the body and improves digestive comfort."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Cinnamon",
+        "description": "Place 1-2 cinnamon sticks into your teapot or saucepan per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Simmer gently for 5-8 minutes to fully release the aromatic oils."
+      },
+      {
+        "title": "Serve",
+        "description": "Pour and serve. Naturally sweet — enjoy plain or with a drizzle of honey."
+      }
+    ]
+  },
+  {
+    "id": "tea-069",
+    "name": "Turmeric Super",
+    "description": "A potent golden wellness infusion featuring premium turmeric blended with complementary spices and herbs. Nature's most celebrated anti-inflammatory golden superfood in a perfectly crafted cup.",
+    "price": "$3.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Turmeric Super 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Premium Turmeric",
+        "description": "High-curcumin ground turmeric root for maximum anti-inflammatory potency."
+      },
+      {
+        "name": "Spice Blend",
+        "description": "A supporting blend of black pepper, ginger, and cinnamon to enhance absorption."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Powerful Anti-inflammatory",
+        "description": "Curcumin in turmeric is one of the most potent natural anti-inflammatory compounds."
+      },
+      {
+        "title": "Joint Health",
+        "description": "Reduces joint pain, stiffness, and inflammation naturally."
+      },
+      {
+        "title": "Gut Health",
+        "description": "Turmeric promotes a healthy gut lining and supports balanced digestion."
+      },
+      {
+        "title": "Immunity & Brain",
+        "description": "Curcumin boosts brain-derived neurotrophic factor (BDNF) and supports immunity."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water or Milk",
+        "description": "Heat fresh water or milk to 90°C-95°C (194°F-203°F)."
+      },
+      {
+        "title": "Add Turmeric Super",
+        "description": "Add 1 teaspoon of Turmeric Super blend per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Stir well and steep for 4-5 minutes, allowing the spices to bloom fully."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. Best with warm milk and a touch of honey as a Golden Latte."
+      }
+    ]
+  }
+]
