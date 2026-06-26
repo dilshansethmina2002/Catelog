@@ -5,3 +5,58 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL - DO NOT DELETE THIS COMMENT */
+
+/* ── Custom scrollbar — theme-matched, subtle ───────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b2818;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(10, 140, 94, 0.45);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 106, 0.55);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(10, 140, 94, 0.45) #0b2818;
+}
+
+/* ── Mobile / iOS baseline fixes ─────────────────────────────────────────── */
+html {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safe-area insets for iPhone notch / Dynamic Island */
+.safe-top    { padding-top:    env(safe-area-inset-top); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+.safe-left   { padding-left:   env(safe-area-inset-left); }
+.safe-right  { padding-right:  env(safe-area-inset-right); }
+
+/* ── iOS Safari scroll-snap fixes ────────────────────────────────────────── */
+/* Vendor-prefix scroll-snap for older iOS Safari (pre-15) */
+.snap-y {
+  -webkit-scroll-snap-type: y mandatory;
+}
+.snap-start {
+  -webkit-scroll-snap-align: start;
+}
+/* Prevent scroll chaining leaking to the page body on iOS */
+.snap-y.overflow-y-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
