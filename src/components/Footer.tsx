@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
                 Athukorala Group
               </span>
               <span className="block text-white/80 font-normal text-base sm:text-lg mt-0.5">
-                (Pvt) Ltd
+                pvt Ltd
               </span>
             </h3>
           </div>
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
             </li>
             <li className="flex items-center justify-center md:justify-start gap-3 text-green-200/80 hover:text-white transition-colors">
               <Mail size={18} className="text-[#0a8c5e] shrink-0" />
-              <a href="mailto:atf@athukoralagroup.com" className="text-sm font-medium hover:underline decoration-[#0a8c5e] underline-offset-4 transition-all overflow-hidden text-ellipsis">
+              <a href="mailto:atf@athukoralagroup.com" className="text-sm font-medium hover:underline decoration-[#0a8c5e] underline-offset-4 transition-all break-all min-w-0">
                 atf@athukoralagroup.com
               </a>
             </li>
@@ -92,15 +92,7 @@ export const Footer: React.FC = () => {
 
       {/* Footer Bottom / Legal */}
       <div className="max-w-7xl mx-auto mt-10 sm:mt-16 pt-6 border-t border-green-900/50 flex flex-col md:flex-row justify-between items-center gap-4 text-green-200/50 text-[11px] sm:text-xs text-center md:text-left">
-        <p>&copy; {new Date().getFullYear()} Athukorala Group (Pvt) Ltd. {t.footer.rights}</p>
-        <div className="flex gap-4 sm:gap-6 font-medium">
-          <button className="hover:text-green-200 transition-colors uppercase tracking-wider">
-            {t.footer.privacyPolicy}
-          </button>
-          <button className="hover:text-green-200 transition-colors uppercase tracking-wider">
-            {t.footer.termsOfService}
-          </button>
-        </div>
+        <p>&copy; {new Date().getFullYear()} Athukorala Group pvt Ltd. {t.footer.rights}</p>
       </div>
     </footer>
   );

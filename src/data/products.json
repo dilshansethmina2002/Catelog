@@ -1,68 +1,12 @@
 [
   {
-    "id": "tea-001",
-    "name": "Ceylon Green Tea with Lemongrass",
-    "description": "A refreshing blend of Ceylon Green Tea and zesty Lemongrass. Expertly crafted for a calming afternoon experience.",
-    "price": "Rs. 1500",
-    "pack": "Premium Pack",
-    "weight": "100g Loose Leaf",
-    "image": "/images/CeylonGreenTeawithLemongrass.jpg",
-    "ingredientImage": "/leaves/purl.jpg",
-    "ingredients": [
-      {
-        "name": "Green Tea Leaves",
-        "description": "Premium Ceylon green tea, rich in catechins and antioxidants."
-      },
-      {
-        "name": "Natural Lemongrass",
-        "description": "Dried lemongrass stalks for a citrusy, aromatic kick."
-      }
-    ],
-    "benefits": [
-      {
-        "title": "Metabolism Boost",
-        "description": "Green tea catechins help increase metabolic rate naturally."
-      },
-      {
-        "title": "Digestive Aid",
-        "description": "Lemongrass is traditionally used to soothe digestion and bloating."
-      },
-      {
-        "title": "Focus & Calm",
-        "description": "L-theanine promotes relaxation without drowsiness."
-      },
-      {
-        "title": "Natural Detox",
-        "description": "Rich in antioxidants that help cleanse the body of toxins."
-      }
-    ],
-    "brewing": [
-      {
-        "title": "Boil Water",
-        "description": "Heat fresh water to 80°C (176°F). Avoid boiling completely to protect delicate green tea leaves."
-      },
-      {
-        "title": "Add Tea",
-        "description": "Add 1 teaspoon (2g) of tea blend per cup into your teapot or infuser."
-      },
-      {
-        "title": "Steep",
-        "description": "Pour hot water and cover. Let it steep for 2 minutes for a light, refreshing taste."
-      },
-      {
-        "title": "Serve",
-        "description": "Strain and serve hot. Garnish with a fresh stalk of lemongrass if desired."
-      }
-    ]
-  },
-  {
     "id": "tea-002",
     "name": "Black Tea Flower",
     "description": "A delicate and aromatic blend of premium Ceylon black tea enriched with natural edible flowers.",
     "price": "$10.00",
     "pack": "",
-    "weight": "",
-    "image": "/images/BlackTeaFlower.jpg",
+    "weight": "25g",
+    "image": "/images/Black Tea Flower 25g.jpg",
     "ingredientImage": "/leaves/black-tea-flower.jpg",
     "ingredients": [
       {
@@ -94,20 +38,296 @@
     ],
     "brewing": [
       {
-        "title": "Boil Water",
-        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon per cup into your infuser."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3 to 4 minutes to extract the perfect floral balance."
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
       },
       {
         "title": "Serve",
-        "description": "Strain and enjoy plain, or with a tiny drop of honey."
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-056",
+    "name": "Black Tea with Curry Leaves",
+    "description": "A distinctively Sri Lankan creation blending bold Ceylon black tea with aromatic, naturally therapeutic curry leaves. A savory, warming, and deeply comforting cup rooted in island tradition.",
+    "price": "$13.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Black Tea with Curry Leaves 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A robust Ceylon black tea base that pairs boldly with herbal notes."
+      },
+      {
+        "name": "Dried Curry Leaves",
+        "description": "Naturally dried curry leaves (Murraya koenigii) carrying rich aromatic oils."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Aid",
+        "description": "Curry leaves are a traditional remedy for nausea, indigestion, and bloating."
+      },
+      {
+        "title": "Blood Sugar Control",
+        "description": "Known to help regulate blood glucose levels naturally."
+      },
+      {
+        "title": "Hair & Scalp Health",
+        "description": "Rich in antioxidants that strengthen hair follicles and combat thinning."
+      },
+      {
+        "title": "Liver Support",
+        "description": "Traditionally used to protect and detoxify the liver in Ayurvedic practice."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-052",
+    "name": "Black Tea with Gotukola",
+    "description": "A uniquely Sri Lankan wellness blend combining robust Ceylon black tea with revered Gotukola (Centella asiatica) — a celebrated Ayurvedic herb known for its remarkable brain-supporting properties.",
+    "price": "$13.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Black Tea with Gotukola 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, full-bodied base that pairs well with powerful medicinal herbs."
+      },
+      {
+        "name": "Gotukola (Centella asiatica)",
+        "description": "Fresh dried Gotukola leaves, a treasured Ayurvedic herb used for centuries."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Brain & Memory",
+        "description": "Gotukola is traditionally renowned for improving memory and cognitive sharpness."
+      },
+      {
+        "title": "Stress Reduction",
+        "description": "Adaptogenic properties help calm the nervous system and reduce anxiety."
+      },
+      {
+        "title": "Wound Healing",
+        "description": "Promotes collagen synthesis and supports faster skin healing."
+      },
+      {
+        "title": "Circulation",
+        "description": "Improves blood flow and supports healthy vein and capillary function."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-068",
+    "name": "Black Tea with Heen Bovitiya",
+    "description": "A traditional Sri Lankan wellness blend combining bold Ceylon black tea with Heen Bovitiya (Aerva lanata), a highly revered Ayurvedic herb celebrated for its remarkable kidney and urinary health benefits.",
+    "price": "$13.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Black Tea with Heen Bovitiya 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, full-bodied base that partners well with medicinal herbs."
+      },
+      {
+        "name": "Heen Bovitiya (Aerva lanata)",
+        "description": "Dried Heen Bovitiya herb, a traditional Sri Lankan Ayurvedic remedy."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Kidney Health",
+        "description": "Heen Bovitiya is traditionally used to support kidney function and dissolve kidney stones."
+      },
+      {
+        "title": "Urinary Support",
+        "description": "Natural diuretic properties help cleanse the urinary tract effectively."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Reduces inflammation in the urinary system and throughout the body."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Helps the body eliminate toxins through natural diuretic action."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-049",
+    "name": "Black Tea with Moringa",
+    "description": "A powerful superfood fusion of bold Ceylon black tea and nutrient-dense Moringa leaves. Crafted for those who demand both great taste and exceptional nutritional value.",
+    "price": "$13.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Black Tea with Moringa 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, robust black tea base delivering bold flavor."
+      },
+      {
+        "name": "Moringa Leaves",
+        "description": "Dried Moringa oleifera leaves packed with vitamins, minerals, and amino acids."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Nutritional Powerhouse",
+        "description": "Moringa contains over 90 nutrients and 46 antioxidants in a single cup."
+      },
+      {
+        "title": "Energy & Vitality",
+        "description": "Iron and B vitamins in moringa combat fatigue and boost natural energy."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Isothiocyanates in moringa reduce chronic inflammation throughout the body."
+      },
+      {
+        "title": "Blood Sugar Balance",
+        "description": "Helps regulate blood glucose levels naturally and effectively."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-004",
+    "name": "BOPF SP 200",
+    "description": "Special Broken Orange Pekoe Fannings. A superior grade of finely crushed tea offering a brisk, bright, and exceptionally strong cup.",
+    "price": "$4.00",
+    "pack": "",
+    "weight": "200g",
+    "image": "/images/BOPF SP 200.jpg",
+    "ingredientImage": "/leaves/bopf-sp.jpg",
+    "ingredients": [
+      {
+        "name": "Special BOPF Tea",
+        "description": "Extra fine, high-quality broken black tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Rich in Antioxidants",
+        "description": "Premium grade ensures higher retention of beneficial polyphenols."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular consumption supports healthy blood pressure levels."
+      },
+      {
+        "title": "Focus & Alertness",
+        "description": "High caffeine content sharpens mental clarity."
+      },
+      {
+        "title": "Metabolism",
+        "description": "Helps boost the body's natural metabolic rate."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -117,8 +337,8 @@
     "description": "Broken Orange Pekoe Fannings. A strong, robust, and fast-brewing Ceylon black tea, perfect for a classic milk tea.",
     "price": "$8.00",
     "pack": "",
-    "weight": "",
-    "image": "/images/BOPF400.jpg",
+    "weight": "400g",
+    "image": "/images/BOPF SP 400.jpg",
     "ingredientImage": "/leaves/bopf.jpg",
     "ingredients": [
       {
@@ -151,67 +371,15 @@
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of BOPF per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-5 minutes for a strong, dark liquor."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Best enjoyed with a splash of warm milk and sugar."
-      }
-    ]
-  },
-  {
-    "id": "tea-004",
-    "name": "BOPF SP 200",
-    "description": "Special Broken Orange Pekoe Fannings. A superior grade of finely crushed tea offering a brisk, bright, and exceptionally strong cup.",
-    "price": "$8.00",
-    "pack": "",
-    "weight": "",
-    "image": "/images/BOPFSP200.jpg",
-    "ingredientImage": "/leaves/bopf-sp.jpg",
-    "ingredients": [
-      {
-        "name": "Special BOPF Tea",
-        "description": "Extra fine, high-quality broken black tea leaves."
-      }
-    ],
-    "benefits": [
-      {
-        "title": "Rich in Antioxidants",
-        "description": "Premium grade ensures higher retention of beneficial polyphenols."
-      },
-      {
-        "title": "Heart Health",
-        "description": "Regular consumption supports healthy blood pressure levels."
-      },
-      {
-        "title": "Focus & Alertness",
-        "description": "High caffeine content sharpens mental clarity."
-      },
-      {
-        "title": "Metabolism",
-        "description": "Helps boost the body's natural metabolic rate."
-      }
-    ],
-    "brewing": [
-      {
-        "title": "Boil Water",
-        "description": "Use freshly boiled water at 100°C (212°F)."
-      },
-      {
-        "title": "Add Tea",
-        "description": "Use a slightly heaped teaspoon per cup."
-      },
-      {
-        "title": "Steep",
-        "description": "Steep for 3-4 minutes based on desired strength."
-      },
-      {
-        "title": "Serve",
-        "description": "Perfect for making strong traditional milk tea."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -221,8 +389,8 @@
     "description": "Special Broken Orange Pekoe Fannings in convenient tea bags. Enjoy the brisk and bold flavor of premium Ceylon tea effortlessly.",
     "price": "$8.00",
     "pack": "",
-    "weight": "200g (100 tea bags)",
-    "image": "/images/BOPFSPTB100.jpg",
+    "weight": "200g",
+    "image": "/images/BOPF SP TB 200g.jpg",
     "ingredientImage": "/leaves/bopf-tb.jpg",
     "ingredients": [
       {
@@ -251,19 +419,71 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Boil water to 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
-        "title": "Add Tea Bag",
-        "description": "Place one tea bag in your cup."
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Pour hot water over the tea bag and steep for 2-3 minutes."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Remove the tea bag and enjoy with or without milk."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-103",
+    "name": "BOPF Special",
+    "description": "A premium Broken Orange Pekoe Fannings Special grade Ceylon tea. Finely broken leaves that brew a bold, rich, deep-coloured cup with a brisk, full-bodied flavour — ideal for those who love a strong morning tea.",
+    "price": "$5.00",
+    "pack": "",
+    "weight": "200g",
+    "image": "/images/BOPF Special 200g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "BOPF Special Ceylon Tea",
+        "description": "Finely broken Ceylon black tea leaves of the highest Fannings Special grade."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Energy Boost",
+        "description": "Strong caffeine content provides a powerful and sustained energy lift."
+      },
+      {
+        "title": "Rich Antioxidants",
+        "description": "High concentration of polyphenols that protect cells from oxidative stress."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular consumption supports healthy blood pressure and cholesterol levels."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "Stimulates alertness and focus to power through the morning."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -274,7 +494,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/CardamonFlavoured50g.jpg",
+    "image": "/images/Cardamon Flavoured 50g.jpg",
     "ingredientImage": "/leaves/cardamom.jpg",
     "ingredients": [
       {
@@ -307,19 +527,295 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the cardamom blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-5 minutes to let the spice flavors bloom."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Tastes divine with a touch of hot milk."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-088",
+    "name": "Ceylon Black Tea BOP Broken Orange Pekoe",
+    "description": "A premium Ceylon Broken Orange Pekoe black tea delivering a strong, rich, and beautifully balanced cup. Sourced from Sri Lanka's finest high-grown tea gardens.",
+    "price": "$9.00",
+    "pack": "",
+    "weight": "150g",
+    "image": "/images/Ceylon Black Tea BOP Broken Orange Pekoe 150g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon BOP Black Tea",
+        "description": "Premium Broken Orange Pekoe leaves from high-altitude Sri Lankan estates."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Morning Energy",
+        "description": "A strong, full-bodied cup provides a reliable and robust start to the day."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Daily black tea consumption actively supports cardiovascular well-being."
+      },
+      {
+        "title": "Immunity",
+        "description": "Boosts the body's natural defense mechanisms with powerful antioxidants."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Black tea polyphenols naturally support a healthy and comfortable gut."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-001",
+    "name": "Ceylon Green Tea with Lemongrass",
+    "description": "A refreshing blend of Ceylon Green Tea and zesty Lemongrass. Expertly crafted for a calming afternoon experience.",
+    "price": "$10.00",
+    "pack": "Premium Pack",
+    "weight": "100g",
+    "image": "/images/Ceylon Green Tea with Lemongrass 100g.jpg",
+    "ingredientImage": "/leaves/purl.jpg",
+    "ingredients": [
+      {
+        "name": "Green Tea Leaves",
+        "description": "Premium Ceylon green tea, rich in catechins and antioxidants."
+      },
+      {
+        "name": "Natural Lemongrass",
+        "description": "Dried lemongrass stalks for a citrusy, aromatic kick."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Metabolism Boost",
+        "description": "Green tea catechins help increase metabolic rate naturally."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Lemongrass is traditionally used to soothe digestion and bloating."
+      },
+      {
+        "title": "Focus & Calm",
+        "description": "L-theanine promotes relaxation without drowsiness."
+      },
+      {
+        "title": "Natural Detox",
+        "description": "Rich in antioxidants that help cleanse the body of toxins."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-089",
+    "name": "Ceylon Hibiscus Black Tea with Natural Hibiscus",
+    "description": "A vibrant and health-boosting fusion of bold Ceylon black tea and naturally dried hibiscus flowers. A beautifully tart, ruby-toned cup rich in antioxidants.",
+    "price": "$8.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Ceylon Hibiscus Black Tea with Natural Hibiscus 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong Ceylon black tea base that balances the tartness of hibiscus."
+      },
+      {
+        "name": "Dried Hibiscus Flowers",
+        "description": "Natural dried Hibiscus sabdariffa flowers for a tangy, ruby-red infusion."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Pressure",
+        "description": "Hibiscus is clinically proven to help naturally lower high blood pressure."
+      },
+      {
+        "title": "Rich in Vitamin C",
+        "description": "Boosts immunity and fights off common infections."
+      },
+      {
+        "title": "Antioxidant Power",
+        "description": "Combined benefits of black tea polyphenols and hibiscus anthocyanins."
+      },
+      {
+        "title": "Energy Lift",
+        "description": "Black tea caffeine paired with hibiscus provides a refreshing, energising cup."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-090",
+    "name": "Ceylon Mix Flower Black Tea with Natural Flowers -Pink Pouch",
+    "description": "A romantically floral Ceylon black tea beautifully blended with a curated mix of naturally dried edible flowers. Presented in an elegant pink pouch — a feast for the senses.",
+    "price": "$8.00",
+    "pack": "Pink Pouch",
+    "weight": "50g",
+    "image": "/images/Ceylon Mix Flower Black Tea with Natural Flowers -Pink Pouch 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, medium-bodied black tea base that carries floral notes beautifully."
+      },
+      {
+        "name": "Mixed Edible Flowers",
+        "description": "A curated blend of naturally dried edible flowers for a delicate floral aroma."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Uplift",
+        "description": "Floral aromas naturally uplift the mood and reduce everyday stress."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with polyphenols from both black tea and natural flower compounds."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Black tea flavonoids help maintain a healthy cardiovascular system."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Floral antioxidants promote a healthy, glowing complexion from within."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-091",
+    "name": "Ceylon Mix Flower Black Tea with Natural Flowers-Yellow Pouch",
+    "description": "A cheerful and aromatic Ceylon black tea blended with a vibrant mix of naturally dried edible flowers. Presented in a bright yellow pouch — uplifting, fragrant, and full of character.",
+    "price": "$8.00",
+    "pack": "Yellow Pouch",
+    "weight": "50g",
+    "image": "/images/Ceylon Mix Flower Black Tea with Natural Flowers-Yellow Pouch 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, medium-bodied black tea base that carries floral notes beautifully."
+      },
+      {
+        "name": "Mixed Edible Flowers",
+        "description": "A vibrant blend of naturally dried edible flowers for a cheerful floral aroma."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Uplift",
+        "description": "Floral aromas naturally uplift the mood and reduce everyday stress."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with polyphenols from both black tea and natural flower compounds."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Black tea flavonoids help maintain a healthy cardiovascular system."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Floral antioxidants promote a healthy, glowing complexion from within."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
@@ -327,10 +823,10 @@
     "id": "tea-007",
     "name": "Ceylon Premium tea",
     "description": "The quintessential Ceylon tea experience. A perfectly balanced, bright, and flavorful premium black tea.",
-    "price": "$125.00",
+    "price": "$13.00",
     "pack": "",
     "weight": "125g",
-    "image": "/images/CeylonPremiumtea125.jpg",
+    "image": "/images/Ceylon Premium tea 125g.jpg",
     "ingredientImage": "/leaves/ceylon-premium.jpg",
     "ingredients": [
       {
@@ -359,19 +855,75 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Use freshly drawn water boiled to 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of loose leaf tea per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3 to 5 minutes depending on desired strength."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and enjoy. Perfect plain or with a slice of lemon."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-092",
+    "name": "Ceylon Rose Black Tea with Natural Rose",
+    "description": "An enchanting blend of premium Ceylon black tea and naturally dried red rose petals. Deeply romantic, wonderfully fragrant, and soothing in every sip.",
+    "price": "$8.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Ceylon Rose Black Tea with Natural Rose 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth Ceylon black tea base that complements delicate rose notes beautifully."
+      },
+      {
+        "name": "Natural Rose Petals",
+        "description": "Naturally dried edible red rose petals for a romantic floral aroma."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Skin Radiance",
+        "description": "Rose is renowned for promoting a healthy, youthful, glowing complexion."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "The natural aroma of roses deeply relaxes the nervous system."
+      },
+      {
+        "title": "Digestive Health",
+        "description": "Helps soothe stomach cramps and mild indigestion naturally."
+      },
+      {
+        "title": "Immunity",
+        "description": "Rose petals are a naturally good source of Vitamin C and antioxidants."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
@@ -382,7 +934,7 @@
     "price": "$12.00",
     "pack": "",
     "weight": "125g",
-    "image": "/images/CeylonSpecialFFSPtea125.jpg",
+    "image": "/images/Ceylon Special FFSP tea 125g.jpg",
     "ingredientImage": "/leaves/ffsp.jpg",
     "ingredients": [
       {
@@ -411,19 +963,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Measure 1 teaspoon into your teapot."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for precisely 3 minutes for the best flavor."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain into a cup. Best enjoyed black to appreciate its complex notes."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -434,7 +986,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "150g",
-    "image": "/images/CeylonSupremetea150.jpg",
+    "image": "/images/Ceylon Supreme tea 150g.jpg",
     "ingredientImage": "/leaves/supreme.jpg",
     "ingredients": [
       {
@@ -463,19 +1015,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a full boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 heaped teaspoon of Supreme tea per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes for a truly bold cup."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain well. Highly recommended with milk and a sweetener."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -486,7 +1038,7 @@
     "price": "$7.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/CeylonteaBOP.jpg",
+    "image": "/images/Ceylon tea BOP 100g.jpg",
     "ingredientImage": "/leaves/bop.jpg",
     "ingredients": [
       {
@@ -515,19 +1067,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Boil fresh water to 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of BOP per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-4 minutes depending on preferred strength."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Excellent for making traditional milk tea."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -538,7 +1090,7 @@
     "price": "$7.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/CeylonteaOP1.jpg",
+    "image": "/images/Ceylon tea OP1 100g.jpg",
     "ingredientImage": "/leaves/op1.jpg",
     "ingredients": [
       {
@@ -567,19 +1119,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 95°C-100°C (203°F-212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Use 1 to 1.5 teaspoons of the large wiry leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes to allow leaves to fully unfurl."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Best enjoyed black without milk."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -590,7 +1142,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/CeylonteaPEKO.jpg",
+    "image": "/images/Ceylon tea PEKO 100g.jpg",
     "ingredientImage": "/leaves/pekoe.jpg",
     "ingredients": [
       {
@@ -619,19 +1171,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a full boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Measure 1 teaspoon of Pekoe leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4 minutes for a deep, malty flavor."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and enjoy. Pairs wonderfully with a dash of milk."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -642,7 +1194,7 @@
     "price": "$8.00",
     "pack": "",
     "weight": "25g",
-    "image": "/images/ChakraTea25.jpg",
+    "image": "/images/Chakra Tea 25g.jpg",
     "ingredientImage": "/leaves/chakra-herbs.jpg",
     "ingredients": [
       {
@@ -674,20 +1226,20 @@
     ],
     "brewing": [
       {
-        "title": "Boil Water",
-        "description": "Heat water to 95°C (203°F)."
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of Chakra Tea per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 4-5 minutes to release herbal oils."
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
       },
       {
         "title": "Serve",
-        "description": "Strain. Breathe in the aroma before taking your first sip."
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
@@ -698,7 +1250,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/CinnamonTea100.jpg",
+    "image": "/images/Cinnamon Tea 100g.jpg",
     "ingredientImage": "/leaves/cinnamon.jpg",
     "ingredients": [
       {
@@ -731,19 +1283,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the cinnamon blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes to extract the cinnamon oils."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve hot. Naturally sweet, but add honey if desired."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -754,7 +1306,7 @@
     "price": "$15.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/CinnamonTeaBox.jpg",
+    "image": "/images/Cinnamon Tea Box 100g.jpg",
     "ingredientImage": "/leaves/cinnamon.jpg",
     "ingredients": [
       {
@@ -787,19 +1339,75 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the cinnamon blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes to extract the cinnamon oils."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve hot. Naturally sweet, but add honey if desired."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-048",
+    "name": "Earl Grey Tea",
+    "description": "A timeless classic reimagined. Premium Ceylon black tea masterfully scented with the distinctive citrus elegance of natural Bergamot oil, delivering a refined and aromatic experience.",
+    "price": "$15.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Earl Grey Tea 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, medium-bodied black tea base from high-altitude estates."
+      },
+      {
+        "name": "Natural Bergamot Oil",
+        "description": "Cold-pressed citrus extract from the bergamot orange rind."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress Relief",
+        "description": "Bergamot aromatherapy naturally reduces anxiety and promotes calm."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Soothes the digestive system and helps alleviate indigestion."
+      },
+      {
+        "title": "Energy Boost",
+        "description": "Provides a clean, refreshing lift in sustained energy."
+      },
+      {
+        "title": "Oral Health",
+        "description": "Contains natural catechins that protect against oral infections."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -810,7 +1418,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/EarlGreyTeaBox.jpg",
+    "image": "/images/Earl Grey Tea Box 100g.jpg",
     "ingredientImage": "/leaves/earl-grey.jpg",
     "ingredients": [
       {
@@ -843,71 +1451,123 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 95°C-100°C (203°F-212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Place 1 teaspoon of Earl Grey per cup into your teapot."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-4 minutes. Do not over-steep to avoid bitterness."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Excellent black or with a slice of lemon."
+        "description": "Strain and serve hot."
       }
     ]
   },
   {
-    "id": "tea-017",
-    "name": "OPA",
-    "description": "Orange Pekoe A from the picturesque Ella region. A large, bold leaf tea producing a mild, smooth, and incredibly aromatic cup.",
-    "price": "$6.00",
+    "id": "tea-080",
+    "name": "English Afternoon Tea",
+    "description": "A lighter, more delicate interpretation of the classic English tea tradition. A refined Ceylon blend crafted for the afternoon, offering a smooth, aromatic, and perfectly balanced cup.",
+    "price": "$13.00",
     "pack": "",
-    "weight": "100g",
-    "image": "/images/EllaOPA100.jpg",
-    "ingredientImage": "/leaves/opa.jpg",
+    "weight": "125g",
+    "image": "/images/English Afternoon Tea 125g.jpg",
+    "ingredientImage": "",
     "ingredients": [
       {
-        "name": "OPA Black Tea",
-        "description": "Large, slightly twisted whole leaves from high-altitude estates."
+        "name": "Ceylon Afternoon Blend",
+        "description": "A lighter, smoother selection of Ceylon black tea leaves suited for afternoon enjoyment."
       }
     ],
     "benefits": [
       {
-        "title": "Deep Relaxation",
-        "description": "The mild liquor provides a soothing, calming experience."
+        "title": "Afternoon Calm",
+        "description": "A gentler caffeine level than breakfast tea, perfect for a relaxed afternoon moment."
       },
       {
-        "title": "Antioxidant Rich",
-        "description": "Large leaves retain a high concentration of beneficial polyphenols."
+        "title": "Digestive Aid",
+        "description": "Aids comfortable digestion when enjoyed after a midday meal."
       },
       {
-        "title": "Hydration",
-        "description": "A light brew perfect for all-day hydration."
+        "title": "Antioxidant Boost",
+        "description": "Delivers a reliable daily dose of heart-protecting polyphenols."
       },
       {
-        "title": "Heart Health",
-        "description": "Supports healthy blood circulation and heart function."
+        "title": "Focus & Clarity",
+        "description": "Sustains mental clarity and alertness through the afternoon hours."
       }
     ],
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to 95°C-100°C (203°F-212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Use 1.5 teaspoons of the large leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-6 minutes to let the large leaves fully expand."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Best enjoyed without milk to appreciate its mild notes."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-074",
+    "name": "English Breakfast Tea",
+    "description": "A classic, full-bodied breakfast blend crafted from the finest Ceylon black tea leaves. Bold, malty, and robust — the definitive cup for a strong and energizing morning start.",
+    "price": "$13.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/English Breakfast Tea 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea Blend",
+        "description": "A full-bodied, expertly blended selection of robust Ceylon black tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Morning Energy",
+        "description": "A strong caffeine content provides a robust and reliable wake-up call."
+      },
+      {
+        "title": "Mental Alertness",
+        "description": "L-theanine and caffeine sharpen focus and sustained concentration."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Flavonoids in black tea support a healthy cardiovascular system daily."
+      },
+      {
+        "title": "Immunity",
+        "description": "Rich in antioxidants that strengthen the body's natural defense system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -918,7 +1578,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "150g",
-    "image": "/images/ExtraspecialFFEXSPtea125.jpg",
+    "image": "/images/Extra special FFEXSP tea 150g.jpg",
     "ingredientImage": "/leaves/ffexsp.jpg",
     "ingredients": [
       {
@@ -947,19 +1607,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat fresh water to exactly 95°C (203°F) to protect the delicate tips."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Measure 1 teaspoon into your finest teapot."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3 minutes for a bright, golden-red liquor."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain carefully. This masterpiece is best enjoyed absolutely plain."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -970,7 +1630,7 @@
     "price": "$14.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/FBOPBox.jpg",
+    "image": "/images/FBOP Box 100g.jpg",
     "ingredientImage": "/leaves/fbop.jpg",
     "ingredients": [
       {
@@ -999,19 +1659,915 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a full boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 level teaspoon of FBOP per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3 to 4 minutes."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Tastes superb black or with a dash of milk."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-093",
+    "name": "Flavoured Ceylon Black Lemongrass Tea",
+    "description": "A bold Ceylon black tea masterfully infused with the fresh, citrusy warmth of natural lemongrass. Invigorating, aromatic, and deeply refreshing.",
+    "price": "$10.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Flavoured Ceylon Black Lemongrass Tea 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, full-bodied black tea base that pairs boldly with herbal notes."
+      },
+      {
+        "name": "Natural Lemongrass",
+        "description": "Dried lemongrass stalks delivering a citrusy, uplifting aromatic character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Aid",
+        "description": "Lemongrass is traditionally used to soothe digestion and relieve bloating."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "The citrusy aroma of lemongrass naturally calms the mind and reduces anxiety."
+      },
+      {
+        "title": "Immunity",
+        "description": "Rich in antioxidants and Vitamin C to strengthen natural defences."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A clean caffeine lift paired with invigorating lemongrass aroma."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-063",
+    "name": "Flavoured Ceylon Tea Blackberry",
+    "description": "A rich and fruity Ceylon black tea beautifully infused with the deep, jewel-toned sweetness of wild blackberries. Bold, vibrant, and wonderfully complex.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Blackberry 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A full-bodied base that beautifully carries dark berry notes."
+      },
+      {
+        "name": "Natural Blackberry Flavoring",
+        "description": "Deep, sweet-tart essence of wild blackberries."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Rich Antioxidants",
+        "description": "Blackberry anthocyanins combined with tea polyphenols deliver powerful cell protection."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Dark berry compounds support healthy blood pressure and circulation."
+      },
+      {
+        "title": "Immune Defense",
+        "description": "A high dose of natural antioxidants fortifies the immune system."
+      },
+      {
+        "title": "Vibrant Energy",
+        "description": "The rich berry aroma and natural caffeine create a truly invigorating cup."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-084",
+    "name": "Flavoured Ceylon Tea Cardamom",
+    "description": "A richly warming and exotic Ceylon black tea masterfully blended with the spicy-sweet, aromatic notes of natural green cardamom pods. A deeply comforting and sophisticated cup.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Cardamom 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, robust black tea base that holds up to bold aromatic spices."
+      },
+      {
+        "name": "Natural Cardamom Flavoring",
+        "description": "The authentic spicy-sweet, floral aroma of real green cardamom pods."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Health",
+        "description": "Cardamom is highly effective for relieving bloating, nausea, and indigestion."
+      },
+      {
+        "title": "Breath Freshener",
+        "description": "Natural antibacterial properties in cardamom help cleanse and freshen breath."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Stimulates the body to flush out toxins and supports liver health."
+      },
+      {
+        "title": "Warming Comfort",
+        "description": "Improves blood circulation and provides a deeply comforting body warmth."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-071",
+    "name": "Flavoured Ceylon Tea Honey",
+    "description": "A warm, naturally sweet Ceylon black tea delicately infused with the golden richness of natural honey flavor. Comforting, smooth, and luxuriously indulgent in every sip.",
+    "price": "$15.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Honey 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, mellow black tea base that carries honey notes beautifully."
+      },
+      {
+        "name": "Natural Honey Flavoring",
+        "description": "The warm, floral sweetness of natural honey essence."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Soothing Comfort",
+        "description": "Honey and tea together create the ultimate soothing, throat-coating beverage."
+      },
+      {
+        "title": "Energy Boost",
+        "description": "Natural sweetness paired with caffeine provides a gentle, lasting energy lift."
+      },
+      {
+        "title": "Immune Support",
+        "description": "Honey's natural antibacterial properties complement black tea antioxidants."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "Warm, sweet infusion naturally soothes and calms the digestive system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-070",
+    "name": "Flavoured Ceylon Tea Jasmine",
+    "description": "A heavenly and aromatic Ceylon black tea gently scented with the intoxicating fragrance of night-blooming jasmine blossoms. Floral, soothing, and elegantly refined.",
+    "price": "$15.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Jasmine 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A delicate, smooth black tea base that absorbs floral notes beautifully."
+      },
+      {
+        "name": "Natural Jasmine Flavoring",
+        "description": "The enchanting, sweet fragrance of freshly bloomed jasmine flowers."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress Relief",
+        "description": "Jasmine aroma acts as a natural mild sedative, calming the mind and body."
+      },
+      {
+        "title": "Sleep Support",
+        "description": "Floral aromatherapy properties gently promote relaxation before sleep."
+      },
+      {
+        "title": "Antioxidant Power",
+        "description": "Combined benefits of black tea polyphenols and floral compounds."
+      },
+      {
+        "title": "Mood Enhancement",
+        "description": "The sweet scent of jasmine naturally uplifts and brightens one's spirits."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-067",
+    "name": "Flavoured Ceylon Tea Lemon",
+    "description": "A bright and zesty Ceylon black tea beautifully paired with the clean, vibrant tang of natural lemon. Crisp, refreshing, and the perfect pick-me-up at any hour.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Lemon 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A bright, brisk Ceylon black tea base that shines with citrus."
+      },
+      {
+        "name": "Natural Lemon Flavoring",
+        "description": "Clean, tart natural lemon essence for a crisp citrus character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Vitamin C Rich",
+        "description": "Lemon notes amplify immune support alongside black tea antioxidants."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Lemon and black tea together gently soothe the digestive system."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A crisp, clean cup that instantly revives and energizes."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "Citrus scents naturally elevate mood and sharpen mental clarity."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-075",
+    "name": "Flavoured Ceylon Tea Lime",
+    "description": "A sharp, refreshing, and uniquely zesty Ceylon black tea infused with the cool tartness of natural lime. Crisp, lively, and wonderfully thirst-quenching at any time of day.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Lime 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A bright, brisk Ceylon black tea base perfectly suited for citrus notes."
+      },
+      {
+        "name": "Natural Lime Flavoring",
+        "description": "Sharp, tart natural lime essence for a crisp, refreshing citrus character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Refreshing & Hydrating",
+        "description": "The crisp lime character makes this one of the most refreshing teas available."
+      },
+      {
+        "title": "Immune Boost",
+        "description": "Lime's Vitamin C complements black tea polyphenols for strong immunity."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Citrus and black tea tannins work together to support smooth digestion."
+      },
+      {
+        "title": "Mood Uplift",
+        "description": "The sharp lime citrus aroma instantly refreshes and uplifts the senses."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-060",
+    "name": "Flavoured Ceylon Tea Mango",
+    "description": "A tropical escape in every cup. Premium Ceylon black tea beautifully infused with the sweet, sun-kissed fragrance of ripe mango. Bright, fruity, and utterly refreshing.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Mango 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A bright, lively black tea that complements tropical fruit beautifully."
+      },
+      {
+        "name": "Natural Mango Flavoring",
+        "description": "The irresistible sweet-tart essence of sun-ripened tropical mango."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Immune Support",
+        "description": "Mango notes complement black tea antioxidants for enhanced immunity."
+      },
+      {
+        "title": "Energy Lift",
+        "description": "Natural caffeine provides a refreshing and sustained energy boost."
+      },
+      {
+        "title": "Mood Booster",
+        "description": "The tropical mango aroma instantly uplifts and invigorates the senses."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Black tea polyphenols support a healthy and comfortable digestive system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-096",
+    "name": "Flavoured Ceylon Tea Masala Tea",
+    "description": "An authentic and boldly spiced Ceylon Masala Chai experience. Premium black tea expertly blended with a traditional aromatic Indian spice medley — warming, invigorating, and deeply satisfying.",
+    "price": "$10.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Flavoured Ceylon Tea Masala Tea 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A robust, full-bodied black tea base designed to hold up to bold spices."
+      },
+      {
+        "name": "Masala Spice Blend",
+        "description": "A traditional blend of cardamom, cinnamon, clove, ginger, and black pepper."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Immunity Boost",
+        "description": "The complex spice blend is a powerhouse of antiviral and antibacterial properties."
+      },
+      {
+        "title": "Improves Digestion",
+        "description": "Spices like ginger and black pepper stimulate healthy digestion."
+      },
+      {
+        "title": "Energy and Warmth",
+        "description": "Provides sustained energy and warms the body from the inside out."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Cloves and cinnamon act as natural anti-inflammatory agents."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-078",
+    "name": "Flavoured Ceylon Tea Mixed Fruit",
+    "description": "A festive and vibrant Ceylon black tea bursting with the combined sweetness of multiple tropical and orchard fruits. A cheerful, colorful, and endlessly refreshing blend for all occasions.",
+    "price": "$15.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Mixed Fruit 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A lively, medium-bodied base that showcases a medley of fruit flavors."
+      },
+      {
+        "name": "Mixed Fruit Flavoring",
+        "description": "A vibrant blend of tropical and orchard fruit essences including mango, strawberry, and pineapple."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Immune Support",
+        "description": "A spectrum of fruit antioxidants combined with black tea polyphenols for complete immunity."
+      },
+      {
+        "title": "Energy & Mood",
+        "description": "The bright, cheerful medley of flavors uplifts mood and provides natural energy."
+      },
+      {
+        "title": "Hydrating",
+        "description": "A delicious way to stay hydrated with a refreshing and fruity flavor profile."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Multiple fruit enzymes and black tea tannins promote healthy digestion."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-082",
+    "name": "Flavoured Ceylon Tea Peppermint",
+    "description": "A bold Ceylon black tea invigorated with the cool, clean freshness of natural peppermint leaves. Brisk, energizing, and wonderfully refreshing — a timeless and beloved pairing.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Peppermint 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A bold, brisk Ceylon black tea that powerfully complements cooling mint."
+      },
+      {
+        "name": "Natural Peppermint Flavoring",
+        "description": "The intensely cool, clean menthol character of natural peppermint."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Relief",
+        "description": "Peppermint menthol relaxes the digestive tract and effectively relieves bloating."
+      },
+      {
+        "title": "Clears Congestion",
+        "description": "The cooling aroma opens sinuses and clears respiratory pathways naturally."
+      },
+      {
+        "title": "Headache Relief",
+        "description": "The cooling, soothing properties can help alleviate tension and sinus headaches."
+      },
+      {
+        "title": "Energizing Freshness",
+        "description": "Combines bold caffeine with a cool mint burst for a highly invigorating lift."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-061",
+    "name": "Flavoured Ceylon Tea Pineapple",
+    "description": "A vibrant and refreshing blend of premium Ceylon black tea infused with the bright, tangy sweetness of natural pineapple. A zesty tropical cup that energizes and delights.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Pineapple 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A lively, medium-strength base that highlights bright fruit flavors."
+      },
+      {
+        "name": "Natural Pineapple Flavoring",
+        "description": "Sweet and tangy natural pineapple essence for a tropical character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Enzyme Support",
+        "description": "Pineapple's natural bromelain supports comfortable and healthy digestion."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Bromelain and tea polyphenols work together to reduce inflammation."
+      },
+      {
+        "title": "Immune Boost",
+        "description": "Vitamin-rich pineapple notes complement tea antioxidants for strong immunity."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A bright, uplifting cup that fights fatigue and invigorates the senses."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-065",
+    "name": "Flavoured Ceylon Tea Pomegranate",
+    "description": "A luxurious and antioxidant-rich Ceylon black tea elevated with the exotic, ruby-red sweetness of natural pomegranate. Bold, fruity, and deeply indulgent.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Pomegranate 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A rich, full-bodied black tea that showcases bold fruit flavors."
+      },
+      {
+        "name": "Natural Pomegranate Flavoring",
+        "description": "Sweet-tart natural pomegranate essence for a jewel-like, ruby-toned character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Super Antioxidants",
+        "description": "Pomegranate punicalagins are among the most potent antioxidants known."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Pomegranate compounds help lower blood pressure and protect arteries."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Powerful plant compounds reduce inflammation throughout the body."
+      },
+      {
+        "title": "Memory & Focus",
+        "description": "Pomegranate antioxidants have been linked to improved memory and brain health."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-059",
+    "name": "Flavoured Ceylon Tea Strawberry Cream",
+    "description": "A delightfully indulgent blend of premium Ceylon black tea infused with the luscious, sun-ripened sweetness of strawberries and a smooth creamy finish. Dessert in a cup.",
+    "price": "$15.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea Strawberry Cream 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, medium-bodied base that carries fruity flavors perfectly."
+      },
+      {
+        "name": "Natural Strawberry & Cream Flavoring",
+        "description": "Natural strawberry essence and creamy vanilla undertones."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Uplift",
+        "description": "Sweet strawberry aroma naturally elevates mood and reduces stress."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Combined antioxidants from black tea and strawberry essence protect cells."
+      },
+      {
+        "title": "Energy",
+        "description": "A gentle caffeine lift that keeps you alert and refreshed."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Black tea tannins gently support healthy gut function."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-094",
+    "name": "Flavoured Ceylon Tea with Natural Caramel Extract",
+    "description": "A luxuriously indulgent Ceylon black tea delicately infused with the warm, golden sweetness of natural caramel. A comforting dessert-like experience in every cup.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea 125g with Natural Caramel Extract 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, medium-bodied black tea base that carries sweet caramel notes beautifully."
+      },
+      {
+        "name": "Natural Caramel Extract",
+        "description": "Warm, golden natural caramel flavouring for a rich, indulgent sweetness."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Enhancer",
+        "description": "The warm caramel aroma naturally uplifts mood and reduces stress."
+      },
+      {
+        "title": "Curb Cravings",
+        "description": "A sweet, satisfying cup that helps manage sugar cravings guilt-free."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Black tea polyphenols deliver a reliable daily dose of protective antioxidants."
+      },
+      {
+        "title": "Energy Lift",
+        "description": "A gentle, sustained caffeine release for calm, focused energy."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-095",
+    "name": "Flavoured Ceylon Tea with Natural Peach",
+    "description": "A delightfully fruity Ceylon black tea infused with the sweet, sun-ripened juiciness of natural peach. Bright, fragrant, and wonderfully refreshing in every sip.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "125g",
+    "image": "/images/Flavoured Ceylon Tea with Natural Peach 125g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth, lively black tea base that showcases vibrant fruit flavours."
+      },
+      {
+        "name": "Natural Peach Flavouring",
+        "description": "The sweet, juicy essence of sun-ripened natural peach."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Uplift",
+        "description": "The sweet peach aroma naturally elevates mood and reduces stress."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Combined antioxidants from black tea and peach essence protect cells."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Black tea tannins gently support healthy gut function."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A gentle caffeine lift in a bright, fruity, uplifting package."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1022,7 +2578,7 @@
     "price": "$10.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/GingerTea100.jpg",
+    "image": "/images/Ginger Tea 100g.jpg",
     "ingredientImage": "/leaves/ginger.jpg",
     "ingredients": [
       {
@@ -1055,19 +2611,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 heaped teaspoon of the ginger blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 4-5 minutes to extract the ginger spice."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain. Highly recommended with honey and a squeeze of lemon."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1078,7 +2634,7 @@
     "price": "$15.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/GingerTeaBox.jpg",
+    "image": "/images/Ginger Tea Box 100g.jpg",
     "ingredientImage": "/leaves/ginger.jpg",
     "ingredients": [
       {
@@ -1111,19 +2667,179 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 heaped teaspoon of the ginger blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 4-5 minutes to extract the ginger spice."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain. Highly recommended with honey and a squeeze of lemon."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-057",
+    "name": "Golden Tips",
+    "description": "An extraordinarily rare and precious tea composed entirely of hand-harvested golden tea buds. Each delicate tip yields a honey-toned liquor of unparalleled sweetness and refinement.",
+    "price": "$14.00",
+    "pack": "",
+    "weight": "20g",
+    "image": "/images/Golden Tips 20g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Pure Golden Tea Tips",
+        "description": "100% unopened tea buds covered in fine golden down, harvested by hand at dawn."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Supreme Antioxidants",
+        "description": "Unopened buds contain the absolute highest concentration of natural antioxidants."
+      },
+      {
+        "title": "Anti-Aging",
+        "description": "Premium polyphenols combat cellular aging and protect skin from damage."
+      },
+      {
+        "title": "Zen Calm",
+        "description": "Highest L-theanine content induces a profound state of calm, clear alertness."
+      },
+      {
+        "title": "Immunity Boost",
+        "description": "Rich in trace minerals and vitamins that fortify the immune system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-033",
+    "name": "Golden Tips Roll",
+    "description": "A highly luxurious artisanal tea. Premium Orange Pekoe hand-rolled with precious, velvety Golden Tips. Offers an exquisite honey-like sweetness.",
+    "price": "$35.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Golden Tips Roll 50g.jpg",
+    "ingredientImage": "/leaves/golden-tips.jpg",
+    "ingredients": [
+      {
+        "name": "OP Black Tea",
+        "description": "Finest whole leaf Orange Pekoe."
+      },
+      {
+        "name": "Golden Tips",
+        "description": "Unopened, golden-hued tea buds packed with nutrients and sweetness."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Supreme Antioxidants",
+        "description": "Tea buds (tips) contain the highest concentration of L-theanine and antioxidants."
+      },
+      {
+        "title": "Anti-Aging",
+        "description": "Powerful polyphenols help combat cellular aging and skin damage."
+      },
+      {
+        "title": "Immunity Focus",
+        "description": "Fortifies the immune system with essential trace minerals."
+      },
+      {
+        "title": "Zen State",
+        "description": "High L-theanine induces a state of calm, relaxed alertness."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-040",
+    "name": "Green Tea",
+    "description": "Our Signature Mystery Blend. A secret, exclusive combination of premium Ceylon black and green teas crafted by our master blenders.",
+    "price": "$10.00",
+    "pack": "",
+    "weight": "200g",
+    "image": "/images/Green Tea 200g.jpg",
+    "ingredientImage": "/leaves/signature-blend.jpg",
+    "ingredients": [
+      {
+        "name": "Master's Tea Blend",
+        "description": "A proprietary mix of high-grown black and green tea leaves."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Balanced Energy",
+        "description": "A perfect equilibrium of stimulation and relaxation."
+      },
+      {
+        "title": "Comprehensive Antioxidants",
+        "description": "Combines the flavonoids of black tea with the catechins of green tea."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Aids in maintaining a healthy gut microbiome."
+      },
+      {
+        "title": "Immunity",
+        "description": "Supports overall health and daily wellness."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1134,7 +2850,7 @@
     "price": "$4.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/GreenteaBox.jpg",
+    "image": "/images/Green tea Box 50g.jpg",
     "ingredientImage": "/leaves/green-tea.jpg",
     "ingredients": [
       {
@@ -1163,19 +2879,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 80°C (176°F). Never use boiling water on green tea."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of green tea leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep gently for 2 to 3 minutes maximum to avoid bitterness."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve immediately. Best enjoyed completely plain."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1186,12 +2902,16 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/HibiscusTeaBox.jpg",
+    "image": "/images/Hibiscus Tea Box 100g.jpg",
     "ingredientImage": "/leaves/hibiscus.jpg",
     "ingredients": [
       {
         "name": "Hibiscus Sabdariffa",
-        "description": "100% natural dried hibiscus flower calyces."
+        "description": "100% natural dried hibiscus flower calyces — the source of the signature ruby-red color and tart flavor."
+      },
+      {
+        "name": "Dried Rose Hip (Rosa canina)",
+        "description": "Naturally rich in Vitamin C, rose hip complements hibiscus and adds a gentle fruity depth."
       }
     ],
     "benefits": [
@@ -1215,19 +2935,75 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a full boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 to 2 teaspoons of dried hibiscus per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 5-7 minutes until the water turns a deep, vibrant red."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain. Can be served hot with honey, or poured over ice for a summer cooler."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-086",
+    "name": "Jasmine Flavoured Tea",
+    "description": "A classically fragrant Ceylon tea delicately scented with the timeless, heavenly aroma of night-blooming jasmine flowers. Sweet, floral, and endlessly soothing in every sip.",
+    "price": "$9.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Jasmine Flavoured Tea 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Tea",
+        "description": "A light to medium-bodied Ceylon tea that absorbs jasmine fragrance beautifully."
+      },
+      {
+        "name": "Natural Jasmine Flavoring",
+        "description": "The pure, sweet, intoxicating scent of freshly bloomed jasmine blossoms."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Stress & Anxiety Relief",
+        "description": "Jasmine aroma is a natural mild sedative proven to reduce stress and calm nerves."
+      },
+      {
+        "title": "Sleep Support",
+        "description": "The relaxing floral properties gently ease the mind for restful sleep."
+      },
+      {
+        "title": "Antioxidant Power",
+        "description": "Combines the health benefits of tea polyphenols with floral bioactive compounds."
+      },
+      {
+        "title": "Mood Enhancement",
+        "description": "The sweet scent of jasmine naturally uplifts mood and promotes positive feelings."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1238,7 +3014,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/JasmieTeaBox.jpg",
+    "image": "/images/jasmine Tea Box 100g.jpg",
     "ingredientImage": "/leaves/jasmine.jpg",
     "ingredients": [
       {
@@ -1271,19 +3047,75 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat fresh water to about 80°C (176°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Measure 1 level teaspoon of Jasmine tea per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 2-3 minutes to preserve the delicate floral notes."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve immediately. Do not add milk or strong sweeteners."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-104",
+    "name": "Karapincha Green Tea Tin",
+    "description": "A unique wellness blend of premium Ceylon green tea infused with fresh Karapincha (curry leaves). Rich in antioxidants and aromatic plant compounds, this is a deeply nourishing and distinctly Sri Lankan herbal experience.",
+    "price": "$10.00",
+    "pack": "Tin",
+    "weight": "40g",
+    "image": "/images/Karapincha Green Tea Tin 40g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Green Tea",
+        "description": "Delicate unoxidised Ceylon green tea leaves, light and fresh."
+      },
+      {
+        "name": "Karapincha (Curry Leaves)",
+        "description": "Sun-dried Sri Lankan curry leaves known for their medicinal properties."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Hair & Skin Health",
+        "description": "Curry leaves are rich in nutrients that promote healthy hair growth and skin."
+      },
+      {
+        "title": "Blood Sugar Balance",
+        "description": "Karapincha is traditionally used to help regulate blood sugar levels."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Supports healthy digestion and relieves bloating naturally."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Combined green tea and curry leaf antioxidants protect against cellular damage."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1294,7 +3126,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/MasalaTeaBox.jpg",
+    "image": "/images/Masala Tea Box 100g.jpg",
     "ingredientImage": "/leaves/masala.jpg",
     "ingredients": [
       {
@@ -1326,20 +3158,76 @@
     ],
     "brewing": [
       {
-        "title": "Simmer Water & Milk",
-        "description": "Combine half water and half milk in a saucepan and bring to a simmer."
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1.5 teaspoons of Masala Tea per cup directly into the simmering liquid."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
-        "title": "Boil Together",
-        "description": "Let it boil together for 3-5 minutes until the color turns a rich caramel brown."
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain into a cup. Add sugar or jaggery to taste for the perfect Chai."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-087",
+    "name": "Mint Flavoured Tea",
+    "description": "A wonderfully refreshing and cooling Ceylon tea infused with crisp, natural mint leaves. Clean, invigorating, and perfectly reviving — an ideal cup to awaken and refresh at any hour.",
+    "price": "$9.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Mint Flavoured Tea 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Tea",
+        "description": "A smooth, light Ceylon tea base that complements cooling mint perfectly."
+      },
+      {
+        "name": "Natural Mint Flavoring",
+        "description": "The crisp, refreshing menthol character of natural spearmint and peppermint."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Relief",
+        "description": "Mint menthol naturally relaxes the digestive muscles and eases bloating."
+      },
+      {
+        "title": "Freshens Breath",
+        "description": "Natural antibacterial properties kill the germs responsible for bad breath."
+      },
+      {
+        "title": "Clears the Mind",
+        "description": "The cool mint aroma sharpens focus and clears mental fog instantly."
+      },
+      {
+        "title": "Headache Soother",
+        "description": "The cooling, relaxing menthol effect helps relieve tension headaches."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1350,7 +3238,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/MintTeaBox.jpg",
+    "image": "/images/Mint Tea Box 100g.jpg",
     "ingredientImage": "/leaves/mint.jpg",
     "ingredients": [
       {
@@ -1383,19 +3271,131 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a rolling boil at 95°C-100°C (203°F-212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the mint blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 3-5 minutes to release the menthol oils fully."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain. Delicious hot, or poured over ice as a refreshing summer drink."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-105",
+    "name": "Mixed Fruit Tea Roll",
+    "description": "A vibrant and refreshing Ceylon tea blend rolled with a medley of natural tropical fruit flavours. Bright, aromatic and naturally sweet — a joyful cup for any time of day.",
+    "price": "$9.00",
+    "pack": "Roll",
+    "weight": "50g",
+    "image": "/images/Mixed Fruit Tea Roll 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "Fine Ceylon black tea as the smooth, full-bodied base."
+      },
+      {
+        "name": "Natural Fruit Blend",
+        "description": "A tropical medley of dried fruit pieces and natural fruit flavours."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mood Lifting",
+        "description": "Natural fruit aromas and flavours elevate mood and energy levels."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Fruit compounds and black tea polyphenols work together to fight free radicals."
+      },
+      {
+        "title": "Hydrating",
+        "description": "A delicious way to increase daily fluid intake."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Natural fruit enzymes gently support healthy digestion."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-106",
+    "name": "Moringa Green Tea Tin",
+    "description": "A powerhouse wellness blend combining delicate Ceylon green tea with nutrient-dense Moringa (drumstick leaf). One of the most nutritionally complete herbal tea experiences available, elegantly presented in a premium tin.",
+    "price": "$10.00",
+    "pack": "Tin",
+    "weight": "40g",
+    "image": "/images/Moringa Green Tea Tin 40g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Green Tea",
+        "description": "Light, unoxidised Ceylon green tea leaves rich in catechins."
+      },
+      {
+        "name": "Moringa Leaf",
+        "description": "Dried Moringa oleifera leaves — one of the most nutrient-rich plants on earth."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Nutritional Powerhouse",
+        "description": "Moringa provides vitamins A, C, E, calcium, and iron in a single cup."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Both moringa and green tea reduce chronic inflammation naturally."
+      },
+      {
+        "title": "Energy & Vitality",
+        "description": "Natural plant compounds boost energy without the crash of caffeine alone."
+      },
+      {
+        "title": "Immune Support",
+        "description": "High vitamin C and antioxidant content strengthens the immune system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1406,7 +3406,7 @@
     "price": "$5.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/OP200.jpg",
+    "image": "/images/OP 200g.jpg",
     "ingredientImage": "/leaves/op.jpg",
     "ingredients": [
       {
@@ -1435,71 +3435,71 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat fresh water to 95°C-100°C (203°F-212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Use 1 heaped teaspoon of these large leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes, giving the large leaves time to unfurl."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Highly recommended to be enjoyed black."
+        "description": "Strain and serve hot."
       }
     ]
   },
   {
-    "id": "tea-028",
-    "name": "OP",
-    "description": "Orange Pekoe. A classic, high-grade whole leaf black tea. Delivers a bright, coppery liquor with a smooth, refined taste.",
+    "id": "tea-107",
+    "name": "OP Pure Ceylon Purple Lable",
+    "description": "A distinguished Orange Pekoe grade Pure Ceylon Tea presented in iconic purple label packaging. Large, bold whole leaves that brew a remarkably smooth, mild and aromatic cup with excellent clarity.",
     "price": "$4.00",
-    "pack": "",
+    "pack": "Purple Label",
     "weight": "200g",
-    "image": "/images/OP200.jpg",
-    "ingredientImage": "/leaves/op.jpg",
+    "image": "/images/OP Pure Ceylon Purple Lable 200g.jpg",
+    "ingredientImage": "",
     "ingredients": [
       {
-        "name": "OP Black Tea",
-        "description": "Long, twisted, and wiry whole black tea leaves."
+        "name": "OP Ceylon Black Tea",
+        "description": "Large, whole Orange Pekoe grade Ceylon tea leaves with exceptional clarity."
       }
     ],
     "benefits": [
       {
-        "title": "Antioxidant Rich",
-        "description": "Whole leaves retain maximum polyphenols to protect body cells."
+        "title": "Smooth & Mild",
+        "description": "Low astringency delivers a wonderfully smooth and easy-drinking experience."
       },
       {
-        "title": "Mental Clarity",
-        "description": "Provides a smooth, jitter-free energy boost for better focus."
+        "title": "Heart Friendly",
+        "description": "Regular OP tea consumption supports healthy cardiovascular function."
       },
       {
-        "title": "Heart Health",
-        "description": "Supports a healthy cardiovascular system and blood pressure."
+        "title": "Calming Effect",
+        "description": "Gentle caffeine and L-theanine provide calm, focused energy."
       },
       {
-        "title": "Hydrating",
-        "description": "A lighter brew that effectively hydrates while providing flavor."
+        "title": "Digestive Comfort",
+        "description": "Light on the stomach and aids gentle, comfortable digestion."
       }
     ],
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat fresh water to 95°C-100°C (203°F-212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Use 1 heaped teaspoon of these large leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes, giving the large leaves time to unfurl."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Highly recommended to be enjoyed black."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1510,7 +3510,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/OP1200.jpg",
+    "image": "/images/OP1 200g.jpg",
     "ingredientImage": "/leaves/op1.jpg",
     "ingredients": [
       {
@@ -1539,71 +3539,71 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to just under a boil, around 95°C (203°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1.5 teaspoons of the light, wiry leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-5 minutes, watching the long leaves beautifully unroll."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain gently. Must be enjoyed without milk to taste its subtle notes."
+        "description": "Strain and serve hot."
       }
     ]
   },
   {
-    "id": "tea-030",
-    "name": "OP1 ",
-    "description": "Orange Pekoe 1. The highest grade of Orange Pekoe, featuring exceptionally long, delicate, wiry leaves. Produces a light, floral, and sophisticated liquor.",
+    "id": "tea-017",
+    "name": "OPA",
+    "description": "Orange Pekoe A from the picturesque Ella region. A large, bold leaf tea producing a mild, smooth, and incredibly aromatic cup.",
     "price": "$6.00",
     "pack": "",
-    "weight": "200g",
-    "image": "/images/OP1200.jpg",
-    "ingredientImage": "/leaves/op1.jpg",
+    "weight": "100g",
+    "image": "/images/OPA 100g.jpg",
+    "ingredientImage": "/leaves/opa.jpg",
     "ingredients": [
       {
-        "name": "OP1 Black Tea",
-        "description": "The most premium, delicate whole leaf black tea."
+        "name": "OPA Black Tea",
+        "description": "Large, slightly twisted whole leaves from high-altitude estates."
       }
     ],
     "benefits": [
       {
-        "title": "Stress Relief",
-        "description": "The delicate floral aroma acts as a natural stress reliever."
+        "title": "Deep Relaxation",
+        "description": "The mild liquor provides a soothing, calming experience."
       },
       {
-        "title": "Cellular Protection",
-        "description": "Extremely high in antioxidants due to careful leaf selection."
+        "title": "Antioxidant Rich",
+        "description": "Large leaves retain a high concentration of beneficial polyphenols."
       },
       {
-        "title": "Metabolism",
-        "description": "Aids in maintaining a healthy weight and metabolic rate."
+        "title": "Hydration",
+        "description": "A light brew perfect for all-day hydration."
       },
       {
-        "title": "Gut Health",
-        "description": "A light, non-astringent brew that is gentle on the stomach."
+        "title": "Heart Health",
+        "description": "Supports healthy blood circulation and heart function."
       }
     ],
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to just under a boil, around 95°C (203°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1.5 teaspoons of the light, wiry leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-5 minutes, watching the long leaves beautifully unroll."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain gently. Must be enjoyed without milk to taste its subtle notes."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1614,7 +3614,7 @@
     "price": "$5.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/OPA200.jpg",
+    "image": "/images/OPA 200g.jpg",
     "ingredientImage": "/leaves/opa.jpg",
     "ingredients": [
       {
@@ -1643,41 +3643,41 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Because the leaves are large, use 1.5 to 2 teaspoons per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 5-6 minutes to extract flavor from the thick leaves."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Perfect black, or with a slice of fresh lemon."
+        "description": "Strain and serve hot."
       }
     ]
   },
   {
-    "id": "tea-032",
-    "name": "OPA ",
-    "description": "Orange Pekoe A. Characterized by bold, large, slightly open leaves. Brews into a very mild, pale liquor with a soothing, earthy flavor.",
+    "id": "tea-102",
+    "name": "OPA Transparent Package",
+    "description": "Pure Ceylon Tea OPA (Orange Pekoe A) — bold, large, slightly open leaves that brew into a mild, smooth liquor with a soothing earthy character. A timeless classic from the highlands of Sri Lanka.",
     "price": "$4.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/OPA200.jpg",
-    "ingredientImage": "/leaves/opa.jpg",
+    "image": "/images/OPA Transparent Package 200g.jpg",
+    "ingredientImage": "",
     "ingredients": [
       {
         "name": "OPA Black Tea",
-        "description": "Large, bold, and slightly twisted whole tea leaves."
+        "description": "Large, bold, slightly twisted whole Ceylon tea leaves with a clean, earthy profile."
       }
     ],
     "benefits": [
       {
         "title": "Calming Effect",
-        "description": "Very low astringency makes it a deeply calming beverage."
+        "description": "Very low astringency makes it a deeply calming and soothing beverage."
       },
       {
         "title": "Hydrating",
@@ -1685,85 +3685,85 @@
       },
       {
         "title": "Heart Friendly",
-        "description": "Contains flavonoids that support cardiovascular health."
+        "description": "Contains flavonoids that support cardiovascular health and circulation."
       },
       {
         "title": "Digestive Ease",
-        "description": "Gentle on the stomach and aids in mild digestion."
+        "description": "Gentle on the stomach and aids in smooth, comfortable digestion."
       }
     ],
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Because the leaves are large, use 1.5 to 2 teaspoons per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 5-6 minutes to extract flavor from the thick leaves."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Perfect black, or with a slice of fresh lemon."
+        "description": "Strain and serve hot."
       }
     ]
   },
   {
-    "id": "tea-033",
-    "name": "Golden Tips Roll",
-    "description": "A highly luxurious artisanal tea. Premium Orange Pekoe hand-rolled with precious, velvety Golden Tips. Offers an exquisite honey-like sweetness.",
-    "price": "$35.00",
+    "id": "tea-062",
+    "name": "Orange Flavoured Tea",
+    "description": "A bright and citrusy blend of premium Ceylon tea infused with the warm, zesty sweetness of natural orange. Cheerful, aromatic, and wonderfully uplifting in every sip.",
+    "price": "$8.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/OPGoldenTipsRoll.jpg",
-    "ingredientImage": "/leaves/golden-tips.jpg",
+    "image": "/images/Orange Flavoured Tea 50g.jpg",
+    "ingredientImage": "",
     "ingredients": [
       {
-        "name": "OP Black Tea",
-        "description": "Finest whole leaf Orange Pekoe."
+        "name": "Ceylon Tea",
+        "description": "A bright, medium-bodied Ceylon tea as the base."
       },
       {
-        "name": "Golden Tips",
-        "description": "Unopened, golden-hued tea buds packed with nutrients and sweetness."
+        "name": "Natural Orange Flavoring",
+        "description": "Zesty, sweet natural orange essence for a citrus-forward character."
       }
     ],
     "benefits": [
       {
-        "title": "Supreme Antioxidants",
-        "description": "Tea buds (tips) contain the highest concentration of L-theanine and antioxidants."
+        "title": "Vitamin C Boost",
+        "description": "Citrus notes complement natural tea antioxidants for enhanced immunity."
       },
       {
-        "title": "Anti-Aging",
-        "description": "Powerful polyphenols help combat cellular aging and skin damage."
+        "title": "Mood Uplift",
+        "description": "Orange aroma is known to reduce anxiety and naturally brighten mood."
       },
       {
-        "title": "Immunity Focus",
-        "description": "Fortifies the immune system with essential trace minerals."
+        "title": "Digestive Aid",
+        "description": "Citrus and black tea tannins together support smooth digestion."
       },
       {
-        "title": "Zen State",
-        "description": "High L-theanine induces a state of calm, relaxed alertness."
+        "title": "Refreshing Energy",
+        "description": "A clean caffeine lift in a bright, cheerful citrus package."
       }
     ],
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 90°C (194°F). Boiling water can burn the delicate tips."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the Golden Tips roll per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep gently for 3 minutes for a bright, golden liquor."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain carefully. This is a master-grade tea; strictly serve without milk or sugar."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1774,7 +3774,7 @@
     "price": "$6.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/pekoe.jpg",
+    "image": "/images/PEKOE 200g.jpg",
     "ingredientImage": "/leaves/pekoe.jpg",
     "ingredients": [
       {
@@ -1803,19 +3803,435 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a full boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Measure 1 teaspoon of Pekoe leaves per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4 minutes for a deep, malty flavor."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and enjoy. Pairs wonderfully with a dash of milk."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-050",
+    "name": "Pekoe Purple Label",
+    "description": "A premium selection of Ceylon Pekoe presented under our exclusive Purple Label. The same beloved malty character elevated with the finest leaf selection from special high-grown estates.",
+    "price": "$5.00",
+    "pack": "Purple Label",
+    "weight": "200g",
+    "image": "/images/Pekoe Purple Label 200g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Premium Pekoe Black Tea",
+        "description": "Hand-selected pekoe leaves from altitude estates for superior quality."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Rich Boldness",
+        "description": "Premium selection ensures a deeper, more complex malty character."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular consumption supports healthy cardiovascular function."
+      },
+      {
+        "title": "Enhanced Antioxidants",
+        "description": "Special grade selection retains a higher density of beneficial polyphenols."
+      },
+      {
+        "title": "Focus & Alertness",
+        "description": "Sharpens mental clarity for a productive and energized day."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-108",
+    "name": "PEKOE Purple Lable",
+    "description": "A classic Pekoe grade Pure Ceylon Tea in elegant purple label presentation. Slightly smaller, rolled leaves than OP that brew a medium-bodied, smooth cup with a balanced flavour profile beloved by traditional Ceylon tea lovers.",
+    "price": "$7.00",
+    "pack": "Purple Label",
+    "weight": "100g",
+    "image": "/images/PEKOE Purple Lable 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Pekoe Ceylon Black Tea",
+        "description": "Medium-rolled Pekoe grade Ceylon black tea leaves with a balanced character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Balanced Flavour",
+        "description": "Medium body and smooth finish make it ideal for all-day drinking."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Pekoe leaves retain high levels of beneficial polyphenols."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Flavonoids in Ceylon tea support healthy blood vessel function."
+      },
+      {
+        "title": "Mental Alertness",
+        "description": "Moderate caffeine content keeps the mind sharp and focused."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-109",
+    "name": "Pink Tea Roll",
+    "description": "A beautifully delicate pink-hued Ceylon tea in elegant roll packaging. Light, floral and subtly sweet with a gentle rosy colour in the cup — a unique and memorable tea experience from the highlands of Sri Lanka.",
+    "price": "$10.00",
+    "pack": "Roll",
+    "weight": "25g",
+    "image": "/images/Pink Tea Roll 25g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Pink Ceylon Tea",
+        "description": "Rare pink-hued Ceylon tea leaves with a naturally delicate floral character."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Antioxidant Rich",
+        "description": "Natural pigments in pink tea are powerful antioxidants protecting cell health."
+      },
+      {
+        "title": "Calming",
+        "description": "Light caffeine and floral compounds promote a gentle sense of calm."
+      },
+      {
+        "title": "Skin Health",
+        "description": "Antioxidants and natural compounds support healthy, glowing skin."
+      },
+      {
+        "title": "Hydrating",
+        "description": "A beautifully light cup that makes staying hydrated a pleasure."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-081",
+    "name": "Pink Tea Single Estate Artisanal",
+    "description": "An extraordinary single-estate artisanal white tea, hand-crafted from the most tender buds of one exceptional Sri Lankan tea garden. Sublime, rare, and deeply nuanced in flavor.",
+    "price": "$8.00",
+    "pack": "Artisanal",
+    "weight": "25g",
+    "image": "/images/Pink Tea Single Estate Artisanal 25g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Single Estate White Tea",
+        "description": "Hand-harvested, artisanally crafted white tea buds from a single, carefully chosen Sri Lankan estate."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Exceptional Antioxidants",
+        "description": "Single-estate processing preserves the absolute maximum natural antioxidant content."
+      },
+      {
+        "title": "Unique Terroir",
+        "description": "A single-garden origin delivers a complex, layered flavor no blended tea can replicate."
+      },
+      {
+        "title": "Skin & Longevity",
+        "description": "The highest polyphenol density actively combats cellular aging and skin deterioration."
+      },
+      {
+        "title": "Deep Tranquility",
+        "description": "Ultra-low caffeine paired with high L-theanine creates profound, centered calm."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-097",
+    "name": "Premium OPA Ceylon Tea",
+    "description": "A premium selection of Ceylon Orange Pekoe A — large, bold whole leaves that brew into a mild, smooth, and wonderfully aromatic cup. A refined everyday indulgence.",
+    "price": "$5.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Premium OPA Ceylon Tea 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Premium OPA Black Tea",
+        "description": "Large, slightly twisted whole Orange Pekoe A leaves from premium high-altitude estates."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Deep Relaxation",
+        "description": "The mild, smooth liquor provides a soothing, calming experience."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Large whole leaves retain a high concentration of beneficial polyphenols."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Supports healthy blood circulation and heart function."
+      },
+      {
+        "title": "Hydration",
+        "description": "A light brew perfect for all-day hydration without over-caffeinating."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-085",
+    "name": "Premium Silver Tips",
+    "description": "An exceptional larger pack of our prized Silver Tips — pristine, hand-harvested tea buds of the highest order. Offering a sweet, ethereal, and incredibly refined white tea experience.",
+    "price": "$20.00",
+    "pack": "",
+    "weight": "40g",
+    "image": "/images/Premium Silver Tips 40g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Pure Silver Tip Buds",
+        "description": "100% hand-harvested, downy-white unopened tea buds of the finest quality."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Maximum Antioxidants",
+        "description": "The most minimally processed tea, retaining the highest natural polyphenol levels."
+      },
+      {
+        "title": "Skin & Anti-Aging",
+        "description": "Protects collagen and elastin, actively reducing signs of premature aging."
+      },
+      {
+        "title": "Ultra-Low Caffeine",
+        "description": "A deeply calming and restorative experience without caffeine overstimulation."
+      },
+      {
+        "title": "Immune Fortification",
+        "description": "Dense in antibacterial and antiviral compounds that powerfully boost immunity."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-073",
+    "name": "Premium Silver Tips",
+    "description": "One of Sri Lanka's most treasured and rare teas. Pristine, downy Silver Needle buds harvested before sunrise, offering an extraordinarily delicate, sweet, and nectar-like liquor.",
+    "price": "$11.00",
+    "pack": "",
+    "weight": "20g",
+    "image": "/images/Premium Silver Tips 20g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Pure Silver Tip Buds",
+        "description": "100% hand-harvested, unopened tea buds covered in fine silvery-white down."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Maximum Antioxidants",
+        "description": "Silver tips are the most minimally processed tea, locking in peak antioxidant levels."
+      },
+      {
+        "title": "Skin & Anti-Aging",
+        "description": "Protects collagen and elastin, reducing signs of aging and promoting youthful skin."
+      },
+      {
+        "title": "Ultra-Low Caffeine",
+        "description": "Provides a gentle, calming experience without overstimulating the nervous system."
+      },
+      {
+        "title": "Immune Defense",
+        "description": "Richly concentrated in polyphenols that strongly fortify the immune system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-079",
+    "name": "Pure Ceylon Purple Tea",
+    "description": "A spectacular and extraordinarily rare Pure Ceylon Purple Tea. Naturally rich in health-boosting anthocyanins, this unique tea brews a mesmerizing purplish hue with a pleasantly mild, earthy flavor.",
+    "price": "$10.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Pure Ceylon Purple Tea 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Pure Purple Tea Leaves",
+        "description": "A rare Sri Lankan tea varietal naturally rich in purple anthocyanin pigments."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Super Antioxidant",
+        "description": "Anthocyanins found in purple tea are among the most potent antioxidants in nature."
+      },
+      {
+        "title": "Heart & Brain Health",
+        "description": "Protects cardiovascular health and supports healthy neuro-pathways."
+      },
+      {
+        "title": "Weight Management",
+        "description": "Contains a unique polyphenol (GHG) clinically linked to healthy weight management."
+      },
+      {
+        "title": "Anti-Viral Protection",
+        "description": "High levels of unique polyphenols help the body ward off infections effectively."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
@@ -1826,7 +4242,7 @@
     "price": "$7.00",
     "pack": "",
     "weight": "200g",
-    "image": "/images/PureCeylonTeaBOP200.jpg",
+    "image": "/images/Pure Ceylon Tea BOP 200g.jpg",
     "ingredientImage": "/leaves/bop.jpg",
     "ingredients": [
       {
@@ -1855,19 +4271,227 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Boil fresh water to 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of BOP per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-4 minutes depending on preferred strength."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Excellent for making traditional milk tea."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-098",
+    "name": "Pure Ceylon Tea FBOPF Extra Special",
+    "description": "An extraordinarily premium Flowery Broken Orange Pekoe Fannings Extra Special — the finest grade of its kind. Bright golden tips produce an exquisite, sweet, golden liquor of unmatched quality.",
+    "price": "$25.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Pure Ceylon Tea FBOPF Extra Special 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "FBOPF Extra Special Black Tea",
+        "description": "The finest fannings grade, heavily accented with precious golden tips."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Supreme Antioxidants",
+        "description": "Golden tips are the youngest leaves, retaining the highest natural antioxidants."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "Provides a smooth, clean, highly focused energy boost."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Flavonoids support a healthy cardiovascular system with daily use."
+      },
+      {
+        "title": "Immunity Boost",
+        "description": "Packed with vitamins and minerals to support the immune system."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-099",
+    "name": "Pure Ceylon Tea FBOPF Special",
+    "description": "A highly distinguished Flowery Broken Orange Pekoe Fannings Special. Rich, bright, and full-bodied with a scattering of sweet tips — an exceptional everyday premium tea.",
+    "price": "$15.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Pure Ceylon Tea FBOPF Special.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "FBOPF Special Black Tea",
+        "description": "Premium broken fannings with golden tips for a brisk, sweet, golden liquor."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Superior Antioxidants",
+        "description": "Special grade processing locks in higher nutrient levels."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Flavonoids help maintain healthy blood vessels and circulation."
+      },
+      {
+        "title": "Energy Boost",
+        "description": "Provides a clean, jitter-free energy lift for the day."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "Warm, comforting aroma aids in relaxation and mental clarity."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-110",
+    "name": "Pure Ceylon Tea Purple Lable OP",
+    "description": "A premium Orange Pekoe grade Pure Ceylon Tea in signature purple label packaging. Whole, large leaves sourced from the finest Ceylon estates brew a beautifully clear, smooth and mellow cup with a natural golden liquor.",
+    "price": "$5.00",
+    "pack": "Purple Label",
+    "weight": "200g",
+    "image": "/images/Pure Ceylon Tea Purple Lable OP 200g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "OP Grade Ceylon Tea",
+        "description": "Premium whole Orange Pekoe Ceylon tea leaves with superior clarity and aroma."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Premium Quality",
+        "description": "OP grade guarantees the finest whole leaf experience from Ceylon estates."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular consumption of Ceylon OP tea supports cardiovascular wellness."
+      },
+      {
+        "title": "Smooth & Mellow",
+        "description": "Naturally low astringency for a beautifully easy-drinking, smooth cup."
+      },
+      {
+        "title": "Antioxidant Protection",
+        "description": "Whole OP leaves retain maximum polyphenol content for superior health benefits."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-100",
+    "name": "Pure Ceylon Tea Single Estate BOPF Sp",
+    "description": "A prestigious single-estate Broken Orange Pekoe Fannings Special from one exceptional Sri Lankan tea garden. Traceable, pure, and delivering a consistently bright, robust cup.",
+    "price": "$7.00",
+    "pack": "",
+    "weight": "400g",
+    "image": "/images/Pure Ceylon Tea Single Estate 400g BOPF Sp.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Single Estate BOPF Special",
+        "description": "100% single-origin broken fannings from a carefully selected Sri Lankan estate."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Unique Terroir",
+        "description": "Single-garden origin delivers a consistent, complex flavour no blend can replicate."
+      },
+      {
+        "title": "Morning Energy",
+        "description": "A strong, full-bodied cup provides a reliable and robust start to the day."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Regular black tea consumption actively supports cardiovascular well-being."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Delivers a reliable daily dose of heart-protecting polyphenols."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1878,7 +4502,7 @@
     "price": "$3.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/PureCeylonTeaTB.jpg",
+    "image": "/images/Pure Ceylon Tea TB 50g.jpg",
     "ingredientImage": "/leaves/bopf-tb.jpg",
     "ingredients": [
       {
@@ -1907,19 +4531,243 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Boil water to 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
-        "title": "Add Tea Bag",
-        "description": "Place one tea bag into your favorite mug."
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Pour hot water and let it steep for 2-3 minutes."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Remove the bag. Enjoy black or with a splash of milk."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-077",
+    "name": "Pure Ceylon Tea with Curry leaves",
+    "description": "A distinctively Sri Lankan creation blending pure Ceylon black tea with aromatic, naturally therapeutic curry leaves (Murraya koenigii). A warming, savory, and deeply comforting cup rooted in island Ayurvedic tradition.",
+    "price": "$13.00",
+    "pack": "Pack",
+    "weight": "50g",
+    "image": "/images/Pure Ceylon Tea with Curry leaves 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A robust, full-bodied pure Ceylon black tea base that pairs boldly with herbal notes."
+      },
+      {
+        "name": "Dried Curry Leaves",
+        "description": "Naturally dried curry leaves (Murraya koenigii) carrying rich aromatic oils and medicinal compounds."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Digestive Aid",
+        "description": "Curry leaves are a traditional remedy for nausea, indigestion, and bloating."
+      },
+      {
+        "title": "Blood Sugar Control",
+        "description": "Known to help regulate blood glucose levels naturally and effectively."
+      },
+      {
+        "title": "Hair & Scalp Health",
+        "description": "Rich in antioxidants that strengthen hair follicles and combat thinning."
+      },
+      {
+        "title": "Liver Support",
+        "description": "Traditionally used to protect and detoxify the liver in Ayurvedic practice."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-076",
+    "name": "Pure Ceylon Tea with Gotukola",
+    "description": "A uniquely Sri Lankan wellness blend combining pure Ceylon black tea with revered Gotukola (Centella asiatica). This celebrated Ayurvedic herb has been used for centuries for its remarkable brain-supporting and healing properties.",
+    "price": "$13.00",
+    "pack": "Pack",
+    "weight": "50g",
+    "image": "/images/Pure Ceylon Tea with Gotukola 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A full-bodied pure Ceylon black tea base that pairs well with powerful medicinal herbs."
+      },
+      {
+        "name": "Gotukola (Centella asiatica)",
+        "description": "Freshly dried Gotukola leaves, a treasured Ayurvedic herb used for centuries in Sri Lankan wellness traditions."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Brain & Memory",
+        "description": "Gotukola is traditionally renowned for improving memory, focus, and cognitive sharpness."
+      },
+      {
+        "title": "Stress Reduction",
+        "description": "Adaptogenic properties help calm the nervous system and reduce anxiety naturally."
+      },
+      {
+        "title": "Wound Healing",
+        "description": "Promotes collagen synthesis and supports faster skin healing from within."
+      },
+      {
+        "title": "Circulation",
+        "description": "Improves blood flow and supports healthy vein and capillary function."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-083",
+    "name": "Pure Ceylon Tea with Heenbovitiya",
+    "description": "A traditional Sri Lankan wellness blend combining pure Ceylon black tea with Heen Bovitiya (Aerva lanata), a highly revered Ayurvedic herb celebrated for its remarkable kidney and urinary health benefits.",
+    "price": "$13.00",
+    "pack": "Pack",
+    "weight": "50g",
+    "image": "/images/Pure Ceylon Tea with Heenbovitiya 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, full-bodied pure Ceylon black tea base that partners well with medicinal herbs."
+      },
+      {
+        "name": "Heen Bovitiya (Aerva lanata)",
+        "description": "Dried Heen Bovitiya herb, a traditional Sri Lankan Ayurvedic remedy renowned for urinary and kidney health."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Kidney Health",
+        "description": "Heen Bovitiya is traditionally used to support kidney function and help dissolve kidney stones."
+      },
+      {
+        "title": "Urinary Support",
+        "description": "Natural diuretic properties help cleanse the urinary tract effectively."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Reduces inflammation in the urinary system and throughout the body naturally."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Helps the body eliminate toxins through natural diuretic action."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-053",
+    "name": "Pure Ceylon Tea with Moringa",
+    "description": "A powerful superfood fusion of pure Ceylon black tea and nutrient-dense Moringa leaves (Moringa oleifera). A deeply nourishing blend crafted for those who demand both great taste and exceptional nutritional value from every cup.",
+    "price": "$13.00",
+    "pack": "Wooden Gift Box",
+    "weight": "50g",
+    "image": "/images/Pure Ceylon Tea with Moringa 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, robust pure Ceylon black tea base delivering bold flavor and antioxidants."
+      },
+      {
+        "name": "Moringa Leaves",
+        "description": "Dried Moringa oleifera leaves packed with vitamins A, C, E, iron, calcium, and essential amino acids."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Nutritional Powerhouse",
+        "description": "Moringa contains over 90 nutrients and 46 antioxidants, making every cup exceptionally nourishing."
+      },
+      {
+        "title": "Energy & Vitality",
+        "description": "Iron and B vitamins in moringa combat fatigue and boost natural energy levels."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Isothiocyanates in moringa help reduce chronic inflammation throughout the body."
+      },
+      {
+        "title": "Blood Sugar Balance",
+        "description": "Moringa naturally helps regulate blood glucose levels effectively."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -1930,7 +4778,7 @@
     "price": "$9.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/PurpleteaRoll.jpg",
+    "image": "/images/Purple tea Roll 50g.jpg",
     "ingredientImage": "/leaves/purple-tea.jpg",
     "ingredients": [
       {
@@ -1958,20 +4806,20 @@
     ],
     "brewing": [
       {
-        "title": "Boil Water",
-        "description": "Heat water to exactly 85°C (185°F). Too hot will ruin the delicate pigments."
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
       },
       {
         "title": "Add Tea",
-        "description": "Place 1 teaspoon of the rolled purple tea into a glass teapot."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3 minutes. Watch the water turn a beautiful purplish-pink."
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
       },
       {
         "title": "Serve",
-        "description": "Strain. Add a drop of lemon juice to see the color magically change to bright pink!"
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
@@ -1982,7 +4830,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/RoseTeaBox.jpg",
+    "image": "/images/Rose Tea Box 100g.jpg",
     "ingredientImage": "/leaves/rose-petals.jpg",
     "ingredients": [
       {
@@ -2015,19 +4863,71 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 90°C (194°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 level teaspoon of the Rose Tea blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 3-4 minutes to capture the floral essence."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. Beautiful when enjoyed clear without any additions."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-101",
+    "name": "Sigiriya Ceylon Tea OP",
+    "description": "A proudly Sri Lankan Orange Pekoe black tea inspired by the majesty of Sigiriya Rock Fortress. A bold, bright, and full-flavoured cup that captures the spirit of the island.",
+    "price": "$6.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Sigiriya Ceylon Tea OP 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Orange Pekoe",
+        "description": "Long, wiry whole leaf Orange Pekoe from the verdant tea gardens of Sri Lanka."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Antioxidant Rich",
+        "description": "Whole leaves retain maximum polyphenols to protect body cells."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "Provides a smooth, jitter-free energy boost for better focus."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Supports a healthy cardiovascular system and blood pressure."
+      },
+      {
+        "title": "Hydrating",
+        "description": "A lighter brew that effectively hydrates while providing bold flavour."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -2038,7 +4938,7 @@
     "price": "$14.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/SilvergreenteaRoll.jpg",
+    "image": "/images/Silver green tea Roll 50g.jpg",
     "ingredientImage": "/leaves/silver-tips.jpg",
     "ingredients": [
       {
@@ -2070,72 +4970,296 @@
     ],
     "brewing": [
       {
-        "title": "Boil Water",
-        "description": "Heat water strictly to 75°C-80°C (167°F-176°F). Never use boiling water."
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the rolled tea per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep gently for 2 to 3 minutes. You can re-steep these leaves up to 3 times."
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
       },
       {
         "title": "Serve",
-        "description": "Strain carefully. Serve absolutely plain to respect its delicate nature."
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
   {
-    "id": "tea-040",
-    "name": "Green Tea",
-    "description": "Our Signature Mystery Blend. A secret, exclusive combination of premium Ceylon black and green teas crafted by our master blenders.",
-    "price": "$10.00",
-    "pack": "",
-    "weight": "200g",
-    "image": "/images/GreenTea.jpg",
-    "ingredientImage": "/leaves/signature-blend.jpg",
+    "id": "tea-111",
+    "name": "Silver Tips Tea Roll",
+    "description": "One of Ceylon's most prized and rare teas — delicate silver-tipped white tea buds in elegant roll packaging. Harvested by hand at dawn, Silver Tips brews an exceptionally light, sweet and refined cup with barely any caffeine.",
+    "price": "$30.00",
+    "pack": "Roll",
+    "weight": "50g",
+    "image": "/images/Silver Tips Tea Roll 50g.jpg",
+    "ingredientImage": "",
     "ingredients": [
       {
-        "name": "Master's Tea Blend",
-        "description": "A proprietary mix of high-grown black and green tea leaves."
+        "name": "Ceylon Silver Tips",
+        "description": "The finest hand-plucked silver-tipped white tea buds from high-altitude Ceylon estates."
       }
     ],
     "benefits": [
       {
-        "title": "Balanced Energy",
-        "description": "A perfect equilibrium of stimulation and relaxation."
+        "title": "Ultra-low Caffeine",
+        "description": "Perfect for evenings — the lightest caffeine content of any Ceylon tea."
       },
       {
-        "title": "Comprehensive Antioxidants",
-        "description": "Combines the flavonoids of black tea with the catechins of green tea."
+        "title": "Powerful Antioxidants",
+        "description": "Silver tips retain maximum catechins due to minimal processing."
       },
       {
-        "title": "Digestive Support",
-        "description": "Aids in maintaining a healthy gut microbiome."
+        "title": "Anti-ageing",
+        "description": "High antioxidant levels protect skin cells and slow oxidative ageing."
       },
       {
-        "title": "Immunity",
-        "description": "Supports overall health and daily wellness."
+        "title": "Immune Support",
+        "description": "Rare polyphenols in white tea buds strengthen the body's natural defences."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-044",
+    "name": "Slim Beauty Black Tea",
+    "description": "A specialized wellness black tea crafted for beauty and body management. A luxurious blend of Ceylon black tea with detoxifying herbs and metabolism-boosting botanicals.",
+    "price": "$11.00",
+    "pack": "",
+    "weight": "100g",
+    "image": "/images/Slim Beauty Black Tea 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A strong, full-bodied base that supports thermogenesis."
+      },
+      {
+        "name": "Slimming Herb Blend",
+        "description": "A curated mix of detoxifying and metabolism-boosting botanicals."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Weight Management",
+        "description": "Specially formulated herbs support healthy weight loss goals."
+      },
+      {
+        "title": "Metabolism Boost",
+        "description": "Thermogenic ingredients help increase calorie burning naturally."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Helps flush toxins and reduce water retention in the body."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Antioxidants promote a clearer, healthier complexion from within."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-112",
+    "name": "Slim beauty tea Roll",
+    "description": "A specially crafted wellness blend of Ceylon tea with natural herbs and botanicals formulated to support a healthy metabolism, gentle detox and natural beauty from within. A daily ritual for health-conscious tea lovers.",
+    "price": "$7.00",
+    "pack": "Roll",
+    "weight": "50g",
+    "image": "/images/Slim beauty tea Roll 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Green Tea",
+        "description": "Metabolism-boosting green tea as the functional wellness base."
+      },
+      {
+        "name": "Herbal Botanical Blend",
+        "description": "A curated blend of natural herbs supporting detox and beauty benefits."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Metabolism Boost",
+        "description": "Green tea catechins naturally support a healthy metabolic rate."
+      },
+      {
+        "title": "Gentle Detox",
+        "description": "Herbal botanicals help cleanse the body of toxins naturally."
+      },
+      {
+        "title": "Skin Glow",
+        "description": "Antioxidants and herbal compounds promote clear, radiant skin."
+      },
+      {
+        "title": "Wellbeing",
+        "description": "A mindful daily ritual that supports overall health and inner balance."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-055",
+    "name": "Soursop Flavoured Tea",
+    "description": "An exotic and tropical Ceylon black tea delicately infused with the unique, creamy sweetness of natural soursop fruit. A refreshing and truly one-of-a-kind tea experience.",
+    "price": "$9.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Soursop Flavoured Tea 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A medium-bodied black tea that carries tropical fruit flavors beautifully."
+      },
+      {
+        "name": "Natural Soursop Flavoring",
+        "description": "Natural essence of soursop (Graviola) fruit for a creamy tropical sweetness."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Immune Support",
+        "description": "Soursop is rich in Vitamin C and antioxidants that strengthen immunity."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Contains natural compounds known to reduce inflammation."
+      },
+      {
+        "title": "Digestive Health",
+        "description": "Supports healthy digestion and eases stomach discomfort."
+      },
+      {
+        "title": "Mood Uplift",
+        "description": "The tropical aroma naturally elevates mood and reduces stress."
       }
     ],
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Heat water to 90°C (194°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of the signature blend per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for exactly 3 minutes for the perfect balance."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve. A versatile tea that can be enjoyed plain or with a dash of honey."
+        "description": "Strain and serve hot."
+      }
+    ]
+  },
+  {
+    "id": "tea-113",
+    "name": "Soursop Tea Box",
+    "description": "A tropical wellness fusion of premium Ceylon tea with the exotic Soursop (Graviola) fruit and leaf. Naturally sweet with a tropical character, this is a deeply nourishing infusion celebrated for its remarkable health properties.",
+    "price": "$20.00",
+    "pack": "Box",
+    "weight": "100g",
+    "image": "/images/Soursop Tea Box 100g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Black Tea",
+        "description": "A smooth Ceylon black tea base with natural depth and character."
+      },
+      {
+        "name": "Soursop Leaf & Fruit",
+        "description": "Dried Graviola (soursop) leaf and fruit pieces with a naturally sweet tropical flavour."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Immune Defence",
+        "description": "Soursop is rich in vitamin C and antioxidants that fortify the immune system."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Soursop compounds are known for potent natural anti-inflammatory properties."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "Natural compounds in soursop promote relaxation and reduce anxiety."
+      },
+      {
+        "title": "Digestive Health",
+        "description": "Soursop supports a healthy gut lining and smooth digestive function."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "Steep for 3 minutes to draw out the full flavour."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -2146,7 +5270,7 @@
     "price": "$20.00",
     "pack": "",
     "weight": "100g",
-    "image": "/images/VanilaTeaBox.jpg",
+    "image": "/images/Vanila Tea Box 100g.jpg",
     "ingredientImage": "/leaves/vanilla.jpg",
     "ingredients": [
       {
@@ -2179,19 +5303,19 @@
     "brewing": [
       {
         "title": "Boil Water",
-        "description": "Bring water to a full boil at 100°C (212°F)."
+        "description": "Bring fresh water to a full boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 teaspoon of Vanilla tea per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 3-5 minutes to let the creamy vanilla notes develop."
+        "description": "Steep for 3 minutes to draw out the full flavour."
       },
       {
         "title": "Serve",
-        "description": "Strain. Exceptionally delicious when served with a splash of warm milk."
+        "description": "Strain and serve hot."
       }
     ]
   },
@@ -2202,7 +5326,7 @@
     "price": "$5.00",
     "pack": "",
     "weight": "25g",
-    "image": "/images/VitaglowTea.jpg",
+    "image": "/images/Vita glow Tea 25g.jpg",
     "ingredientImage": "/leaves/vita-glow-herbs.jpg",
     "ingredients": [
       {
@@ -2234,20 +5358,72 @@
     ],
     "brewing": [
       {
-        "title": "Boil Water",
-        "description": "Heat water to 85°C (185°F)."
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
       },
       {
         "title": "Add Tea",
-        "description": "Add 1 heaped teaspoon of Vita Glow per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Cover and steep for 4 minutes."
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
       },
       {
         "title": "Serve",
-        "description": "Strain and serve plain to enjoy its pure, cleansing properties."
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
+      }
+    ]
+  },
+  {
+    "id": "tea-045",
+    "name": "White Tea",
+    "description": "A beautifully pure and minimally processed Ceylon white tea. Delicately sweet with a silky, feather-light body and naturally low caffeine content.",
+    "price": "$7.00",
+    "pack": "",
+    "weight": "25g",
+    "image": "/images/White Tea 25g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon White Tea",
+        "description": "Gently withered, unoxidized tea buds and young leaves from Sri Lanka's finest estates."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Highest Antioxidants",
+        "description": "Minimal processing preserves the greatest concentration of natural antioxidants."
+      },
+      {
+        "title": "Skin Health",
+        "description": "Polyphenols protect collagen and elastin, supporting youthful, firm skin."
+      },
+      {
+        "title": "Gentle Energy",
+        "description": "Low caffeine provides a mild, clean lift without jitteriness."
+      },
+      {
+        "title": "Immune Support",
+        "description": "Rich in antibacterial catechins that naturally strengthen immunity."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
+      },
+      {
+        "title": "Add Tea",
+        "description": "Add 2g per cup into your teapot or infuser."
+      },
+      {
+        "title": "Steep",
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
+      },
+      {
+        "title": "Serve",
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   },
@@ -2258,7 +5434,7 @@
     "price": "$9.00",
     "pack": "",
     "weight": "25g",
-    "image": "/images/WhiteteaRoll.jpg",
+    "image": "/images/White tea Roll 25g.jpg",
     "ingredientImage": "/leaves/silver-needles.jpg",
     "ingredients": [
       {
@@ -2286,20 +5462,20 @@
     ],
     "brewing": [
       {
-        "title": "Boil Water",
-        "description": "Heat water to a gentle 75°C (167°F). Boiling water will destroy this tea."
+        "title": "Heat Water",
+        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages these delicate handmade leaves."
       },
       {
         "title": "Add Tea",
-        "description": "Use 2 teaspoons of the light, fluffy rolled buds per cup."
+        "description": "Add 2g per cup into your teapot or infuser."
       },
       {
         "title": "Steep",
-        "description": "Steep for 4-5 minutes. The delicate buds take longer to release flavor."
+        "description": "1st infusion: brew for 2 minutes. 2nd infusion (re-use leaves): brew for 5 minutes. 3rd infusion (re-use leaves): brew for 8 minutes."
       },
       {
         "title": "Serve",
-        "description": "Strain gently. These premium leaves can be re-steeped up to 4 times."
+        "description": "Strain and serve. These handmade leaves can be enjoyed 3 times, each infusion revealing a new depth of flavour."
       }
     ]
   }

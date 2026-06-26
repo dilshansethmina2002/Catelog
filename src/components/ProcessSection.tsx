@@ -10,11 +10,11 @@ export function ProcessSection() {
       {/* Connecting Line Background */}
       <div className="absolute top-1/2 left-0 w-full h-px bg-emerald-100 hidden lg:block transform -translate-y-1/2" />
 
-      <div className="text-center mb-20 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-emerald-950 mb-6">
+      <div className="text-center mb-10 md:mb-20 relative z-10">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-emerald-950 mb-4 md:mb-6">
           {t.process.title}
         </h2>
-        <p className="text-emerald-800/60 text-lg max-w-2xl mx-auto font-light">
+        <p className="text-emerald-800/60 text-base md:text-lg max-w-2xl mx-auto font-light px-2">
           {t.process.subtitle}
         </p>
       </div>

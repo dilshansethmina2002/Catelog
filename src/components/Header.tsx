@@ -21,6 +21,8 @@ export const Header: React.FC = () => {
   const location = useLocation();
   const isProductPage = /^\/product\//.test(location.pathname);
   const isQRPage = location.pathname === '/admin/qr';
+  const isHomePage = location.pathname === '/';
+  const isCatalogPage = location.pathname === '/catalog';
 
   const filteredProducts = searchQuery.trim()
     ? productsData.filter(p => {
@@ -73,12 +75,20 @@ export const Header: React.FC = () => {
   const handleSelect = (id: string) => {
     if (isQRPage) {
       document.getElementById(`qr-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (isCatalogPage) {
+      setSearchOpen(false);
+      setSearchQuery('');
+      setMobileMenuOpen(false);
+      setTimeout(() => {
+        document.getElementById(`catalog-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+      return;
     } else {
       navigate(`/product/${id}`);
     }
     setSearchOpen(false);
     setSearchQuery('');
-    setMobileMenuOpen(false); // Close mobile menu after selection
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -117,7 +127,7 @@ export const Header: React.FC = () => {
               style={{ fontFamily: "'Cormorant Garamond', 'Playfair Display', Georgia, serif" }}
             >
               Athukorala Group
-              <span className="hidden sm:inline font-normal text-[#f5f0e6]/60 italic"> Ltd.</span>
+              <span className="hidden sm:inline font-normal text-[#f5f0e6]/60 italic"> pvt Ltd.</span>
             </span>
             <span className="text-[8px] sm:text-[9px] font-medium uppercase tracking-[0.25em] text-[#d4af6a]/70 truncate mt-1">
               Manufacturers &amp; Exporters of Tea
@@ -132,6 +142,13 @@ export const Header: React.FC = () => {
             className="flex items-center gap-2 text-[#f5f0e6]/75 hover:text-[#f5f0e6] transition-colors duration-300 text-[11px] font-semibold uppercase tracking-[0.18em]"
           >
             {t.nav.home}
+          </Link>
+          <span className="w-1 h-1 rotate-45 bg-[#d4af6a]/40" />
+          <Link
+            to="/spices"
+            className="flex items-center gap-2 text-[#f5f0e6]/75 hover:text-[#f5f0e6] transition-colors duration-300 text-[11px] font-semibold uppercase tracking-[0.18em]"
+          >
+            {t.nav.spices}
           </Link>
 
           {isProductPage && (
@@ -155,7 +172,7 @@ export const Header: React.FC = () => {
         {/* Right: Language Selector + Desktop Search + Hamburger */}
         <div className="flex items-center justify-end gap-2 sm:gap-3">
           {/* Desktop Search */}
-          <div className="relative hidden sm:block" ref={searchRef}>
+          {!isHomePage && <div className="relative hidden sm:block" ref={searchRef}>
             {!searchOpen ? (
               <button
                 onClick={() => setSearchOpen(true)}
@@ -213,7 +230,7 @@ export const Header: React.FC = () => {
                 </div>
               </div>
             )}
-          </div>
+          </div>}
           {!isQRPage && <LanguageSelector />}
 
           {/* Hamburger Icon for Mobile */}
@@ -246,7 +263,7 @@ export const Header: React.FC = () => {
       >
         <div className="p-5 flex flex-col gap-4">
           {/* Mobile Search */}
-          <div className="flex items-center gap-2 px-4 py-3 bg-[#1a2b22]/60 border border-[#3d4f43]/50 rounded-2xl">
+          {!isHomePage && <div className="flex items-center gap-2 px-4 py-3 bg-[#1a2b22]/60 border border-[#3d4f43]/50 rounded-2xl">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#d4af6a]/60 flex-shrink-0">
               <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
             </svg>
@@ -264,10 +281,10 @@ export const Header: React.FC = () => {
                 </svg>
               </button>
             )}
-          </div>
+          </div>}
 
           {/* Mobile Search Results */}
-          {searchQuery.trim() && (
+          {!isHomePage && searchQuery.trim() && (
             <div className="max-h-48 overflow-y-auto bg-[#1a2b22]/40 rounded-2xl border border-[#3d4f43]/40">
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product, idx) => (
@@ -300,6 +317,18 @@ export const Header: React.FC = () => {
                 <polyline points="9 22 9 12 15 12 15 22"/>
               </svg>
               {t.nav.home}
+            </Link>
+
+            <Link
+              to="/spices"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 px-4 py-3.5 text-[#f5f0e6]/90 border border-[#3d4f43]/50 rounded-2xl hover:border-[#d4af6a]/40 active:bg-[#d4af6a]/5 transition-colors font-semibold uppercase tracking-[0.18em] text-[11px]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+              {t.nav.spices}
             </Link>
 
             {isProductPage && (
