@@ -35,7 +35,7 @@ export function IngredientsSection() {
       {/* Editorial Background Text */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-[0.03]">
         <span className="text-[20vw] font-serif font-bold leading-none whitespace-nowrap absolute top-10 left-0">
-          PURE NATURE
+          {t.ingredients.pureNature}
         </span>
       </div>
 
