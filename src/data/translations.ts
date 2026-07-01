@@ -2,7 +2,7 @@ export type Language = 'en' | 'es' | 'ru' | 'it' | 'fr' | 'ja' | 'zh';
 
 export const translations = {
   en: {
-    nav: { language: 'Language', home: 'Home', spices: 'Spices', search: 'Search', searchPlaceholder: 'Search products...', noProductsFound: 'No products found' },
+    nav: { language: 'Language', home: 'Home', spices: 'Spices', search: 'Search', searchPlaceholder: 'Search products...', noProductsFound: 'No products found', tagline: 'Manufacturer & Exporter of Tea' },
     hero: {
       title: 'Ceylon Green Tea with Lemongrass',
       tagline: 'A refreshing blend of Ceylon Green Tea and zesty Lemongrass',
@@ -39,6 +39,7 @@ export const translations = {
       title: 'Pure Ingredients',
       subtitle: "Nature's finest selection",
       composition: 'Composition',
+      pureNature: 'PURE NATURE',
       items: [
         {
           name: 'Green Tea Leaves',
@@ -124,6 +125,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: 'Since 1991 · Sri Lanka',
+        ceylon: 'CEYLON',
         headline1: 'The Art of',
         headline2: 'Ceylon Tea',
         subheading: 'Manufacturers & exporters of premium Ceylon tea and spices. Grown in the highlands. Crafted with generations of expertise.',
@@ -166,10 +168,14 @@ export const translations = {
         description: 'Experience our teas through a cinematic editorial journey — crafted to bring the essence of each blend to life.',
         cta: 'Enter Catalog',
       },
+      manifesto: {
+        quote: '"Every cup carries the soul of the highland — grown where the mist meets the mountain, crafted where tradition meets precision."',
+        attribution: 'Athukorala Group · Pure Ceylon Tea',
+      },
     }
   },
   es: {
-    nav: { language: 'Idioma', home: 'Inicio', spices: 'Especias', search: 'Buscar', searchPlaceholder: 'Buscar productos...', noProductsFound: 'No se encontraron productos' },
+    nav: { language: 'Idioma', home: 'Inicio', spices: 'Especias', search: 'Buscar', searchPlaceholder: 'Buscar productos...', noProductsFound: 'No se encontraron productos', tagline: 'Fabricantes y Exportadores de Té' },
     hero: {
       title: 'Té Verde de Ceilán con Limoncillo',
       tagline: 'Una mezcla refrescante de Té Verde de Ceilán y Limoncillo vibrante',
@@ -202,6 +208,7 @@ export const translations = {
       title: 'Ingredientes Puros',
       subtitle: 'La mejor selección de la naturaleza',
       composition: 'Composición',
+      pureNature: 'NATURALEZA PURA',
       items: [
         {
           name: 'Hojas de Té Verde',
@@ -287,6 +294,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: 'Desde 1991 · Sri Lanka',
+        ceylon: 'CEILÁN',
         headline1: 'El Arte del',
         headline2: 'Té de Ceilán',
         subheading: 'Fabricantes y exportadores de té y especias premium de Ceilán. Cultivado en las tierras altas. Elaborado con generaciones de experiencia.',
@@ -329,10 +337,14 @@ export const translations = {
         description: 'Experimente nuestros tés a través de un viaje editorial cinematográfico, creado para dar vida a cada mezcla.',
         cta: 'Entrar al Catálogo',
       },
+      manifesto: {
+        quote: '"Cada taza lleva el alma de las tierras altas — cultivado donde la niebla se encuentra con la montaña, elaborado donde la tradición se encuentra con la precisión."',
+        attribution: 'Grupo Athukorala · Té Puro de Ceilán',
+      },
     }
   },
   fr: {
-    nav: { language: 'Langue', home: 'Accueil', spices: 'Épices', search: 'Rechercher', searchPlaceholder: 'Rechercher des produits...', noProductsFound: 'Aucun produit trouvé' },
+    nav: { language: 'Langue', home: 'Accueil', spices: 'Épices', search: 'Rechercher', searchPlaceholder: 'Rechercher des produits...', noProductsFound: 'Aucun produit trouvé', tagline: 'Fabricants et Exportateurs de Thé' },
     hero: {
       title: 'Thé Vert Ceylan à la Citronnelle',
       tagline: 'Un mélange rafraîchissant de Thé Vert Ceylan et de Citronnelle zesty',
@@ -365,6 +377,7 @@ export const translations = {
       title: 'Ingrédients Purs',
       subtitle: 'La meilleure sélection de la nature',
       composition: 'Composition',
+      pureNature: 'PURE NATURE',
       items: [
         {
           name: 'Feuilles de Thé Vert',
@@ -450,6 +463,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: 'Depuis 1991 · Sri Lanka',
+        ceylon: 'CEYLAN',
         headline1: "L'Art du",
         headline2: 'Thé de Ceylan',
         subheading: "Fabricants et exportateurs de thé et épices premium de Ceylan. Cultivé dans les hauts plateaux. Élaboré avec des générations d'expertise.",
@@ -492,10 +506,14 @@ export const translations = {
         description: "Découvrez nos thés à travers un voyage éditorial cinématique — conçu pour donner vie à l'essence de chaque mélange.",
         cta: 'Accéder au Catalogue',
       },
+      manifesto: {
+        quote: '"Chaque tasse porte l\'âme des hauts plateaux — cultivé là où la brume rencontre la montagne, élaboré là où la tradition rencontre la précision."',
+        attribution: 'Groupe Athukorala · Thé Pur de Ceylan',
+      },
     }
   },
   it: {
-    nav: { language: 'Lingua', home: 'Home', spices: 'Spezie', search: 'Cerca', searchPlaceholder: 'Cerca prodotti...', noProductsFound: 'Nessun prodotto trovato' },
+    nav: { language: 'Lingua', home: 'Home', spices: 'Spezie', search: 'Cerca', searchPlaceholder: 'Cerca prodotti...', noProductsFound: 'Nessun prodotto trovato', tagline: 'Produttori ed Esportatori di Tè' },
     hero: {
       title: 'Tè Verde Ceylon con Citronella',
       tagline: 'Una miscela rinfrescante di Tè Verde Ceylon e Citronella vivace',
@@ -528,6 +546,7 @@ export const translations = {
       title: 'Ingredienti Puri',
       subtitle: 'La migliore selezione della natura',
       composition: 'Composizione',
+      pureNature: 'PURA NATURA',
       items: [
         {
           name: 'Foglie di Tè Verde',
@@ -613,6 +632,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: 'Dal 1991 · Sri Lanka',
+        ceylon: 'CEYLON',
         headline1: "L'Arte del",
         headline2: 'Tè di Ceylon',
         subheading: 'Produttori ed esportatori di pregiato tè e spezie di Ceylon. Coltivato sulle alture. Realizzato con generazioni di esperienza.',
@@ -655,10 +675,14 @@ export const translations = {
         description: "Vivi i nostri tè attraverso un viaggio editoriale cinematico — creato per dare vita all'essenza di ogni miscela.",
         cta: 'Entra nel Catalogo',
       },
+      manifesto: {
+        quote: '"Ogni tazza porta l\'anima degli altipiani — coltivato dove la nebbia incontra la montagna, creato dove la tradizione incontra la precisione."',
+        attribution: 'Gruppo Athukorala · Tè Puro di Ceylon',
+      },
     }
   },
   ru: {
-    nav: { language: 'Язык', home: 'Главная', spices: 'Специи', search: 'Поиск', searchPlaceholder: 'Поиск продуктов...', noProductsFound: 'Продукты не найдены' },
+    nav: { language: 'Язык', home: 'Главная', spices: 'Специи', search: 'Поиск', searchPlaceholder: 'Поиск продуктов...', noProductsFound: 'Продукты не найдены', tagline: 'Производители и Экспортёры Чая' },
     hero: {
       title: 'Цейлонский Зеленый Чай с Лемонграссом',
       tagline: 'Освежающая смесь цейлонского зеленого чая и яркого лемонграсса',
@@ -691,6 +715,7 @@ export const translations = {
       title: 'Чистые Ингредиенты',
       subtitle: 'Лучший выбор природы',
       composition: 'Состав',
+      pureNature: 'ЧИСТАЯ ПРИРОДА',
       items: [
         {
           name: 'Листья Зеленого Чая',
@@ -776,6 +801,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: 'С 1991 года · Шри-Ланка',
+        ceylon: 'ЦЕЙЛОН',
         headline1: 'Искусство',
         headline2: 'Цейлонского Чая',
         subheading: 'Производители и экспортёры премиального цейлонского чая и специй. Выращен в нагорьях. Создан с многовековым мастерством.',
@@ -818,10 +844,14 @@ export const translations = {
         description: 'Откройте для себя наши чаи через кинематографическое редакционное путешествие — созданное, чтобы передать суть каждого купажа.',
         cta: 'Открыть Каталог',
       },
+      manifesto: {
+        quote: '"Каждая чашка несёт душу высокогорья — выращено там, где туман встречает горы, создано там, где традиция встречает точность."',
+        attribution: 'Группа Атхукорала · Чистый Цейлонский Чай',
+      },
     }
   },
   ja: {
-    nav: { language: '言語', home: 'ホーム', spices: 'スパイス', search: '検索', searchPlaceholder: '製品を検索...', noProductsFound: '製品が見つかりません' },
+    nav: { language: '言語', home: 'ホーム', spices: 'スパイス', search: '検索', searchPlaceholder: '製品を検索...', noProductsFound: '製品が見つかりません', tagline: '紅茶の製造・輸出業者' },
     hero: {
       title: 'レモングラス入りセイロン緑茶',
       tagline: 'セイロン緑茶と爽やかなレモングラスの鮮やかなブレンド',
@@ -854,6 +884,7 @@ export const translations = {
       title: '純粋な成分',
       subtitle: '自然からの最高の贈り物',
       composition: '成分',
+      pureNature: 'ピュアネイチャー',
       items: [
         {
           name: '緑茶の葉',
@@ -939,6 +970,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: '1991年創業・スリランカ',
+        ceylon: 'セイロン',
         headline1: 'セイロン茶の',
         headline2: '美の世界へ',
         subheading: 'プレミアムセイロン茶とスパイスの製造・輸出メーカー。高地で育まれ、受け継がれてきた職人の技で作られています。',
@@ -981,10 +1013,14 @@ export const translations = {
         description: '各ブレンドの本質を伝えるシネマティックな編集の旅でお茶を体験してください。',
         cta: 'カタログへ入る',
       },
+      manifesto: {
+        quote: '"すべてのカップは高原の魂を運ぶ — 霧が山と出会う場所で育ち、伝統が精密さと出会う場所で作られる。"',
+        attribution: 'アスコラーラ グループ · 純粋セイロン茶',
+      },
     }
   },
   zh: {
-    nav: { language: '语言', home: '首页', spices: '香料', search: '搜索', searchPlaceholder: '搜索产品...', noProductsFound: '未找到产品' },
+    nav: { language: '语言', home: '首页', spices: '香料', search: '搜索', searchPlaceholder: '搜索产品...', noProductsFound: '未找到产品', tagline: '茶叶制造商与出口商' },
     hero: {
       title: '柠檬草 锡兰绿茶',
       tagline: '锡兰绿茶与鲜活柠檬草的清爽融合',
@@ -1017,6 +1053,7 @@ export const translations = {
       title: '纯净成分',
       subtitle: '大自然的精选',
       composition: '成分',
+      pureNature: '纯净自然',
       items: [
         { name: '绿茶叶', description: '优质锡兰绿茶，富含儿茶素和抗氧化剂。' },
         { name: '天然柠檬草', description: '干柠檬草茎，带来清新柑橘香气。' }]
@@ -1087,6 +1124,7 @@ export const translations = {
     homepage: {
       hero: {
         brandMarker: '创立于1991年 · 斯里兰卡',
+        ceylon: '锡兰',
         headline1: '锡兰茶的',
         headline2: '艺术世界',
         subheading: '优质锡兰茶叶与香料的制造商及出口商。生长于高地，以世代传承的工艺精制而成。',
@@ -1128,6 +1166,10 @@ export const translations = {
         heading2: '完整系列',
         description: '通过电影化的编辑之旅体验我们的茶叶，将每种混合茶的精华带入生活。',
         cta: '进入目录',
+      },
+      manifesto: {
+        quote: '"每一杯都承载着高原的灵魂 — 在薄雾与山峰相遇之处生长，在传统与精湛相遇之处精制。"',
+        attribution: '阿图科拉拉集团 · 纯正锡兰茶',
       },
     }
   }
