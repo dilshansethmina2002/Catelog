@@ -8,11 +8,43 @@ export const ingredientImageMap: Record<string, string> = {
   // ── Black Tea Flower ─────────────────────────────────────────────────────
   "tea-002": "/images_of_products_ingredients/black tea flower product.jpg",
 
-  // ── Black Tea with Herbs (no specific ingredient image) ──────────────────
-  "tea-056": FALLBACK, // Black Tea with Curry Leaves
-  "tea-052": FALLBACK, // Black Tea with Gotukola
-  "tea-068": FALLBACK, // Black Tea with Heen Bovitiya
-  "tea-049": FALLBACK, // Black Tea with Moringa
+  // ── Black Tea with Curry Leaves ──────────────────────────────────────────
+  "tea-056": "/images_of_products_ingredients/Black tea with curry leaves products.jpg",
+  "tea-077": "/images_of_products_ingredients/Black tea with curry leaves products.jpg",
+
+  // ── Black Tea with Gotukola ──────────────────────────────────────────────
+  "tea-052": "/images_of_products_ingredients/Black tea with gotukola products.jpg",
+  "tea-076": "/images_of_products_ingredients/Black tea with gotukola products.jpg",
+
+  // ── Black Tea with Heen Bovitiya ─────────────────────────────────────────
+  "tea-068": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg",
+  "tea-083": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg",
+
+  // ── Black Tea with Moringa ───────────────────────────────────────────────
+  "tea-049": "/images_of_products_ingredients/black tea with moringa products.jpg",
+  "tea-053": "/images_of_products_ingredients/black tea with moringa products.jpg",
+
+  // ── Cardamom Flavoured Tea ───────────────────────────────────────────────
+  "tea-006": "/images_of_products_ingredients/Cardamon Flavoured tea products.jpg",
+  "tea-084": "/images_of_products_ingredients/Cardamon Flavoured tea products.jpg",
+
+  // ── Hibiscus Tea ─────────────────────────────────────────────────────────
+  "tea-089": "/images_of_products_ingredients/Ceylon hibiscus black tea products .jpg",
+  "tea-023": "/images_of_products_ingredients/Ceylon hibiscus black tea products .jpg",
+
+  // ── Mix Flower Tea ───────────────────────────────────────────────────────
+  "tea-090": "/images_of_products_ingredients/Ceylon mix flower black tea products.jpg",
+  "tea-091": "/images_of_products_ingredients/Ceylon mix flower black tea products.jpg",
+
+  // ── Pure Black Tea (Premium / Supreme / English styles) ──────────────────
+  "tea-007": "/images_of_products_ingredients/Ceylon premium tea products .jpg",
+  "tea-009": "/images_of_products_ingredients/Ceylon premium tea products .jpg",
+  "tea-074": "/images_of_products_ingredients/Ceylon premium tea products .jpg",
+  "tea-080": "/images_of_products_ingredients/Ceylon premium tea products .jpg",
+
+  // ── Rose Tea ─────────────────────────────────────────────────────────────
+  "tea-092": "/images_of_products_ingredients/ceylon rose black tea products .jpg",
+  "tea-038": "/images_of_products_ingredients/ceylon rose black tea products .jpg",
 
   // ── BOPF / BOPF SP ───────────────────────────────────────────────────────
   "tea-004": "/images_of_products_ingredients/BOPF sp.jpg",  // BOPF SP 200
@@ -20,9 +52,6 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-005": "/images_of_products_ingredients/BOPF sp.jpg",  // BOPF SP TB
   "tea-103": "/images_of_products_ingredients/BOPF sp.jpg",  // BOPF Special
   "tea-100": "/images_of_products_ingredients/BOPF sp.jpg",  // Pure Ceylon Tea Single Estate BOPF Sp
-
-  // ── Cardamom Flavoured (no specific image) ───────────────────────────────
-  "tea-006": FALLBACK,
 
   // ── BOP products ─────────────────────────────────────────────────────────
   "tea-088": "/images_of_products_ingredients/all BOP products.jpg", // Ceylon Black Tea BOP
@@ -32,18 +61,6 @@ export const ingredientImageMap: Record<string, string> = {
   // ── Ceylon Green Tea with Lemongrass / Lemongrass teas ───────────────────
   "tea-001": "/images_of_products_ingredients/all green lemon grass tea products .jpg",
   "tea-093": "/images_of_products_ingredients/all green lemon grass tea products .jpg",
-
-  // ── Hibiscus / Mix Flower / Rose (no specific image) ────────────────────
-  "tea-089": FALLBACK,
-  "tea-090": FALLBACK,
-  "tea-091": FALLBACK,
-  "tea-092": FALLBACK,
-  "tea-023": FALLBACK,
-  "tea-038": FALLBACK,
-
-  // ── Ceylon Premium / Supreme (no specific image) ─────────────────────────
-  "tea-007": FALLBACK,
-  "tea-009": FALLBACK,
 
   // ── FFSP – Flowery Fannings Special ──────────────────────────────────────
   "tea-008": "/images_of_products_ingredients/FF sp.jpg",
@@ -74,29 +91,8 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-048": "/images_of_products_ingredients/all earlygray tea products.jpg",
   "tea-016": "/images_of_products_ingredients/all earlygray tea products.jpg",
 
-  // ── English Afternoon / Breakfast (no specific image) ────────────────────
-  "tea-080": FALLBACK,
-  "tea-074": FALLBACK,
-
   // ── FBOP ─────────────────────────────────────────────────────────────────
   "tea-019": "/images_of_products_ingredients/all FBOP tea products .jpg",
-
-  // ── Flavoured teas without a dedicated ingredient image ──────────────────
-  "tea-063": FALLBACK, // Blackberry
-  "tea-084": FALLBACK, // Cardamom
-  "tea-071": FALLBACK, // Honey
-  "tea-070": FALLBACK, // Jasmine
-  "tea-067": FALLBACK, // Lemon
-  "tea-075": FALLBACK, // Lime
-  "tea-060": FALLBACK, // Mango
-  "tea-078": FALLBACK, // Mixed Fruit
-  "tea-082": FALLBACK, // Peppermint
-  "tea-061": FALLBACK, // Pineapple
-  "tea-065": FALLBACK, // Pomegranate
-  "tea-059": FALLBACK, // Strawberry Cream
-  "tea-094": FALLBACK, // Caramel Extract
-  "tea-095": FALLBACK, // Natural Peach
-  "tea-062": FALLBACK, // Orange Flavoured
 
   // ── Masala Tea ───────────────────────────────────────────────────────────
   "tea-096": "/images_of_products_ingredients/all masala flavour products  .jpg",
@@ -115,13 +111,6 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-022": "/images_of_products_ingredients/all greentea products .jpg",
   "tea-104": "/images_of_products_ingredients/all greentea products .jpg", // Karapincha Green Tea
   "tea-106": "/images_of_products_ingredients/all greentea products .jpg", // Moringa Green Tea
-
-  // ── Jasmine / Mint (no specific image) ───────────────────────────────────
-  "tea-086": FALLBACK,
-  "tea-024": FALLBACK,
-  "tea-087": FALLBACK,
-  "tea-026": FALLBACK,
-  "tea-105": FALLBACK, // Mixed Fruit Roll
 
   // ── OP ───────────────────────────────────────────────────────────────────
   "tea-027": "/images_of_products_ingredients/all OP tea products .jpg",
@@ -150,12 +139,6 @@ export const ingredientImageMap: Record<string, string> = {
   // ── Pure Ceylon Tea TB (BOPF fannings in teabags) ────────────────────────
   "tea-036": "/images_of_products_ingredients/BOPF.jpg",
 
-  // ── Pure Ceylon Tea with Herbs (no specific image) ───────────────────────
-  "tea-077": FALLBACK,
-  "tea-076": FALLBACK,
-  "tea-083": FALLBACK,
-  "tea-053": FALLBACK,
-
   // ── Purple Tea Roll ──────────────────────────────────────────────────────
   "tea-037": "/images_of_products_ingredients/purple tea products.jpg",
 
@@ -166,11 +149,6 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-044": "/images_of_products_ingredients/all slim beauty products .jpg",
   "tea-112": "/images_of_products_ingredients/all slim beauty products .jpg",
 
-  // ── Soursop / Vanilla (no specific image) ────────────────────────────────
-  "tea-055": FALLBACK,
-  "tea-113": FALLBACK,
-  "tea-041": FALLBACK,
-
   // ── Vita Glow ────────────────────────────────────────────────────────────
   "tea-042": "/images_of_products_ingredients/All vita glow products .jpg",
 
@@ -180,7 +158,7 @@ export const ingredientImageMap: Record<string, string> = {
 
   // ── Spices ───────────────────────────────────────────────────────────────
   "tea-058": "/images_of_products_ingredients/black pepper products .jpg",
-  "tea-064": "/images_of_products_ingredients/All cinnamon stick products .jpg", // Cinnamon Pouches
-  "tea-051": "/images_of_products_ingredients/All cinnamon stick products .jpg", // Cinnamon Stick Alba
+  "tea-064": "/images_of_products_ingredients/all cinnamon powder spices product.jpg", // Cinnamon Pouches (ground/powder)
+  "tea-051": "/images_of_products_ingredients/All cinnamon stick products .jpg",        // Cinnamon Stick Alba
   "tea-069": "/images_of_products_ingredients/tumeric spices products .jpg",
 };
