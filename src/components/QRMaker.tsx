@@ -1,9 +1,11 @@
 import React from 'react';
 // ✅ QRCodeSVG වෙනුවට QRCodeCanvas භාවිතා කර ඇත
-import { QRCodeCanvas } from 'qrcode.react'; 
+import { QRCodeCanvas } from 'qrcode.react';
 import productsData from '../data/products.json';
 import spicesData from '../data/spices.json';
 import athuLogo from '../assets/athu.png';
+import { useLanguage } from '../context/LanguageContext';
+import { productTranslations } from '../data/productTranslations';
 
 const spiceIds = new Set(spicesData.map((s) => s.id));
 const allItems = [
@@ -13,6 +15,7 @@ const allItems = [
 
 export const QRMaker: React.FC = () => {
   const BASE_URL = "http://localhost:5173";
+  const { language } = useLanguage();
 
   // ✅ QR Code එක PNG පින්තූරයක් ලෙස Download කිරීමේ Function එක
   const downloadQR = (productId: string, imagePath: string) => {
@@ -63,7 +66,7 @@ export const QRMaker: React.FC = () => {
               />
 
               <h3 className="mt-4 text-xs font-bold text-gray-800 line-clamp-2 h-8">
-                {product.image.split('/').pop()?.replace('.jpg', '') ?? product.name}
+                {productTranslations[product.id]?.[language]?.name || product.name}
               </h3>
 
               <div className="flex w-full gap-2 mt-3">

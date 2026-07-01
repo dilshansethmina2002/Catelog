@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Footer } from '../Footer';
+import { productTranslations } from '../../data/productTranslations';
+import { subtitleTranslations, categoryTranslations } from '../../data/catalogTranslations';
 
 interface CinematicSection {
   id: number;
@@ -538,20 +540,22 @@ const SectionBlock = ({
 
 // ── Root ───────────────────────────────────────────────────────────────────
 export default function EditorialSnapScroll(): JSX.Element {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const localizedSections = sections
+    .filter(s => s.url !== '/spices')
     .map((s) => {
-      const tIdx = s.id >= 1 && s.id <= 5 ? s.id - 1 : -1;
+      const tIdx = s.id >= 1 && s.id <= 4 ? s.id - 1 : -1;
+      const productId = s.url.startsWith('/product/') ? s.url.replace('/product/', '') : null;
+      const productTrans = productId ? productTranslations[productId]?.[language] : null;
       return {
         ...s,
-        title: (tIdx >= 0 && t?.catalog?.sections?.[tIdx]?.title) || s.title,
-        subtitle: (tIdx >= 0 && t?.catalog?.sections?.[tIdx]?.subtitle) || s.subtitle,
-        productName: (tIdx >= 0 && t?.catalog?.sections?.[tIdx]?.productName) || s.productName,
+        title: (tIdx >= 0 && t?.catalog?.sections?.[tIdx]?.title) || productTrans?.name || s.title,
+        subtitle: (tIdx >= 0 && t?.catalog?.sections?.[tIdx]?.subtitle) || subtitleTranslations[s.subtitle]?.[language as keyof typeof subtitleTranslations[string]] || s.subtitle,
+        productName: (tIdx >= 0 && t?.catalog?.sections?.[tIdx]?.productName) || categoryTranslations[s.productName]?.[language as keyof typeof categoryTranslations[string]] || s.productName,
       };
-    })
-    .filter(s => s.url !== '/spices');
+    });
 
   // Hide body scrollbar while on this page so only the snap container's bar shows
   useEffect(() => {

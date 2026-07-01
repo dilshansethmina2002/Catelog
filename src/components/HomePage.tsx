@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { productTranslations } from '../data/productTranslations';
 
 // Static data that never changes with language (images, routes, catalog indices)
 const featuredProductsBase = [
@@ -27,7 +28,7 @@ function FadeInSection({ children, className = '', delay = 0 }: { children: Reac
 }
 
 export default function HomePage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const hp = t.homepage;
 
   const stats = [
@@ -37,13 +38,17 @@ export default function HomePage() {
     { value: 'Export', label: hp.stats.gradeQuality },
   ];
 
-  const featuredProducts = featuredProductsBase.map((p, i) => ({
-    image:    p.image,
-    url:      p.url,
-    title:    t.catalog.sections[p.catalogIndex]?.title    ?? '',
-    subtitle: t.catalog.sections[p.catalogIndex]?.productName ?? '',
-    tag:      hp.featured.tags[i] ?? '',
-  }));
+  const featuredProducts = featuredProductsBase.map((p, i) => {
+    const productId = p.url.replace('/product/', '');
+    const productTrans = productTranslations[productId]?.[language];
+    return {
+      image:    p.image,
+      url:      p.url,
+      title:    productTrans?.name || t.catalog.sections[p.catalogIndex]?.title || '',
+      subtitle: t.catalog.sections[p.catalogIndex]?.productName || '',
+      tag:      hp.featured.tags[i] || '',
+    };
+  });
 
   const qualityPillars = hp.heritage.pillars;
 
@@ -363,6 +368,7 @@ export default function HomePage() {
                 fontWeight: 700,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase',
+                backgroundColor: 'rgba(255, 255, 255, 0.55)',
               }}
             >
               {hp.featured.viewAll}
@@ -393,7 +399,7 @@ export default function HomePage() {
               whiteSpace: 'nowrap',
             }}
           >
-            CEYLON
+            {hp.hero.ceylon}
           </span>
         </div>
 
@@ -627,8 +633,7 @@ export default function HomePage() {
               fontStyle: 'italic',
             }}
           >
-            "Every cup carries the soul of the highland — grown where the mist meets the mountain,
-            crafted where tradition meets precision."
+            {hp.manifesto.quote}
           </p>
 
           {/* Attribution */}
@@ -643,7 +648,7 @@ export default function HomePage() {
                 color: 'rgba(212,175,106,0.5)',
               }}
             >
-              Athukorala Group · Pure Ceylon Tea
+              {hp.manifesto.attribution}
             </span>
             <span style={{ height: '1px', width: '32px', background: 'rgba(212,175,106,0.25)', display: 'inline-block' }} />
           </div>

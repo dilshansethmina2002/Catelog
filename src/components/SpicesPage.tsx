@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import spicesData from '../data/spices.json';
 import { Footer } from './Footer';
+import { useLanguage } from '../context/LanguageContext';
+import { productTranslations } from '../data/productTranslations';
 
 interface SpiceSection {
   id: string;
@@ -12,14 +14,6 @@ interface SpiceSection {
   url: string;
 }
 
-const sections: SpiceSection[] = spicesData.map((s) => ({
-  id: s.id,
-  title: s.name,
-  subtitle: s.description.split('.')[0],
-  image: s.image,
-  productName: s.pack || 'Premium Spice',
-  url: `/spice/${s.id}`,
-}));
 
 const ShutterOverlay = ({ isVisible, count = 6 }: { isVisible: boolean; count?: number }) => {
   const slats = useRef(
@@ -104,6 +98,7 @@ const TextContent = ({
   const [isHovered, setIsHovered] = useState(false);
   const rotationDirection = isImageLeft ? -12 : 12;
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   return (
     <div
@@ -279,7 +274,7 @@ const TextContent = ({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            DISCOVER MORE
+            {t.catalog.discoverMore.toUpperCase()}
             <span
               style={{
                 position: 'absolute',
@@ -339,6 +334,22 @@ const SectionBlock = ({
 };
 
 export default function SpicesPage(): JSX.Element {
+  const { t, language } = useLanguage();
+
+  const sections: SpiceSection[] = spicesData.map((s) => {
+    const translated = productTranslations[s.id]?.[language];
+    const name = translated?.name || s.name;
+    const description = translated?.description || s.description;
+    return {
+      id: s.id,
+      title: name,
+      subtitle: description.split('.')[0],
+      image: s.image,
+      productName: s.pack || t.homepage.spices.badge,
+      url: `/spice/${s.id}`,
+    };
+  });
+
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => { document.body.style.overflow = ''; };

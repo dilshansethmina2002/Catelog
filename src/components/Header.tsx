@@ -127,10 +127,10 @@ export const Header: React.FC = () => {
               style={{ fontFamily: "'Cormorant Garamond', 'Playfair Display', Georgia, serif" }}
             >
               Athukorala Group
-              <span className="hidden sm:inline font-normal text-[#f5f0e6]/60 italic"> pvt Ltd.</span>
+              <span className="hidden sm:inline font-normal text-[#f5f0e6]/60 italic"> (PVT) LTD.</span>
             </span>
             <span className="text-[8px] sm:text-[9px] font-medium uppercase tracking-[0.25em] text-[#d4af6a]/70 truncate mt-1">
-              Manufacturers &amp; Exporters of Tea
+              {t.nav.tagline}
             </span>
           </div>
         </div>
