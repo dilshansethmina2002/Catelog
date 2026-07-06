@@ -1,5 +1,7 @@
 import './index.css';
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
-render(<App />, document.getElementById("root"));
+// Notice the '!' at the very end of the getElementById call
+const root = createRoot(document.getElementById("root")!);
+root.render(<App />);

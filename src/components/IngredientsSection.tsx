@@ -1,28 +1,31 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
-import logoImg from '../assets/tea.jpg'; // මේක හැම එකටම පොදුයි
+import logoImg from '../assets/tea.jpg'; // மே  hackக் எல்லாத்துக்கும் பொதுவானது
 import { useParams } from 'react-router-dom';
 
 // JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json';
+import spicesData from '../data/spices.json';
+import { ingredientTranslations } from '../data/ingredientTranslations';
+import { ingredientImageMap } from '../data/ingredientImages';
 
 export function IngredientsSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
-  const { id } = useParams(); // URL එකෙන් ID එක ගන්නවා (උදා: tea-002)
-  
-  // URL එකේ ID එකක් තියෙනවා නම් ඒකට අදාළ product එක ගන්නවා, නැත්නම් default විදිහට පළවෙනි එක ගන්නවා
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
+  const { id } = useParams();
+  const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
 
-  // අලුත් JSON ෆයිල් එකේ 'ingredients' දත්ත ගන්නවා
-  // Use translated ingredients for tea-001 / home page; JSON for all other products
   const isTea001 = !id || id === 'tea-001';
-  const ingredientsList = isTea001 ? t.ingredients.items : (featuredProduct.ingredients || t.ingredients.items);
+  const rawIngredients = isTea001 ? t.ingredients.items : (featuredProduct.ingredients || t.ingredients.items);
+  const ingredientsList = (isTea001 || language === 'en')
+    ? rawIngredients
+    : rawIngredients.map((item: any) => ingredientTranslations[item.name]?.[language as keyof typeof ingredientTranslations[string]] ?? item);
 
-  // JSON එකෙන් යට පින්තූරය ගන්නවා. ඒක නැත්නම් පරණ Unsplash පින්තූරය දානවා (Fallback)
-  const dynamicIngredientImage = featuredProduct.ingredientImage || "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?q=80&w=600&auto=format&fit=crop";
+  // New ingredient content images take priority; fall back to legacy ingredientImage, then Unsplash
+  const dynamicIngredientImage =
+    ingredientImageMap[id ?? "tea-001"] ||
+    featuredProduct.ingredientImage ||
+    "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?q=80&w=600&auto=format&fit=crop";
 
   return (
     <Section
@@ -32,93 +35,76 @@ export function IngredientsSection() {
       {/* Editorial Background Text */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-[0.03]">
         <span className="text-[20vw] font-serif font-bold leading-none whitespace-nowrap absolute top-10 left-0">
-          PURE NATURE
+          {t.ingredients.pureNature}
         </span>
       </div>
 
-      {/* මොබයිල් වලදී px-4 කිනුත්, ලොකු ස්ක්‍රීන්වලදී px-6 කිනුත් පෑඩින් පාලනය කර ඇත */}
+      {/* மோபயில் வலடீ px-4 கிலும்த், லோகு ஸ்க்ரீன்வலடீ px-6 கிலும்த் பேடிங் பாலனோ கர அத */}
       <div className="container mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
-        
-        {/* Left Column: Image Collage (මොබයිල් වලදී 'hidden' එක අයින් කර උස ප්‍රමාණය ස්වයංක්‍රීයව හැඩගැසෙන්න හැදුවා) */}
+
+        {/* Left Column: Image Collage */}
         <div className="lg:col-span-5 relative h-[320px] sm:h-[450px] lg:h-[600px] w-full order-1 lg:order-none">
-          
-          {/* ප්‍රධාන පින්තූරය (logoImg) - මොබයිල් වලදී border radius එක rounded-[40px] කර ඇත */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="absolute top-0 right-0 w-3/4 h-3/4 rounded-t-[40px] sm:rounded-t-[100px] overflow-hidden z-10 border-r-4 border-t-4 border-amber-500/30"
-          >
+
+          {/* ප්‍රධාන පින්තූරය (logoImg) */}
+          <div className="absolute top-0 right-0 w-3/4 h-3/4 rounded-t-[40px] sm:rounded-t-[100px] overflow-hidden z-10 border-r-4 border-t-4 border-amber-500/30">
             <img
-              src={logoImg} 
+              src={logoImg}
               alt="Tea Ingredients"
+              loading="eager"
               decoding="async"
-              className="w-full h-full object-cover" 
+              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
-          </motion.div>
-          
+          </div>
+
           {/* වෙනස් වන පින්තූරය (JSON එකෙන් එන පින්තූරය) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="absolute bottom-0 left-0 w-2/3 h-1/2 bg-emerald-900 rounded-b-[40px] sm:rounded-b-[100px] overflow-hidden z-20 border-l-4 border-b-4 border-emerald-700"
-          >
+          <div className="absolute bottom-0 left-0 w-2/3 h-1/2 bg-emerald-900 rounded-b-[40px] sm:rounded-b-[100px] overflow-hidden z-20 border-l-4 border-b-4 border-emerald-700">
             <img
-              src={dynamicIngredientImage} 
+              src={dynamicIngredientImage}
               alt="Tea Leaves"
+              loading="eager"
               decoding="async"
-              className="w-full h-full object-cover hover:opacity-100 transition-opacity duration-700" 
+              className="w-full h-full object-cover hover:scale-110 hover:opacity-100 transition-all duration-700"
             />
-          </motion.div>
+          </div>
         </div>
 
         {/* Right Column: Content */}
         <div className="lg:col-span-7 lg:pl-12 order-2 lg:order-none">
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <span className="text-amber-400 font-medium tracking-widest uppercase text-xs sm:text-sm mb-3 sm:mb-4 block">
               {t.ingredients.composition}
             </span>
-            
-            {/* මොබයිල්වලදී text-3xl/leading-tight ලෙසත් ලොකු තිරවලදී text-7xl/leading-none ලෙසත් හැරේ */}
+
+            {/* மோபயில்வலடீ text-3xl/leading-tight லெசும்த் லோகு திரவலடீ text-7xl/leading-none லெசும்த் ஹரே */}
             <h2 className="text-3xl sm:text-5xl lg:text-7xl font-serif font-bold text-white mb-8 sm:mb-12 leading-tight lg:leading-none">
               {t.ingredients.title}
             </h2>
 
-            {/* මොබයිල් එකේදී කරුණු අතර පරතරය space-y-6/8 දක්වා අඩු කර ඇත */}
+            {/* மோபயில் எகேடீ கருண அதர பரதரோ space-y-6/8 டக்வா அடு கர அத */}
             <div className="space-y-6 sm:space-y-8 lg:space-y-12">
               {ingredientsList.map((item: any, index: number) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.2 }}
                   className="group border-b border-emerald-800 pb-6 sm:pb-8 last:border-0"
                 >
                   <div className="flex items-baseline gap-3 sm:gap-4 mb-2 sm:mb-3">
                     <span className="text-amber-500 font-serif text-lg sm:text-xl italic">
                       0{index + 1}
                     </span>
-                    {/* මොබයිල් මාතෘකා text-xl කර ඇත */}
+                    {/* மோபயில் மாத்ரிகா text-xl கர அத */}
                     <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">
                       {item.name}
                     </h3>
                   </div>
-                  
-                  {/* iPhone SE වැනි කුඩා තිරවලදී text එක තෙරපෙන්නේ නැති වෙන්න pl-6 දුන්නා */}
+
+                  {/* iPhone SE வன்ன குட திரவலடீ text எக தெரபென்னே நத வென்ன pl-6 டுன்னா */}
                   <p className="text-emerald-200/60 text-base sm:text-lg pl-6 sm:pl-10 leading-relaxed font-light max-w-xl">
                     {item.description}
                   </p>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </Section>

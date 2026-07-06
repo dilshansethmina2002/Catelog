@@ -6,30 +6,46 @@ import { useParams } from 'react-router-dom';
 
 // JSON ෆයිල් එක import කරගන්නවා
 import productsData from '../data/products.json';
+import spicesData from '../data/spices.json';
+import { translations } from '../data/translations';
+import { ingredientTranslations, spiceBenefitTranslations } from '../data/ingredientTranslations';
 
 export function PriceSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
-  const { id } = useParams(); // URL එකෙන් ID එක ගන්නවා (උදා: tea-002)
-  
-  // URL එකේ ID එකක් තියෙනවා නම් ඒකට අදාළ product එක ගන්නවා, නැත්නම් default විදිහට පළවෙනි එක ගන්නවා
-  const featuredProduct = productsData.find((p) => p.id === id) || productsData[0];
+  const { id } = useParams();
 
-  // JSON එකෙන් මිල ගන්නවා, නැත්නම් Translation එකේ තියෙන default මිල ගන්නවා
+  const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
+
   const displayPrice = featuredProduct.price || t.price.price;
   const displayWeight = featuredProduct.weight || t.price.weight;
 
-  // Checkmarks වලට එන්න ඕනේ දේවල් ටික ලේසියෙන් හදාගන්නවා (භාෂාව මාරු වෙන්න පහසු වෙන්න)
-  const checklistItems = [
-    t.ingredients.items[0].name,
-    t.benefits.items[0].title,
-    t.benefits.items[3].title
-  ];
+  const displayWeight = featuredProduct.weight === translations.en.price.weight
+    ? t.price.weight
+    : (featuredProduct.weight || t.price.weight);
+
+  type NonEnglishLang = 'es'|'fr'|'it'|'ru'|'ja'|'zh';
+  const translateIngredient = (name: string) =>
+    language === 'en' ? name : (ingredientTranslations[name]?.[language as NonEnglishLang]?.name ?? name);
+  const translateBenefit = (title: string) =>
+    language === 'en' ? title : (spiceBenefitTranslations[title]?.[language as NonEnglishLang] ?? title);
+
+  const isSpicePage = spicesData.some((s) => s.id === id);
+  const checklistItems = isSpicePage
+    ? [
+        translateIngredient(featuredProduct.ingredients[0]?.name ?? t.ingredients.items[0].name),
+        translateBenefit(featuredProduct.benefits[0]?.title ?? t.benefits.items[0].title),
+        translateBenefit(featuredProduct.benefits[3]?.title ?? featuredProduct.benefits[2]?.title ?? t.benefits.items[3].title),
+      ]
+    : [
+        t.ingredients.items[0].name,
+        t.benefits.items[0].title,
+        t.benefits.items[3].title,
+      ];
 
   return (
-    // Changed to dark background with relative and overflow-hidden for the gradient
     <Section id="price" className="relative bg-emerald-950 py-16 sm:py-24 md:py-32 overflow-hidden">
-      
+
       {/* --- THE ANIMATED GRADIENT BACKGROUND --- */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -43,22 +59,18 @@ export function PriceSection() {
 
       {/* Content Container positioned above the background */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          // Transformed to dark frosted glass
-          className="relative bg-black/30 backdrop-blur-md border border-white/10 rounded-3xl sm:rounded-[3rem] p-6 sm:p-10 md:p-16 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] group"
-        >
 
-          {/* Very subtle inner glass reflection replacing the old solid gradient */}
+        {/* Price Card */}
+        <div className="relative bg-black/30 backdrop-blur-md border border-white/10 rounded-3xl sm:rounded-[3rem] p-6 sm:p-10 md:p-16 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] group">
+
+          {/* Very subtle inner glass reflection */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-0 pointer-events-none" />
-          
-          {/* Background Orb - Changed to Gold/Emerald mix */}
+
+          {/* Background Orb */}
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-0 right-0 w-[280px] h-[280px] sm:w-[500px] sm:h-[500px] bg-[#d4af37]/20 rounded-full blur-[60px] sm:blur-[100px] transform translate-x-1/3 -translate-y-1/3 z-0 pointer-events-none" 
+            className="absolute top-0 right-0 w-[280px] h-[280px] sm:w-[500px] sm:h-[500px] bg-[#d4af37]/20 rounded-full blur-[60px] sm:blur-[100px] transform translate-x-1/3 -translate-y-1/3 z-0 pointer-events-none"
           />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -98,7 +110,6 @@ export function PriceSection() {
             <motion.div
               whileHover={{ y: -10, rotateX: 5 }}
               transition={{ type: 'spring', stiffness: 300 }}
-              // Deepened the glass effect to contrast against the parent container
               className="bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-center relative overflow-hidden w-full shadow-2xl"
             >
               {/* Premium Gold to Green top border highlight */}
@@ -121,18 +132,12 @@ export function PriceSection() {
               </div>
             </motion.div>
           </div>
-        </motion.div>
-        
+        </div>
+
         {/* Bespoke Review Experience */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          // Transformed to dark frosted glass
-          className="mt-12 sm:mt-20 relative px-4 sm:px-6 py-12 sm:py-16 md:py-24 rounded-3xl sm:rounded-[3rem] overflow-hidden text-center bg-black/20 backdrop-blur-md border border-white/5"
-        >
-          {/* Decorative Floating Leaf (Faded for dark mode) */}
+        <div className="mt-12 sm:mt-20 relative px-4 sm:px-6 py-12 sm:py-16 md:py-24 rounded-3xl sm:rounded-[3rem] overflow-hidden text-center bg-black/20 backdrop-blur-md border border-white/5">
+
+          {/* Decorative Floating Leaf */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 text-white/[0.02] pointer-events-none select-none z-0">
             <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full rotate-45">
               <path d="M50,5 C20,25 5,55 50,95 C95,55 80,25 50,5 Z" />
@@ -141,14 +146,9 @@ export function PriceSection() {
 
           <div className="relative z-10 flex flex-col items-center gap-6 sm:gap-8 w-full">
             <div className="space-y-2 sm:space-y-3 max-w-xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="text-[#d4af37] font-bold text-[9px] sm:text-[10px] uppercase tracking-[0.3em]"
-              >
-                Trusted Excellence
-              </motion.div>
+              <div className="text-[#d4af37] font-bold text-[9px] sm:text-[10px] uppercase tracking-[0.3em]">
+                {t.price.trustedExcellence}
+              </div>
               <h3 className="text-2xl sm:text-4xl md:text-5xl font-serif font-medium text-white tracking-tight italic leading-tight">
                 {t.price.videoTitle}
               </h3>
@@ -189,7 +189,7 @@ export function PriceSection() {
               </motion.span>
             </motion.a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </Section>
   );

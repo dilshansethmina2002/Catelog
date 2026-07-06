@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
@@ -11,8 +12,12 @@ import { PriceSection } from './components/PriceSection';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import ProductDetails from './components/ProductDetails';
+import SpicesPage from './components/SpicesPage';
+import SpiceDetails from './components/SpiceDetails';
 import { QRMaker } from './components/QRMaker';
-// import SnapScroll from './components/ui/SnapScroll';
+import { NotFound } from './components/NotFound';
+import SnapScroll from './components/ui/SnapScroll';
+import HomePage from './components/HomePage';
 
 
 // Floating scroll-to-top button — appears after scrolling 400px
@@ -27,6 +32,27 @@ function ScrollToTopButton() {
 
   if (!visible) return null;
 
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Scroll to top"
+      className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-amber-400 hover:bg-amber-300 text-emerald-950 shadow-lg flex items-center justify-center transition-colors duration-200"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+  );
+}
+
+function ScrollToTopButton() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  if (!visible) return null;
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -67,10 +93,14 @@ function AppContent() {
         {/* ✅ වෙනස: pt-20 md:pt-24 ඉවත් කරන ලදී. එවිට Hero Section එක තිරයේ ඉහළම කෙළවරේ සිට ආරම්භ වේ */}
         <main className="flex-grow"> 
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/catalog" element={<SnapScroll />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/spices" element={<SpicesPage />} />
+            <Route path="/spice/:id" element={<SpiceDetails />} />
             <Route path="/admin/qr" element={<QRMaker />} />
-
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 
