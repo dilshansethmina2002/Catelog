@@ -18,7 +18,6 @@ export function PriceSection() {
   const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
 
   const displayPrice = featuredProduct.price || t.price.price;
-  const displayWeight = featuredProduct.weight || t.price.weight;
 
   const displayWeight = featuredProduct.weight === translations.en.price.weight
     ? t.price.weight
