@@ -237,7 +237,7 @@ export const Header: React.FC = () => {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="sm:hidden flex items-center justify-center w-9 h-9 rounded-full border border-[#3d4f43] text-[#f5f0e6]/80 hover:border-[#d4af6a]/50 transition-colors"
-            aria-label="Toggle Menu"
+            aria-label={t.common.toggleMenu}
           >
             {mobileMenuOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

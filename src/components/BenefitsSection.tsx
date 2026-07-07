@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 // Import the JSON file to access product data and benefits
 import productsData from '../data/products.json';
 import spicesData from '../data/spices.json';
+import { benefitTranslations } from '../data/benefitTranslations';
 
 // --- CUSTOM SVG ILLUSTRATIONS ---
 const ShieldIcon = ({ className = "" }: { className?: string }) => (
@@ -42,12 +43,18 @@ const BrainIcon = ({ className = "" }: { className?: string }) => (
 const customIcons = [ShieldIcon, HeartIcon, ZapIcon, BrainIcon];
 
 export const BenefitsSection: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
   const isTea001 = !id || id === 'tea-001';
-  const benefitsList = isTea001 ? t.benefits.items : (featuredProduct.benefits || t.benefits.items);
+  const rawBenefitsList = isTea001 ? t.benefits.items : (featuredProduct.benefits || t.benefits.items);
+  const benefitsList = (isTea001 || language === 'en')
+    ? rawBenefitsList
+    : rawBenefitsList.map((item: any) => {
+        const key = `${item.title}|||${item.description}`;
+        return benefitTranslations[key]?.[language as keyof typeof benefitTranslations[string]] ?? item;
+      });
 
   return (
     <Section id="benefits" className="relative py-16 sm:py-24 md:py-32 overflow-hidden bg-emerald-950">

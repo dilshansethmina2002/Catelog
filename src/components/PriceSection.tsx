@@ -154,7 +154,7 @@ export function PriceSection() {
             </div>
 
             {/* Elegant Shimmering Stars */}
-            <div className="flex gap-1.5 sm:gap-2" aria-label="5 star rating">
+            <div className="flex gap-1.5 sm:gap-2" aria-label={t.price.starRating}>
               {[1, 2, 3, 4, 5].map((s) => (
                 <motion.div
                   key={s}

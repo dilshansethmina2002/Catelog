@@ -35,7 +35,7 @@ export default function HomePage() {
     { value: '40+',    label: hp.stats.premiumTeas },
     { value: '7',      label: hp.stats.languages },
     { value: '100%',   label: hp.stats.ceylonOrigin },
-    { value: 'Export', label: hp.stats.gradeQuality },
+    { value: hp.stats.exportValue, label: hp.stats.gradeQuality },
   ];
 
   const featuredProducts = featuredProductsBase.map((p, i) => {
@@ -499,7 +499,7 @@ export default function HomePage() {
               >
                 <img
                   src="/images/Cinnamon Stick Alba 50g.jpg"
-                  alt="Ceylon Spices"
+                  alt={hp.spices.imageAlt}
                   className="w-full h-full object-cover"
                 />
                 <div

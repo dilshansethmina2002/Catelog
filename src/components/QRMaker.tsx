@@ -15,7 +15,7 @@ const allItems = [
 
 export const QRMaker: React.FC = () => {
   const BASE_URL = "http://localhost:5173";
-  const { language } = useLanguage();
+  const { t, language } = useLanguage();
 
   // ✅ QR Code එක PNG පින්තූරයක් ලෙස Download කිරීමේ Function එක
   const downloadQR = (productId: string, imagePath: string) => {
@@ -41,7 +41,7 @@ export const QRMaker: React.FC = () => {
     <div className="min-h-screen bg-gray-100 p-10 pt-[80px] lg:pt-[120px]">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-center text-emerald-900">
-          Tea Products - QR Code Generator
+          {t.qrMaker.title}
         </h1>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -76,14 +76,14 @@ export const QRMaker: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex-1 px-2 py-1.5 bg-emerald-600 text-white text-xs font-medium rounded-md hover:bg-emerald-700 transition-colors text-center flex items-center justify-center"
                 >
-                  View
+                  {t.qrMaker.view}
                 </a>
 
                 <button
                   onClick={() => downloadQR(product.id, product.image)}
                   className="flex-1 px-2 py-1.5 bg-slate-800 text-white text-xs font-medium rounded-md hover:bg-slate-900 transition-colors text-center flex items-center justify-center"
                 >
-                  Download
+                  {t.qrMaker.download}
                 </button>
               </div>
 
