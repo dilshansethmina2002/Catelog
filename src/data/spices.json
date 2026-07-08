@@ -30,6 +30,22 @@
       {
         "title": "Warming Effect",
         "description": "Naturally warms the body and enhances circulation in cold conditions."
+      },
+      {
+        "title": "Nutrient Absorption",
+        "description": "Piperine is known to enhance the body's absorption of other nutrients."
+      },
+      {
+        "title": "Antibacterial Properties",
+        "description": "Piperine has natural antimicrobial properties."
+      },
+      {
+        "title": "Metabolism Boost",
+        "description": "Black pepper is traditionally linked to a healthy metabolism."
+      },
+      {
+        "title": "Respiratory Ease",
+        "description": "Traditionally used to help clear congestion and support easy breathing."
       }
     ],
     "brewing": [
@@ -82,6 +98,22 @@
       {
         "title": "Warmth & Comfort",
         "description": "A perfectly portioned warming infusion for cold mornings and evenings."
+      },
+      {
+        "title": "Antimicrobial Properties",
+        "description": "Cinnamaldehyde has natural antibacterial properties."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Cinnamaldehyde is linked to healthy blood circulation."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "One of the richest natural sources of antioxidant polyphenols."
+      },
+      {
+        "title": "Warming Effect",
+        "description": "A naturally warming spice, especially comforting in cooler weather."
       }
     ],
     "brewing": [
@@ -138,6 +170,22 @@
       {
         "title": "Immunity & Brain",
         "description": "Curcumin boosts brain-derived neurotrophic factor (BDNF) and supports immunity."
+      },
+      {
+        "title": "Curcumin Power",
+        "description": "Rich in curcumin, one of the most researched natural anti-inflammatory compounds."
+      },
+      {
+        "title": "Liver Support",
+        "description": "Long valued in traditional medicine for supporting healthy liver function."
+      },
+      {
+        "title": "Antioxidant Shield",
+        "description": "Curcumin is a powerful natural antioxidant compound."
+      },
+      {
+        "title": "Immune Support",
+        "description": "Traditionally used to support the body's natural defenses."
       }
     ],
     "brewing": [
@@ -190,6 +238,22 @@
       {
         "title": "Warming Effect",
         "description": "Naturally warms the body and improves digestive comfort."
+      },
+      {
+        "title": "Antimicrobial Properties",
+        "description": "Cinnamaldehyde has natural antibacterial properties."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Cinnamaldehyde is linked to healthy blood circulation."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "One of the richest natural sources of antioxidant polyphenols."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Traditionally used to settle the stomach after meals."
       }
     ],
     "brewing": [

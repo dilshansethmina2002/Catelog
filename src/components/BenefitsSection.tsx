@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 // Import the JSON file to access product data and benefits
 import productsData from '../data/products.json';
@@ -40,10 +40,143 @@ const BrainIcon = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
-const customIcons = [ShieldIcon, HeartIcon, ZapIcon, BrainIcon];
+const AntioxidantIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.circle cx="50" cy="50" r="10" stroke="currentColor" strokeWidth="3" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} />
+    {[0, 60, 120, 180, 240, 300].map((angle, i) => (
+      <motion.circle
+        key={angle}
+        cx={50 + 28 * Math.cos((angle * Math.PI) / 180)}
+        cy={50 + 28 * Math.sin((angle * Math.PI) / 180)}
+        r="6"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0.4, 1, 0.4] }}
+        transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.2 }}
+      />
+    ))}
+  </svg>
+);
 
-export const BenefitsSection: React.FC = () => {
+const DigestiveIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M38 18C30 25 28 35 32 45C36 55 26 58 26 68C26 78 36 84 48 82C60 80 66 70 62 60" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5 }} />
+    <motion.path d="M62 60C70 58 76 50 74 40" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, delay: 0.3 }} />
+  </svg>
+);
+
+const SleepIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M65 22C50 26 40 40 40 55C40 72 54 85 71 82C58 92 38 90 27 76C15 61 18 38 34 26C44 18 56 17 65 22Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} />
+    <motion.circle cx="72" cy="30" r="2.5" fill="currentColor" animate={{ opacity: [0.3, 1, 0.3] }} transition={{ duration: 2, repeat: Infinity }} />
+    <motion.circle cx="80" cy="42" r="1.8" fill="currentColor" animate={{ opacity: [0.3, 1, 0.3] }} transition={{ duration: 2, repeat: Infinity, delay: 0.5 }} />
+  </svg>
+);
+
+const WarmingIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M50 18C50 18 32 38 32 55C32 68 40 78 50 78C60 78 68 68 68 55C68 48 65 44 62 40C62 48 57 52 53 48C49 44 52 38 50 30C48 34 44 38 44 44C44 38 46 30 50 18Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" animate={{ scale: [1, 1.06, 1] }} transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }} />
+  </svg>
+);
+
+const BoneJointIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M28 72L72 28" stroke="currentColor" strokeWidth="6" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1 }} />
+    <circle cx="24" cy="76" r="9" stroke="currentColor" strokeWidth="3" />
+    <circle cx="76" cy="24" r="9" stroke="currentColor" strokeWidth="3" />
+  </svg>
+);
+
+const RespiratoryIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M18 35C30 30 42 32 48 40" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 1 }} />
+    <motion.path d="M18 50C33 44 48 47 56 57" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 1, delay: 0.2 }} />
+    <motion.path d="M18 65C36 58 54 62 62 73" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 1, delay: 0.4 }} />
+  </svg>
+);
+
+const SkinIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    {[0, 72, 144, 216, 288].map((angle, i) => (
+      <motion.ellipse
+        key={angle}
+        cx={50 + 18 * Math.cos((angle * Math.PI) / 180)}
+        cy={50 + 18 * Math.sin((angle * Math.PI) / 180)}
+        rx="12"
+        ry="18"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        transform={`rotate(${angle + 90} ${50 + 18 * Math.cos((angle * Math.PI) / 180)} ${50 + 18 * Math.sin((angle * Math.PI) / 180)})`}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: i * 0.1 }}
+      />
+    ))}
+    <circle cx="50" cy="50" r="6" fill="currentColor" opacity="0.8" />
+  </svg>
+);
+
+const MetabolismIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M22 60C22 44 34 32 50 32C66 32 78 44 78 60" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1 }} />
+    <motion.path d="M50 60L62 42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" animate={{ rotate: [0, 20, -10, 0] }} style={{ transformOrigin: '50px 60px' }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} />
+    <circle cx="50" cy="60" r="4" fill="currentColor" />
+  </svg>
+);
+
+const HydrationIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M50 18C50 18 28 46 28 63C28 76 38 84 50 84C62 84 72 76 72 63C72 46 50 18 50 18Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.4 }} />
+    <motion.path d="M38 62C38 68 43 72 49 72" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" animate={{ opacity: [0.2, 0.6, 0.2] }} transition={{ duration: 2, repeat: Infinity }} />
+  </svg>
+);
+
+const DetoxIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M50 20C64 20 76 30 79 43C82 57 74 70 62 76" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2 }} />
+    <motion.path d="M50 80C36 80 24 70 21 57C18 43 26 30 38 24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, delay: 0.3 }} />
+    <motion.path d="M60 68L62 76L70 74" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} />
+    <motion.path d="M40 32L38 24L30 26" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} />
+  </svg>
+);
+
+const WellnessIcon = ({ className = "" }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <motion.path d="M50 20C50 20 30 32 30 50C30 68 50 80 50 80C50 80 70 68 70 50C70 32 50 20 50 20Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.4 }} />
+    <motion.path d="M50 30V70" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.4" animate={{ opacity: [0.2, 0.5, 0.2] }} transition={{ duration: 2.5, repeat: Infinity }} />
+  </svg>
+);
+
+// Ordered (priority-first) keyword categories used to pick a distinct icon per benefit type.
+const ICON_CATEGORIES: { icon: typeof ShieldIcon; keywords: string[] }[] = [
+  { icon: SleepIcon, keywords: ['sleep', 'calm', 'relax', 'tranquil', 'zen', 'soothing', 'soothe', 'stress', 'mood', 'emotional', 'headache', 'aromatic'] },
+  { icon: WarmingIcon, keywords: ['warm'] },
+  { icon: BoneJointIcon, keywords: ['bone', 'joint', 'muscle', 'aches'] },
+  { icon: RespiratoryIcon, keywords: ['breath', 'congestion', 'respiratory', 'oral', 'throat'] },
+  { icon: SkinIcon, keywords: ['skin', 'hair', 'glow', 'radian', 'complexion', 'collagen', 'wound', 'anti-aging', 'anti-ageing', 'ageing', 'aging', 'longevity'] },
+  { icon: DigestiveIcon, keywords: ['digest', 'gut', 'stomach', 'nausea', 'appetite', 'nutrient', 'nutrition'] },
+  { icon: DetoxIcon, keywords: ['detox', 'liver', 'kidney', 'urinary', 'cleanse'] },
+  { icon: HydrationIcon, keywords: ['hydrat'] },
+  { icon: MetabolismIcon, keywords: ['metabol', 'weight', 'craving', 'crav', 'blood sugar'] },
+  { icon: BrainIcon, keywords: ['brain', 'memory', 'cognitive', 'mental', 'clarity', 'clears the mind', 'focus', 'eye', 'vision'] },
+  { icon: AntioxidantIcon, keywords: ['antioxidant', 'catechin', 'curcumin', 'cellular', 'anthocyanin', 'inflammat'] },
+  { icon: ShieldIcon, keywords: ['immun', 'defense', 'defence', 'antibacterial', 'antimicrobial', 'antiviral', 'anti-viral', 'fortification', 'vitamin c', 'cold'] },
+  { icon: HeartIcon, keywords: ['heart', 'cardiovascular', 'blood pressure', 'vascular', 'circulat', 'iron'] },
+  { icon: ZapIcon, keywords: ['energy', 'energiz', 'alert', 'morning', 'vitality', 'robust', 'steady', 'caffeine', 'refreshing', 'vibrant'] },
+];
+
+function getIconForBenefit(title: string) {
+  const lower = (title || '').toLowerCase();
+  for (const category of ICON_CATEGORIES) {
+    if (category.keywords.some((kw) => lower.includes(kw))) return category.icon;
+  }
+  return WellnessIcon;
+}
+
+export const BenefitsSection: React.FC<{ showAll?: boolean }> = ({ showAll = false }) => {
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
 
   const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
@@ -85,42 +218,24 @@ export const BenefitsSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Bento Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 md:gap-8">
+        {/* Uniform Grid layout: 4 cards per row */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
 
           {benefitsList.map((item: any, index: number) => {
-            const Icon = customIcons[index % customIcons.length];
-            const isMain = index === 0;
+            const Icon = getIconForBenefit(rawBenefitsList[index]?.title || item.title);
+            const hiddenOnMobile = !showAll && index >= 2;
 
             return (
               <div
                 key={index}
-                className={`
-                  group relative rounded-3xl sm:rounded-[2.5rem] p-5 sm:p-8 md:p-12 overflow-hidden flex flex-col transition-all duration-700
-                  ${isMain
-                    ? 'md:col-span-8 bg-black/30 backdrop-blur-lg border border-white/10 text-white min-h-[280px] sm:min-h-[400px]'
-                    : 'md:col-span-4 bg-black/15 backdrop-blur-lg border border-white/10 text-white shadow-xl hover:bg-black/25'
-                  }
-                `}
+                className={`${hiddenOnMobile ? 'hidden sm:flex' : 'flex'} group relative rounded-3xl sm:rounded-[2.5rem] p-5 sm:p-8 md:p-12 overflow-hidden flex-col transition-all duration-700 bg-black/15 backdrop-blur-lg border border-white/10 text-white shadow-xl hover:bg-black/25 min-h-[320px] sm:min-h-[380px] md:min-h-[420px]`}
               >
                 {/* Background Decor Circles */}
-                {isMain ? (
-                  <>
-                    <div className="absolute top-0 right-0 w-[240px] h-[240px] sm:w-[400px] sm:h-[400px] bg-emerald-500/20 rounded-full blur-[10px] sm:blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none" />
-                    <div className="absolute -bottom-20 -left-20 w-60 h-60 border border-white/10 rounded-full pointer-events-none hidden sm:block" />
-                  </>
-                ) : (
-                  <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-white/5 rounded-full blur-2xl pointer-events-none" />
-                )}
+                <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-white/5 rounded-full blur-2xl pointer-events-none" />
 
                 <div className="relative z-10 h-full flex flex-col">
                   {/* Icon Container */}
-                  <div className={`
-                    w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8 md:mb-10 transition-transform duration-500 group-hover:scale-110
-                    ${isMain
-                      ? 'bg-white/10 text-emerald-400 backdrop-blur-[4px] border border-white/10'
-                      : 'bg-white/5 text-emerald-300 border border-white/5'}
-                  `}>
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8 md:mb-10 transition-transform duration-500 group-hover:scale-110 bg-white/5 text-emerald-300 border border-white/5">
                     <Icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
                   </div>
 
@@ -130,23 +245,28 @@ export const BenefitsSection: React.FC = () => {
                   </h3>
 
                   {/* Card Description */}
-                  <p className={`
-                    text-base sm:text-lg md:text-xl font-medium leading-relaxed
-                    ${isMain ? 'text-emerald-100/90 max-w-xl' : 'text-emerald-100/60'}
-                  `}>
+                  <p className="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-emerald-100/60">
                     {item.description}
                   </p>
                 </div>
-
-                {/* Optimized pattern overlay (only on main card) */}
-                {isMain && (
-                  <div className="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden"
-                    style={{ backgroundImage: 'radial-gradient(circle, white 2px, transparent 2px)', backgroundSize: '24px 24px' }} />
-                )}
               </div>
             );
           })}
         </div>
+
+        {!showAll && (
+          <div className="sm:hidden flex justify-center mt-8">
+            <button
+              onClick={() => navigate(`/benefits/${featuredProduct.id}`)}
+              className="inline-flex items-center gap-3 px-7 py-3.5 bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold rounded-full transition-colors duration-200 text-sm"
+            >
+              {t.benefits.viewAll}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
     </Section>
   );

@@ -17,6 +17,7 @@ import { QRMaker } from './components/QRMaker';
 import { NotFound } from './components/NotFound';
 import SnapScroll from './components/ui/SnapScroll';
 import HomePage from './components/HomePage';
+import AllBenefitsPage from './components/AllBenefitsPage';
 
 
 // Floating scroll-to-top button — appears after scrolling 400px
@@ -79,6 +80,7 @@ function AppContent() {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/spices" element={<SpicesPage />} />
             <Route path="/spice/:id" element={<SpiceDetails />} />
+            <Route path="/benefits/:id" element={<AllBenefitsPage />} />
             <Route path="/admin/qr" element={<QRMaker />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -30,6 +30,22 @@
       {
         "title": "Metabolism",
         "description": "Helps maintain a healthy metabolic rate."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
       }
     ],
     "brewing": [
@@ -82,6 +98,22 @@
       {
         "title": "Hydrating",
         "description": "A lighter brew that effectively hydrates while providing bold flavour."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
       }
     ],
     "brewing": [
@@ -134,6 +166,22 @@
       {
         "title": "Hydration",
         "description": "A light brew that keeps you refreshed and hydrated."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
       }
     ],
     "brewing": [
@@ -186,6 +234,22 @@
       {
         "title": "Hydration",
         "description": "A light brew perfect for all-day hydration without over-caffeinating."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
       }
     ],
     "brewing": [
@@ -238,6 +302,22 @@
       {
         "title": "Focus",
         "description": "Enhances cognitive function and concentration."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
       }
     ],
     "brewing": [
@@ -294,6 +374,22 @@
       {
         "title": "Liver Support",
         "description": "Traditionally used to protect and detoxify the liver in Ayurvedic practice."
+      },
+      {
+        "title": "Iron Rich",
+        "description": "A traditional source of iron and folate to support healthy blood."
+      },
+      {
+        "title": "Digestive Tonic",
+        "description": "Traditionally used in Sri Lankan kitchens to ease indigestion and bloating."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Curry leaves contribute additional natural antioxidants to every cup."
+      },
+      {
+        "title": "Eye Health",
+        "description": "Traditionally associated with supporting healthy vision."
       }
     ],
     "brewing": [
@@ -350,6 +446,22 @@
       {
         "title": "Circulation",
         "description": "Improves blood flow and supports healthy vein and capillary function."
+      },
+      {
+        "title": "Cognitive Support",
+        "description": "Gotukola (Centella asiatica) is traditionally valued for memory and mental clarity."
+      },
+      {
+        "title": "Calming Effect",
+        "description": "Valued in Ayurvedic tradition for easing everyday stress."
+      },
+      {
+        "title": "Skin Health",
+        "description": "Traditionally used to support smooth, healthy-looking skin."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Adds an extra layer of natural antioxidants to your cup."
       }
     ],
     "brewing": [
@@ -406,6 +518,22 @@
       {
         "title": "Detoxifying",
         "description": "Helps the body eliminate toxins through natural diuretic action."
+      },
+      {
+        "title": "Liver Tonic",
+        "description": "A traditional Sri Lankan herb long used to support healthy liver function."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Traditionally taken after meals to ease digestion."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Contributes additional natural antioxidants to every cup."
+      },
+      {
+        "title": "Metabolic Support",
+        "description": "Traditionally used to support healthy metabolic function."
       }
     ],
     "brewing": [
@@ -462,6 +590,22 @@
       {
         "title": "Blood Sugar Balance",
         "description": "Helps regulate blood glucose levels naturally and effectively."
+      },
+      {
+        "title": "Nutrient Dense",
+        "description": "Moringa leaves are a concentrated source of vitamins A, C and iron."
+      },
+      {
+        "title": "Bone & Muscle Support",
+        "description": "Rich in calcium and protein to support bone and muscle health."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Packed with additional plant compounds that fight oxidative stress."
+      },
+      {
+        "title": "Immune Fortification",
+        "description": "Vitamin C content helps support natural immune defenses."
       }
     ],
     "brewing": [
@@ -514,6 +658,22 @@
       {
         "title": "Metabolism",
         "description": "Helps boost the body's natural metabolic rate."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
       }
     ],
     "brewing": [
@@ -570,6 +730,22 @@
       {
         "title": "Warming",
         "description": "Perfect for cold days to warm the body from within."
+      },
+      {
+        "title": "Blood Sugar Balance",
+        "description": "Cinnamon is well studied for supporting healthy blood sugar levels."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Cinnamaldehyde is linked to healthy blood circulation."
+      },
+      {
+        "title": "Warming Comfort",
+        "description": "A naturally warming spice that's especially comforting in cooler weather."
+      },
+      {
+        "title": "Antimicrobial Properties",
+        "description": "Cinnamaldehyde has natural antibacterial properties."
       }
     ],
     "brewing": [
@@ -626,6 +802,22 @@
       {
         "title": "Oral Health",
         "description": "Contains natural catechins that protect against oral infections."
+      },
+      {
+        "title": "Mood Uplift",
+        "description": "Bergamot oil's bright citrus aroma is linked to reduced stress and better mood."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "A classic pairing that settles the stomach after a heavy meal."
+      },
+      {
+        "title": "Focus Blend",
+        "description": "Bright bergamot complements tea's natural alertness-supporting caffeine."
+      },
+      {
+        "title": "Aromatic Therapy",
+        "description": "Bergamot's fragrance is traditionally used to ease everyday tension."
       }
     ],
     "brewing": [
@@ -678,6 +870,22 @@
       {
         "title": "Heart Health",
         "description": "Supports the cardiovascular system and healthy blood flow."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
       }
     ],
     "brewing": [
@@ -730,6 +938,22 @@
       {
         "title": "Immunity Boost",
         "description": "Packed with vitamins and minerals to support the immune system."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
       }
     ],
     "brewing": [
@@ -782,6 +1006,22 @@
       {
         "title": "Stress Relief",
         "description": "Warm, comforting aroma aids in relaxation and mental clarity."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
       }
     ],
     "brewing": [
@@ -838,6 +1078,22 @@
       {
         "title": "Immunity",
         "description": "Packed with antioxidants that fortify your immune defense."
+      },
+      {
+        "title": "Warming Comfort",
+        "description": "A naturally warming root, ideal for cold days or seasonal support."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Traditionally taken to ease bloating and support smooth digestion."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Naturally warming compounds support healthy blood flow."
+      },
+      {
+        "title": "Muscle Comfort",
+        "description": "Traditionally used to ease everyday muscle soreness."
       }
     ],
     "brewing": [
@@ -890,6 +1146,22 @@
       {
         "title": "Skin Radiance",
         "description": "Antioxidants prevent cellular damage, promoting healthy, glowing skin."
+      },
+      {
+        "title": "Catechin Power",
+        "description": "Rich in EGCG, one of the most studied antioxidants in green tea."
+      },
+      {
+        "title": "Metabolic Support",
+        "description": "Traditionally linked to healthy metabolism and fat oxidation."
+      },
+      {
+        "title": "Cognitive Support",
+        "description": "Caffeine and L-theanine work together for calm, sustained focus."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Catechins help protect cells from everyday oxidative stress."
       }
     ],
     "brewing": [
@@ -942,6 +1214,22 @@
       {
         "title": "Caffeine-Free",
         "description": "A perfect, relaxing beverage for any time of the day or night."
+      },
+      {
+        "title": "Blood Pressure Support",
+        "description": "Hibiscus is well studied for supporting already-healthy blood pressure."
+      },
+      {
+        "title": "Vitamin C Rich",
+        "description": "A naturally tart flower packed with vitamin C."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Rich in anthocyanins, the pigments that give hibiscus its deep red color."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally tart, refreshing infusion perfect served hot or iced."
       }
     ],
     "brewing": [
@@ -998,6 +1286,22 @@
       {
         "title": "Glowing Skin",
         "description": "Anti-inflammatory properties help reduce acne and skin irritation."
+      },
+      {
+        "title": "Calming Aroma",
+        "description": "Jasmine's natural fragrance is linked to reduced stress and better rest."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "A delicate floral aroma known to gently uplift mood."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Jasmine blossoms add their own natural antioxidant compounds."
+      },
+      {
+        "title": "Sleep Support",
+        "description": "A calming evening ritual that may support restful sleep."
       }
     ],
     "brewing": [
@@ -1054,6 +1358,22 @@
       {
         "title": "Aches & Pains",
         "description": "Cloves and cinnamon act as natural anti-inflammatory agents."
+      },
+      {
+        "title": "Digestive Spice Blend",
+        "description": "A time-honored spice blend that eases digestion after meals."
+      },
+      {
+        "title": "Warming Energy",
+        "description": "A robust blend of warming spices for a comforting, energizing cup."
+      },
+      {
+        "title": "Immune Spice Boost",
+        "description": "Cardamom, cloves and ginger combine to support natural immunity."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "The spice blend's natural compounds help manage everyday inflammation."
       }
     ],
     "brewing": [
@@ -1110,6 +1430,22 @@
       {
         "title": "Headache Relief",
         "description": "The soothing properties can help alleviate tension headaches."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Menthol is well known for soothing the stomach after meals."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Naturally freshens breath and cools the palate."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A naturally cooling infusion that revives and refreshes."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "The bright aroma of mint is linked to improved focus and alertness."
       }
     ],
     "brewing": [
@@ -1162,6 +1498,22 @@
       {
         "title": "Hydrating",
         "description": "A lighter brew that effectively hydrates while providing flavor."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
       }
     ],
     "brewing": [
@@ -1214,6 +1566,22 @@
       {
         "title": "Gut Health",
         "description": "A light, non-astringent brew that is gentle on the stomach."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
       }
     ],
     "brewing": [
@@ -1266,6 +1634,22 @@
       {
         "title": "Digestive Ease",
         "description": "Gentle on the stomach and aids in mild digestion."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
       }
     ],
     "brewing": [
@@ -1318,6 +1702,22 @@
       {
         "title": "Focus",
         "description": "Enhances cognitive function and concentration."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
       }
     ],
     "brewing": [
@@ -1370,6 +1770,22 @@
       {
         "title": "Steady Energy",
         "description": "A moderate, natural caffeine lift without the jitters."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
       }
     ],
     "brewing": [
@@ -1426,6 +1842,22 @@
       {
         "title": "Immunity",
         "description": "Rose petals are a surprisingly good source of Vitamin C."
+      },
+      {
+        "title": "Emotional Balance",
+        "description": "Rose is traditionally used to ease tension and lift the mood."
+      },
+      {
+        "title": "Vitamin C Rich",
+        "description": "Rose petals contribute a natural source of vitamin C."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with polyphenols that help fight everyday oxidative stress."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Traditionally sipped to soothe the stomach after meals."
       }
     ],
     "brewing": [
@@ -1482,6 +1914,22 @@
       {
         "title": "Digestive Health",
         "description": "Soursop supports a healthy gut lining and smooth digestive function."
+      },
+      {
+        "title": "Vitamin C Rich",
+        "description": "Soursop leaf and fruit are a natural source of vitamin C."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with plant compounds that help fight everyday oxidative stress."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Traditionally used to support smooth, comfortable digestion."
+      },
+      {
+        "title": "Immune Support",
+        "description": "Vitamin C content helps support the body's natural defenses."
       }
     ],
     "brewing": [
@@ -1538,6 +1986,22 @@
       {
         "title": "Soothing",
         "description": "A perfect comforting cup to wind down the afternoon."
+      },
+      {
+        "title": "Mood Uplift",
+        "description": "Vanilla's warm aroma is linked to comfort and relaxation."
+      },
+      {
+        "title": "Calming Ritual",
+        "description": "A naturally sweet-scented cup that soothes at the end of the day."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Natural vanilla compounds add their own antioxidant boost."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
       }
     ],
     "brewing": [
@@ -1594,6 +2058,22 @@
       {
         "title": "Detoxification",
         "description": "Aids the liver and kidneys in natural detox processes."
+      },
+      {
+        "title": "Holistic Balance",
+        "description": "A curated floral blend crafted for whole-body balance."
+      },
+      {
+        "title": "Calming Aroma",
+        "description": "Delicate blossoms lend a naturally soothing fragrance to every cup."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Each edible flower contributes its own natural antioxidant compounds."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "A pretty, fragrant cup that offers a simple daily mood boost."
       }
     ],
     "brewing": [
@@ -1650,6 +2130,22 @@
       {
         "title": "Antioxidant Rich",
         "description": "Packed with polyphenols that fight free radicals in the body."
+      },
+      {
+        "title": "Calming Aroma",
+        "description": "Delicate blossoms lend a naturally soothing fragrance to every cup."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "A pretty, fragrant cup that offers a simple daily mood boost."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "A floral ritual traditionally used to ease everyday tension."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Floral antioxidants support a naturally healthy glow."
       }
     ],
     "brewing": [
@@ -1702,6 +2198,22 @@
       {
         "title": "Metabolism",
         "description": "Helps maintain a healthy metabolic rate."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
       }
     ],
     "brewing": [
@@ -1754,6 +2266,22 @@
       {
         "title": "Digestive Aid",
         "description": "Black tea polyphenols naturally support a healthy and comfortable gut."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
       }
     ],
     "brewing": [
@@ -1810,6 +2338,22 @@
       {
         "title": "Energy Lift",
         "description": "Black tea caffeine paired with hibiscus provides a refreshing, energising cup."
+      },
+      {
+        "title": "Vitamin C Rich",
+        "description": "A naturally tart flower packed with vitamin C."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Rich in anthocyanins, the pigments that give hibiscus its deep red color."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally tart, refreshing infusion perfect served hot or iced."
+      },
+      {
+        "title": "Liver Support",
+        "description": "Traditionally used to support healthy liver function."
       }
     ],
     "brewing": [
@@ -1866,6 +2410,22 @@
       {
         "title": "Skin Radiance",
         "description": "Floral antioxidants promote a healthy, glowing complexion from within."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "A pretty, fragrant cup that offers a simple daily mood boost."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "A floral ritual traditionally used to ease everyday tension."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A gentle, fragrant infusion that's soothing after meals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A beautiful, comforting ritual for steady, all-round well-being."
       }
     ],
     "brewing": [
@@ -1922,6 +2482,22 @@
       {
         "title": "Skin Radiance",
         "description": "Floral antioxidants promote a healthy, glowing complexion from within."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "A pretty, fragrant cup that offers a simple daily mood boost."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "A floral ritual traditionally used to ease everyday tension."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A gentle, fragrant infusion that's soothing after meals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A beautiful, comforting ritual for steady, all-round well-being."
       }
     ],
     "brewing": [
@@ -1974,6 +2550,22 @@
       {
         "title": "Immune Boost",
         "description": "Supports a robust and healthy immune system."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
       }
     ],
     "brewing": [
@@ -2030,6 +2622,22 @@
       {
         "title": "Immunity",
         "description": "Rose petals are a naturally good source of Vitamin C and antioxidants."
+      },
+      {
+        "title": "Emotional Balance",
+        "description": "Rose is traditionally used to ease tension and lift the mood."
+      },
+      {
+        "title": "Vitamin C Rich",
+        "description": "Rose petals contribute a natural source of vitamin C."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with polyphenols that help fight everyday oxidative stress."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Traditionally sipped to soothe the stomach after meals."
       }
     ],
     "brewing": [
@@ -2082,6 +2690,22 @@
       {
         "title": "Stress Relief",
         "description": "Warm, comforting aroma aids in relaxation."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
       }
     ],
     "brewing": [
@@ -2134,6 +2758,22 @@
       {
         "title": "Focus",
         "description": "Improves brain function and alertness naturally."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
       }
     ],
     "brewing": [
@@ -2190,6 +2830,22 @@
       {
         "title": "Oral Health",
         "description": "Contains natural catechins that protect against oral infections."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "A classic pairing that settles the stomach after a heavy meal."
+      },
+      {
+        "title": "Focus Blend",
+        "description": "Bright bergamot complements tea's natural alertness-supporting caffeine."
+      },
+      {
+        "title": "Aromatic Therapy",
+        "description": "Bergamot's fragrance is traditionally used to ease everyday tension."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Citrus oils add their own natural antioxidant compounds."
       }
     ],
     "brewing": [
@@ -2242,6 +2898,22 @@
       {
         "title": "Focus & Clarity",
         "description": "Sustains mental clarity and alertness through the afternoon hours."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
       }
     ],
     "brewing": [
@@ -2294,6 +2966,22 @@
       {
         "title": "Immunity",
         "description": "Rich in antioxidants that strengthen the body's natural defense system."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
       }
     ],
     "brewing": [
@@ -2346,6 +3034,22 @@
       {
         "title": "Mental Clarity",
         "description": "Provides a smooth, highly focused energy boost."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
       }
     ],
     "brewing": [
@@ -2402,6 +3106,22 @@
       {
         "title": "Refreshing Energy",
         "description": "A clean caffeine lift paired with invigorating lemongrass aroma."
+      },
+      {
+        "title": "Citral Freshness",
+        "description": "Lemongrass's natural citral compound lends an uplifting, fresh aroma."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Valued in traditional practice for supporting the body's detox process."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally citrusy, refreshing infusion perfect any time of day."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Contributes additional natural antioxidant compounds to every cup."
       }
     ],
     "brewing": [
@@ -2458,6 +3178,22 @@
       {
         "title": "Vibrant Energy",
         "description": "The rich berry aroma and natural caffeine create a truly invigorating cup."
+      },
+      {
+        "title": "Vitamin C Lift",
+        "description": "Fruity notes add a naturally refreshing vitamin C boost to your cup."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally fruity infusion that encourages you to drink more, hydrate more."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
       }
     ],
     "brewing": [
@@ -2514,6 +3250,22 @@
       {
         "title": "Warming Comfort",
         "description": "Improves blood circulation and provides a deeply comforting body warmth."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Cardamom's aromatic oils naturally freshen breath."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Traditionally used to ease bloating and support digestion."
+      },
+      {
+        "title": "Respiratory Ease",
+        "description": "Traditionally used to support easy, comfortable breathing."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "A fragrant spice packed with natural antioxidant compounds."
       }
     ],
     "brewing": [
@@ -2570,6 +3322,22 @@
       {
         "title": "Warming",
         "description": "Perfect for cold days to warm the body from within."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Cinnamaldehyde is linked to healthy blood circulation."
+      },
+      {
+        "title": "Warming Comfort",
+        "description": "A naturally warming spice that's especially comforting in cooler weather."
+      },
+      {
+        "title": "Antimicrobial Properties",
+        "description": "Cinnamaldehyde has natural antibacterial properties."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "Traditionally used to settle the stomach after meals."
       }
     ],
     "brewing": [
@@ -2626,6 +3394,22 @@
       {
         "title": "Immunity",
         "description": "Packed with antioxidants that fortify your immune defense."
+      },
+      {
+        "title": "Warming Comfort",
+        "description": "A naturally warming root, ideal for cold days or seasonal support."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Traditionally taken to ease bloating and support smooth digestion."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Naturally warming compounds support healthy blood flow."
+      },
+      {
+        "title": "Muscle Comfort",
+        "description": "Traditionally used to ease everyday muscle soreness."
       }
     ],
     "brewing": [
@@ -2682,6 +3466,22 @@
       {
         "title": "Digestive Ease",
         "description": "Warm, sweet infusion naturally soothes and calms the digestive system."
+      },
+      {
+        "title": "Throat Soother",
+        "description": "A warm, sweet infusion traditionally used to soothe a scratchy throat."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Tea polyphenols provide a steady natural antioxidant boost."
+      },
+      {
+        "title": "Gentle Energy",
+        "description": "A naturally sweet, comforting lift any time of day."
       }
     ],
     "brewing": [
@@ -2738,6 +3538,22 @@
       {
         "title": "Mood Enhancement",
         "description": "The sweet scent of jasmine naturally uplifts and brightens one's spirits."
+      },
+      {
+        "title": "Mood Lift",
+        "description": "A delicate floral aroma known to gently uplift mood."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Jasmine blossoms add their own natural antioxidant compounds."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Antioxidants support a naturally healthy, radiant complexion."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A gentle floral infusion that's soothing after meals."
       }
     ],
     "brewing": [
@@ -2794,6 +3610,22 @@
       {
         "title": "Mood Lift",
         "description": "Citrus scents naturally elevate mood and sharpen mental clarity."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally fruity infusion that encourages you to drink more, hydrate more."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A soothing infusion that's gentle on the stomach after meals."
       }
     ],
     "brewing": [
@@ -2850,6 +3682,22 @@
       {
         "title": "Mood Uplift",
         "description": "The sharp lime citrus aroma instantly refreshes and uplifts the senses."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A soothing infusion that's gentle on the stomach after meals."
+      },
+      {
+        "title": "Antioxidant Infusion",
+        "description": "Fruit and tea polyphenols combine for a well-rounded antioxidant cup."
       }
     ],
     "brewing": [
@@ -2906,6 +3754,22 @@
       {
         "title": "Digestive Aid",
         "description": "Black tea polyphenols support a healthy and comfortable digestive system."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A soothing infusion that's gentle on the stomach after meals."
+      },
+      {
+        "title": "Antioxidant Infusion",
+        "description": "Fruit and tea polyphenols combine for a well-rounded antioxidant cup."
+      },
+      {
+        "title": "Everyday Freshness",
+        "description": "A light, fragrant cup perfect for any time of day."
       }
     ],
     "brewing": [
@@ -2962,6 +3826,22 @@
       {
         "title": "Anti-inflammatory",
         "description": "Cloves and cinnamon act as natural anti-inflammatory agents."
+      },
+      {
+        "title": "Warming Energy",
+        "description": "A robust blend of warming spices for a comforting, energizing cup."
+      },
+      {
+        "title": "Immune Spice Boost",
+        "description": "Cardamom, cloves and ginger combine to support natural immunity."
+      },
+      {
+        "title": "Circulatory Support",
+        "description": "Warming spices support healthy blood circulation."
+      },
+      {
+        "title": "Metabolic Boost",
+        "description": "A traditional spice blend linked to a healthy metabolism."
       }
     ],
     "brewing": [
@@ -3018,6 +3898,22 @@
       {
         "title": "Digestive Support",
         "description": "Multiple fruit enzymes and black tea tannins promote healthy digestion."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A soothing infusion that's gentle on the stomach after meals."
+      },
+      {
+        "title": "Antioxidant Infusion",
+        "description": "Fruit and tea polyphenols combine for a well-rounded antioxidant cup."
+      },
+      {
+        "title": "Everyday Freshness",
+        "description": "A light, fragrant cup perfect for any time of day."
+      },
+      {
+        "title": "Zero Guilt Treat",
+        "description": "A naturally flavored, calorie-free alternative to sugary drinks."
       }
     ],
     "brewing": [
@@ -3074,6 +3970,22 @@
       {
         "title": "Energizing Freshness",
         "description": "Combines bold caffeine with a cool mint burst for a highly invigorating lift."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Naturally freshens breath and cools the palate."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A naturally cooling infusion that revives and refreshes."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "The bright aroma of mint is linked to improved focus and alertness."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Mint leaves add their own natural antioxidant compounds."
       }
     ],
     "brewing": [
@@ -3130,6 +4042,22 @@
       {
         "title": "Refreshing Energy",
         "description": "A bright, uplifting cup that fights fatigue and invigorates the senses."
+      },
+      {
+        "title": "Antioxidant Infusion",
+        "description": "Fruit and tea polyphenols combine for a well-rounded antioxidant cup."
+      },
+      {
+        "title": "Everyday Freshness",
+        "description": "A light, fragrant cup perfect for any time of day."
+      },
+      {
+        "title": "Zero Guilt Treat",
+        "description": "A naturally flavored, calorie-free alternative to sugary drinks."
+      },
+      {
+        "title": "Vitamin C Lift",
+        "description": "Fruity notes add a naturally refreshing vitamin C boost to your cup."
       }
     ],
     "brewing": [
@@ -3186,6 +4114,22 @@
       {
         "title": "Memory & Focus",
         "description": "Pomegranate antioxidants have been linked to improved memory and brain health."
+      },
+      {
+        "title": "Everyday Freshness",
+        "description": "A light, fragrant cup perfect for any time of day."
+      },
+      {
+        "title": "Zero Guilt Treat",
+        "description": "A naturally flavored, calorie-free alternative to sugary drinks."
+      },
+      {
+        "title": "Vitamin C Lift",
+        "description": "Fruity notes add a naturally refreshing vitamin C boost to your cup."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally fruity infusion that encourages you to drink more, hydrate more."
       }
     ],
     "brewing": [
@@ -3242,6 +4186,22 @@
       {
         "title": "Digestive Support",
         "description": "Black tea tannins gently support healthy gut function."
+      },
+      {
+        "title": "Zero Guilt Treat",
+        "description": "A naturally flavored, calorie-free alternative to sugary drinks."
+      },
+      {
+        "title": "Vitamin C Lift",
+        "description": "Fruity notes add a naturally refreshing vitamin C boost to your cup."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally fruity infusion that encourages you to drink more, hydrate more."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
       }
     ],
     "brewing": [
@@ -3298,6 +4258,22 @@
       {
         "title": "Energy Lift",
         "description": "A gentle, sustained caffeine release for calm, focused energy."
+      },
+      {
+        "title": "Throat Soother",
+        "description": "A warm, sweet infusion traditionally used to soothe a scratchy throat."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Tea polyphenols provide a steady natural antioxidant boost."
+      },
+      {
+        "title": "Gentle Energy",
+        "description": "A naturally sweet, comforting lift any time of day."
       }
     ],
     "brewing": [
@@ -3354,6 +4330,22 @@
       {
         "title": "Refreshing Energy",
         "description": "A gentle caffeine lift in a bright, fruity, uplifting package."
+      },
+      {
+        "title": "Vitamin C Lift",
+        "description": "Fruity notes add a naturally refreshing vitamin C boost to your cup."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally fruity infusion that encourages you to drink more, hydrate more."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
       }
     ],
     "brewing": [
@@ -3410,6 +4402,22 @@
       {
         "title": "Natural Detox",
         "description": "Rich in antioxidants that help cleanse the body of toxins."
+      },
+      {
+        "title": "Detoxifying",
+        "description": "Valued in traditional practice for supporting the body's detox process."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally citrusy, refreshing infusion perfect any time of day."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "Lemongrass's aroma is traditionally used to ease everyday tension."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Contributes additional natural antioxidant compounds to every cup."
       }
     ],
     "brewing": [
@@ -3462,6 +4470,22 @@
       {
         "title": "Immunity",
         "description": "Supports overall health and daily wellness."
+      },
+      {
+        "title": "Metabolic Support",
+        "description": "Traditionally linked to healthy metabolism and fat oxidation."
+      },
+      {
+        "title": "Cognitive Support",
+        "description": "Caffeine and L-theanine work together for calm, sustained focus."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Catechins help protect cells from everyday oxidative stress."
+      },
+      {
+        "title": "Skin Vitality",
+        "description": "Antioxidants help defend collagen for healthier-looking skin."
       }
     ],
     "brewing": [
@@ -3514,6 +4538,22 @@
       {
         "title": "Hydrating",
         "description": "A lighter brew that effectively hydrates while providing flavor."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
       }
     ],
     "brewing": [
@@ -3566,6 +4606,22 @@
       {
         "title": "Gut Health",
         "description": "A light, non-astringent brew that is gentle on the stomach."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
       }
     ],
     "brewing": [
@@ -3618,6 +4674,22 @@
       {
         "title": "Digestive Ease",
         "description": "Gentle on the stomach and aids in mild digestion."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
       }
     ],
     "brewing": [
@@ -3670,6 +4742,22 @@
       {
         "title": "Digestive Ease",
         "description": "Gentle on the stomach and aids in smooth, comfortable digestion."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
       }
     ],
     "brewing": [
@@ -3722,6 +4810,22 @@
       {
         "title": "Focus",
         "description": "Enhances cognitive function and concentration."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
       }
     ],
     "brewing": [
@@ -3774,6 +4878,22 @@
       {
         "title": "Focus",
         "description": "Enhances cognitive function and concentration."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
       }
     ],
     "brewing": [
@@ -3826,6 +4946,22 @@
       {
         "title": "Deep Tranquility",
         "description": "Ultra-low caffeine paired with high L-theanine creates profound, centered calm."
+      },
+      {
+        "title": "Delicate Antioxidants",
+        "description": "Light oxidation preserves a delicate, antioxidant-rich profile."
+      },
+      {
+        "title": "Gentle Energy",
+        "description": "A soft, balanced caffeine lift without any harsh edge."
+      },
+      {
+        "title": "Skin Glow",
+        "description": "Natural polyphenols help support a healthy, glowing complexion."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Antioxidants help shield cells from everyday oxidative stress."
       }
     ],
     "brewing": [
@@ -3878,6 +5014,22 @@
       {
         "title": "Immunity Boost",
         "description": "Rich in trace minerals and vitamins that fortify the immune system."
+      },
+      {
+        "title": "Maximum Antioxidants",
+        "description": "Minimal processing preserves the highest natural antioxidant content."
+      },
+      {
+        "title": "Gentle Caffeine",
+        "description": "Naturally low caffeine offers a smooth, calm lift any time of day."
+      },
+      {
+        "title": "Skin & Anti-Aging",
+        "description": "Polyphenols help defend skin cells against premature aging."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Unoxidized leaves retain compounds that shield cells from damage."
       }
     ],
     "brewing": [
@@ -3930,6 +5082,22 @@
       {
         "title": "Immunity Boost",
         "description": "Rich in trace minerals and vitamins that fortify the immune system."
+      },
+      {
+        "title": "Gentle Caffeine",
+        "description": "Naturally low caffeine offers a smooth, calm lift any time of day."
+      },
+      {
+        "title": "Skin & Anti-Aging",
+        "description": "Polyphenols help defend skin cells against premature aging."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Unoxidized leaves retain compounds that shield cells from damage."
+      },
+      {
+        "title": "Delicate Digestion",
+        "description": "A gentle infusion that's easy on a sensitive stomach."
       }
     ],
     "brewing": [
@@ -3982,6 +5150,22 @@
       {
         "title": "Hydration",
         "description": "A light brew perfect for all-day hydration without over-caffeinating."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
       }
     ],
     "brewing": [
@@ -4034,6 +5218,22 @@
       {
         "title": "Immune Defense",
         "description": "Richly concentrated in polyphenols that strongly fortify the immune system."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Unoxidized leaves retain compounds that shield cells from damage."
+      },
+      {
+        "title": "Delicate Digestion",
+        "description": "A gentle infusion that's easy on a sensitive stomach."
+      },
+      {
+        "title": "Radiant Complexion",
+        "description": "Rich catechin content supports naturally glowing skin."
+      },
+      {
+        "title": "Calm Clarity",
+        "description": "Delivers quiet, sustained alertness without any harshness."
       }
     ],
     "brewing": [
@@ -4086,6 +5286,22 @@
       {
         "title": "Immune Fortification",
         "description": "Dense in antibacterial and antiviral compounds that powerfully boost immunity."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Unoxidized leaves retain compounds that shield cells from damage."
+      },
+      {
+        "title": "Delicate Digestion",
+        "description": "A gentle infusion that's easy on a sensitive stomach."
+      },
+      {
+        "title": "Radiant Complexion",
+        "description": "Rich catechin content supports naturally glowing skin."
+      },
+      {
+        "title": "Calm Clarity",
+        "description": "Delivers quiet, sustained alertness without any harshness."
       }
     ],
     "brewing": [
@@ -4138,6 +5354,22 @@
       {
         "title": "Metabolic Boost",
         "description": "Contains GHG (a unique polyphenol) known to help with weight management."
+      },
+      {
+        "title": "Anthocyanin Rich",
+        "description": "Purple-hued leaves are naturally rich in anthocyanins, rare among teas."
+      },
+      {
+        "title": "Vascular Support",
+        "description": "Anthocyanins are linked to healthy blood vessel function."
+      },
+      {
+        "title": "Vision Wellness",
+        "description": "Anthocyanins are traditionally associated with eye health support."
+      },
+      {
+        "title": "Unique Antioxidants",
+        "description": "A distinctive antioxidant profile not found in standard black or green tea."
       }
     ],
     "brewing": [
@@ -4190,6 +5422,22 @@
       {
         "title": "Metabolism",
         "description": "Helps boost the body's natural metabolic rate."
+      },
+      {
+        "title": "Calm Alertness",
+        "description": "L-theanine balances caffeine's lift, keeping energy smooth rather than jittery."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
       }
     ],
     "brewing": [
@@ -4242,6 +5490,22 @@
       {
         "title": "Antioxidant Boost",
         "description": "Delivers a reliable daily dose of heart-protecting polyphenols."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Theaflavins and thearubigins help neutralize everyday free radicals."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
       }
     ],
     "brewing": [
@@ -4294,6 +5558,22 @@
       {
         "title": "Mental Clarity",
         "description": "Stimulates alertness and focus to power through the morning."
+      },
+      {
+        "title": "Everyday Wellness",
+        "description": "A comforting daily ritual that supports steady, all-round well-being."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
       }
     ],
     "brewing": [
@@ -4346,6 +5626,22 @@
       {
         "title": "Mental Clarity",
         "description": "Stimulates alertness and focus to power through the morning."
+      },
+      {
+        "title": "Alertness & Focus",
+        "description": "A steady caffeine lift sharpens focus without the jitters of coffee."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
       }
     ],
     "brewing": [
@@ -4398,6 +5694,22 @@
       {
         "title": "Mental Clarity",
         "description": "Stimulates alertness and focus to power through the morning."
+      },
+      {
+        "title": "Heart Support",
+        "description": "Theaflavins in black tea are linked to healthier cholesterol balance."
+      },
+      {
+        "title": "Gut Friendly",
+        "description": "Natural tannins help settle the stomach and ease digestion after meals."
+      },
+      {
+        "title": "Bone Strength",
+        "description": "Regular tea drinkers show higher bone mineral density thanks to natural flavonoids."
+      },
+      {
+        "title": "Fresh Breath",
+        "description": "Polyphenols help inhibit the bacteria responsible for bad breath."
       }
     ],
     "brewing": [
@@ -4454,6 +5766,22 @@
       {
         "title": "Skin Radiance",
         "description": "Antioxidants promote a clearer, healthier complexion from within."
+      },
+      {
+        "title": "Metabolic Support",
+        "description": "A herbal-tea blend formulated to support a healthy metabolism."
+      },
+      {
+        "title": "Detox Ritual",
+        "description": "Supports the body's natural detoxification processes."
+      },
+      {
+        "title": "Appetite Balance",
+        "description": "Traditionally taken to help manage appetite between meals."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "A blend of botanicals that add layered antioxidant support."
       }
     ],
     "brewing": [
@@ -4510,6 +5838,22 @@
       {
         "title": "Hydration",
         "description": "Provides essential hydration required for plump, healthy skin."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "A concentrated blend of antioxidant-rich botanicals."
+      },
+      {
+        "title": "Collagen Support",
+        "description": "Polyphenols help defend the skin's natural collagen from damage."
+      },
+      {
+        "title": "Detox Ritual",
+        "description": "Supports the body's natural detoxification processes."
+      },
+      {
+        "title": "Cellular Defense",
+        "description": "Catechins help protect cells from everyday oxidative stress."
       }
     ],
     "brewing": [
@@ -4562,6 +5906,22 @@
       {
         "title": "Immune Support",
         "description": "Rich in antibacterial catechins that naturally strengthen immunity."
+      },
+      {
+        "title": "Delicate Digestion",
+        "description": "A gentle infusion that's easy on a sensitive stomach."
+      },
+      {
+        "title": "Radiant Complexion",
+        "description": "Rich catechin content supports naturally glowing skin."
+      },
+      {
+        "title": "Calm Clarity",
+        "description": "Delivers quiet, sustained alertness without any harshness."
+      },
+      {
+        "title": "Rare Terroir Wellness",
+        "description": "Hand-plucked buds carry a concentrated dose of natural plant nutrients."
       }
     ],
     "brewing": [
@@ -4618,6 +5978,22 @@
       {
         "title": "Warming Effect",
         "description": "Improves blood circulation and provides a comforting warmth."
+      },
+      {
+        "title": "Digestive Comfort",
+        "description": "Traditionally used to ease bloating and support digestion."
+      },
+      {
+        "title": "Respiratory Ease",
+        "description": "Traditionally used to support easy, comfortable breathing."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "A fragrant spice packed with natural antioxidant compounds."
+      },
+      {
+        "title": "Oral Health",
+        "description": "Traditionally chewed or infused to support healthy gums and breath."
       }
     ],
     "brewing": [
@@ -4674,6 +6050,22 @@
       {
         "title": "Liver Support",
         "description": "Traditionally used to protect and detoxify the liver in Ayurvedic practice."
+      },
+      {
+        "title": "Iron Rich",
+        "description": "A traditional source of iron and folate to support healthy blood."
+      },
+      {
+        "title": "Digestive Tonic",
+        "description": "Traditionally used in Sri Lankan kitchens to ease indigestion and bloating."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Curry leaves contribute additional natural antioxidants to every cup."
+      },
+      {
+        "title": "Eye Health",
+        "description": "Traditionally associated with supporting healthy vision."
       }
     ],
     "brewing": [
@@ -4726,6 +6118,22 @@
       {
         "title": "Immunity Boost",
         "description": "Rich in trace minerals and vitamins that fortify the immune system."
+      },
+      {
+        "title": "Radiant Complexion",
+        "description": "Rich catechin content supports naturally glowing skin."
+      },
+      {
+        "title": "Calm Clarity",
+        "description": "Delivers quiet, sustained alertness without any harshness."
+      },
+      {
+        "title": "Rare Terroir Wellness",
+        "description": "Hand-plucked buds carry a concentrated dose of natural plant nutrients."
+      },
+      {
+        "title": "Maximum Antioxidants",
+        "description": "Minimal processing preserves the highest natural antioxidant content."
       }
     ],
     "brewing": [
@@ -4782,6 +6190,22 @@
       {
         "title": "Circulation",
         "description": "Improves blood flow and supports healthy vein and capillary function."
+      },
+      {
+        "title": "Calming Effect",
+        "description": "Valued in Ayurvedic tradition for easing everyday stress."
+      },
+      {
+        "title": "Skin Health",
+        "description": "Traditionally used to support smooth, healthy-looking skin."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Adds an extra layer of natural antioxidants to your cup."
+      },
+      {
+        "title": "Joint Health",
+        "description": "Traditionally taken to support joint comfort and mobility."
       }
     ],
     "brewing": [
@@ -4838,6 +6262,22 @@
       {
         "title": "Detoxifying",
         "description": "Helps the body eliminate toxins through natural diuretic action."
+      },
+      {
+        "title": "Digestive Support",
+        "description": "Traditionally taken after meals to ease digestion."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Contributes additional natural antioxidants to every cup."
+      },
+      {
+        "title": "Metabolic Support",
+        "description": "Traditionally used to support healthy metabolic function."
+      },
+      {
+        "title": "Wellness Tonic",
+        "description": "A time-honored herbal tea taken for general well-being."
       }
     ],
     "brewing": [
@@ -4894,6 +6334,22 @@
       {
         "title": "Mood Enhancement",
         "description": "The sweet scent of jasmine naturally uplifts mood and promotes positive feelings."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Jasmine blossoms add their own natural antioxidant compounds."
+      },
+      {
+        "title": "Stress Relief",
+        "description": "Traditionally inhaled and sipped to ease everyday tension."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Antioxidants support a naturally healthy, radiant complexion."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A gentle floral infusion that's soothing after meals."
       }
     ],
     "brewing": [
@@ -4950,6 +6406,22 @@
       {
         "title": "Antioxidant Rich",
         "description": "Combined green tea and curry leaf antioxidants protect against cellular damage."
+      },
+      {
+        "title": "Digestive Tonic",
+        "description": "Traditionally used in Sri Lankan kitchens to ease indigestion and bloating."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Curry leaves contribute additional natural antioxidants to every cup."
+      },
+      {
+        "title": "Eye Health",
+        "description": "Traditionally associated with supporting healthy vision."
+      },
+      {
+        "title": "Skin Nourishment",
+        "description": "Valued in traditional practice for supporting clear, healthy skin."
       }
     ],
     "brewing": [
@@ -5006,6 +6478,22 @@
       {
         "title": "Headache Soother",
         "description": "The cooling, relaxing menthol effect helps relieve tension headaches."
+      },
+      {
+        "title": "Clears Congestion",
+        "description": "Menthol's cooling vapor traditionally helps clear the airways."
+      },
+      {
+        "title": "Headache Relief",
+        "description": "Traditionally used to ease everyday tension headaches."
+      },
+      {
+        "title": "Refreshing Energy",
+        "description": "A naturally cooling infusion that revives and refreshes."
+      },
+      {
+        "title": "Mental Clarity",
+        "description": "The bright aroma of mint is linked to improved focus and alertness."
       }
     ],
     "brewing": [
@@ -5062,6 +6550,22 @@
       {
         "title": "Digestive Support",
         "description": "Natural fruit enzymes gently support healthy digestion."
+      },
+      {
+        "title": "Refreshing Hydration",
+        "description": "A naturally fruity infusion that encourages you to drink more, hydrate more."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A soothing infusion that's gentle on the stomach after meals."
       }
     ],
     "brewing": [
@@ -5118,6 +6622,22 @@
       {
         "title": "Blood Sugar Balance",
         "description": "Helps regulate blood glucose levels naturally and effectively."
+      },
+      {
+        "title": "Bone & Muscle Support",
+        "description": "Rich in calcium and protein to support bone and muscle health."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Packed with additional plant compounds that fight oxidative stress."
+      },
+      {
+        "title": "Immune Fortification",
+        "description": "Vitamin C content helps support natural immune defenses."
+      },
+      {
+        "title": "Skin & Hair Health",
+        "description": "Vitamins and minerals support healthy-looking skin and hair."
       }
     ],
     "brewing": [
@@ -5174,6 +6694,22 @@
       {
         "title": "Immune Support",
         "description": "High vitamin C and antioxidant content strengthens the immune system."
+      },
+      {
+        "title": "Antioxidant Boost",
+        "description": "Packed with additional plant compounds that fight oxidative stress."
+      },
+      {
+        "title": "Immune Fortification",
+        "description": "Vitamin C content helps support natural immune defenses."
+      },
+      {
+        "title": "Blood Sugar Balance",
+        "description": "Moringa is traditionally associated with healthy blood sugar levels."
+      },
+      {
+        "title": "Skin & Hair Health",
+        "description": "Vitamins and minerals support healthy-looking skin and hair."
       }
     ],
     "brewing": [
@@ -5230,6 +6766,22 @@
       {
         "title": "Refreshing Energy",
         "description": "A clean caffeine lift in a bright, cheerful citrus package."
+      },
+      {
+        "title": "Craving Control",
+        "description": "A naturally sweet aroma helps curb sugar cravings without added calories."
+      },
+      {
+        "title": "Mood Brightener",
+        "description": "Bright fruity notes offer a simple, comforting mood lift."
+      },
+      {
+        "title": "Digestive Ease",
+        "description": "A soothing infusion that's gentle on the stomach after meals."
+      },
+      {
+        "title": "Antioxidant Infusion",
+        "description": "Fruit and tea polyphenols combine for a well-rounded antioxidant cup."
       }
     ],
     "brewing": [
@@ -5282,6 +6834,22 @@
       {
         "title": "Hydrating",
         "description": "A beautifully light cup that makes staying hydrated a pleasure."
+      },
+      {
+        "title": "Gentle Energy",
+        "description": "A soft, balanced caffeine lift without any harsh edge."
+      },
+      {
+        "title": "Skin Glow",
+        "description": "Natural polyphenols help support a healthy, glowing complexion."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Antioxidants help shield cells from everyday oxidative stress."
+      },
+      {
+        "title": "Calm Focus",
+        "description": "A smooth infusion that supports quiet, sustained alertness."
       }
     ],
     "brewing": [
@@ -5334,6 +6902,22 @@
       {
         "title": "Metabolic Boost",
         "description": "Contains GHG (a unique polyphenol) known to help with weight management."
+      },
+      {
+        "title": "Vascular Support",
+        "description": "Anthocyanins are linked to healthy blood vessel function."
+      },
+      {
+        "title": "Vision Wellness",
+        "description": "Anthocyanins are traditionally associated with eye health support."
+      },
+      {
+        "title": "Unique Antioxidants",
+        "description": "A distinctive antioxidant profile not found in standard black or green tea."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Natural compounds help the body manage everyday inflammation."
       }
     ],
     "brewing": [
@@ -5390,6 +6974,22 @@
       {
         "title": "Metabolism",
         "description": "Naturally boosts fat burning capabilities."
+      },
+      {
+        "title": "Calm Clarity",
+        "description": "Delivers quiet, sustained alertness without any harshness."
+      },
+      {
+        "title": "Rare Terroir Wellness",
+        "description": "Hand-plucked buds carry a concentrated dose of natural plant nutrients."
+      },
+      {
+        "title": "Maximum Antioxidants",
+        "description": "Minimal processing preserves the highest natural antioxidant content."
+      },
+      {
+        "title": "Gentle Caffeine",
+        "description": "Naturally low caffeine offers a smooth, calm lift any time of day."
       }
     ],
     "brewing": [
@@ -5442,6 +7042,22 @@
       {
         "title": "Immune Support",
         "description": "Rare polyphenols in white tea buds strengthen the body's natural defences."
+      },
+      {
+        "title": "Rare Terroir Wellness",
+        "description": "Hand-plucked buds carry a concentrated dose of natural plant nutrients."
+      },
+      {
+        "title": "Maximum Antioxidants",
+        "description": "Minimal processing preserves the highest natural antioxidant content."
+      },
+      {
+        "title": "Gentle Caffeine",
+        "description": "Naturally low caffeine offers a smooth, calm lift any time of day."
+      },
+      {
+        "title": "Skin & Anti-Aging",
+        "description": "Polyphenols help defend skin cells against premature aging."
       }
     ],
     "brewing": [
@@ -5498,6 +7114,22 @@
       {
         "title": "Wellbeing",
         "description": "A mindful daily ritual that supports overall health and inner balance."
+      },
+      {
+        "title": "Weight Management",
+        "description": "Traditionally taken as part of a balanced approach to healthy weight."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Antioxidant botanicals support a naturally healthy, radiant complexion."
+      },
+      {
+        "title": "Detox Ritual",
+        "description": "Supports the body's natural detoxification processes."
+      },
+      {
+        "title": "Appetite Balance",
+        "description": "Traditionally taken to help manage appetite between meals."
       }
     ],
     "brewing": [
@@ -5554,6 +7186,22 @@
       {
         "title": "Mood Uplift",
         "description": "The tropical aroma naturally elevates mood and reduces stress."
+      },
+      {
+        "title": "Antioxidant Rich",
+        "description": "Packed with plant compounds that help fight everyday oxidative stress."
+      },
+      {
+        "title": "Digestive Aid",
+        "description": "Traditionally used to support smooth, comfortable digestion."
+      },
+      {
+        "title": "Relaxation",
+        "description": "Soursop leaf is traditionally taken as a calming evening infusion."
+      },
+      {
+        "title": "Skin Radiance",
+        "description": "Antioxidants support a naturally healthy-looking complexion."
       }
     ],
     "brewing": [
@@ -5606,6 +7254,22 @@
       {
         "title": "Immune Support",
         "description": "Rich in antibacterial catechins that naturally strengthen immunity."
+      },
+      {
+        "title": "Maximum Antioxidants",
+        "description": "Minimal processing preserves the highest natural antioxidant content."
+      },
+      {
+        "title": "Gentle Caffeine",
+        "description": "Naturally low caffeine offers a smooth, calm lift any time of day."
+      },
+      {
+        "title": "Skin & Anti-Aging",
+        "description": "Polyphenols help defend skin cells against premature aging."
+      },
+      {
+        "title": "Cellular Protection",
+        "description": "Unoxidized leaves retain compounds that shield cells from damage."
       }
     ],
     "brewing": [
