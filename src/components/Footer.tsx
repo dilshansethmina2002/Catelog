@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
           </div>
           
           <p className="hidden sm:block text-green-200/70 text-sm leading-relaxed max-w-sm px-2 sm:px-0">
-            Producers of fine Ceylon tea. Dedicated to uncompromised quality, sustainability, and bringing the authentic taste of Sri Lanka to the world.
+            {t.footer.description}
           </p>
         </div>
 

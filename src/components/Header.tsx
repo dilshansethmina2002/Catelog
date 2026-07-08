@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logoImg12 from '.././assets/athu.png';
 import { LanguageSelector } from './LanguageSelector';
 import productsData from '../data/products.json';
+import spicesData from '../data/spices.json';
 import { useLanguage } from '../context/LanguageContext';
 import { productTranslations } from '../data/productTranslations';
 
@@ -24,14 +25,21 @@ export const Header: React.FC = () => {
   const isHomePage = location.pathname === '/';
   const isCatalogPage = location.pathname === '/catalog';
 
-  const filteredProducts = searchQuery.trim()
-    ? productsData.filter(p => {
+  const spiceIds = new Set(spicesData.map((s) => s.id));
+  const searchableItems = [...productsData, ...spicesData];
+
+  const getDisplayName = (p: (typeof searchableItems)[number]) =>
+    (productTranslations[p.id]?.[language]?.name || p.name).toLowerCase();
+
+  const filteredProducts = (searchQuery.trim()
+    ? searchableItems.filter(p => {
         const query = searchQuery.toLowerCase();
-        const localizedName = (productTranslations[p.id]?.[language]?.name || p.name).toLowerCase();
+        const localizedName = getDisplayName(p);
         const englishName = (productTranslations[p.id]?.['en']?.name || p.name).toLowerCase();
         return localizedName.includes(query) || englishName.includes(query);
       })
-    : isProductPage ? productsData : [];
+    : isProductPage ? searchableItems : []
+  ).slice().sort((a, b) => getDisplayName(a).localeCompare(getDisplayName(b)));
 
   useEffect(() => {
     const handleScroll = (): void => {
@@ -84,7 +92,7 @@ export const Header: React.FC = () => {
       }, 50);
       return;
     } else {
-      navigate(`/product/${id}`);
+      navigate(spiceIds.has(id) ? `/spice/${id}` : `/product/${id}`);
     }
     setSearchOpen(false);
     setSearchQuery('');
@@ -237,7 +245,7 @@ export const Header: React.FC = () => {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="sm:hidden flex items-center justify-center w-9 h-9 rounded-full border border-[#3d4f43] text-[#f5f0e6]/80 hover:border-[#d4af6a]/50 transition-colors"
-            aria-label="Toggle Menu"
+            aria-label={t.common.toggleMenu}
           >
             {mobileMenuOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -257,7 +265,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`sm:hidden absolute top-full left-0 w-full bg-[#0c1410]/97 backdrop-blur-3xl border-b border-[#d4af6a]/10 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-auto ${
+        className={`sm:hidden absolute top-full left-0 w-full bg-[#0c1410]/95 backdrop-blur-3xl border-b border-[#d4af6a]/10 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-auto ${
           mobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

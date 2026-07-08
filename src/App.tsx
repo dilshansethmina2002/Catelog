@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { LanguageProvider } from './context/LanguageContext';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 
 // --- Components ---
 import { HeroSection } from './components/HeroSection';
@@ -17,10 +17,12 @@ import { QRMaker } from './components/QRMaker';
 import { NotFound } from './components/NotFound';
 import SnapScroll from './components/ui/SnapScroll';
 import HomePage from './components/HomePage';
+import AllBenefitsPage from './components/AllBenefitsPage';
 
 
 // Floating scroll-to-top button — appears after scrolling 400px
 function ScrollToTopButton() {
+  const { t } = useLanguage();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -34,7 +36,7 @@ function ScrollToTopButton() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      aria-label="Scroll to top"
+      aria-label={t.common.scrollToTop}
       className="fixed bottom-6 right-6 z-50 w-11 h-11 rounded-full bg-amber-400 hover:bg-amber-300 text-emerald-950 shadow-lg flex items-center justify-center transition-colors duration-200"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -78,6 +80,7 @@ function AppContent() {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/spices" element={<SpicesPage />} />
             <Route path="/spice/:id" element={<SpiceDetails />} />
+            <Route path="/benefits/:id" element={<AllBenefitsPage />} />
             <Route path="/admin/qr" element={<QRMaker />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

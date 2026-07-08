@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
 
 export function NotFound() {
+  const { t } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -13,10 +15,10 @@ export function NotFound() {
         404
       </p>
       <h1 className="text-2xl sm:text-3xl font-serif font-semibold text-white mb-3">
-        Product Not Found
+        {t.notFound.title}
       </h1>
       <p className="text-emerald-100/60 text-base sm:text-lg max-w-sm leading-relaxed mb-10">
-        This QR code may be damaged or the product page no longer exists. Please check the packaging and try again.
+        {t.notFound.message}
       </p>
       <Link
         to="/"
@@ -25,7 +27,7 @@ export function NotFound() {
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
-        Go to Home
+        {t.notFound.goHome}
       </Link>
     </motion.div>
   );
