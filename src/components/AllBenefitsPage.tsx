@@ -2,12 +2,14 @@ import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BenefitsSection } from './BenefitsSection';
 import spicesData from '../data/spices.json';
+import { useLanguage } from '../context/LanguageContext';
 
 const spiceIds = new Set(spicesData.map((s) => s.id));
 
 export default function AllBenefitsPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,13 +22,13 @@ export default function AllBenefitsPage() {
       <div className="container mx-auto px-4 sm:px-6 pt-8">
         <button
           onClick={() => navigate(`/${detailPath}/${id}`)}
-          aria-label="Back"
+          aria-label={t.benefits.back}
           className="inline-flex items-center gap-2 text-emerald-100/70 hover:text-amber-400 transition-colors duration-200 text-sm font-medium"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M19 12H5M12 19l-7-7 7-7"/>
           </svg>
-          Back
+          {t.benefits.back}
         </button>
       </div>
       <BenefitsSection showAll />

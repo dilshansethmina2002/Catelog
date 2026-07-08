@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Section } from './Section';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 // Import the JSON file to access product data and benefits
 import productsData from '../data/products.json';
@@ -176,7 +176,7 @@ function getIconForBenefit(title: string) {
 
 export const BenefitsSection: React.FC<{ showAll?: boolean }> = ({ showAll = false }) => {
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
+  const [expanded, setExpanded] = useState(false);
 
   const { id } = useParams();
   const featuredProduct = productsData.find((p) => p.id === id) || spicesData.find((p) => p.id === id) || productsData[0];
@@ -223,7 +223,7 @@ export const BenefitsSection: React.FC<{ showAll?: boolean }> = ({ showAll = fal
 
           {benefitsList.map((item: any, index: number) => {
             const Icon = getIconForBenefit(rawBenefitsList[index]?.title || item.title);
-            const hiddenOnMobile = !showAll && index >= 2;
+            const hiddenOnMobile = !showAll && !expanded && index >= 2;
 
             return (
               <div
@@ -254,10 +254,10 @@ export const BenefitsSection: React.FC<{ showAll?: boolean }> = ({ showAll = fal
           })}
         </div>
 
-        {!showAll && (
+        {!showAll && !expanded && (
           <div className="sm:hidden flex justify-center mt-8">
             <button
-              onClick={() => navigate(`/benefits/${featuredProduct.id}`)}
+              onClick={() => setExpanded(true)}
               className="inline-flex items-center gap-3 px-7 py-3.5 bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold rounded-full transition-colors duration-200 text-sm"
             >
               {t.benefits.viewAll}
