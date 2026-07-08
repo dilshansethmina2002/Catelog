@@ -8,8 +8,17 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
+const LANGUAGE_STORAGE_KEY = 'athukorala-language';
+function getInitialLanguage(): Language {
+  const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+  return stored && stored in translations ? (stored as Language) : 'en';
+}
 export function LanguageProvider({ children }: {children: ReactNode;}) {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguageState] = useState<Language>(getInitialLanguage);
+  const setLanguage = (lang: Language) => {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+    setLanguageState(lang);
+  };
   const value = {
     language,
     setLanguage,

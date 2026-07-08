@@ -1,12 +1,12 @@
 ﻿[
   {
-    "id": "tea-058",
-    "name": "Black Pepper",
+    "id": "tea-114",
+    "name": "Black Pepper 50g Pouch",
     "description": "Premium whole Black Pepper sourced from Sri Lanka. Rich in piperine with a bold, sharp heat and complex aroma — perfect for spiced teas and culinary blends.",
     "price": "USD 3.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/Black Pepper 50g.jpg",
+    "image": "/images/Spices/Packets/BlackPepper 50g.jpg",
     "ingredientImage": "",
     "ingredients": [
       {
@@ -52,13 +52,13 @@
     ]
   },
   {
-    "id": "tea-064",
-    "name": "Cinnamon Pouches",
+    "id": "tea-115",
+    "name": "Cinnamon 50g Pouch",
     "description": "Convenient and beautifully portioned True Ceylon Cinnamon in individual pouches. The perfect way to enjoy authentic Ceylon cinnamon's warmth and wellness benefits effortlessly every day.",
     "price": "USD 10.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/Cinnamon Pouches 50g.jpg",
+    "image": "/images/Spices/Packets/Cinnamon Pouches 50g.jpg",
     "ingredientImage": "",
     "ingredients": [
       {
@@ -104,65 +104,13 @@
     ]
   },
   {
-    "id": "tea-051",
-    "name": "Cinnamon Stick Alba",
-    "description": "Premium True Ceylon Cinnamon Alba grade sticks in an elegant replica presentation. The finest, most fragrant variety of real Ceylon cinnamon, perfect for gifting or daily wellness.",
-    "price": "USD 10.00",
-    "pack": "Replica Pack",
-    "weight": "50g",
-    "image": "/images/Cinnamon Stick Alba 50g.jpg",
-    "ingredientImage": "",
-    "ingredients": [
-      {
-        "name": "Ceylon Cinnamon Alba Grade",
-        "description": "The finest true Ceylon cinnamon with paper-thin, tightly rolled bark."
-      }
-    ],
-    "benefits": [
-      {
-        "title": "Blood Sugar Control",
-        "description": "Ceylon cinnamon is clinically shown to help moderate blood glucose."
-      },
-      {
-        "title": "Anti-inflammatory",
-        "description": "Natural cinnamaldehyde reduces bodily inflammation and soothes pain."
-      },
-      {
-        "title": "Heart Health",
-        "description": "Helps lower bad cholesterol and promotes healthy blood circulation."
-      },
-      {
-        "title": "Warming Effect",
-        "description": "Naturally warms the body and improves digestive comfort."
-      }
-    ],
-    "brewing": [
-      {
-        "title": "Boil Water",
-        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
-      },
-      {
-        "title": "Add Cinnamon",
-        "description": "Place 1-2 cinnamon sticks into your teapot or saucepan per cup."
-      },
-      {
-        "title": "Steep",
-        "description": "Simmer gently for 5-8 minutes to fully release the aromatic oils."
-      },
-      {
-        "title": "Serve",
-        "description": "Pour and serve. Naturally sweet — enjoy plain or with a drizzle of honey."
-      }
-    ]
-  },
-  {
-    "id": "tea-069",
-    "name": "Turmeric Super",
+    "id": "tea-116",
+    "name": "Turmeric 50g Pouch",
     "description": "A potent golden wellness infusion featuring premium turmeric blended with complementary spices and herbs. Nature's most celebrated anti-inflammatory golden superfood in a perfectly crafted cup.",
     "price": "USD 3.00",
     "pack": "",
     "weight": "50g",
-    "image": "/images/Turmeric Super 50g.jpg",
+    "image": "/images/Spices/Packets/Turmeric Super 50g.jpg",
     "ingredientImage": "",
     "ingredients": [
       {
@@ -208,6 +156,58 @@
       {
         "title": "Serve",
         "description": "Strain and serve. Best with warm milk and a touch of honey as a Golden Latte."
+      }
+    ]
+  },
+  {
+    "id": "tea-117",
+    "name": "Cinnamon Stick Alba 50g Roll",
+    "description": "Premium True Ceylon Cinnamon Alba grade sticks in an elegant replica presentation. The finest, most fragrant variety of real Ceylon cinnamon, perfect for gifting or daily wellness.",
+    "price": "USD 18.00",
+    "pack": "",
+    "weight": "50g",
+    "image": "/images/Spices/Tins/Cinnamon Stick Alba 50g.jpg",
+    "ingredientImage": "",
+    "ingredients": [
+      {
+        "name": "Ceylon Cinnamon Alba Grade",
+        "description": "The finest true Ceylon cinnamon with paper-thin, tightly rolled bark."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Blood Sugar Control",
+        "description": "Ceylon cinnamon is clinically shown to help moderate blood glucose."
+      },
+      {
+        "title": "Anti-inflammatory",
+        "description": "Natural cinnamaldehyde reduces bodily inflammation and soothes pain."
+      },
+      {
+        "title": "Heart Health",
+        "description": "Helps lower bad cholesterol and promotes healthy blood circulation."
+      },
+      {
+        "title": "Warming Effect",
+        "description": "Naturally warms the body and improves digestive comfort."
+      }
+    ],
+    "brewing": [
+      {
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
+      },
+      {
+        "title": "Add Cinnamon",
+        "description": "Place 1-2 cinnamon sticks into your teapot or saucepan per cup."
+      },
+      {
+        "title": "Steep",
+        "description": "Simmer gently for 5-8 minutes to fully release the aromatic oils."
+      },
+      {
+        "title": "Serve",
+        "description": "Pour and serve. Naturally sweet — enjoy plain or with a drizzle of honey."
       }
     ]
   }

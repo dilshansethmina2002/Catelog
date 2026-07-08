@@ -28,11 +28,6 @@ export function HeroSection() {
   const displayImage = featuredProduct.image || roseTeaImg;
   const description = translated?.description || featuredProduct.description || t.hero.tagline;
 
-  // නම වචන වලට කැඩීම (Styling සඳහා)
-  const nameParts = productName.split(' ');
-  const firstWord = nameParts[0];
-  const restOfName = nameParts.slice(1).join(' ');
-
   // CJK languages have no spaces — no letter-spacing on badge
   const isCJK = language === 'ja' || language === 'zh';
   const badgeTracking = isCJK ? 'tracking-normal' : 'tracking-[0.2em] sm:tracking-[0.3em]';
@@ -40,9 +35,13 @@ export function HeroSection() {
   // CJK characters are full-width so they need a much smaller font than Latin
   const titleSize = isCJK
     ? 'text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'
-    : productName.length > 22
-      ? 'text-3xl sm:text-4xl lg:text-5xl xl:text-6xl'
-      : 'text-5xl sm:text-6xl lg:text-7xl xl:text-8xl'; 
+    : productName.length > 34
+      ? 'text-2xl sm:text-3xl lg:text-4xl xl:text-5xl'
+      : productName.length > 24
+        ? 'text-3xl sm:text-4xl lg:text-5xl xl:text-6xl'
+        : productName.length > 15
+          ? 'text-4xl sm:text-5xl lg:text-6xl xl:text-7xl'
+          : 'text-5xl sm:text-6xl lg:text-7xl xl:text-8xl';
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -100,19 +99,7 @@ export function HeroSection() {
 
           {/* Main Headline - Mobile වල text-5xl දක්වා කුඩා වේ */}
           <motion.h1 variants={itemVariants} className={`${titleSize} font-serif text-white leading-[1.05] tracking-tight mb-6 sm:mb-8`}>
-            {restOfName ? (
-              <>
-                <span className="block font-medium">{firstWord}</span>
-                <span
-                  className="block italic text-emerald-200 mt-1 sm:mt-2"
-                  style={{ fontFamily: "Playfair Display, serif" }}
-                >
-                  {restOfName}
-                </span>
-              </>
-            ) : (
-              <span className="block font-medium">{productName}</span>
-            )}
+            <span className="font-medium">{productName}</span>
           </motion.h1>
 
           {/* Description - JSON එකෙන් Map වේ */}

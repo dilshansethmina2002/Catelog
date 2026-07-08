@@ -6,9 +6,9 @@ import { productTranslations } from '../data/productTranslations';
 
 // Static data that never changes with language (images, routes, catalog indices)
 const featuredProductsBase = [
-  { image: '/images/Rose Tea Box 100g.jpg',      url: '/product/tea-038', catalogIndex: 0 },
-  { image: '/images/FBOP Box 100g.jpg',          url: '/product/tea-019', catalogIndex: 1 },
-  { image: '/images/Cinnamon Tea Box 100g.jpg',  url: '/product/tea-015', catalogIndex: 3 },
+  { image: '/images/Tea Boxes/Rose Tea Box 100g.jpg',      url: '/product/tea-144', catalogIndex: 0 },
+  { image: '/images/Tea Boxes/FBOP Box 100g.jpg',          url: '/product/tea-130', catalogIndex: 1 },
+  { image: '/images/Tea Boxes/Cinnamon Tea Box 100g.jpg',  url: '/product/tea-128', catalogIndex: 3 },
 ];
 
 function FadeInSection({ children, className = '', delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
@@ -181,7 +181,7 @@ export default function HomePage() {
 
           {/* Stats bar — lives inside the hero */}
           <div
-            className="mt-11 w-full max-w-2xl grid grid-cols-2 md:grid-cols-4 md:divide-x"
+            className="mt-11 w-full max-w-2xl grid grid-cols-2 md:flex md:flex-row md:justify-center md:divide-x"
             style={{ borderTop: '1px solid rgba(10,140,94,0.18)', paddingTop: '2rem', borderColor: 'rgba(10,140,94,0.18)' }}
           >
             {stats.map((stat, i) => (
@@ -193,6 +193,8 @@ export default function HomePage() {
                     fontWeight: 700,
                     color: '#d4af6a',
                     letterSpacing: '-0.02em',
+                    textAlign: 'center',
+                    whiteSpace: 'nowrap',
                   }}
                 >
                   {stat.value}
@@ -498,9 +500,9 @@ export default function HomePage() {
                 style={{ aspectRatio: '16/10' }}
               >
                 <img
-                  src="/images/Cinnamon Stick Alba 50g.jpg"
+                  src="/images/Spices/Spices Raw.jpg"
                   alt={hp.spices.imageAlt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-bottom"
                 />
                 <div
                   className="absolute inset-0"

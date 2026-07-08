@@ -120,10 +120,10 @@ export const translations = {
     catalog: {
       discoverMore: 'Discover More',
       sections: [
-        { title: 'Rose Tea', subtitle: 'Aromatic & Delicate', productName: 'Botanical Collection' },
-        { title: 'FBOP Tea', subtitle: 'Premium & Aromatic', productName: 'Artisan Reserve' },
-        { title: 'Ceylon BOP Tea', subtitle: 'Bold & Full-Bodied', productName: 'Heritage Estates' },
-        { title: 'Cinnamon Tea', subtitle: 'Warm & Invigorating', productName: 'Spiced Wellness' }
+        { title: 'Rose Tea 100g Box', subtitle: 'Aromatic & Delicate', productName: 'Botanical Collection' },
+        { title: 'FBOP Tea 100g Box', subtitle: 'Premium & Aromatic', productName: 'Artisan Reserve' },
+        { title: 'Ceylon BOP Tea 100g Bag', subtitle: 'Bold & Full-Bodied', productName: 'Heritage Estates' },
+        { title: 'Cinnamon Tea 100g Box', subtitle: 'Warm & Invigorating', productName: 'Spiced Wellness' }
       ]
     },
     homepage: {
@@ -309,10 +309,10 @@ export const translations = {
     catalog: {
       discoverMore: 'Descubrir Más',
       sections: [
-        { title: 'Té de Rosa', subtitle: 'Aromático y Delicado', productName: 'Colección Botánica' },
-        { title: 'Té FBOP', subtitle: 'Premium y Aromático', productName: 'Reserva Artesanal' },
-        { title: 'Té BOP de Ceilán', subtitle: 'Intenso y Con Cuerpo', productName: 'Haciendas Heritage' },
-        { title: 'Té de Canela', subtitle: 'Cálido e Invigorante', productName: 'Bienestar Especiado' }
+        { title: 'Té de Rosa 100g Caja', subtitle: 'Aromático y Delicado', productName: 'Colección Botánica' },
+        { title: 'Té FBOP 100g Caja', subtitle: 'Premium y Aromático', productName: 'Reserva Artesanal' },
+        { title: 'Té BOP de Ceilán 100g Bolsita', subtitle: 'Intenso y Con Cuerpo', productName: 'Haciendas Heritage' },
+        { title: 'Té de Canela 100g Caja', subtitle: 'Cálido e Invigorante', productName: 'Bienestar Especiado' }
       ]
     },
     homepage: {
@@ -498,10 +498,10 @@ export const translations = {
     catalog: {
       discoverMore: 'Découvrir Plus',
       sections: [
-        { title: 'Thé à la Rose', subtitle: 'Aromatique et Délicat', productName: 'Collection Botanique' },
-        { title: 'Thé FBOP', subtitle: 'Premium et Aromatique', productName: 'Réserve Artisanale' },
-        { title: 'Thé BOP de Ceylan', subtitle: 'Corsé et Charpenté', productName: 'Domaines Heritage' },
-        { title: 'Thé à la Cannelle', subtitle: 'Chaud et Tonifiant', productName: 'Bien-être Épicé' }
+        { title: 'Thé à la Rose 100g Boîte', subtitle: 'Aromatique et Délicat', productName: 'Collection Botanique' },
+        { title: 'Thé FBOP 100g Boîte', subtitle: 'Premium et Aromatique', productName: 'Réserve Artisanale' },
+        { title: 'Thé BOP de Ceylan 100g Sachet', subtitle: 'Corsé et Charpenté', productName: 'Domaines Heritage' },
+        { title: 'Thé à la Cannelle 100g Boîte', subtitle: 'Chaud et Tonifiant', productName: 'Bien-être Épicé' }
       ]
     },
     homepage: {
@@ -687,10 +687,10 @@ export const translations = {
     catalog: {
       discoverMore: 'Scopri di Più',
       sections: [
-        { title: 'Tè alla Rosa', subtitle: 'Aromatico e Delicato', productName: 'Collezione Botanica' },
-        { title: 'Tè FBOP', subtitle: 'Premium e Aromatico', productName: 'Riserva Artigianale' },
-        { title: 'Tè BOP Ceylon', subtitle: 'Intenso e Corposo', productName: 'Tenute Heritage' },
-        { title: 'Tè alla Cannella', subtitle: 'Caldo e Tonificante', productName: 'Benessere Speziato' }
+        { title: 'Tè alla Rosa 100g Scatola', subtitle: 'Aromatico e Delicato', productName: 'Collezione Botanica' },
+        { title: 'Tè FBOP 100g Scatola', subtitle: 'Premium e Aromatico', productName: 'Riserva Artigianale' },
+        { title: 'Tè BOP Ceylon 100g Bustina', subtitle: 'Intenso e Corposo', productName: 'Tenute Heritage' },
+        { title: 'Tè alla Cannella 100g Scatola', subtitle: 'Caldo e Tonificante', productName: 'Benessere Speziato' }
       ]
     },
     homepage: {
@@ -876,10 +876,10 @@ export const translations = {
     catalog: {
       discoverMore: 'Узнать Больше',
       sections: [
-        { title: 'Чай с Розой', subtitle: 'Ароматный и Нежный', productName: 'Ботаническая Коллекция' },
-        { title: 'Чай FBOP', subtitle: 'Премиум и Ароматный', productName: 'Резерв Мастера' },
-        { title: 'Цейлонский Чай BOP', subtitle: 'Насыщенный и Полнотелый', productName: 'Поместья Heritage' },
-        { title: 'Чай с Корицей', subtitle: 'Тёплый и Бодрящий', productName: 'Пряное Здоровье' }
+        { title: 'Чай с Розой 100g Коробка', subtitle: 'Ароматный и Нежный', productName: 'Ботаническая Коллекция' },
+        { title: 'Чай FBOP 100g Коробка', subtitle: 'Премиум и Ароматный', productName: 'Резерв Мастера' },
+        { title: 'Цейлонский Чай BOP 100g Пакетик', subtitle: 'Насыщенный и Полнотелый', productName: 'Поместья Heritage' },
+        { title: 'Чай с Корицей 100g Коробка', subtitle: 'Тёплый и Бодрящий', productName: 'Пряное Здоровье' }
       ]
     },
     homepage: {
@@ -1065,10 +1065,10 @@ export const translations = {
     catalog: {
       discoverMore: 'さらに見る',
       sections: [
-        { title: 'ローズティー', subtitle: '芳醇で繊細', productName: 'ボタニカルコレクション' },
-        { title: 'FBOPティー', subtitle: 'プレミアムで芳醇', productName: 'アルティザンリザーブ' },
-        { title: 'セイロンBOPティー', subtitle: '濃厚でコクのある', productName: 'ヘリテージエステーツ' },
-        { title: 'シナモンティー', subtitle: '温かく活力を与える', productName: 'スパイスウェルネス' }
+        { title: 'ローズティー 100g ボックス', subtitle: '芳醇で繊細', productName: 'ボタニカルコレクション' },
+        { title: 'FBOPティー 100g ボックス', subtitle: 'プレミアムで芳醇', productName: 'アルティザンリザーブ' },
+        { title: 'セイロンBOPティー 100g ティーバッグ', subtitle: '濃厚でコクのある', productName: 'ヘリテージエステーツ' },
+        { title: 'シナモンティー 100g ボックス', subtitle: '温かく活力を与える', productName: 'スパイスウェルネス' }
       ]
     },
     homepage: {
@@ -1239,10 +1239,10 @@ export const translations = {
     catalog: {
       discoverMore: '探索更多',
       sections: [
-        { title: '玫瑰茶', subtitle: '芳香细腻', productName: '植物系列' },
-        { title: 'FBOP茶', subtitle: '优质芳香', productName: '工匠珍藏' },
-        { title: '锡兰BOP茶', subtitle: '醇厚饱满', productName: '传承庄园' },
-        { title: '肉桂茶', subtitle: '温暖提神', productName: '香料健康' }
+        { title: '玫瑰茶 100g 盒', subtitle: '芳香细腻', productName: '植物系列' },
+        { title: 'FBOP茶 100g 盒', subtitle: '优质芳香', productName: '工匠珍藏' },
+        { title: '锡兰BOP茶 100g 茶包', subtitle: '醇厚饱满', productName: '传承庄园' },
+        { title: '肉桂茶 100g 盒', subtitle: '温暖提神', productName: '香料健康' }
       ]
     },
     homepage: {
