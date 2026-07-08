@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logoImg12 from '.././assets/athu.png';
 import { LanguageSelector } from './LanguageSelector';
 import productsData from '../data/products.json';
+import spicesData from '../data/spices.json';
 import { useLanguage } from '../context/LanguageContext';
 import { productTranslations } from '../data/productTranslations';
 
@@ -24,14 +25,21 @@ export const Header: React.FC = () => {
   const isHomePage = location.pathname === '/';
   const isCatalogPage = location.pathname === '/catalog';
 
-  const filteredProducts = searchQuery.trim()
-    ? productsData.filter(p => {
+  const spiceIds = new Set(spicesData.map((s) => s.id));
+  const searchableItems = [...productsData, ...spicesData];
+
+  const getDisplayName = (p: (typeof searchableItems)[number]) =>
+    (productTranslations[p.id]?.[language]?.name || p.name).toLowerCase();
+
+  const filteredProducts = (searchQuery.trim()
+    ? searchableItems.filter(p => {
         const query = searchQuery.toLowerCase();
-        const localizedName = (productTranslations[p.id]?.[language]?.name || p.name).toLowerCase();
+        const localizedName = getDisplayName(p);
         const englishName = (productTranslations[p.id]?.['en']?.name || p.name).toLowerCase();
         return localizedName.includes(query) || englishName.includes(query);
       })
-    : isProductPage ? productsData : [];
+    : isProductPage ? searchableItems : []
+  ).slice().sort((a, b) => getDisplayName(a).localeCompare(getDisplayName(b)));
 
   useEffect(() => {
     const handleScroll = (): void => {
@@ -84,7 +92,7 @@ export const Header: React.FC = () => {
       }, 50);
       return;
     } else {
-      navigate(`/product/${id}`);
+      navigate(spiceIds.has(id) ? `/spice/${id}` : `/product/${id}`);
     }
     setSearchOpen(false);
     setSearchQuery('');
