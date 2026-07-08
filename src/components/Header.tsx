@@ -26,6 +26,7 @@ export const Header: React.FC = () => {
   const isQRPage = location.pathname === '/admin/qr';
   const isHomePage = location.pathname === '/';
   const isCatalogPage = location.pathname === '/catalog';
+  const isSpicesListPage = location.pathname === '/spices';
 
   const spiceIds = new Set(spicesData.map((s) => s.id));
   const searchableItems = [...productsData, ...spicesData];
@@ -88,7 +89,7 @@ export const Header: React.FC = () => {
   const handleSelect = (id: string) => {
     if (isQRPage) {
       document.getElementById(`qr-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    } else if (isCatalogPage) {
+    } else if (isCatalogPage || isSpicesListPage) {
       setSearchOpen(false);
       setSearchQuery('');
       setMobileMenuOpen(false);

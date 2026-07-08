@@ -320,6 +320,7 @@ const SectionBlock = ({
   return (
     <div
       ref={sectionRef}
+      id={`catalog-${section.id}`}
       className={`relative flex flex-col h-[calc(100svh-4rem)] sm:h-[calc(100svh-5rem)] w-full snap-start overflow-hidden md:flex-row ${isImageLeft ? '' : 'md:flex-row-reverse'}`}
     >
       <div className="relative w-full h-2/5 md:w-1/2 md:h-full bg-stone-100" style={{ perspective: '1200px' }}>
