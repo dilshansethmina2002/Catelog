@@ -267,6 +267,20 @@ export const BenefitsSection: React.FC<{ showAll?: boolean }> = ({ showAll = fal
             </button>
           </div>
         )}
+
+        {!showAll && expanded && (
+          <div className="sm:hidden flex justify-center mt-8">
+            <button
+              onClick={() => setExpanded(false)}
+              className="inline-flex items-center gap-3 px-7 py-3.5 bg-transparent border border-amber-400/60 hover:bg-amber-400/10 text-amber-400 font-bold rounded-full transition-colors duration-200 text-sm"
+            >
+              {t.benefits.hide}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 15l-6-6-6 6"/>
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
     </Section>
   );

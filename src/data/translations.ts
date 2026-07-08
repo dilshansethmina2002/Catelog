@@ -57,6 +57,7 @@ export const translations = {
       subtitle: 'Wellness in every sip',
       viewAll: 'View All Health Benefits',
       back: 'Back',
+      hide: 'Show Less',
       items: [
         {
           title: 'Metabolism Boost',
@@ -248,6 +249,7 @@ export const translations = {
       subtitle: 'Bienestar en cada sorbo',
       viewAll: 'Ver Todos los Beneficios para la Salud',
       back: 'Volver',
+      hide: 'Ver Menos',
       items: [
         {
           title: 'Impulso Metabólico',
@@ -439,6 +441,7 @@ export const translations = {
       subtitle: 'Le bien-être dans chaque gorgée',
       viewAll: 'Voir Tous les Bienfaits pour la Santé',
       back: 'Retour',
+      hide: 'Voir Moins',
       items: [
         {
           title: 'Boost Métabolique',
@@ -630,6 +633,7 @@ export const translations = {
       subtitle: 'Benessere in ogni sorso',
       viewAll: 'Vedi Tutti i Benefici per la Salute',
       back: 'Indietro',
+      hide: 'Mostra Meno',
       items: [
         {
           title: 'Spinta Metabolica',
@@ -821,6 +825,7 @@ export const translations = {
       subtitle: 'Здоровье в каждом глотке',
       viewAll: 'Смотреть Всю Пользу для Здоровья',
       back: 'Назад',
+      hide: 'Свернуть',
       items: [
         {
           title: 'Ускорение Метаболизма',
@@ -1012,6 +1017,7 @@ export const translations = {
       subtitle: '一口ごとのウェルネス',
       viewAll: 'すべての健康効果を見る',
       back: '戻る',
+      hide: '表示を減らす',
       items: [
         {
           title: '代謝促進',
@@ -1197,6 +1203,7 @@ export const translations = {
       subtitle: '每一口的健康',
       viewAll: '查看全部健康益处',
       back: '返回',
+      hide: '收起',
       items: [
         {
           title: '促进代谢',
