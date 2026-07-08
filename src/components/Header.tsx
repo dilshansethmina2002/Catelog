@@ -22,6 +22,7 @@ export const Header: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isProductPage = /^\/product\//.test(location.pathname);
+  const isSpicePage = /^\/spice\//.test(location.pathname);
   const isQRPage = location.pathname === '/admin/qr';
   const isHomePage = location.pathname === '/';
   const isCatalogPage = location.pathname === '/catalog';
@@ -39,7 +40,7 @@ export const Header: React.FC = () => {
         const englishName = (productTranslations[p.id]?.['en']?.name || p.name).toLowerCase();
         return localizedName.includes(query) || englishName.includes(query);
       })
-    : isProductPage ? searchableItems : []
+    : (isProductPage || isSpicePage) ? searchableItems : []
   ).slice().sort((a, b) => getDisplayName(a).localeCompare(getDisplayName(b)));
 
   useEffect(() => {
@@ -220,7 +221,7 @@ export const Header: React.FC = () => {
             )}
 
             {/* Desktop Search Dropdown */}
-            {searchOpen && (searchQuery.trim() || isProductPage) && (
+            {searchOpen && (searchQuery.trim() || isProductPage || isSpicePage) && (
               <div className="absolute right-0 mt-3 w-72 bg-[#0c1410]/95 backdrop-blur-xl rounded-2xl shadow-2xl shadow-black/40 border border-[#d4af6a]/15 z-50 max-h-64 overflow-hidden">
                 <div className="max-h-64 overflow-y-auto py-2 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#d4af6a]/30 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-transparent">
                   {filteredProducts.length > 0 ? (
