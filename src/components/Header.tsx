@@ -265,7 +265,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`sm:hidden absolute top-full left-0 w-full bg-[#0c1410]/97 backdrop-blur-3xl border-b border-[#d4af6a]/10 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-auto ${
+        className={`sm:hidden absolute top-full left-0 w-full bg-[#0c1410]/95 backdrop-blur-3xl border-b border-[#d4af6a]/10 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-auto ${
           mobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
