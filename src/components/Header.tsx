@@ -18,6 +18,7 @@ export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false); // Mobile Menu State
 
   const searchRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const location = useLocation();
   const isProductPage = /^\/product\//.test(location.pathname);
@@ -71,7 +72,10 @@ export const Header: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      const outsideDesktopSearch = !searchRef.current || !searchRef.current.contains(target);
+      const outsideMobileMenu = !mobileMenuRef.current || !mobileMenuRef.current.contains(target);
+      if (outsideDesktopSearch && outsideMobileMenu) {
         setSearchOpen(false);
         setSearchQuery('');
       }
@@ -265,6 +269,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
+        ref={mobileMenuRef}
         className={`sm:hidden absolute top-full left-0 w-full bg-[#0c1410]/95 backdrop-blur-3xl border-b border-[#d4af6a]/10 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-auto ${
           mobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
