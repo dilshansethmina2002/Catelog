@@ -1,10 +1,10 @@
-# 🍃 Athukorala Group — Ceylon Tea & Spices Digital Catalog
+# Athukorala Group — Ceylon Tea & Spices Digital Catalog
 
 A multilingual, interactive product catalog for **Athukorala Group's** premium Ceylon tea and spice collection. Built as a modern single-page application with smooth animations, dynamic routing, and full internationalization support across 7 languages.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multilingual Support** — Fully translated UI in 7 languages: English, Spanish, Russian, Italian, French, Japanese, and Chinese, switchable at runtime with no page reload.
 - **Product Catalog** — 40+ premium Ceylon tea products displayed in an interactive snap-scroll catalog with individual detail pages.
@@ -18,7 +18,7 @@ A multilingual, interactive product catalog for **Athukorala Group's** premium C
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |---|---|
@@ -33,39 +33,41 @@ A multilingual, interactive product catalog for **Athukorala Group's** premium C
 
 ---
 
-## 📁 Project Structure
-src/
-├── assets/ # Static image assets
-├── components/
-│ ├── ui/ # Reusable UI primitives (Button, SnapScroll)
-│ ├── Header.tsx # Navigation, search, language selector
-│ ├── Footer.tsx
-│ ├── HomePage.tsx # Landing page (hero, featured, heritage, spice CTA)
-│ ├── HeroSection.tsx
-│ ├── IngredientsSection.tsx
-│ ├── BenefitsSection.tsx
-│ ├── BrewingSection.tsx
-│ ├── PriceSection.tsx
-│ ├── ProcessSection.tsx
-│ ├── ProductDetails.tsx
-│ ├── SpicesPage.tsx
-│ ├── SpiceDetails.tsx
-│ ├── QRMaker.tsx
-│ └── NotFound.tsx
-├── context/
-│ └── LanguageContext.tsx # Global language state via React Context
-├── data/
-│ ├── products.json # All tea product records
-│ ├── spices.json # All spice product records
-│ ├── translations.ts # UI strings in all 7 languages
-│ ├── productTranslations.ts
-│ └── ingredientTranslations.ts
-└── App.tsx # Router setup and layout shell
+## Project Structure
 
+```
+src/
+├── assets/             # Static image assets
+├── components/
+│   ├── ui/             # Reusable UI primitives (Button, SnapScroll)
+│   ├── Header.tsx      # Navigation, search, language selector
+│   ├── Footer.tsx
+│   ├── HomePage.tsx    # Landing page (hero, featured, heritage, spice CTA)
+│   ├── HeroSection.tsx
+│   ├── IngredientsSection.tsx
+│   ├── BenefitsSection.tsx
+│   ├── BrewingSection.tsx
+│   ├── PriceSection.tsx
+│   ├── ProcessSection.tsx
+│   ├── ProductDetails.tsx
+│   ├── SpicesPage.tsx
+│   ├── SpiceDetails.tsx
+│   ├── QRMaker.tsx
+│   └── NotFound.tsx
+├── context/
+│   └── LanguageContext.tsx   # Global language state via React Context
+├── data/
+│   ├── products.json         # All tea product records
+│   ├── spices.json           # All spice product records
+│   ├── translations.ts       # UI strings in all 7 languages
+│   ├── productTranslations.ts
+│   └── ingredientTranslations.ts
+└── App.tsx                   # Router setup and layout shell
+```
 
 ---
 
-## 🚏 Routes
+## Routes
 
 | Path | Page |
 |---|---|
@@ -80,65 +82,90 @@ src/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 📋 Prerequisites
+### Prerequisites
 
 - Node.js 18 or later
 - npm 9 or later
 
-### 📦 Installation
+### Installation
 
+```bash
 # Clone the repository
 git clone <repository-url>
 cd Catelog
 
 # Install dependencies
 npm install
-💻 Development
+```
+
+### Development
+
+```bash
 npm run dev
+```
 
-The app runs at http://localhost:5173 by default.
+The app runs at `http://localhost:5173` by default.
 
-🏗️ Build for Production
+### Build for Production
+
+```bash
 npm run build
+```
 
-Output is placed in the dist/ folder and ready for static hosting.
+Output is placed in the `dist/` folder and ready for static hosting.
 
-👀 Preview Production Build
+### Preview Production Build
+
+```bash
 npm run preview
-🧹 Lint
+```
+
+### Lint
+
+```bash
 npm run lint
-🌍 Internationalization
+```
 
-Language selection is managed globally via LanguageContext. The supported language codes are:
+---
 
-Code	Language
-en	English
-es	Spanish
-ru	Russian
-it	Italian
-fr	French
-ja	Japanese
-zh	Chinese
+## Internationalization
 
-All UI strings, product names, ingredient descriptions, and brewing instructions are available in every language through the translation data files in src/data/.
+Language selection is managed globally via `LanguageContext`. The supported language codes are:
 
-🍵 Product Data
+| Code | Language |
+|---|---|
+| `en` | English |
+| `es` | Spanish |
+| `ru` | Russian |
+| `it` | Italian |
+| `fr` | French |
+| `ja` | Japanese |
+| `zh` | Chinese |
 
-Products are defined in src/data/products.json. Each entry includes:
+All UI strings, product names, ingredient descriptions, and brewing instructions are available in every language through the translation data files in `src/data/`.
 
-id — Unique identifier (e.g. tea-002)
-name — English product name
-description — English description
-price — Display price
-weight — Package weight
-image — Path to product image
-ingredients — List of ingredients with descriptions
-benefits — Health/wellness benefit entries
+---
 
-Localized overrides for each product live in src/data/productTranslations.ts.
+## Product Data
 
-📜 License
+Products are defined in `src/data/products.json`. Each entry includes:
 
-This project is proprietary software belonging to Athukorala Group. All rights reserved.
+- `id` — Unique identifier (e.g. `tea-002`)
+- `name` — English product name
+- `description` — English description
+- `price` — Display price
+- `weight` — Package weight
+- `image` — Path to product image
+- `ingredients` — List of ingredients with descriptions
+- `benefits` — Health/wellness benefit entries
+
+Localized overrides for each product live in `src/data/productTranslations.ts`.
+
+---
+
+## License
+
+This project is proprietary software belonging to **Athukorala Group**. All rights reserved.
+"
