@@ -14,6 +14,7 @@ export const subtitleTranslations: Record<string, LangMap> = {
   'Bold & Traditional':       { es: 'Intenso & Tradicional',         fr: 'Audacieux & Traditionnel',      it: 'Deciso & Tradizionale',          ru: 'Насыщенный & Традиционный',       ja: '力強い & 伝統',       zh: '浓郁 & 传统' },
   'Bold & Warming':           { es: 'Intenso & Cálido',              fr: 'Audacieux & Réchauffant',       it: 'Deciso & Riscaldante',           ru: 'Насыщенный & Согревающий',        ja: '力強い & 温かい',     zh: '浓郁 & 暖心' },
   'Boldly Spiced':            { es: 'Intensamente Especiado',        fr: 'Fortement Épicé',               it: 'Speziato in Modo Deciso',        ru: 'Насыщенно Пряный',                ja: '力強いスパイス',       zh: '浓郁香辛' },
+  'Boxed & Gift-Ready':       { es: 'En Caja y Listo para Regalar',  fr: 'En Boîte et Prêt à Offrir',     it: 'In Scatola e Pronto da Regalare', ru: 'В Коробке и Готов Дарить',        ja: '箱入り & ギフトに最適', zh: '礼盒装 & 送礼佳品' },
   'Brisk & Strong':           { es: 'Vigoroso & Fuerte',             fr: 'Vif & Fort',                    it: 'Vivace & Forte',                 ru: 'Бодрящий & Крепкий',              ja: 'スッキリ & 力強い',   zh: '清爽 & 浓郁' },
   'Bright & Cheerful':        { es: 'Brillante & Alegre',            fr: 'Lumineux & Joyeux',             it: 'Brillante & Gioioso',            ru: 'Яркий & Жизнерадостный',          ja: '明るい & 爽やか',     zh: '明亮 & 欢快' },
   'Bright & Premium':         { es: 'Brillante & Premium',           fr: 'Lumineux & Premium',            it: 'Brillante & Premium',            ru: 'Яркий & Премиальный',             ja: '明るい & プレミアム', zh: '明亮 & 优质' },
@@ -114,4 +115,5 @@ export const categoryTranslations: Record<string, LangMap> = {
   'Spiced Wellness':      { es: 'Bienestar Especiado',        fr: 'Bien-être Épicé',           it: 'Benessere Speziato',       ru: 'Пряное Здоровье',           ja: 'スパイスウェルネス',         zh: '香料养生' },
   'Premium Spices':       { es: 'Especias Premium',           fr: 'Épices Premium',            it: 'Spezie Premium',           ru: 'Премиальные Специи',        ja: 'プレミアムスパイス',         zh: '优质香料' },
   'Botanical Collection': { es: 'Colección Botánica',         fr: 'Collection Botanique',      it: 'Collezione Botanica',      ru: 'Ботаническая Коллекция',    ja: 'ボタニカルコレクション',     zh: '植物系列' },
+  'Boxed Collection':     { es: 'Colección en Caja',          fr: 'Collection en Boîte',       it: 'Collezione in Scatola',    ru: 'Коллекция в Коробках',      ja: 'ボックスコレクション',       zh: '礼盒系列' },
 };

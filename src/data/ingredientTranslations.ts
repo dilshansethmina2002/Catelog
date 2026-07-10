@@ -825,6 +825,30 @@ export const ingredientTranslations: Record<string, LangMap> = {
     ja: { name: 'ビューティーボタニカルズ', description: '肌の美容とウェルネスのための植物と花のボタニカルセレクション。' },
     zh: { name: '美容植物', description: '为皮肤美容和健康精选的植物花卉组合。' },
   },
+  'Gotukola': {
+    es: { name: 'Gotukola', description: 'Hierba tradicional de Sri Lanka valorada por sus propiedades para la memoria y la piel.' },
+    fr: { name: 'Gotukola', description: 'Herbe traditionnelle du Sri Lanka appréciée pour ses bienfaits sur la mémoire et la peau.' },
+    it: { name: 'Gotukola', description: 'Erba tradizionale dello Sri Lanka apprezzata per i suoi benefici sulla memoria e sulla pelle.' },
+    ru: { name: 'Готукола', description: 'Традиционная шри-ланкийская трава, ценимая за пользу для памяти и кожи.' },
+    ja: { name: 'ゴツコラ', description: '記憶力と肌への効能で知られる、スリランカの伝統的なハーブ。' },
+    zh: { name: '积雪草', description: '斯里兰卡传统草本,以有益记忆力与肌肤而闻名。' },
+  },
+  'Heen Bovitiya': {
+    es: { name: 'Heen Bovitiya', description: 'Hierba medicinal tradicional de Sri Lanka utilizada para apoyar la salud del hígado.' },
+    fr: { name: 'Heen Bovitiya', description: 'Herbe médicinale traditionnelle du Sri Lanka utilisée pour soutenir la santé du foie.' },
+    it: { name: 'Heen Bovitiya', description: 'Erba medicinale tradizionale dello Sri Lanka utilizzata per sostenere la salute del fegato.' },
+    ru: { name: 'Хин Бовития', description: 'Традиционная лекарственная трава Шри-Ланки, используемая для поддержки здоровья печени.' },
+    ja: { name: 'ヒーンボヴィティヤ', description: '肝臓の健康をサポートするために使われる、スリランカの伝統的な薬草。' },
+    zh: { name: 'Heen Bovitiya草', description: '斯里兰卡传统药草,用于支持肝脏健康。' },
+  },
+  'Select Ceylon Black Tea': {
+    es: { name: 'Té Negro de Ceilán Selecto', description: 'Hojas de té negro de Ceilán cuidadosamente seleccionadas por su calidad superior.' },
+    fr: { name: 'Thé Noir de Ceylan Sélectionné', description: 'Feuilles de thé noir de Ceylan soigneusement sélectionnées pour leur qualité supérieure.' },
+    it: { name: 'Tè Nero di Ceylon Selezionato', description: 'Foglie di tè nero di Ceylon accuratamente selezionate per la loro qualità superiore.' },
+    ru: { name: 'Отборный Цейлонский Чёрный Чай', description: 'Тщательно отобранные листья цейлонского чёрного чая высшего качества.' },
+    ja: { name: '厳選セイロン紅茶', description: '優れた品質のために厳選されたセイロン紅茶の茶葉。' },
+    zh: { name: '精选锡兰红茶', description: '精心挑选的优质锡兰红茶茶叶。' },
+  },
 };
 
 export const spiceBenefitTranslations: Record<string, Partial<Record<'es'|'fr'|'it'|'ru'|'ja'|'zh', string>>> = {
