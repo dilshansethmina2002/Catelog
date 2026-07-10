@@ -299,7 +299,7 @@ export const Header: React.FC = () => {
           </div>}
 
           {/* Mobile Search Results */}
-          {!isHomePage && searchQuery.trim() && (
+          {!isHomePage && (searchQuery.trim() || isProductPage || isSpicePage) && (
             <div className="max-h-48 overflow-y-auto bg-[#1a2b22]/40 rounded-2xl border border-[#3d4f43]/40">
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product, idx) => (
