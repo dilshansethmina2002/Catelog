@@ -53,22 +53,30 @@ export default function HomePage() {
   const qualityPillars = hp.heritage.pillars;
 
   return (
-    <div style={{ background: '#D4EAD4' }}>
+    <div className="relative bg-[#0c1410] text-[#f5f0e6]">
+      
+      {/* ── GLOBAL NOISE TEXTURE OVERLAY ── 
+          This eliminates color banding and makes gradients look incredibly rich and premium. */}
+      <div 
+        className="pointer-events-none fixed inset-0 z-50 opacity-[0.035]" 
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+        }}
+      />
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section
         className="relative flex flex-col items-center justify-center overflow-hidden"
         style={{
           minHeight: '100svh',
-          background: 'linear-gradient(160deg, #0c1410 0%, #0b2818 55%, #0c1815 100%)',
+          background: 'linear-gradient(180deg, #070d0a 0%, #0b2818 55%, #0c1815 100%)',
         }}
       >
         {/* Radial glow */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background:
-              'radial-gradient(ellipse 80% 60% at 50% 55%, rgba(212,175,106,0.07) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 80% 60% at 50% 55%, rgba(212,175,106,0.07) 0%, transparent 70%)',
           }}
         />
 
@@ -89,42 +97,22 @@ export default function HomePage() {
         ))}
 
         {/* Corner SVG botanical accents */}
-        <svg
-          className="absolute top-0 left-0 pointer-events-none opacity-[0.035]"
-          width="220" height="220" viewBox="0 0 200 200" fill="none"
-        >
+        <svg className="absolute top-0 left-0 pointer-events-none opacity-[0.035]" width="220" height="220" viewBox="0 0 200 200" fill="none">
           <path d="M0 200 Q50 100 100 50 Q150 0 200 0" stroke="#d4af6a" strokeWidth="0.6" />
           <path d="M0 160 Q70 80 130 30 Q170 5 200 30" stroke="#d4af6a" strokeWidth="0.6" />
           <path d="M30 200 Q90 120 140 70 Q175 35 200 60" stroke="#d4af6a" strokeWidth="0.6" />
         </svg>
-        <svg
-          className="absolute bottom-0 right-0 pointer-events-none opacity-[0.035] rotate-180"
-          width="220" height="220" viewBox="0 0 200 200" fill="none"
-        >
+        <svg className="absolute bottom-0 right-0 pointer-events-none opacity-[0.035] rotate-180" width="220" height="220" viewBox="0 0 200 200" fill="none">
           <path d="M0 200 Q50 100 100 50 Q150 0 200 0" stroke="#d4af6a" strokeWidth="0.6" />
           <path d="M0 160 Q70 80 130 30 Q170 5 200 30" stroke="#d4af6a" strokeWidth="0.6" />
         </svg>
 
         {/* Hero content */}
         <div className="relative z-10 flex flex-col items-center text-center px-6 pt-20 pb-20 sm:pt-24 sm:pb-24 md:pt-28 md:pb-28">
-
           {/* Brand marker line */}
-          <motion.div
-            initial={{ opacity: 0, y: -16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center gap-4 mb-10"
-          >
+          <motion.div initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-4 mb-10">
             <span className="h-px w-10 bg-[#d4af6a]/50" />
-            <span
-              style={{
-                fontSize: '0.6rem',
-                fontWeight: 700,
-                letterSpacing: '0.42em',
-                textTransform: 'uppercase',
-                color: 'rgba(212,175,106,0.75)',
-              }}
-            >
+            <span style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: 'rgba(212,175,106,0.75)' }}>
               {hp.hero.brandMarker}
             </span>
             <span className="h-px w-10 bg-[#d4af6a]/50" />
@@ -141,7 +129,6 @@ export default function HomePage() {
               fontWeight: 700,
               lineHeight: 1.0,
               letterSpacing: '-0.025em',
-              color: '#f5f0e6',
             }}
           >
             {hp.hero.headline1}
@@ -149,66 +136,24 @@ export default function HomePage() {
             <span style={{ color: '#d4af6a' }}>{hp.hero.headline2}</span>
           </motion.h1>
 
-          {/* Gold divider */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.85, delay: 0.82 }}
-            className="mt-8 mb-7"
-            style={{
-              height: '1px',
-              width: '88px',
-              background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.65), transparent)',
-            }}
-          />
+          <motion.div initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.85, delay: 0.82 }} className="mt-8 mb-7" style={{ height: '1px', width: '88px', background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.65), transparent)' }} />
 
-          {/* Subheading */}
           <motion.p
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.94 }}
-            style={{
-              fontSize: 'clamp(0.82rem, 2vw, 1rem)',
-              color: 'rgba(245,240,230,0.58)',
-              letterSpacing: '0.04em',
-              maxWidth: '440px',
-              lineHeight: 1.9,
-              fontWeight: 300,
-            }}
+            style={{ fontSize: 'clamp(0.82rem, 2vw, 1rem)', color: 'rgba(245,240,230,0.58)', letterSpacing: '0.04em', maxWidth: '440px', lineHeight: 1.9, fontWeight: 300 }}
           >
             {hp.hero.subheading}
           </motion.p>
 
-          {/* Stats bar — lives inside the hero */}
-          <div
-            className="mt-11 w-full max-w-2xl grid grid-cols-2 md:flex md:flex-row md:justify-center md:divide-x"
-            style={{ borderTop: '1px solid rgba(10,140,94,0.18)', paddingTop: '2rem', borderColor: 'rgba(10,140,94,0.18)' }}
-          >
+          <div className="mt-11 w-full max-w-2xl grid grid-cols-2 md:flex md:flex-row md:justify-center md:divide-x" style={{ borderTop: '1px solid rgba(10,140,94,0.18)', paddingTop: '2rem', borderColor: 'rgba(10,140,94,0.18)' }}>
             {stats.map((stat, i) => (
               <div key={i} className="flex flex-col items-center gap-1.5 px-4 py-2">
-                <span
-                  style={{
-                    fontFamily: 'Georgia, serif',
-                    fontSize: 'clamp(1.5rem, 3vw, 2.1rem)',
-                    fontWeight: 700,
-                    color: '#d4af6a',
-                    letterSpacing: '-0.02em',
-                    textAlign: 'center',
-                    whiteSpace: 'nowrap',
-                  }}
-                >
+                <span style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', fontWeight: 700, color: '#d4af6a', letterSpacing: '-0.02em', textAlign: 'center', whiteSpace: 'nowrap' }}>
                   {stat.value}
                 </span>
-                <span
-                  style={{
-                    fontSize: '0.6rem',
-                    fontWeight: 600,
-                    letterSpacing: '0.3em',
-                    textTransform: 'uppercase',
-                    color: 'rgba(245,240,230,0.45)',
-                    textAlign: 'center',
-                  }}
-                >
+                <span style={{ fontSize: '0.6rem', fontWeight: 600, letterSpacing: '0.3em', textTransform: 'uppercase', color: 'rgba(245,240,230,0.45)', textAlign: 'center' }}>
                   {stat.label}
                 </span>
               </div>
@@ -218,138 +163,64 @@ export default function HomePage() {
       </section>
 
       {/* ── FEATURED TEAS ──────────────────────────────────────────────────── */}
-      <section className="py-24 px-6" style={{ background: '#D4EAD4' }}>
+      <section 
+        className="py-24 px-6" 
+        style={{ 
+          // Injecting highly saturated mid-tone greens (#1b3826, #3c6346) forces a beautiful, vivid transition instead of a muddy gray line.
+          background: 'linear-gradient(180deg, #0c1815 0%, #1b3826 4%, #3c6346 8%, #5c7e5c 14%, #5c7e5c 100%)' 
+        }}
+      >
         <div className="max-w-6xl mx-auto">
-
-          {/* Section header */}
           <FadeInSection className="text-center mb-16">
-            <p
-              style={{
-                fontSize: '0.6rem',
-                fontWeight: 700,
-                letterSpacing: '0.42em',
-                textTransform: 'uppercase',
-                color: '#a8a29e',
-                marginBottom: '1rem',
-              }}
-            >
+            <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#2a2828', marginBottom: '1rem' }}>
               {hp.featured.label}
             </p>
-            <h2
-              style={{
-                fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(1.8rem, 4vw, 3rem)',
-                fontWeight: 700,
-                color: '#292524',
-                letterSpacing: '-0.02em',
-              }}
-            >
+            <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 700, color: '#292524', letterSpacing: '-0.02em' }}>
               {hp.featured.heading}
             </h2>
-            <div
-              style={{
-                margin: '1rem auto 0',
-                height: '1px',
-                width: '56px',
-                background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.6), transparent)',
-              }}
-            />
+            <div style={{ margin: '1rem auto 0', height: '2px', width: '96px', background: 'linear-gradient(90deg, transparent, rgba(222, 170, 73, 0.6), transparent)' }} />
           </FadeInSection>
 
-          {/* Cards grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {featuredProducts.map((product, i) => (
-              <FadeInSection key={i} delay={i * 0.1}>
+              <FadeInSection key={i} delay={i * 0.1} className="h-full">
                 <Link
                   to={product.url}
-                  className="group block relative overflow-hidden rounded-2xl bg-white transition-all duration-500 hover:-translate-y-1"
-                  style={{
-                    border: '1px solid rgba(120,113,108,0.1)',
-                    boxShadow: '0 2px 12px rgba(0,0,0,0.04)',
-                  }}
-                  onMouseEnter={e => {
-                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = '0 20px 48px rgba(0,0,0,0.12)';
-                  }}
-                  onMouseLeave={e => {
-                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = '0 2px 12px rgba(0,0,0,0.04)';
-                  }}
+                  className="group flex flex-col h-full relative overflow-hidden rounded-xl transition-all duration-500 hover:-translate-y-1.5 m-2 border"
+                  style={{ background: 'linear-gradient(145deg, #112017 0%, #0c1410 100%)', border: '1px solid rgba(212,175,106,0.15)', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }}
                 >
-                  {/* Image */}
-                  <div className="relative overflow-hidden" style={{ aspectRatio: '4/3' }}>
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
-                    />
-                    {/* Gradient overlay on hover */}
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{ background: 'linear-gradient(to top, rgba(12,20,16,0.35) 0%, transparent 60%)' }}
-                    />
-                    {/* Tag pill */}
-                    <div
-                      className="absolute top-4 left-4"
-                      style={{
-                        padding: '0.3rem 0.85rem',
-                        borderRadius: '999px',
-                        fontSize: '0.6rem',
-                        fontWeight: 700,
-                        letterSpacing: '0.28em',
-                        textTransform: 'uppercase',
-                        background: 'rgba(12,20,16,0.72)',
-                        color: '#d4af6a',
-                        backdropFilter: 'blur(8px)',
-                        border: '1px solid rgba(212,175,106,0.22)',
-                      }}
-                    >
-                      {product.tag}
-                    </div>
+                  <div className="relative overflow-hidden" style={{ aspectRatio: '1/1' }}>
+                    <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 50%, #0c1410 100%)' }} />
+                    {product.tag && (
+                      <div className="absolute top-4 right-4">
+                        <span style={{ padding: '0.3rem 0.75rem', border: '1px solid rgba(212,175,106,0.4)', fontSize: '0.55rem', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#d4af6a', backdropFilter: 'blur(4px)', background: 'rgba(12,20,16,0.4)' }}>
+                          {product.tag}
+                        </span>
+                      </div>
+                    )}
                   </div>
 
-                  {/* Info */}
-                  <div style={{ padding: '1.5rem 1.6rem 1.6rem' }}>
-                    <p
-                      style={{
-                        fontSize: '0.6rem',
-                        fontWeight: 700,
-                        letterSpacing: '0.32em',
-                        textTransform: 'uppercase',
-                        color: '#a8a29e',
-                        marginBottom: '0.5rem',
-                      }}
-                    >
-                      {product.subtitle}
-                    </p>
-                    <h3
-                      style={{
-                        fontFamily: 'Georgia, serif',
-                        fontSize: '1.3rem',
-                        fontWeight: 700,
-                        color: '#292524',
-                        letterSpacing: '-0.01em',
-                        lineHeight: 1.2,
-                      }}
-                    >
-                      {product.title}
-                    </h3>
-                    <div
-                      className="mt-5 flex items-center gap-2 transition-colors group-hover:text-[#0a8c5e]"
-                      style={{
-                        fontSize: '0.6rem',
-                        fontWeight: 700,
-                        letterSpacing: '0.22em',
-                        textTransform: 'uppercase',
-                        color: '#292524',
-                      }}
-                    >
-                      {hp.featured.discover}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-                        className="transition-transform group-hover:translate-x-1"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                      </svg>
+                  <div className="relative z-10 flex flex-col flex-1" style={{ padding: '0 1.75rem 1.75rem', marginTop: '-1.5rem' }}>
+                    <div className="flex-1">
+                      <p style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: 'rgba(245,240,230,0.5)', marginBottom: '0.5rem' }}>
+                        {product.subtitle}
+                      </p>
+                      <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 600, color: '#f5f0e6', letterSpacing: '0.02em', lineHeight: 1.2 }}>
+                        {product.title}
+                      </h3>
+                    </div>
+                    <div className="mt-auto pt-6">
+                      <div className="flex items-center justify-between border-t border-[rgba(212,175,106,0.15)] pt-4">
+                        <span style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#d4af6a' }} className="transition-colors group-hover:text-white">
+                          {hp.featured.discover}
+                        </span>
+                        <div className="flex items-center justify-center w-8 h-8 rounded-full border border-[rgba(212,175,106,0.3)] text-[#d4af6a] transition-all duration-300 group-hover:bg-[#d4af6a] group-hover:text-[#0c1410]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-0.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -357,26 +228,10 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* View all CTA */}
           <FadeInSection className="text-center mt-12">
-            <Link
-              to="/catalog"
-              className="inline-flex items-center gap-3 rounded-full transition-all duration-300 hover:bg-[#292524] hover:text-white"
-              style={{
-                padding: '1rem 2.2rem',
-                border: '1px solid rgba(41,37,36,0.2)',
-                color: '#292524',
-                fontSize: '0.65rem',
-                fontWeight: 700,
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase',
-                backgroundColor: 'rgba(255, 255, 255, 0.55)',
-              }}
-            >
+            <Link to="/catalog" className="inline-flex items-center gap-3 rounded-full transition-all duration-300 hover:bg-[#292524] hover:text-white" style={{ padding: '1rem 2.2rem', border: '1px solid rgba(41,37,36,0.2)', color: '#292524', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', backgroundColor: 'rgba(255, 255, 255, 0.55)' }}>
               {hp.featured.viewAll}
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </Link>
           </FadeInSection>
         </div>
@@ -385,99 +240,39 @@ export default function HomePage() {
       {/* ── HERITAGE SECTION ───────────────────────────────────────────────── */}
       <section
         className="relative overflow-hidden py-28 px-6"
-        style={{ background: 'linear-gradient(160deg, #0c1410 0%, #0b2818 100%)' }}
+        style={{ 
+          // Reverse transition: Vibrant sage smoothly steps back down into the deepest green.
+          background: 'linear-gradient(180deg, #5c7e5c 0%, #3c6346 4%, #1b3826 8%, #0c1410 14%, #0b2818 100%)' 
+        }}
       >
-        {/* Large watermark text */}
-        <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
-        >
-          <span
-            style={{
-              fontFamily: 'Georgia, serif',
-              fontSize: 'clamp(7rem, 20vw, 18rem)',
-              fontWeight: 900,
-              color: 'rgba(212,175,106,0.03)',
-              letterSpacing: '-0.05em',
-              whiteSpace: 'nowrap',
-            }}
-          >
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+          <span style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(7rem, 20vw, 18rem)', fontWeight: 900, color: 'rgba(212,175,106,0.03)', letterSpacing: '-0.05em', whiteSpace: 'nowrap' }}>
             {hp.hero.ceylon}
           </span>
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <FadeInSection>
-            <p
-              style={{
-                fontSize: '0.6rem',
-                fontWeight: 700,
-                letterSpacing: '0.42em',
-                textTransform: 'uppercase',
-                color: 'rgba(212,175,106,0.55)',
-                marginBottom: '1.5rem',
-              }}
-            >
+            <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: 'rgba(212,175,106,0.55)', marginBottom: '1.5rem' }}>
               {hp.heritage.label}
             </p>
-            <h2
-              style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
-                fontWeight: 700,
-                color: '#f5f0e6',
-                lineHeight: 1.2,
-                letterSpacing: '-0.02em',
-              }}
-            >
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', fontWeight: 700, lineHeight: 1.2, letterSpacing: '-0.02em' }}>
               {hp.heritage.heading1}
               <br />
               <span style={{ color: '#d4af6a' }}>{hp.heritage.heading2}</span>
             </h2>
-
-            <div
-              style={{
-                margin: '1.5rem auto',
-                height: '1px',
-                width: '72px',
-                background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.5), transparent)',
-              }}
-            />
-
-            <p
-              style={{
-                color: 'rgba(245,240,230,0.5)',
-                fontSize: '0.92rem',
-                lineHeight: 1.95,
-                fontWeight: 300,
-                letterSpacing: '0.02em',
-                maxWidth: '520px',
-                margin: '0 auto',
-              }}
-            >
+            <div style={{ margin: '1.5rem auto', height: '1px', width: '72px', background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.5), transparent)' }} />
+            <p style={{ color: 'rgba(245,240,230,0.5)', fontSize: '0.92rem', lineHeight: 1.95, fontWeight: 300, letterSpacing: '0.02em', maxWidth: '520px', margin: '0 auto' }}>
               {hp.heritage.description}
             </p>
 
-            {/* Quality pillars */}
             <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10">
               {qualityPillars.map((label, i) => (
                 <React.Fragment key={i}>
-                  {i > 0 && (
-                    <span
-                      className="hidden sm:inline-block w-1 h-1 rotate-45"
-                      style={{ background: 'rgba(212,175,106,0.3)' }}
-                    />
-                  )}
+                  {i > 0 && <span className="hidden sm:inline-block w-1 h-1 rotate-45" style={{ background: 'rgba(212,175,106,0.3)' }} />}
                   <div className="flex items-center gap-2.5">
                     <span className="h-px w-7" style={{ background: 'rgba(212,175,106,0.4)' }} />
-                    <span
-                      style={{
-                        fontSize: '0.6rem',
-                        fontWeight: 700,
-                        letterSpacing: '0.32em',
-                        textTransform: 'uppercase',
-                        color: 'rgba(212,175,106,0.7)',
-                      }}
-                    >
+                    <span style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'rgba(212,175,106,0.7)' }}>
                       {label}
                     </span>
                   </div>
@@ -489,99 +284,42 @@ export default function HomePage() {
       </section>
 
       {/* ── SPICE COLLECTION ───────────────────────────────────────────────── */}
-      <section className="py-24 px-6" style={{ background: '#B8D4B8' }}>
+      <section 
+        className="py-24 px-6" 
+        style={{ 
+          // Injecting highly saturated olive/forest greens (#295232, #537a54) to step into the lighter spice background.
+          background: 'linear-gradient(180deg, #0b2818 0%, #295232 4%, #537a54 8%, #7e9c7e 14%, #7e9c7e 100%)' 
+        }}
+      >
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-            {/* Image side */}
             <FadeInSection>
-              <div
-                className="relative overflow-hidden rounded-2xl"
-                style={{ aspectRatio: '16/10' }}
-              >
-                <img
-                  src="/images/Spices/Spices Raw.jpg"
-                  alt={hp.spices.imageAlt}
-                  className="w-full h-full object-cover object-bottom"
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{ background: 'linear-gradient(135deg, rgba(12,20,16,0.5) 0%, transparent 65%)' }}
-                />
+              <div className="relative overflow-hidden rounded-2xl" style={{ aspectRatio: '16/10' }}>
+                <img src="/images/Spices/Spices Raw.jpg" alt={hp.spices.imageAlt} className="w-full h-full object-cover object-bottom" />
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(12,20,16,0.5) 0%, transparent 65%)' }} />
                 <div className="absolute bottom-5 left-5">
-                  <span
-                    style={{
-                      padding: '0.4rem 1rem',
-                      borderRadius: '999px',
-                      fontSize: '0.6rem',
-                      fontWeight: 700,
-                      letterSpacing: '0.32em',
-                      textTransform: 'uppercase',
-                      background: 'rgba(212,175,106,0.92)',
-                      color: '#0c1410',
-                    }}
-                  >
+                  <span style={{ padding: '0.4rem 1rem', borderRadius: '999px', fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.32em', textTransform: 'uppercase', background: 'rgba(212,175,106,0.92)', color: '#0c1410' }}>
                     {hp.spices.badge}
                   </span>
                 </div>
               </div>
             </FadeInSection>
 
-            {/* Text side */}
             <FadeInSection delay={0.12} className="flex flex-col gap-5 md:px-6">
-              <p
-                style={{
-                  fontSize: '0.6rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.42em',
-                  textTransform: 'uppercase',
-                  color: '#2e5c2e',
-                }}
-              >
+              <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#2e5c2e' }}>
                 {hp.spices.label}
               </p>
-              <h2
-                style={{
-                  fontFamily: 'Georgia, serif',
-                  fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)',
-                  fontWeight: 700,
-                  color: '#292524',
-                  letterSpacing: '-0.02em',
-                  lineHeight: 1.15,
-                }}
-              >
+              <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 700, color: '#292524', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
                 {hp.spices.heading1}
                 <br />
                 <span style={{ color: '#0a8c5e' }}>{hp.spices.heading2}</span>
               </h2>
-              <p
-                style={{
-                  color: '#1e3d1e',
-                  fontSize: '0.9rem',
-                  lineHeight: 1.95,
-                  fontWeight: 300,
-                }}
-              >
+              <p style={{ color: '#1e3d1e', fontSize: '0.9rem', lineHeight: 1.95, fontWeight: 300 }}>
                 {hp.spices.description}
               </p>
-              <Link
-                to="/spices"
-                className="self-start flex items-center gap-3 rounded-full transition-all duration-300 hover:scale-[1.03]"
-                style={{
-                  padding: '1rem 2rem',
-                  background: '#0b2818',
-                  color: '#d4af6a',
-                  border: '1px solid rgba(10,140,94,0.28)',
-                  fontSize: '0.65rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.22em',
-                  textTransform: 'uppercase',
-                }}
-              >
+              <Link to="/spices" className="self-start flex items-center gap-3 rounded-full transition-all duration-300 hover:scale-[1.03]" style={{ padding: '1rem 2rem', background: '#0b2818', color: '#d4af6a', border: '1px solid rgba(10,140,94,0.28)', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase' }}>
                 {hp.spices.cta}
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </FadeInSection>
           </div>
@@ -591,80 +329,28 @@ export default function HomePage() {
       {/* ── BRAND MANIFESTO ────────────────────────────────────────────────── */}
       <section
         className="relative overflow-hidden py-24 px-6"
-        style={{ background: 'linear-gradient(160deg, #0c1410 0%, #0b2818 55%, #0c1815 100%)' }}
+        style={{ 
+          // Reverse transition: Olive seamlessly fades back down into the dark, moody footer.
+          background: 'linear-gradient(180deg, #7e9c7e 0%, #466e4a 4%, #1a3821 8%, #0c1410 14%, #0c1815 100%)' 
+        }}
       >
-        {/* Large decorative quote mark */}
-        <div
-          className="absolute pointer-events-none select-none"
-          style={{
-            top: '1rem',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            fontFamily: 'Georgia, serif',
-            fontSize: 'clamp(10rem, 22vw, 18rem)',
-            fontWeight: 900,
-            lineHeight: 1,
-            color: 'rgba(212,175,106,0.04)',
-            userSelect: 'none',
-          }}
-        >
+        <div className="absolute pointer-events-none select-none" style={{ top: '1rem', left: '50%', transform: 'translateX(-50%)', fontFamily: 'Georgia, serif', fontSize: 'clamp(10rem, 22vw, 18rem)', fontWeight: 900, lineHeight: 1, color: 'rgba(212,175,106,0.04)' }}>
           "
         </div>
 
         <FadeInSection className="relative z-10 max-w-3xl mx-auto text-center">
-
-          {/* Thin top rule */}
-          <div
-            style={{
-              margin: '0 auto 2.5rem',
-              height: '1px',
-              width: '48px',
-              background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.55), transparent)',
-            }}
-          />
-
-          {/* Quote */}
-          <p
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 'clamp(1.45rem, 3.5vw, 2.35rem)',
-              fontWeight: 600,
-              color: '#f5f0e6',
-              lineHeight: 1.6,
-              letterSpacing: '-0.01em',
-              fontStyle: 'italic',
-            }}
-          >
+          <div style={{ margin: '0 auto 2.5rem', height: '1px', width: '48px', background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.55), transparent)' }} />
+          <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.45rem, 3.5vw, 2.35rem)', fontWeight: 600, lineHeight: 1.6, letterSpacing: '-0.01em', fontStyle: 'italic' }}>
             {hp.manifesto.quote}
           </p>
-
-          {/* Attribution */}
           <div className="mt-8 flex items-center justify-center gap-4">
             <span style={{ height: '1px', width: '32px', background: 'rgba(212,175,106,0.25)', display: 'inline-block' }} />
-            <span
-              style={{
-                fontSize: '0.6rem',
-                fontWeight: 700,
-                letterSpacing: '0.32em',
-                textTransform: 'uppercase',
-                color: 'rgba(212,175,106,0.5)',
-              }}
-            >
+            <span style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.32em', textTransform: 'uppercase', color: 'rgba(212,175,106,0.5)' }}>
               {hp.manifesto.attribution}
             </span>
             <span style={{ height: '1px', width: '32px', background: 'rgba(212,175,106,0.25)', display: 'inline-block' }} />
           </div>
-
-          {/* Thin bottom rule */}
-          <div
-            style={{
-              margin: '2.5rem auto 0',
-              height: '1px',
-              width: '48px',
-              background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.55), transparent)',
-            }}
-          />
-
+          <div style={{ margin: '2.5rem auto 0', height: '1px', width: '48px', background: 'linear-gradient(90deg, transparent, rgba(212,175,106,0.55), transparent)' }} />
         </FadeInSection>
       </section>
 
