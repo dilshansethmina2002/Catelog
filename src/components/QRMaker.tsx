@@ -14,7 +14,7 @@ const allItems = [
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const QRMaker: React.FC = () => {
-  const BASE_URL = "http://localhost:5173";
+  const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5173';
   const { t, language } = useLanguage();
 
   // ✅ QR Code එක PNG පින්තූරයක් ලෙස Download කිරීමේ Function එක
