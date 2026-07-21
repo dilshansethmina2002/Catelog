@@ -53,7 +53,7 @@ export default function HomePage() {
   const qualityPillars = hp.heritage.pillars;
 
   return (
-    <div className="relative bg-[#0c1410] text-[#f5f0e6]">
+    <div className="relative bg-[#080d0a] text-[#f5f0e6]">
       
       {/* ── GLOBAL NOISE TEXTURE OVERLAY ── 
           This eliminates color banding and makes gradients look incredibly rich and premium. */}
@@ -69,7 +69,8 @@ export default function HomePage() {
         className="relative flex flex-col items-center justify-center overflow-hidden"
         style={{
           minHeight: '100svh',
-          background: 'linear-gradient(180deg, #070d0a 0%, #0b2818 55%, #0c1815 100%)',
+          // Smoothed Hero Gradient: Deep charcoal-green to a rich emerald base
+          background: 'linear-gradient(180deg, #060b08 0%, #0a1c12 60%, #0c1815 100%)',
         }}
       >
         {/* Radial glow */}
@@ -109,7 +110,6 @@ export default function HomePage() {
 
         {/* Hero content */}
         <div className="relative z-10 flex flex-col items-center text-center px-6 pt-20 pb-20 sm:pt-24 sm:pb-24 md:pt-28 md:pb-28">
-          {/* Brand marker line */}
           <motion.div initial={{ opacity: 0, y: -16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex items-center gap-4 mb-10">
             <span className="h-px w-10 bg-[#d4af6a]/50" />
             <span style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: 'rgba(212,175,106,0.75)' }}>
@@ -118,7 +118,6 @@ export default function HomePage() {
             <span className="h-px w-10 bg-[#d4af6a]/50" />
           </motion.div>
 
-          {/* Main headline */}
           <motion.h1
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
@@ -166,16 +165,16 @@ export default function HomePage() {
       <section 
         className="py-24 px-6" 
         style={{ 
-          // Injecting highly saturated mid-tone greens (#1b3826, #3c6346) forces a beautiful, vivid transition instead of a muddy gray line.
-          background: 'linear-gradient(180deg, #0c1815 0%, #1b3826 4%, #3c6346 8%, #5c7e5c 14%, #5c7e5c 100%)' 
+          // Seamless transition from hero into a slightly brighter, mossy green base
+          background: 'linear-gradient(180deg, #0c1815 0%, #12281a 40%, #183323 100%)' 
         }}
       >
         <div className="max-w-6xl mx-auto">
           <FadeInSection className="text-center mb-16">
-            <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#2a2828', marginBottom: '1rem' }}>
+            <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#fafafa', marginBottom: '1rem' }}>
               {hp.featured.label}
             </p>
-            <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 700, color: '#292524', letterSpacing: '-0.02em' }}>
+            <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 700, color: '#d4af6a', letterSpacing: '-0.02em' }}>
               {hp.featured.heading}
             </h2>
             <div style={{ margin: '1rem auto 0', height: '2px', width: '96px', background: 'linear-gradient(90deg, transparent, rgba(222, 170, 73, 0.6), transparent)' }} />
@@ -187,7 +186,12 @@ export default function HomePage() {
                 <Link
                   to={product.url}
                   className="group flex flex-col h-full relative overflow-hidden rounded-xl transition-all duration-500 hover:-translate-y-1.5 m-2 border"
-                  style={{ background: 'linear-gradient(145deg, #112017 0%, #0c1410 100%)', border: '1px solid rgba(212,175,106,0.15)', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }}
+                  style={{ 
+                    // Card Gradient: Richer inner depth
+                    background: 'linear-gradient(145deg, #162e1e 0%, #0c1410 100%)', 
+                    border: '1px solid rgba(212,175,106,0.15)', 
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.15)' 
+                  }}
                 >
                   <div className="relative overflow-hidden" style={{ aspectRatio: '1/1' }}>
                     <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-90 group-hover:opacity-100" />
@@ -241,8 +245,8 @@ export default function HomePage() {
       <section
         className="relative overflow-hidden py-28 px-6"
         style={{ 
-          // Reverse transition: Vibrant sage smoothly steps back down into the deepest green.
-          background: 'linear-gradient(180deg, #5c7e5c 0%, #3c6346 4%, #1b3826 8%, #0c1410 14%, #0b2818 100%)' 
+          // Reverse Transition: Smoothly descends back into darker, moody charcoal tones
+          background: 'linear-gradient(180deg, #183323 0%, #0e1e15 50%, #09120c 100%)' 
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
@@ -287,8 +291,8 @@ export default function HomePage() {
       <section 
         className="py-24 px-6" 
         style={{ 
-          // Injecting highly saturated olive/forest greens (#295232, #537a54) to step into the lighter spice background.
-          background: 'linear-gradient(180deg, #0b2818 0%, #295232 4%, #537a54 8%, #7e9c7e 14%, #7e9c7e 100%)' 
+          // Spice Transition: Melds from charcoal green up to a warm, botanical olive
+          background: 'linear-gradient(180deg, #09120c 0%, #1a2c1d 40%, #2b3b27 100%)' 
         }}
       >
         <div className="max-w-6xl mx-auto">
@@ -306,15 +310,15 @@ export default function HomePage() {
             </FadeInSection>
 
             <FadeInSection delay={0.12} className="flex flex-col gap-5 md:px-6">
-              <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#2e5c2e' }}>
+              <p style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#d4af6a' }}>
                 {hp.spices.label}
               </p>
-              <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 700, color: '#292524', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 700, color: '#f5f0e6', letterSpacing: '-0.02em', lineHeight: 1.15 }}>
                 {hp.spices.heading1}
                 <br />
                 <span style={{ color: '#0a8c5e' }}>{hp.spices.heading2}</span>
               </h2>
-              <p style={{ color: '#1e3d1e', fontSize: '0.9rem', lineHeight: 1.95, fontWeight: 300 }}>
+              <p style={{ color: 'rgba(245,240,230,0.6)', fontSize: '0.9rem', lineHeight: 1.95, fontWeight: 300 }}>
                 {hp.spices.description}
               </p>
               <Link to="/spices" className="self-start flex items-center gap-3 rounded-full transition-all duration-300 hover:scale-[1.03]" style={{ padding: '1rem 2rem', background: '#0b2818', color: '#d4af6a', border: '1px solid rgba(10,140,94,0.28)', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase' }}>
@@ -330,8 +334,8 @@ export default function HomePage() {
       <section
         className="relative overflow-hidden py-24 px-6"
         style={{ 
-          // Reverse transition: Olive seamlessly fades back down into the dark, moody footer.
-          background: 'linear-gradient(180deg, #7e9c7e 0%, #466e4a 4%, #1a3821 8%, #0c1410 14%, #0c1815 100%)' 
+          // Footer Fade: From warm botanical olive beautifully trailing off into deep black-green
+          background: 'linear-gradient(180deg, #2b3b27 0%, #152218 50%, #070d0a 100%)' 
         }}
       >
         <div className="absolute pointer-events-none select-none" style={{ top: '1rem', left: '50%', transform: 'translateX(-50%)', fontFamily: 'Georgia, serif', fontSize: 'clamp(10rem, 22vw, 18rem)', fontWeight: 900, lineHeight: 1, color: 'rgba(212,175,106,0.04)' }}>

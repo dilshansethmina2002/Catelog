@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
       {/* MOBILE VIEW (Hidden on Desktop/Tablet)    */}
       {/* ========================================= */}
       <div className="block md:hidden py-10 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-3">
           
           {/* Brand Section */}
           <div className="flex flex-col items-center gap-3 text-center">
@@ -35,7 +35,10 @@ export const Footer: React.FC = () => {
             
             {/* Circle Icons Row */}
             <div className="flex justify-center items-center gap-4 sm:gap-6">
-              
+
+              <a href="mailto:atf@athukoralagroup.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-[#0a8c5e]/10 text-[#0a8c5e] rounded-full hover:bg-[#1877F2] hover:text-white transition-all duration-300" aria-label="Mail">
+                <Mail size={22} />
+              </a>
               <a href="https://web.facebook.com/athukorala.tea.1" target="_blank" rel="noopener noreferrer" className="p-3 bg-[#0a8c5e]/10 text-[#0a8c5e] rounded-full hover:bg-[#1877F2] hover:text-white transition-all duration-300" aria-label="Facebook">
                 <Facebook size={22} />
               </a>
@@ -53,10 +56,10 @@ export const Footer: React.FC = () => {
 
             {/* Email & Website with Text */}
             <div className="flex flex-col items-center gap-3 w-full mt-2">
-              <a href="mailto:atf@athukoralagroup.com" className="flex items-center justify-center gap-3 w-[260px] px-5 py-3 bg-[#0a8c5e]/10 text-[#0a8c5e] rounded-full hover:bg-[#0a8c5e] hover:text-white transition-all duration-300">
+              {/* <a href="mailto:atf@athukoralagroup.com" className="flex items-center justify-center gap-3 w-[260px] px-5 py-3 bg-[#0a8c5e]/10 text-[#0a8c5e] rounded-full hover:bg-[#0a8c5e] hover:text-white transition-all duration-300">
                 <Mail size={18} className="shrink-0" />
                 <span className="text-sm font-medium tracking-wide">atf@athukoralagroup.com</span>
-              </a>
+              </a> */}
               
               <a href="http://www.athukoralagroup.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 w-[260px] px-5 py-3 bg-[#0a8c5e]/10 text-[#0a8c5e] rounded-full hover:bg-lime-500 hover:text-white transition-all duration-300">
                 <Globe size={18} className="shrink-0" />
