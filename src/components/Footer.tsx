@@ -118,7 +118,7 @@ export const Footer: React.FC = () => {
               <li className="flex items-start justify-start gap-3 text-green-200/80 hover:text-white transition-colors">
                 <Phone size={18} className="text-[#0a8c5e] mt-0.5 shrink-0" />
                 <span className="text-sm text-left leading-relaxed font-medium">
-                  091-229 1123
+                  +94 91 229 1123
                 </span>
               </li>
               <li className="flex items-center justify-start gap-3 text-green-200/80 hover:text-white transition-colors">
