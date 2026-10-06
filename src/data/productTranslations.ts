@@ -1281,7 +1281,7 @@ export const productTranslations: ProductTranslations = {
     zh: { name: '脉轮茶 25g 袋装', description: '受阿育吠陀启发的草本红茶调配，旨在平衡您的内在能量、调和脉轮，抚慰心灵。' },
   },
   'tea-148': {
-    en: { name: 'Black Tea Flower 25g Pouch', description: 'A delicate and aromatic blend of premium Ceylon black tea enriched with natural edible flowers.' },
+    en: { name: 'Black Tea Flower 25g Pouch', description: 'An exquisite handcrafted Ceylon black tea, delicately sculpted into a graceful rose blossom. A unique expression of traditional tea craftsmanship, where every bloom is carefully shaped by hand.' },
     es: { name: 'Té Negro con Flores 25g Bolsa', description: 'Una mezcla delicada y aromática de té negro de Ceilán premium enriquecido con flores comestibles naturales.' },
     fr: { name: 'Thé Noir aux Fleurs 25g Pochette', description: 'Un mélange délicat et aromatique de thé noir de Ceylan premium enrichi de fleurs comestibles naturelles.' },
     it: { name: 'Tè Nero ai Fiori 25g Busta', description: 'Una miscela delicata e aromatica di tè nero di Ceylon premium arricchito con fiori commestibili naturali.' },
