@@ -1272,7 +1272,7 @@ export const productTranslations: ProductTranslations = {
     zh: { name: '香草茶 100g 盒', description: '浓郁香甜，宛如甜点般的茶饮。醇厚的锡兰红茶与天然香草的香甜、奶滑、暖心风味完美调配而成。' },
   },
   'tea-147': {
-    en: { name: 'Chakra Tea 25g Pouch', description: 'An Ayurvedic-inspired herbal and black tea blend designed to balance your inner energy, align your chakras, and soothe the soul.' },
+    en: { name: 'Chakra Tea 25g Pouch', description: 'An exquisite handcrafted Ceylon black tea, individually shaped into a refined Chakra-inspired ring. Meticulously formed by hand, each piece is a unique expression of traditional tea craftsmanship and timeless elegance.' },
     es: { name: 'Té Chakra 25g Bolsa', description: 'Una mezcla de té negro y hierbas inspirada en el Ayurveda, diseñada para equilibrar tu energía interior, alinear tus chakras y calmar el alma.' },
     fr: { name: 'Thé Chakra 25g Pochette', description: 'Un mélange de thé noir et de plantes inspiré de l\'Ayurveda, conçu pour équilibrer votre énergie intérieure, aligner vos chakras et apaiser l\'âme.' },
     it: { name: 'Tè Chakra 25g Busta', description: 'Una miscela di tè nero ed erbe di ispirazione ayurvedica, pensata per bilanciare la tua energia interiore, allineare i tuoi chakra e alleviare l\'anima.' },
