@@ -14,10 +14,10 @@ const TILT_SCALE_Y = Math.cos((TILT_DEG * Math.PI) / 180);
 const ZOOM_SCALE = 2.6;
 
 // BOOK_W is the full open-book spread width (two pages side by side); BOOK_H is a single page's height.
-const BOOK_W = 'clamp(800px, 88vw, 1400px)';
+const BOOK_W = 'clamp(300px, 92vw, 1400px)';
 // Closed-cover width — roughly one page's width, so the cover sits centered before the spread opens.
-const COVER_W = 'clamp(420px, 46vw, 700px)';
-const BOOK_H = 'clamp(460px, 80vh, 760px)';
+const COVER_W = 'clamp(220px, 68vw, 700px)';
+const BOOK_H = 'clamp(320px, 72vh, 760px)';
 
 // Cover + 5 inner pages. We flip through to the middle page (index 3), then pause there to write.
 const WRITING_PAGE_INDEX = 3;
@@ -382,9 +382,9 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
               width={440}
               height={610}
               size="stretch"
-              minWidth={400}
+              minWidth={140}
               maxWidth={700}
-              minHeight={420}
+              minHeight={220}
               maxHeight={760}
               startPage={0}
               drawShadow
