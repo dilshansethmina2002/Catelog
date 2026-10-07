@@ -89,19 +89,19 @@ function CoverPage({ showHint }: { showHint: boolean }) {
       <div className="absolute right-[22px] bottom-[14%] w-[26px] h-[26px] translate-y-[4px] rounded-full border-2 border-[#9c8249]/55" />
 
       {/* Emblem */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 sm:gap-6">
-        <div className="w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-[#e8dcb8] border-[3px] border-[#9c8249]/70 shadow-[0_0_25px_rgba(0,0,0,0.5)] flex items-center justify-center" style={{ boxShadow: '0 0 25px rgba(0,0,0,0.5), inset 0 0 20px rgba(100,80,40,0.25)' }}>
-          <img src={athuLogo} alt="Athukorala Tea" className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-contain opacity-90" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 sm:gap-7 px-3">
+        <div className="w-36 h-36 sm:w-44 sm:h-44 lg:w-48 lg:h-48 rounded-full bg-[#e8dcb8] border-[3px] border-[#9c8249]/70 shadow-[0_0_25px_rgba(0,0,0,0.5)] flex items-center justify-center" style={{ boxShadow: '0 0 25px rgba(0,0,0,0.5), inset 0 0 20px rgba(100,80,40,0.25)' }}>
+          <img src={athuLogo} alt="Athukorala Tea" className="w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 object-contain opacity-90" />
         </div>
 
-        <div className="flex items-center gap-3 sm:gap-4">
-          <span className="h-[1px] w-6 sm:w-10 bg-[#9c8249]/50 block" />
-          <span className="text-[#c9b483]/90 text-sm sm:text-lg lg:text-xl uppercase tracking-[0.3em] font-sans">
+        <div className="flex items-center justify-center gap-3 sm:gap-4 max-w-full">
+          <span className="h-[1px] w-5 sm:w-10 bg-[#9c8249]/50 block shrink-0" />
+          <span className="text-[#c9b483]/90 text-base sm:text-xl lg:text-2xl uppercase tracking-[0.25em] sm:tracking-[0.3em] font-sans whitespace-nowrap">
             Athukorala Tea
           </span>
-          <span className="h-[1px] w-6 sm:w-10 bg-[#9c8249]/50 block" />
+          <span className="h-[1px] w-5 sm:w-10 bg-[#9c8249]/50 block shrink-0" />
         </div>
-        <span className="text-[#c9b483]/55 text-sm sm:text-lg italic font-serif tracking-wide">
+        <span className="text-[#c9b483]/55 text-base sm:text-xl italic font-serif tracking-wide">
           The Tea Collection
         </span>
       </div>
@@ -196,7 +196,7 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
               type="button"
               aria-label="Enter the Athukorala Tea catalog"
               onClick={handleOpen}
-              className={`relative block ${stage === 'closed' ? 'cursor-pointer' : ''}`}
+              className={`relative block p-0 m-0 border-0 bg-transparent appearance-none ${stage === 'closed' ? 'cursor-pointer' : ''}`}
               style={{
                 width: COVER_W,
                 height: COVER_H,
