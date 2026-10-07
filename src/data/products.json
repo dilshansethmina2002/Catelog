@@ -2034,46 +2034,46 @@
     "ingredientImage": "/leaves/chakra-herbs.jpg",
     "ingredients": [
       {
-        "name": "Ceylon Tea Base",
-        "description": "Light black tea providing a gentle foundation."
+        "name": "Ceylon Black Tea",
+        "description": "High-grown whole tea leaves, hand-selected for the pliability needed to form each ring."
       },
       {
-        "name": "Ayurvedic Herbs",
-        "description": "A proprietary blend of holy basil, ginger, and soothing spices."
+        "name": "Hand-Rolled Craftsmanship",
+        "description": "No herbs or additives — each leaf is shaped entirely by hand into a symmetrical chakra ring."
       }
     ],
     "benefits": [
       {
-        "title": "Energy Balance",
-        "description": "Formulated to harmonize the mind and body."
+        "title": "Pure & Natural",
+        "description": "100% whole tea leaves, with no herbs, flavourings, or additives."
       },
       {
-        "title": "Stress Relief",
-        "description": "Adaptogenic herbs help reduce cortisol and anxiety."
+        "title": "Heart Health",
+        "description": "Black tea contains flavonoids beneficial for cardiovascular health."
       },
       {
-        "title": "Immune Defense",
-        "description": "Spices and herbs naturally fortify the immune system."
-      },
-      {
-        "title": "Detoxification",
-        "description": "Aids the liver and kidneys in natural detox processes."
-      },
-      {
-        "title": "Holistic Balance",
-        "description": "A curated floral blend crafted for whole-body balance."
-      },
-      {
-        "title": "Calming Aroma",
-        "description": "Delicate blossoms lend a naturally soothing fragrance to every cup."
+        "title": "Energy Lift",
+        "description": "A gentle, sustained caffeine release for focused energy."
       },
       {
         "title": "Antioxidant Rich",
-        "description": "Each edible flower contributes its own natural antioxidant compounds."
+        "description": "Packed with polyphenols that fight free radicals in the body."
       },
       {
-        "title": "Mood Lift",
-        "description": "A pretty, fragrant cup that offers a simple daily mood boost."
+        "title": "Mindful Ritual",
+        "description": "Watching the ring slowly unfurl offers a quiet, meditative moment with every steep."
+      },
+      {
+        "title": "Artisan Craftsmanship",
+        "description": "Each ring is shaped entirely by hand, a mark of traditional skill."
+      },
+      {
+        "title": "Visual Elegance",
+        "description": "Unfurls gracefully in the cup, as beautiful to watch as it is to drink."
+      },
+      {
+        "title": "Smooth & Balanced",
+        "description": "A naturally smooth-bodied black tea, gentle on the stomach."
       }
     ],
     "brewing": [
@@ -6018,7 +6018,7 @@
   {
     "id": "tea-204",
     "name": "Curry Leaves Flavoured Tea 50g Roll",
-    "description": "A distinctively Sri Lankan creation blending bold Ceylon black tea with aromatic, naturally therapeutic curry leaves. A savory, warming, and deeply comforting cup rooted in island tradition.",
+    "description": "A distinctively Sri Lankan creation blending delicate Ceylon green tea with aromatic, naturally therapeutic curry leaves. A savory, warming, and deeply comforting cup rooted in island tradition.",
     "price": "USD 14.00",
     "pack": "",
     "weight": "50g",
@@ -6026,8 +6026,8 @@
     "ingredientImage": "",
     "ingredients": [
       {
-        "name": "Ceylon Black Tea",
-        "description": "A robust Ceylon black tea base that pairs boldly with herbal notes."
+        "name": "Ceylon Green Tea",
+        "description": "A delicate Ceylon green tea base that pairs boldly with herbal notes."
       },
       {
         "name": "Dried Curry Leaves",
