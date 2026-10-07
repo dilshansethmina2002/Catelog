@@ -88,7 +88,7 @@ export function IngredientsSection() {
                   className="group border-b border-emerald-800 pb-6 sm:pb-8 last:border-0"
                 >
                   <div className="flex items-baseline gap-3 sm:gap-4 mb-2 sm:mb-3">
-                    <span className="text-amber-500 font-serif text-lg sm:text-xl italic">
+                    <span className="text-amber-500 font-serif font-bold text-2xl sm:text-3xl italic">
                       0{index + 1}
                     </span>
                     {/* மோபயில் மாத்ரிகா text-xl கர அத */}
