@@ -14,17 +14,17 @@ const TILT_SCALE_Y = Math.cos((TILT_DEG * Math.PI) / 180);
 const ZOOM_SCALE = 2.6;
 
 // BOOK_W is the full open-book spread width (two pages side by side); BOOK_H is a single page's height.
-const BOOK_W = 'clamp(300px, 92vw, 1400px)';
+const BOOK_W = 'clamp(300px, 92vw, 1520px)';
 // react-pageflip always renders a page at HALF of the container width it's given in
 // landscape/spread mode, even for a single "hard cover" page — it assumes a 2-page
 // stage exists even when only showing one side of it. So to get a cover that actually
 // *visually* measures COVER_VISIBLE_W, the container fed to the library must be double
 // that, and the resulting left-shift (the page sits in the container's left half) needs
 // a compensating negative margin to look centered.
-const COVER_VISIBLE_W = 'clamp(240px, 70vw, 700px)';
+const COVER_VISIBLE_W = 'clamp(290px, 84vw, 760px)';
 const COVER_W = `calc(${COVER_VISIBLE_W} * 2)`;
 const COVER_MARGIN = `calc(-1 * (${COVER_VISIBLE_W}) / 2)`;
-const BOOK_H = 'clamp(320px, 72vh, 760px)';
+const BOOK_H = 'clamp(360px, 78vh, 780px)';
 
 // Cover + 5 inner pages. We flip through to the middle page (index 3), then pause there to write.
 const WRITING_PAGE_INDEX = 3;
@@ -408,9 +408,9 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
               height={610}
               size="stretch"
               minWidth={140}
-              maxWidth={700}
+              maxWidth={760}
               minHeight={220}
-              maxHeight={760}
+              maxHeight={780}
               startPage={0}
               drawShadow
               flippingTime={2000}
