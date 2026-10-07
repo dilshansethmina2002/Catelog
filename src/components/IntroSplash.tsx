@@ -15,8 +15,15 @@ const ZOOM_SCALE = 2.6;
 
 // BOOK_W is the full open-book spread width (two pages side by side); BOOK_H is a single page's height.
 const BOOK_W = 'clamp(300px, 92vw, 1400px)';
-// Closed-cover width — roughly one page's width, so the cover sits centered before the spread opens.
-const COVER_W = 'clamp(220px, 68vw, 700px)';
+// react-pageflip always renders a page at HALF of the container width it's given in
+// landscape/spread mode, even for a single "hard cover" page — it assumes a 2-page
+// stage exists even when only showing one side of it. So to get a cover that actually
+// *visually* measures COVER_VISIBLE_W, the container fed to the library must be double
+// that, and the resulting left-shift (the page sits in the container's left half) needs
+// a compensating negative margin to look centered.
+const COVER_VISIBLE_W = 'clamp(240px, 70vw, 700px)';
+const COVER_W = `calc(${COVER_VISIBLE_W} * 2)`;
+const COVER_MARGIN = `calc(-1 * (${COVER_VISIBLE_W}) / 2)`;
 const BOOK_H = 'clamp(320px, 72vh, 760px)';
 
 // Cover + 5 inner pages. We flip through to the middle page (index 3), then pause there to write.
@@ -243,6 +250,23 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
     return () => clearTimeout(timer);
   }, [stage]);
 
+  // Mobile Safari/Chrome can let the page itself scroll behind a scaled-up
+  // fixed-position element instead of clipping it — lock body scroll for
+  // the whole intro so the zoom can't drag the viewport around.
+  useEffect(() => {
+    if (stage === 'done') return;
+    const prevOverflow = document.body.style.overflow;
+    const prevPosition = document.body.style.position;
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.body.style.position = prevPosition;
+      document.body.style.width = '';
+    };
+  }, [stage]);
+
   const bookOpen = stage !== 'closed';
   const tilted = stage !== 'closed';
   const zoomed = stage === 'zooming' || stage === 'revealing';
@@ -353,6 +377,7 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
             style={{
               width: stage === 'closed' ? COVER_W : BOOK_W,
               height: BOOK_H,
+              marginLeft: stage === 'closed' ? COVER_MARGIN : '0px',
               transformOrigin: '50% 46%',
             }}
             onClick={stage === 'closed' ? handleOpen : undefined}
@@ -369,7 +394,7 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
             <div
               className="absolute rounded-[50%] bg-black/50 blur-2xl"
               style={{
-                width: `calc(${stage === 'closed' ? COVER_W : BOOK_W} * 0.85)`,
+                width: `calc(${stage === 'closed' ? COVER_VISIBLE_W : BOOK_W} * 0.85)`,
                 height: '40px',
                 bottom: `calc(-1 * ${BOOK_H} * 0.05)`,
                 left: '50%',
