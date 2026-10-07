@@ -90,18 +90,18 @@ function CoverPage({ showHint }: { showHint: boolean }) {
 
       {/* Emblem */}
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 sm:gap-6">
-        <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-[#e8dcb8] border-[3px] border-[#9c8249]/70 shadow-[0_0_25px_rgba(0,0,0,0.5)] flex items-center justify-center" style={{ boxShadow: '0 0 25px rgba(0,0,0,0.5), inset 0 0 20px rgba(100,80,40,0.25)' }}>
-          <img src={athuLogo} alt="Athukorala Tea" className="w-14 h-14 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain opacity-90" />
+        <div className="w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-[#e8dcb8] border-[3px] border-[#9c8249]/70 shadow-[0_0_25px_rgba(0,0,0,0.5)] flex items-center justify-center" style={{ boxShadow: '0 0 25px rgba(0,0,0,0.5), inset 0 0 20px rgba(100,80,40,0.25)' }}>
+          <img src={athuLogo} alt="Athukorala Tea" className="w-16 h-16 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-contain opacity-90" />
         </div>
 
         <div className="flex items-center gap-3 sm:gap-4">
           <span className="h-[1px] w-6 sm:w-10 bg-[#9c8249]/50 block" />
-          <span className="text-[#c9b483]/90 text-xs sm:text-base lg:text-lg uppercase tracking-[0.3em] font-sans">
+          <span className="text-[#c9b483]/90 text-sm sm:text-lg lg:text-xl uppercase tracking-[0.3em] font-sans">
             Athukorala Tea
           </span>
           <span className="h-[1px] w-6 sm:w-10 bg-[#9c8249]/50 block" />
         </div>
-        <span className="text-[#c9b483]/55 text-xs sm:text-base italic font-serif tracking-wide">
+        <span className="text-[#c9b483]/55 text-sm sm:text-lg italic font-serif tracking-wide">
           The Tea Collection
         </span>
       </div>
@@ -163,7 +163,7 @@ export function IntroSplash({ children }: { children: React.ReactNode }) {
           >
             <span
               className="font-serif font-bold text-amber-100 whitespace-nowrap"
-              style={{ fontSize: '22vw', opacity: 0.045, letterSpacing: '0.02em' }}
+              style={{ fontSize: 'clamp(32px, 13vw, 380px)', opacity: 0.045, letterSpacing: '0.02em' }}
             >
               ATHUKORALA
             </span>
