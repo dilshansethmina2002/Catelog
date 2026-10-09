@@ -849,6 +849,14 @@ export const ingredientTranslations: Record<string, LangMap> = {
     ja: { name: '厳選セイロン紅茶', description: '優れた品質のために厳選されたセイロン紅茶の茶葉。' },
     zh: { name: '精选锡兰红茶', description: '精心挑选的优质锡兰红茶茶叶。' },
   },
+  'Hand-Rolled Craftsmanship': {
+    es: { name: 'Artesanía Enrollada a Mano', description: 'Sin hierbas ni aditivos: cada hoja se moldea enteramente a mano en un anillo simétrico de chakra.' },
+    fr: { name: 'Savoir-Faire Roulé à la Main', description: 'Sans herbes ni additifs : chaque feuille est façonnée entièrement à la main en un anneau chakra symétrique.' },
+    it: { name: 'Artigianato Modellato a Mano', description: 'Senza erbe né additivi: ogni foglia è modellata interamente a mano in un anello chakra simmetrico.' },
+    ru: { name: 'Мастерство Ручной Скрутки', description: 'Без трав и добавок — каждый лист вручную формируется в симметричное кольцо чакры.' },
+    ja: { name: '手作りの職人技', description: 'ハーブや添加物は一切使用せず、一枚一枚の葉を手作業で対称的なチャクラの輪に仕立てています。' },
+    zh: { name: '手工卷制工艺', description: '不含香草或添加剂——每片茶叶均完全手工塑形为对称的脉轮环。' },
+  },
 };
 
 export const spiceBenefitTranslations: Record<string, Partial<Record<'es'|'fr'|'it'|'ru'|'ja'|'zh', string>>> = {
