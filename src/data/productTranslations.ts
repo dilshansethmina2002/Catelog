@@ -1739,15 +1739,6 @@ export const productTranslations: ProductTranslations = {
     ja: { name: 'シングルエステート BOPF スペシャル 400g パウチ', description: 'プレミアムなブロークン・オレンジペコー・ファニングス・スペシャルグレードのセイロンティー。細かく砕かれた茶葉が、力強く濃厚で深い色合いの一杯を生み出し、キレのあるフルボディな味わいが楽しめます。濃い朝の一杯を好む方に最適です。' },
     zh: { name: '单一庄园 BOPF特级 400g 袋装', description: '优质特级碎橙黄白毫芬宁锡兰红茶。细碎茶叶冲泡出浓郁醇厚、色泽深邃的茶汤，口感爽利饱满——特别适合钟爱浓烈晨茶的您。' },
   },
-  'tea-199': {
-    en: { name: 'Single Estate Premium BOPF Special 400g Pouch', description: 'A premium Broken Orange Pekoe Fannings Special grade Ceylon tea. Finely broken leaves that brew a bold, rich, deep-coloured cup with a brisk, full-bodied flavour — ideal for those who love a strong morning tea.' },
-    es: { name: 'BOPF Especial Premium de Finca Única 400g Bolsa', description: 'Un té de Ceilán premium de grado especial Broken Orange Pekoe Fannings (BOPF). Hojas finamente quebradas que producen una infusión intensa, rica y de color profundo, con un sabor vigoroso y de cuerpo completo, ideal para quienes aman un té matutino fuerte.' },
-    fr: { name: 'BOPF Spécial Premium de Domaine Unique 400g Pochette', description: 'Un thé de Ceylan premium de grade spécial Broken Orange Pekoe Fannings (BOPF). Des feuilles finement brisées qui infusent une tasse audacieuse, riche et de couleur profonde, avec une saveur vive et corsée — idéal pour les amateurs de thé matinal corsé.' },
-    it: { name: 'BOPF Speciale Premium di Tenuta Unica 400g Busta', description: 'Un tè di Ceylon premium di grado speciale Broken Orange Pekoe Fannings (BOPF). Foglie finemente spezzate che regalano una tazza intensa, ricca e dal colore profondo, con un sapore deciso e corposo — ideale per chi ama un tè del mattino forte.' },
-    ru: { name: 'Премиальный BOPF Спешл с Единой Плантации 400g Пакет', description: 'Премиальный цейлонский чай специального сорта Broken Orange Pekoe Fannings (BOPF). Мелко скрученные листья дают крепкий, насыщенный напиток глубокого цвета с бодрящим, полнотелым вкусом — идеально для тех, кто любит крепкий утренний чай.' },
-    ja: { name: 'シングルエステート プレミアム BOPFスペシャル 400g パウチ', description: 'プレミアムなブロークン・オレンジ・ペコー・ファニングス（BOPF）スペシャルグレードのセイロンティー。細かく砕かれた茶葉が、濃厚で深い色合い、そしてキレのある力強い風味を生み出します。しっかりとした朝のお茶を好む方に最適です。' },
-    zh: { name: '单一庄园特级BOPF 400g 袋装', description: '特级碎橙白毫芬宁（BOPF）等级锡兰茶。细碎的茶叶冲泡出浓郁、醇厚、色泽深邃的茶汤，口感强劲饱满——特别适合喜爱浓烈晨茶的您。' },
-  },
   'tea-200': {
     en: { name: 'Slim Beauty Black Tea 100g Pouch', description: 'A specialized wellness black tea crafted for beauty and body management. A luxurious blend of Ceylon black tea with detoxifying herbs and metabolism-boosting botanicals.' },
     es: { name: 'Té Negro Belleza Esbelta 100g Bolsa', description: 'Un té negro de bienestar especializado, creado para la belleza y el control corporal. Una lujosa mezcla de té negro de Ceilán con hierbas desintoxicantes y botánicos que estimulan el metabolismo.' },

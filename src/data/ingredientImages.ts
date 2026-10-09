@@ -248,7 +248,6 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-196": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate BOPF Sp 400g Pouch
   "tea-197": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate BOPF Special 200g Pouch
   "tea-198": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate BOPF Special 400g Pouch
-  "tea-199": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate Premium BOPF Special 400g Pouch
   "tea-200": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty Black Tea 100g Pouch
   "tea-201": "/images_of_products_ingredients/All vita glow products .jpg", // Vita Glow Tea 25g Pouch
   "tea-202": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Pouch
