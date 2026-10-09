@@ -769,6 +769,22 @@ export const ingredientTranslations: Record<string, LangMap> = {
     ja: { name: 'サワーソップの葉と果実', description: '抗酸化特性を持つサワーソップ（Annona muricata）の葉と果実エキス。' },
     zh: { name: '刺果番荔枝叶和果实', description: '具有抗氧化特性的刺果番荔枝（Annona muricata）叶和果实提取物。' },
   },
+  'Soursop Extract': {
+    es: { name: 'Extracto de Guanábana', description: 'Extracto natural de guanábana (graviola) con un sabor tropical naturalmente dulce.' },
+    fr: { name: 'Extrait de Corossol', description: 'Extrait naturel de corossol (graviola) à la saveur tropicale naturellement sucrée.' },
+    it: { name: 'Estratto di Graviola', description: 'Estratto naturale di graviola (guanabana) dal sapore tropicale naturalmente dolce.' },
+    ru: { name: 'Экстракт Саусепа', description: 'Натуральный экстракт саусепа (гравиолы) с природно сладким тропическим вкусом.' },
+    ja: { name: 'サワーソップエキス', description: '自然な甘さとトロピカルな風味を持つ、天然のサワーソップ（グラビオラ）エキス。' },
+    zh: { name: '刺果番荔枝提取物', description: '天然刺果番荔枝（红毛榴莲）提取物，带有天然香甜的热带风味。' },
+  },
+  'Soursop Cut': {
+    es: { name: 'Guanábana Cortada', description: 'Trozos de fruta de guanábana deshidratada y cortada que aportan textura y sabor naturales.' },
+    fr: { name: 'Corossol Coupé', description: 'Morceaux de corossol séché et coupé apportant une texture et une saveur naturelles.' },
+    it: { name: 'Graviola Tagliata', description: 'Pezzi di frutto di graviola essiccato e tagliato che aggiungono consistenza e sapore naturali.' },
+    ru: { name: 'Нарезанный Саусеп', description: 'Сушёные нарезанные кусочки плода саусепа, придающие натуральную текстуру и вкус.' },
+    ja: { name: 'カットサワーソップ', description: '自然な食感と風味を加える、乾燥させてカットしたサワーソップ果実片。' },
+    zh: { name: '刺果番荔枝果粒', description: '干燥切块的刺果番荔枝果肉，增添天然口感与风味。' },
+  },
   'Special BOPF Tea': {
     es: { name: 'Té BOPF Especial', description: 'Broken Orange Pekoe Fannings de grado especial de Ceilán.' },
     fr: { name: 'Thé BOPF Spécial', description: 'Broken Orange Pekoe Fannings de grade spécial de Ceylan.' },

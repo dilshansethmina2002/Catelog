@@ -1882,7 +1882,7 @@
   {
     "id": "tea-145",
     "name": "Soursop Tea 100g Box",
-    "description": "A tropical wellness fusion of premium Ceylon tea with the exotic Soursop (Graviola) fruit and leaf. Naturally sweet with a tropical character, this is a deeply nourishing infusion celebrated for its remarkable health properties.",
+    "description": "A tropical wellness fusion of premium Ceylon tea with the exotic Soursop (Graviola) fruit. Naturally sweet with a tropical character, this is a deeply nourishing infusion celebrated for its remarkable health properties.",
     "price": "USD 20.00",
     "pack": "",
     "weight": "100g",
@@ -1894,8 +1894,12 @@
         "description": "A smooth Ceylon green tea base with natural depth and character."
       },
       {
-        "name": "Soursop Leaf & Fruit",
-        "description": "Dried Graviola (soursop) leaf and fruit pieces with a naturally sweet tropical flavour."
+        "name": "Soursop Extract",
+        "description": "Natural Graviola (soursop) extract for a naturally sweet tropical flavour."
+      },
+      {
+        "name": "Soursop Cut",
+        "description": "Dried, cut soursop fruit pieces adding natural texture and taste."
       }
     ],
     "benefits": [
@@ -1917,7 +1921,7 @@
       },
       {
         "title": "Vitamin C Rich",
-        "description": "Soursop leaf and fruit are a natural source of vitamin C."
+        "description": "Soursop extract and fruit are a natural source of vitamin C."
       },
       {
         "title": "Antioxidant Rich",
@@ -7197,7 +7201,7 @@
       },
       {
         "title": "Relaxation",
-        "description": "Soursop leaf is traditionally taken as a calming evening infusion."
+        "description": "Soursop extract is traditionally taken as a calming evening infusion."
       },
       {
         "title": "Skin Radiance",

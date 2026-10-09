@@ -3533,13 +3533,13 @@ export const benefitTranslations: Record<string, LangMap> = {
     ja: { title: '快適な消化', description: '食後に少しずつ味わうことで、胃を落ち着かせる伝統的な飲み方があります。' },
     zh: { title: '肠胃舒适', description: '传统上饭后小口饮用,有助于舒缓肠胃。' },
   },
-  'Vitamin C Rich|||Soursop leaf and fruit are a natural source of vitamin C.': {
-    es: { title: 'Rica en Vitamina C', description: 'Las hojas y el fruto de la guanábana son una fuente natural de vitamina C.' },
-    fr: { title: 'Riche en Vitamine C', description: 'Les feuilles et le fruit du corossol sont une source naturelle de vitamine C.' },
-    it: { title: 'Ricca di Vitamina C', description: 'Le foglie e il frutto della graviola sono una fonte naturale di vitamina C.' },
-    ru: { title: 'Источник витамина C', description: 'Листья и плоды саусепа — природный источник витамина C.' },
-    ja: { title: 'ビタミンC豊富', description: 'ソウルソップの葉と果実は、天然のビタミンC源です。' },
-    zh: { title: '富含维生素C', description: '刺果番荔枝的叶片与果实是天然维生素C的来源。' },
+  'Vitamin C Rich|||Soursop extract and fruit are a natural source of vitamin C.': {
+    es: { title: 'Rica en Vitamina C', description: 'El extracto y el fruto de la guanábana son una fuente natural de vitamina C.' },
+    fr: { title: 'Riche en Vitamine C', description: "L'extrait et le fruit du corossol sont une source naturelle de vitamine C." },
+    it: { title: 'Ricca di Vitamina C', description: "L'estratto e il frutto della graviola sono una fonte naturale di vitamina C." },
+    ru: { title: 'Источник витамина C', description: 'Экстракт и плоды саусепа — природный источник витамина C.' },
+    ja: { title: 'ビタミンC豊富', description: 'サワーソップのエキスと果実は、天然のビタミンC源です。' },
+    zh: { title: '富含维生素C', description: '刺果番荔枝的提取物与果实是天然维生素C的来源。' },
   },
   'Antioxidant Rich|||Packed with plant compounds that help fight everyday oxidative stress.': {
     es: { title: 'Rica en Antioxidantes', description: 'Repleta de compuestos vegetales que ayudan a combatir el estrés oxidativo diario.' },
@@ -4165,13 +4165,13 @@ export const benefitTranslations: Record<string, LangMap> = {
     ja: { title: '肌の輝き', description: '抗酸化植物成分が、自然で健やかな輝く肌をサポートします。' },
     zh: { title: '肌肤光采', description: '抗氧化植物成分有助于呈现自然健康、容光焕发的肌肤。' },
   },
-  'Relaxation|||Soursop leaf is traditionally taken as a calming evening infusion.': {
-    es: { title: 'Relajación', description: 'La hoja de guanábana se toma tradicionalmente como una infusión calmante para la noche.' },
-    fr: { title: 'Relaxation', description: 'La feuille de corossol est traditionnellement infusée le soir pour ses vertus apaisantes.' },
-    it: { title: 'Relax', description: 'La foglia di graviola è tradizionalmente utilizzata come infusione calmante serale.' },
-    ru: { title: 'Расслабление', description: 'Лист саусепа традиционно заваривают как успокаивающий вечерний напиток.' },
-    ja: { title: 'リラックス', description: 'サワーソップの葉は、心を落ち着かせる夜のお茶として伝統的に飲まれてきました。' },
-    zh: { title: '舒缓放松', description: '刺果番荔枝叶传统上用于冲泡舒缓身心的晚间茶饮。' },
+  'Relaxation|||Soursop extract is traditionally taken as a calming evening infusion.': {
+    es: { title: 'Relajación', description: 'El extracto de guanábana se toma tradicionalmente como una infusión calmante para la noche.' },
+    fr: { title: 'Relaxation', description: 'L\'extrait de corossol est traditionnellement infusé le soir pour ses vertus apaisantes.' },
+    it: { title: 'Relax', description: "L'estratto di graviola è tradizionalmente utilizzato come infusione calmante serale." },
+    ru: { title: 'Расслабление', description: 'Экстракт саусепа традиционно заваривают как успокаивающий вечерний напиток.' },
+    ja: { title: 'リラックス', description: 'サワーソップのエキスは、心を落ち着かせる夜のお茶として伝統的に飲まれてきました。' },
+    zh: { title: '舒缓放松', description: '刺果番荔枝提取物传统上用于冲泡舒缓身心的晚间茶饮。' },
   },
   'Skin Radiance|||Antioxidants support a naturally healthy-looking complexion.': {
     es: { title: 'Piel Radiante', description: 'Los antioxidantes favorecen un cutis de aspecto naturalmente saludable.' },
