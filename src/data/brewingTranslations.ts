@@ -285,4 +285,12 @@ export const brewingTranslations: Record<string, LangMap> = {
     ja: { title: 'お湯を温める', description: '新鮮な水を80°C（176°F）まで温めます。完全に沸騰させないでください — 高温は繊細なピンクティーの葉を傷めます。' },
     zh: { title: '加热水', description: '将新鲜水加热至80°C（176°F）。切勿完全煮沸——高温会损伤精致的粉茶叶。' },
   },
+  'Add Tea|||Add 1 tea bag per cup.': {
+    es: { title: 'Añadir Té', description: 'Añada 1 bolsita de té por taza.' },
+    fr: { title: 'Ajouter le Thé', description: 'Ajoutez 1 sachet de thé par tasse.' },
+    it: { title: 'Aggiungere il Tè', description: 'Aggiungere 1 bustina di tè per tazza.' },
+    ru: { title: 'Добавить Чай', description: 'Добавьте 1 чайный пакетик на чашку.' },
+    ja: { title: '茶葉を入れる', description: 'ティーバッグを1杯につき1個入れます。' },
+    zh: { title: '投茶', description: '每杯加入1个茶包。' },
+  },
 };

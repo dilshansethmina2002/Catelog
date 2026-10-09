@@ -101,7 +101,7 @@ const sections: CinematicSection[] = [
   { id: 75, title: "Premium OPA Ceylon Tea 50g Pouch", subtitle: "Premium & Pure", image: "/images/Tea Packets/Premium OPA Ceylon Tea Packet  50g.jpg", productName: "Heritage Estates", url: "/product/tea-191" },
   { id: 76, title: "Premium Silver Tips 20g Pouch", subtitle: "Rare & Silver", image: "/images/Tea Packets/Premium Silver Tips Tea Packet  20g.jpg", productName: "Artisan Reserve", url: "/product/tea-192" },
   { id: 77, title: "Premium Silver Tips 40g Pouch", subtitle: "Rare & Precious", image: "/images/Tea Packets/Premium Silver Tips Tea Packet  40g.jpg", productName: "Artisan Reserve", url: "/product/tea-193" },
-  { id: 27, title: "AT SP BLACK TEA 25 TEA BAGS", subtitle: "Boxed & Gift-Ready", image: "/images/Tea Boxes/Premium Taste Tea Box 50g.jpg", productName: "Boxed Collection", url: "/product/tea-143" },
+  { id: 27, title: "AT SP Black Tea 25 Tea Bags", subtitle: "Boxed & Gift-Ready", image: "/images/Tea Boxes/Premium Taste Tea Box 50g.jpg", productName: "Boxed Collection", url: "/product/tea-143" },
   { id: 78, title: "Purple Tea 100g Pouch", subtitle: "Rare & Artisan", image: "/images/Tea Packets/Purple Tea Packet 100g.jpg", productName: "Artisan Reserve", url: "/product/tea-194" },
   { id: 100, title: "Purple Tea 50g Roll", subtitle: "Rare & Artisan", image: "/images/Tea Tin Products/Purple Tea Tin 50g.jpg", productName: "Artisan Reserve", url: "/product/tea-216" },
   { id: 1, title: "Rose Tea 100g Box", subtitle: "Aromatic & Delicate", image: "/images/Tea Boxes/Rose Tea Box 100g.jpg", productName: "Botanical Infusions", url: "/product/tea-144" },
