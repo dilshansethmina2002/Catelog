@@ -338,12 +338,12 @@ export const ingredientTranslations: Record<string, LangMap> = {
     zh: { name: '大师茶混合', description: '由我们的首席调茶师精心调配的独家混合茶。' },
   },
   "Master's Green Tea Blend": {
-    es: { name: 'Mezcla de Té Verde del Maestro', description: 'Una mezcla exclusiva de hojas de té verde de Ceilán de gran altitud, creada por nuestros maestros mezcladores.' },
-    fr: { name: 'Mélange de Thé Vert du Maître', description: 'Un mélange exclusif de feuilles de thé vert de Ceylan de haute altitude, créé par nos maîtres mélangeurs.' },
-    it: { name: 'Miscela di Tè Verde del Maestro', description: "Una miscela esclusiva di foglie di tè verde di Ceylon d'alta quota, creata dai nostri maestri miscelatori." },
-    ru: { name: 'Зелёный Купаж Мастера', description: 'Эксклюзивный купаж высокогорных цейлонских зелёных чайных листьев, созданный нашими мастерами чаеразвески.' },
-    ja: { name: 'マスターズ・グリーンティーブレンド', description: '高地産セイロン緑茶の茶葉を使用した、当社マスターブレンダーによる独占的なブレンド。' },
-    zh: { name: '大师绿茶混合', description: '由我们的首席调茶师精心调配的高海拔锡兰绿茶独家混合茶。' },
+    es: { name: 'Mezcla de Té Verde del Maestro', description: 'Una mezcla exclusiva de hojas de té verde de Ceilán de baja altitud, creada por nuestros maestros mezcladores.' },
+    fr: { name: 'Mélange de Thé Vert du Maître', description: 'Un mélange exclusif de feuilles de thé vert de Ceylan de basse altitude, créé par nos maîtres mélangeurs.' },
+    it: { name: 'Miscela di Tè Verde del Maestro', description: "Una miscela esclusiva di foglie di tè verde di Ceylon di bassa quota, creata dai nostri maestri miscelatori." },
+    ru: { name: 'Зелёный Купаж Мастера', description: 'Эксклюзивный купаж низкогорных цейлонских зелёных чайных листьев, созданный нашими мастерами чаеразвески.' },
+    ja: { name: 'マスターズ・グリーンティーブレンド', description: '低地産セイロン緑茶の茶葉を使用した、当社マスターブレンダーによる独占的なブレンド。' },
+    zh: { name: '大师绿茶混合', description: '由我们的首席调茶师精心调配的低海拔锡兰绿茶独家混合茶。' },
   },
   'Mixed Edible Flowers': {
     es: { name: 'Flores Comestibles Mixtas', description: 'Surtido de pétalos de flores comestibles naturales seleccionados.' },
