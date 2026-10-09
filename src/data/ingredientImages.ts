@@ -176,7 +176,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-124": "/images_of_products_ingredients/Black tea with gotukola products.jpg", // Black Tea with Gotukola 50g Box
   "tea-125": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg", // Black Tea with Heen Bovitiya 50g Box
   "tea-126": "/images_of_products_ingredients/black tea with moringa products.jpg", // Black Tea with Moringa 50g Box
-  "tea-127": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Pitigala BOPF Sp 200g Box
+  "tea-127": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Pitigala BOPF Sp 100 Tea Bags
   "tea-128": "/images_of_products_ingredients/All cinnamon flavoured tea products .jpg", // Cinnamon Tea 100g Box
   "tea-129": "/images_of_products_ingredients/all earlygray tea products.jpg", // Earl Grey 100g Box
   "tea-130": "/images_of_products_ingredients/all FBOP tea products .jpg", // FBOP 100g Box

@@ -95,7 +95,7 @@ const sections: CinematicSection[] = [
   { id: 71, title: "PEKOE 200g Pouch", subtitle: "Rich & Malty", image: "/images/Tea Packets/PEKOE Tea Packet 200g.jpg", productName: "Heritage Estates", url: "/product/tea-187" },
   { id: 99, title: "Pink Tea 25g Roll", subtitle: "Rare & Artisan", image: "/images/Tea Tin Products/Pink Tea Tin 25g.jpg", productName: "Artisan Reserve", url: "/product/tea-215" },
   { id: 72, title: "Pink Tea Single Estate Artisanal 25g Pouch", subtitle: "Single Estate & Rare", image: "/images/Tea Packets/Pink Tea Single Estate Artisanal Tea Packet  25g.jpg", productName: "Artisan Reserve", url: "/product/tea-188" },
-  { id: 11, title: "Pitigala BOPF Sp 200g Box", subtitle: "Brisk & Strong", image: "/images/Tea Boxes/BOPF SP Tea Box  200g.jpg", productName: "Ceylon Heritage", url: "/product/tea-127" },
+  { id: 11, title: "Pitigala BOPF Sp 100 Tea Bags", subtitle: "Brisk & Strong", image: "/images/Tea Boxes/BOPF SP Tea Box  200g.jpg", productName: "Ceylon Heritage", url: "/product/tea-127" },
   { id: 73, title: "Premium Golden Tips 20g Pouch", subtitle: "Rare & Precious", image: "/images/Tea Packets/Premium Golden Tips Tea Packet 20g.jpg", productName: "Artisan Reserve", url: "/product/tea-189" },
   { id: 74, title: "Premium Golden Tips 40g Pouch", subtitle: "Rare & Precious", image: "/images/Tea Packets/Premium Golden Tips Tea Packet 40g.jpg", productName: "Artisan Reserve", url: "/product/tea-190" },
   { id: 75, title: "Premium OPA Ceylon Tea 50g Pouch", subtitle: "Premium & Pure", image: "/images/Tea Packets/Premium OPA Ceylon Tea Packet  50g.jpg", productName: "Heritage Estates", url: "/product/tea-191" },
