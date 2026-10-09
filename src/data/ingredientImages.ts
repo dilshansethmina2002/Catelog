@@ -75,10 +75,10 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-029": "/images_of_products_ingredients/All OP1 tea products .jpg",
 
   // ── PEKOE ────────────────────────────────────────────────────────────────
-  "tea-012": "/images_of_products_ingredients/all PEKOE tea products.jpg",
-  "tea-034": "/images_of_products_ingredients/all PEKOE tea products.jpg",
-  "tea-050": "/images_of_products_ingredients/all PEKOE tea products.jpg",
-  "tea-108": "/images_of_products_ingredients/all PEKOE tea products.jpg",
+  "tea-012": "/images_of_products_ingredients/pekoe ingredient.jpg",
+  "tea-034": "/images_of_products_ingredients/pekoe ingredient.jpg",
+  "tea-050": "/images_of_products_ingredients/pekoe ingredient.jpg",
+  "tea-108": "/images_of_products_ingredients/pekoe ingredient.jpg",
 
   // ── Chakra Tea ───────────────────────────────────────────────────────────
   "tea-013": "/images_of_products_ingredients/CHAKRA tea products .jpg",
@@ -171,7 +171,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-119": "/images_of_products_ingredients/all OP tea products .jpg", // OP 100g Bag
   "tea-120": "/images_of_products_ingredients/All OP1 tea products .jpg", // OP1 100g Bag
   "tea-121": "/images_of_products_ingredients/all OPA tea products.jpg", // OPA 100g Bag
-  "tea-122": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 100g Bag
+  "tea-122": "/images_of_products_ingredients/pekoe ingredient.jpg", // PEKOE 100g Bag
   "tea-123": "/images_of_products_ingredients/Black tea with curry leaves products.jpg", // Black Tea with Curry Leaves 50g Box
   "tea-124": "/images_of_products_ingredients/Black tea with gotukola products.jpg", // Black Tea with Gotukola 50g Box
   "tea-125": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg", // Black Tea with Heen Bovitiya 50g Box
@@ -191,7 +191,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-139": "/images_of_products_ingredients/all OP tea products .jpg", // OP 200g Box
   "tea-140": "/images_of_products_ingredients/All OP1 tea products .jpg", // OP1 200g Box
   "tea-141": "/images_of_products_ingredients/all OPA tea products.jpg", // OPA 200g Box
-  "tea-142": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 200g Box
+  "tea-142": "/images_of_products_ingredients/pekoe ingredient.jpg", // PEKOE 200g Box
   "tea-143": "/images_of_products_ingredients/Ceylon premium tea products .jpg", // AT SP Black Tea 25 Tea Bags
   "tea-144": "/images_of_products_ingredients/ceylon rose black tea products .jpg", // Rose Tea 100g Box
   "tea-145": "/images_of_products_ingredients/soursop green tea ingredient images .jpeg", // Soursop Tea 100g Box
@@ -235,8 +235,8 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-183": "/images_of_products_ingredients/All OP1 tea products .jpg", // OP1 200g Pouch
   "tea-184": "/images_of_products_ingredients/all OPA tea products.jpg", // OPA 200g Pouch
   "tea-185": "/images_of_products_ingredients/all OPA tea products.jpg", // OPA Transparent 200g Pouch
-  "tea-186": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 100g Pouch
-  "tea-187": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 200g Pouch
+  "tea-186": "/images_of_products_ingredients/pekoe ingredient.jpg", // PEKOE 100g Pouch
+  "tea-187": "/images_of_products_ingredients/pekoe ingredient.jpg", // PEKOE 200g Pouch
   "tea-188": "/images_of_products_ingredients/pink tea ingredient products .jpg", // Pink Tea Single Estate Artisanal 25g Pouch
   "tea-189": "/images_of_products_ingredients/3_golden_tea_purple_leaves.jpg", // Premium Golden Tips 20g Pouch
   "tea-190": "/images_of_products_ingredients/3_golden_tea_purple_leaves.jpg", // Premium Golden Tips 40g Pouch
