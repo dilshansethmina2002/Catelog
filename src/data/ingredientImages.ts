@@ -47,11 +47,11 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-038": "/images_of_products_ingredients/ceylon rose black tea products .jpg",
 
   // ── BOPF / BOPF SP ───────────────────────────────────────────────────────
-  "tea-004": "/images_of_products_ingredients/BOPF sp.jpg",  // BOPF SP 200
+  "tea-004": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg",  // BOPF SP 200
   "tea-003": "/images_of_products_ingredients/BOPF.jpg",     // BOPF SP 400
-  "tea-005": "/images_of_products_ingredients/BOPF sp.jpg",  // BOPF SP TB
-  "tea-103": "/images_of_products_ingredients/BOPF sp.jpg",  // BOPF Special
-  "tea-100": "/images_of_products_ingredients/BOPF sp.jpg",  // Pure Ceylon Tea Single Estate BOPF Sp
+  "tea-005": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg",  // BOPF SP TB
+  "tea-103": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg",  // BOPF Special
+  "tea-100": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg",  // Pure Ceylon Tea Single Estate BOPF Sp
 
   // ── BOP products ─────────────────────────────────────────────────────────
   "tea-088": "/images_of_products_ingredients/all BOP products.jpg", // Ceylon Black Tea BOP
@@ -176,7 +176,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-124": "/images_of_products_ingredients/Black tea with gotukola products.jpg", // Black Tea with Gotukola 50g Box
   "tea-125": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg", // Black Tea with Heen Bovitiya 50g Box
   "tea-126": "/images_of_products_ingredients/black tea with moringa products.jpg", // Black Tea with Moringa 50g Box
-  "tea-127": "/images_of_products_ingredients/BOPF sp.jpg", // Pitigala BOPF Sp 200g Box
+  "tea-127": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Pitigala BOPF Sp 200g Box
   "tea-128": "/images_of_products_ingredients/All cinnamon flavoured tea products .jpg", // Cinnamon Tea 100g Box
   "tea-129": "/images_of_products_ingredients/all earlygray tea products.jpg", // Earl Grey 100g Box
   "tea-130": "/images_of_products_ingredients/all FBOP tea products .jpg", // FBOP 100g Box
@@ -244,10 +244,10 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-192": "/images_of_products_ingredients/silver tips tea .jpg", // Premium Silver Tips 20g Pouch
   "tea-193": "/images_of_products_ingredients/silver tips tea .jpg", // Premium Silver Tips 40g Pouch
   "tea-194": "/images_of_products_ingredients/purple tea products.jpg", // Purple Tea 100g Pouch
-  "tea-195": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate BOPF Sp 200g Pouch
-  "tea-196": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate BOPF Sp 400g Pouch
-  "tea-197": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate Premium BOPF Special 200g Pouch
-  "tea-198": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate Premium BOPF Special 400g Pouch
+  "tea-195": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate BOPF Sp 200g Pouch
+  "tea-196": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate BOPF Sp 400g Pouch
+  "tea-197": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate Premium BOPF Special 200g Pouch
+  "tea-198": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate Premium BOPF Special 400g Pouch
   "tea-200": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty Black Tea 100g Pouch
   "tea-201": "/images_of_products_ingredients/All vita glow products .jpg", // Vita Glow Tea 25g Pouch
   "tea-202": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Pouch
