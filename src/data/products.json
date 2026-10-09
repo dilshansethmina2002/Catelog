@@ -7170,8 +7170,12 @@
         "description": "A medium-bodied green tea that carries tropical fruit flavors beautifully."
       },
       {
-        "name": "Natural Soursop Flavoring",
+        "name": "Soursop Extract",
         "description": "Natural essence of soursop (Graviola) fruit for a creamy tropical sweetness."
+      },
+      {
+        "name": "Soursop Cut",
+        "description": "Dried, cut soursop fruit pieces adding natural texture and taste."
       }
     ],
     "benefits": [
