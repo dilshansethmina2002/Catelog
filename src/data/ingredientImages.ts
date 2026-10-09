@@ -238,22 +238,22 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-186": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 100g Pouch
   "tea-187": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 200g Pouch
   "tea-188": "/images_of_products_ingredients/pink tea ingredient products .jpg", // Pink Tea Single Estate Artisanal 25g Pouch
-  "tea-189": "/images_of_products_ingredients/golden tea products.jpg", // Premium Golden Tips 20g Pouch
-  "tea-190": "/images_of_products_ingredients/golden tea products.jpg", // Premium Golden Tips 40g Pouch
+  "tea-189": "/images_of_products_ingredients/3_golden_tea_purple_leaves.jpg", // Premium Golden Tips 20g Pouch
+  "tea-190": "/images_of_products_ingredients/3_golden_tea_purple_leaves.jpg", // Premium Golden Tips 40g Pouch
   "tea-191": "/images_of_products_ingredients/all OPA tea products.jpg", // Premium OPA Ceylon Tea 50g Pouch
-  "tea-192": "/images_of_products_ingredients/silver tips tea .jpg", // Premium Silver Tips 20g Pouch
-  "tea-193": "/images_of_products_ingredients/silver tips tea .jpg", // Premium Silver Tips 40g Pouch
-  "tea-194": "/images_of_products_ingredients/purple tea products.jpg", // Purple Tea 100g Pouch
+  "tea-192": "/images_of_products_ingredients/2_silver_tips_purple_leaves.jpg", // Premium Silver Tips 20g Pouch
+  "tea-193": "/images_of_products_ingredients/2_silver_tips_purple_leaves.jpg", // Premium Silver Tips 40g Pouch
+  "tea-194": "/images_of_products_ingredients/1_purple_tea_purple_leaves.jpg", // Purple Tea 100g Pouch
   "tea-195": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate BOPF Sp 200g Pouch
   "tea-196": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate BOPF Sp 400g Pouch
   "tea-197": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate Premium BOPF Special 200g Pouch
   "tea-198": "/images_of_products_ingredients/BOPF sp tea ingredient images .jpg", // Single Estate Premium BOPF Special 400g Pouch
-  "tea-200": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty Black Tea 100g Pouch
-  "tea-201": "/images_of_products_ingredients/All vita glow products .jpg", // Vita Glow Tea 25g Pouch
+  "tea-200": "/images_of_products_ingredients/4_slim_beauty_purple_leaves.jpg", // Slim Beauty Black Tea 100g Pouch
+  "tea-201": "/images_of_products_ingredients/5_vita_glow_purple_leaves.jpg", // Vita Glow Tea 25g Pouch
   "tea-202": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Pouch
   "tea-203": "/images_of_products_ingredients/Cardamon Flavoured tea products.jpg", // Cardamom 50g Roll
   "tea-204": "/images_of_products_ingredients/Green Tea Curry leaves products.jpeg", // Curry Leaves Flavoured Tea 50g Roll
-  "tea-205": "/images_of_products_ingredients/golden tea products.jpg", // Golden Tips 50g Roll
+  "tea-205": "/images_of_products_ingredients/3_golden_tea_purple_leaves.jpg", // Golden Tips 50g Roll
   "tea-206": "/images_of_products_ingredients/Black tea with gotukola products.jpg", // Gotukola Flavoured Tea 50g Roll
   "tea-207": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg", // Heen Bovitiya Flavoured Tea 50g Roll
   "tea-208": "/images_of_products_ingredients/all flavoured ceylon jasmine tea products .jpg", // Jasmine 50g Roll
@@ -264,10 +264,10 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-213": "/images_of_products_ingredients/all other moringa tea products .jpg", // Moringa Green Tea 40g Roll
   "tea-214": "/images_of_products_ingredients/all orange flavoured tea products .jpg", // Orange 50g Roll
   "tea-215": "/images_of_products_ingredients/pink tea ingredient products .jpg", // Pink Tea 25g Roll
-  "tea-216": "/images_of_products_ingredients/purple tea products.jpg", // Purple Tea 50g Roll
+  "tea-216": "/images_of_products_ingredients/1_purple_tea_purple_leaves.jpg", // Purple Tea 50g Roll
   "tea-217": "/images_of_products_ingredients/silver green tea products .jpg", // Silver Green Tea 50g Roll
-  "tea-218": "/images_of_products_ingredients/silver tips tea .jpg", // Silver Tips 50g Roll
-  "tea-219": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty 50g Roll
+  "tea-218": "/images_of_products_ingredients/2_silver_tips_purple_leaves.jpg", // Silver Tips 50g Roll
+  "tea-219": "/images_of_products_ingredients/4_slim_beauty_purple_leaves.jpg", // Slim Beauty 50g Roll
   "tea-220": "/images_of_products_ingredients/soursop green tea ingredient images .jpeg", // Soursop 50g Roll
   "tea-221": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Roll
 };
