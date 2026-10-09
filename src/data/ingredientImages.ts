@@ -253,7 +253,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-201": "/images_of_products_ingredients/All vita glow products .jpg", // Vita Glow Tea 25g Pouch
   "tea-202": "/images_of_products_ingredients/all white tea products.jpg", // White Tea 25g Pouch
   "tea-203": "/images_of_products_ingredients/Cardamon Flavoured tea products.jpg", // Cardamom 50g Roll
-  "tea-204": "/images_of_products_ingredients/Black tea with curry leaves products.jpg", // Curry Leaves Flavoured Tea 50g Roll
+  "tea-204": "/images_of_products_ingredients/Green Tea Curry leaves products.jpeg", // Curry Leaves Flavoured Tea 50g Roll
   "tea-205": "/images_of_products_ingredients/golden tea products.jpg", // Golden Tips 50g Roll
   "tea-206": "/images_of_products_ingredients/Black tea with gotukola products.jpg", // Gotukola Flavoured Tea 50g Roll
   "tea-207": "/images_of_products_ingredients/black tea with heenbovitiya products.jpg", // Heen Bovitiya Flavoured Tea 50g Roll
