@@ -2082,8 +2082,8 @@
     ],
     "brewing": [
       {
-        "title": "Heat Water",
-        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages the delicate hand-rolled ring."
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
@@ -2154,8 +2154,8 @@
     ],
     "brewing": [
       {
-        "title": "Heat Water",
-        "description": "Heat fresh water to 80°C (176°F). Do not fully boil — high heat damages the delicate hand-shaped blossom."
+        "title": "Boil Water",
+        "description": "Bring fresh water to a rolling boil at 100°C (212°F)."
       },
       {
         "title": "Add Tea",
