@@ -194,7 +194,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-142": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 200g Box
   "tea-143": "/images_of_products_ingredients/Ceylon premium tea products .jpg", // Premium Taste 50g Box
   "tea-144": "/images_of_products_ingredients/ceylon rose black tea products .jpg", // Rose Tea 100g Box
-  "tea-145": "/images_of_products_ingredients/all soursop tea products .jpg", // Soursop Tea 100g Box
+  "tea-145": "/images_of_products_ingredients/soursop green tea ingredient images .jpeg", // Soursop Tea 100g Box
   "tea-146": "/images_of_products_ingredients/all vanilla tea products.jpg", // Vanilla Tea 100g Box
   "tea-147": "/images_of_products_ingredients/CHAKRA tea products .jpg", // Chakra Tea 25g Pouch
   "tea-148": "/images_of_products_ingredients/black tea flower product.jpg", // Black Tea Flower 25g Pouch
@@ -269,6 +269,6 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-217": "/images_of_products_ingredients/silver green tea products .jpg", // Silver Green Tea 50g Roll
   "tea-218": "/images_of_products_ingredients/silver tips tea .jpg", // Silver Tips 50g Roll
   "tea-219": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty 50g Roll
-  "tea-220": "/images_of_products_ingredients/all soursop tea products .jpg", // Soursop 50g Roll
+  "tea-220": "/images_of_products_ingredients/soursop green tea ingredient images .jpeg", // Soursop 50g Roll
   "tea-221": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Roll
 };
