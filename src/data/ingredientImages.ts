@@ -183,7 +183,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-131": "/images_of_products_ingredients/FF Ex sp .jpg", // FBOPF Extra Special 100g Box
   "tea-132": "/images_of_products_ingredients/FF sp.jpg", // FBOPF Special 100g Box
   "tea-133": "/images_of_products_ingredients/all ginger flavoured tea products .jpg", // Ginger Tea 100g Box
-  "tea-134": "/images_of_products_ingredients/all greentea products .jpg", // AT SP Green Tea 25 Tea Bags
+  "tea-134": "/images_of_products_ingredients/green_tea_replaced.jpg", // AT SP Green Tea 25 Tea Bags
   "tea-135": "/images_of_products_ingredients/Ceylon hibiscus black tea products .jpg", // Hibiscus Tea 100g Box
   "tea-136": "/images_of_products_ingredients/all flavoured ceylon jasmine tea products .jpg", // Jasmine Tea 100g Box
   "tea-137": "/images_of_products_ingredients/all masala flavour products  .jpg", // Masala Tea 100g Box
@@ -230,7 +230,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-178": "/images_of_products_ingredients/flavoured ceylon caramel tea products .jpg", // Flavoured Ceylon Tea Caramel 125g Pouch
   "tea-179": "/images_of_products_ingredients/flavoured ceylon peach tea products .jpg", // Flavoured Ceylon Tea Peach 125g Pouch
   "tea-180": "/images_of_products_ingredients/all green lemon grass tea products .jpg", // Flavoured Green Tea Lemongrass 100g Pouch
-  "tea-181": "/images_of_products_ingredients/all greentea products .jpg", // Green Tea 200g Pouch
+  "tea-181": "/images_of_products_ingredients/green_tea_replaced.jpg", // Green Tea 200g Pouch
   "tea-182": "/images_of_products_ingredients/all OP tea products .jpg", // OP 200g Pouch
   "tea-183": "/images_of_products_ingredients/All OP1 tea products .jpg", // OP1 200g Pouch
   "tea-184": "/images_of_products_ingredients/all OPA tea products.jpg", // OPA 200g Pouch
