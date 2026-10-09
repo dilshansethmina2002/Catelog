@@ -4446,7 +4446,7 @@
   {
     "id": "tea-181",
     "name": "Green Tea 200g Pouch",
-    "description": "Our Signature Mystery Blend. A secret, exclusive combination of premium Ceylon black and green teas crafted by our master blenders.",
+    "description": "Our Signature Green Tea Blend. A secret, exclusive combination of premium Ceylon green teas crafted by our master blenders.",
     "price": "USD 10.00",
     "pack": "",
     "weight": "200g",
@@ -4454,8 +4454,8 @@
     "ingredientImage": "/leaves/signature-blend.jpg",
     "ingredients": [
       {
-        "name": "Master's Tea Blend",
-        "description": "A proprietary mix of high-grown black and green tea leaves."
+        "name": "Master's Green Tea Blend",
+        "description": "A proprietary mix of high-grown Ceylon green tea leaves."
       }
     ],
     "benefits": [
