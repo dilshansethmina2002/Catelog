@@ -125,8 +125,8 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-097": "/images_of_products_ingredients/all OPA tea products.jpg",
 
   // ── Pink Tea ─────────────────────────────────────────────────────────────
-  "tea-109": "/images_of_products_ingredients/all PINK tea products.jpg",
-  "tea-081": "/images_of_products_ingredients/all PINK tea products.jpg",
+  "tea-109": "/images_of_products_ingredients/pink tea ingredient products .jpg",
+  "tea-081": "/images_of_products_ingredients/pink tea ingredient products .jpg",
 
   // ── Premium Silver Tips ──────────────────────────────────────────────────
   "tea-085": "/images_of_products_ingredients/silver tips tea .jpg",
@@ -237,7 +237,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-185": "/images_of_products_ingredients/all OPA tea products.jpg", // OPA Transparent 200g Pouch
   "tea-186": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 100g Pouch
   "tea-187": "/images_of_products_ingredients/all PEKOE tea products.jpg", // PEKOE 200g Pouch
-  "tea-188": "/images_of_products_ingredients/all PINK tea products.jpg", // Pink Tea Single Estate Artisanal 25g Pouch
+  "tea-188": "/images_of_products_ingredients/pink tea ingredient products .jpg", // Pink Tea Single Estate Artisanal 25g Pouch
   "tea-189": "/images_of_products_ingredients/golden tea products.jpg", // Premium Golden Tips 20g Pouch
   "tea-190": "/images_of_products_ingredients/golden tea products.jpg", // Premium Golden Tips 40g Pouch
   "tea-191": "/images_of_products_ingredients/all OPA tea products.jpg", // Premium OPA Ceylon Tea 50g Pouch
@@ -263,7 +263,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-212": "/images_of_products_ingredients/black tea with moringa products.jpg", // Moringa Flavoured Tea 50g Roll
   "tea-213": "/images_of_products_ingredients/all other moringa tea products .jpg", // Moringa Green Tea 40g Roll
   "tea-214": "/images_of_products_ingredients/all orange flavoured tea products .jpg", // Orange 50g Roll
-  "tea-215": "/images_of_products_ingredients/all PINK tea products.jpg", // Pink Tea 25g Roll
+  "tea-215": "/images_of_products_ingredients/pink tea ingredient products .jpg", // Pink Tea 25g Roll
   "tea-216": "/images_of_products_ingredients/purple tea products.jpg", // Purple Tea 50g Roll
   "tea-217": "/images_of_products_ingredients/silver green tea products .jpg", // Silver Green Tea 50g Roll
   "tea-218": "/images_of_products_ingredients/silver tips tea .jpg", // Silver Tips 50g Roll
