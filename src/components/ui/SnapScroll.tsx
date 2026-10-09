@@ -105,7 +105,7 @@ const sections: CinematicSection[] = [
   { id: 78, title: "Purple Tea 100g Pouch", subtitle: "Rare & Artisan", image: "/images/Tea Packets/Purple Tea Packet 100g.jpg", productName: "Artisan Reserve", url: "/product/tea-194" },
   { id: 100, title: "Purple Tea 50g Roll", subtitle: "Rare & Artisan", image: "/images/Tea Tin Products/Purple Tea Tin 50g.jpg", productName: "Artisan Reserve", url: "/product/tea-216" },
   { id: 1, title: "Rose Tea 100g Box", subtitle: "Aromatic & Delicate", image: "/images/Tea Boxes/Rose Tea Box 100g.jpg", productName: "Botanical Infusions", url: "/product/tea-144" },
-  { id: 101, title: "Silver Green Tea 50g Roll", subtitle: "Pure & Silver", image: "/images/Tea Tin Products/Silver green tea Tin 50g.jpg", productName: "Artisan Reserve", url: "/product/tea-217" },
+  { id: 101, title: "Silver Green Tea 50g Roll", subtitle: "Pure & Silver", image: "/images/Tea Tin Products/silver green tea updated one .jpg", productName: "Artisan Reserve", url: "/product/tea-217" },
   { id: 102, title: "Silver Tips 50g Roll", subtitle: "Precious & Artisan", image: "/images/Tea Tin Products/Silver Tips Tea Tin 50g.jpg", productName: "Artisan Reserve", url: "/product/tea-218" },
   { id: 79, title: "Single Estate BOPF Sp 200g Pouch", subtitle: "Brisk & Strong", image: "/images/Tea Packets/Single Estate BOPF SP Tea Packet 200.jpg", productName: "Ceylon Heritage", url: "/product/tea-195" },
   { id: 80, title: "Single Estate BOPF Sp 400g Pouch", subtitle: "Single Estate & Bold", image: "/images/Tea Packets/Single Estate BOPF Sp Tea Packet 400g.jpg", productName: "Artisan Reserve", url: "/product/tea-196" },
