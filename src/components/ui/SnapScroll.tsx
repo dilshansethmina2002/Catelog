@@ -66,7 +66,7 @@ const sections: CinematicSection[] = [
   { id: 89, title: "Golden Tips 50g Roll", subtitle: "Rare & Precious", image: "/images/Tea Packets/04_golden_tips_can_purple_tea_estate.jpg", productName: "Artisan Reserve", url: "/product/tea-205" },
   { id: 90, title: "Gotukola Flavoured Tea 50g Roll", subtitle: "Wellness & Bold", image: "/images/Tea Tin Products/Gotukola Flavoured Tea Tin 50g.jpg", productName: "Ayurvedic Blend", url: "/product/tea-206" },
   { id: 65, title: "Green Tea 200g Pouch", subtitle: "Fresh & Pure", image: "/images/Tea Packets/Green Tea Packet 200g.jpg", productName: "Green Collection", url: "/product/tea-181" },
-  { id: 18, title: "Green Tea 50g Box", subtitle: "Clean & Refreshing", image: "/images/Tea Boxes/Green tea Box 50g.jpg", productName: "Green Collection", url: "/product/tea-134" },
+  { id: 18, title: "AT SP Green Tea 25 Tea Bags", subtitle: "Clean & Refreshing", image: "/images/Tea Boxes/Green tea Box 50g.jpg", productName: "Green Collection", url: "/product/tea-134" },
   { id: 91, title: "Heen Bovitiya Flavoured Tea 50g Roll", subtitle: "Herbal & Healing", image: "/images/Tea Tin Products/Heen Bovitiya Flavoured Tea Tin  50g.jpg", productName: "Wellness Collection", url: "/product/tea-207" },
   { id: 19, title: "Hibiscus Tea 100g Box", subtitle: "Tart & Ruby-Red", image: "/images/Tea Boxes/Hibiscus Tea Box 100g.jpg", productName: "Botanical Infusions", url: "/product/tea-135" },
   { id: 92, title: "Jasmine 50g Roll", subtitle: "Fragrant & Floral", image: "/images/Tea Tin Products/Jasmine Flavoured Tea  Tin 50g.jpg", productName: "Botanical Infusions", url: "/product/tea-208" },

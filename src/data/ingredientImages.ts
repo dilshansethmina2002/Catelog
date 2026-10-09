@@ -183,7 +183,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-131": "/images_of_products_ingredients/FF Ex sp .jpg", // FBOPF Extra Special 100g Box
   "tea-132": "/images_of_products_ingredients/FF sp.jpg", // FBOPF Special 100g Box
   "tea-133": "/images_of_products_ingredients/all ginger flavoured tea products .jpg", // Ginger Tea 100g Box
-  "tea-134": "/images_of_products_ingredients/all greentea products .jpg", // Green Tea 50g Box
+  "tea-134": "/images_of_products_ingredients/all greentea products .jpg", // AT SP Green Tea 25 Tea Bags
   "tea-135": "/images_of_products_ingredients/Ceylon hibiscus black tea products .jpg", // Hibiscus Tea 100g Box
   "tea-136": "/images_of_products_ingredients/all flavoured ceylon jasmine tea products .jpg", // Jasmine Tea 100g Box
   "tea-137": "/images_of_products_ingredients/all masala flavour products  .jpg", // Masala Tea 100g Box
