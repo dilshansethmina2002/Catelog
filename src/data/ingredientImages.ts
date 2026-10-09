@@ -251,7 +251,7 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-199": "/images_of_products_ingredients/BOPF sp.jpg", // Single Estate Premium BOPF Special 400g Pouch
   "tea-200": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty Black Tea 100g Pouch
   "tea-201": "/images_of_products_ingredients/All vita glow products .jpg", // Vita Glow Tea 25g Pouch
-  "tea-202": "/images_of_products_ingredients/all white tea products.jpg", // White Tea 25g Pouch
+  "tea-202": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Pouch
   "tea-203": "/images_of_products_ingredients/Cardamon Flavoured tea products.jpg", // Cardamom 50g Roll
   "tea-204": "/images_of_products_ingredients/Green Tea Curry leaves products.jpeg", // Curry Leaves Flavoured Tea 50g Roll
   "tea-205": "/images_of_products_ingredients/golden tea products.jpg", // Golden Tips 50g Roll
@@ -270,5 +270,5 @@ export const ingredientImageMap: Record<string, string> = {
   "tea-218": "/images_of_products_ingredients/silver tips tea .jpg", // Silver Tips 50g Roll
   "tea-219": "/images_of_products_ingredients/all slim beauty products .jpg", // Slim Beauty 50g Roll
   "tea-220": "/images_of_products_ingredients/all soursop tea products .jpg", // Soursop 50g Roll
-  "tea-221": "/images_of_products_ingredients/all white tea products.jpg", // White Tea 25g Roll
+  "tea-221": "/images_of_products_ingredients/white tea products.jpeg", // White Tea 25g Roll
 };
