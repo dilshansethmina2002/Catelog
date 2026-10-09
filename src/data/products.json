@@ -1890,8 +1890,8 @@
     "ingredientImage": "",
     "ingredients": [
       {
-        "name": "Ceylon Black Tea",
-        "description": "A smooth Ceylon black tea base with natural depth and character."
+        "name": "Ceylon Green Tea",
+        "description": "A smooth Ceylon green tea base with natural depth and character."
       },
       {
         "name": "Soursop Leaf & Fruit",
@@ -7154,7 +7154,7 @@
   {
     "id": "tea-220",
     "name": "Soursop 50g Two Piece Paper Can",
-    "description": "An exotic and tropical Ceylon black tea delicately infused with the unique, creamy sweetness of natural soursop fruit. A refreshing and truly one-of-a-kind tea experience.",
+    "description": "An exotic and tropical Ceylon green tea delicately infused with the unique, creamy sweetness of natural soursop fruit. A refreshing and truly one-of-a-kind tea experience.",
     "price": "USD 9.00",
     "pack": "",
     "weight": "50g",
@@ -7162,8 +7162,8 @@
     "ingredientImage": "",
     "ingredients": [
       {
-        "name": "Ceylon Black Tea",
-        "description": "A medium-bodied black tea that carries tropical fruit flavors beautifully."
+        "name": "Ceylon Green Tea",
+        "description": "A medium-bodied green tea that carries tropical fruit flavors beautifully."
       },
       {
         "name": "Natural Soursop Flavoring",
